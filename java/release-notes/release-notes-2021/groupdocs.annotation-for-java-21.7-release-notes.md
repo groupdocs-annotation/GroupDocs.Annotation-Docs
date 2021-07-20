@@ -338,25 +338,6 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     loadOptions.setPassword("password");
     try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
-7.  **New **
-
-    Example how to use it:
-    ```java
-    PreviewOptions previewOptions = new PreviewOptions(new CreatePageStream() {
-        @Override
-        public OutputStream invoke(int pageNumber) { //Stream => InputStream
-            String pagePath = "/result_{pageNumber}.png";
-            return File.create(pagePath).toOutputStream();
-        }
-    });
-
-    previewOptions.getWorksheetColumns().add(new WorksheetColumnsRange("Sheet1", 2, 3));
-    previewOptions.getWorksheetColumns().add(new WorksheetColumnsRange("Sheet1", 1, 1));
-
-    try (Annotator annotator = new Annotator("input.xlsx")) {
-        annotator.getDocument().generatePreview(previewOptions);
-    }
-    ```
     
     
 ## Versions of Annotated files
