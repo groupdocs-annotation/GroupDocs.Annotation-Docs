@@ -12,29 +12,29 @@ hideChildren: False
 This page contains release notes for GroupDocs.Annotation for Java 21.7
 {{< /alert >}}{{< alert style="danger" >}}
 Breaking changes
-In this versionÿwe're introducing new public API which was designed to be simple and easy to use. For more details about new API please checkÿ[Migration Notes]({{< ref "annotation/java/developer-guide/migration-notes.md" >}}) and [Developer Guide](https://docs.groupdocs.com/display/annotationjava/Developer+Guide) sections.
+In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check [Migration Notes]({{< ref "annotation/java/developer-guide/migration-notes.md" >}}) and [Developer Guide](https://docs.groupdocs.com/display/annotationjava/Developer+Guide) sections.
 {{< /alert >}}
 
 ## Major Features
-In this versionÿBelow the list of most notable changes in release of GroupDocs.Annotation for Java 21.7:
+In this version Below the list of most notable changes in release of GroupDocs.Annotation for Java 21.7:
 *   Legacy API was removed from product
 *   Fixed several bugs and issues 
 *   Added new type of annotation - Image Annotation for (SpreadSheet, Diagrams, Images, PDF, WordProcessing, Presentations)
-*   Investigated and fixed coordinates ofÿannotationsÿto make them same onÿÿimagesÿÿpreviewÿas on documents for number of formats (PDF, Cells, Slides, Words)
+*   Investigated and fixed coordinates of annotations to make them same on images preview as on documents for number of formats (PDF, Cells, Slides, Words)
 *   Adding showing distance value for Distance annotations in different formats (Slides, PDF, Images, Diagrams, Cells)
 *   Fixed Background color for highlight annotation is not set in Images
 *   Implemented ability to add Image Annotations to Diagrams
 *   Added overloads for Remove method
-*   Implement image extracting of ImageAnnotationÿ
+*   Implement image extracting of ImageAnnotation 
 *   Fixed support DWG files
-*   Fixed issue with encryptedÿSpreadSheet(Cells) files
+*   Fixed issue with encrypted SpreadSheet(Cells) files
 *   Added new feature for managing different versions of annotated documents (supported formats: Words, PDF, PowerPoint and Open Document format presentations, Excel and Open Document format spreadsheets)
 *   Added advanced rendering options for show\\hide replies
 *   Added to new API getting pages image size
 *   Fixed issue with throwing exception for encrypted Excel spreadsheets
-*   Fixed cleanup replies forÿPowerPoint presentations
+*   Fixed cleanup replies for PowerPoint presentations
 *   Annotation available in document after removing
-*   Issue with generating preview forÿpassword-protected document
+*   Issue with generating preview for password-protected document
 *   Issue with error when processing images
 *   Implemented managing different versions of annotated documents for Images and Diagrams
 *   Implemented additional overloads for Save method without filestream
@@ -76,10 +76,10 @@ In this versionÿBelow the list of most notable changes in release of GroupDocs.A
 | ANNOTATIONNET-1292 | Implement managing different versions of annotated documents for Diagrams | Feature |
 | ANNOTATIONNET-1291 | Implement managing different versions of annotated documents for Images | Feature |
 | ANNOTATIONNET-884 | Implement ability to add Image annotation to Diagrams | Feature |
-| ANNOTATIONNET-880ÿ | Implement ability to add Image annotation to PDF | Feature |
+| ANNOTATIONNET-880 | Implement ability to add Image annotation to PDF | Feature |
 | ANNOTATIONNET-881 | Implement ability to add Image annotation to SpreadSheet | Feature |
-| ANNOTATIONNET-882ÿ | Implement ability to add Image annotation to Presentations | Feature |
-| ANNOTATIONNET-883ÿ | Implement ability to add Image annotation to WordProcessing | Feature |
+| ANNOTATIONNET-882 | Implement ability to add Image annotation to Presentations | Feature |
+| ANNOTATIONNET-883 | Implement ability to add Image annotation to WordProcessing | Feature |
 | ANNOTATIONNET-1220 | Implement ability to add Image annotation to Images | Feature |
 | ANNOTATIONNET-816 | Managing different versions of annotated file | Feature |
 | ANNOTATIONNET-1537 | Investigate the way of displaying huge worksheets of Spreadsheet | Improvement |
@@ -97,17 +97,17 @@ In this versionÿBelow the list of most notable changes in release of GroupDocs.A
 | ANNOTATIONNET-1248 | Implement image extracting to ImageAnnotation | Improvement |
 | ANNOTATIONNET-1135 | Investigate and fix coordinates discrepancy for Cells | Improvement |
 | ANNOTATIONNET-1139 | Investigate and fix coordinates discrepancy for PDF | Improvement |
-| ANNOTATIONNET-1140ÿ | Investigate and fix coordinates discrepancy for Slides | Improvement |
+| ANNOTATIONNET-1140 | Investigate and fix coordinates discrepancy for Slides | Improvement |
 | ANNOTATIONNET-1141 | Investigate and fix coordinates discrepancy for Words | Improvement |
-| ANNOTATIONNET-1146ÿ | Improve Words Shapes Import | Improvement |
-| ANNOTATIONNET-1165ÿÿ | Adding showing distance value for Distance annotations in different formats(Slides, PDF, Images, Diagrams, Cells) | Improvement |
+| ANNOTATIONNET-1146 | Improve Words Shapes Import | Improvement |
+| ANNOTATIONNET-1165 | Adding showing distance value for Distance annotations in different formats(Slides, PDF, Images, Diagrams, Cells) | Improvement |
 | ANNOTATIONNET-1170 | Improve Logging in Cells | Improvement |
 | ANNOTATIONNET-1171 | Improve Logging in Diagram | Improvement |
-| ANNOTATIONNET-1172ÿ | Improve Logging in Email/Html | Improvement |
+| ANNOTATIONNET-1172 | Improve Logging in Email/Html | Improvement |
 | ANNOTATIONNET-1173 | Improve Logging in Images | Improvement |
-| ANNOTATIONNET-1174ÿ | Improve Logging in PDF | Improvement |
-| ANNOTATIONNET-1175ÿÿ | Improve Logging in Slides | Improvement |
-| ANNOTATIONNET-1176ÿÿ | Improve Logging in Words | Improvement |
+| ANNOTATIONNET-1174 | Improve Logging in PDF | Improvement |
+| ANNOTATIONNET-1175 | Improve Logging in Slides | Improvement |
+| ANNOTATIONNET-1176 | Improve Logging in Words | Improvement |
 | ANNOTATIONNET-1177 | Improve Logging in Common Classes | Improvement |
 | ANNOTATIONNET-1484 | Split PdfCommentator functionality to improve annotating PDF | Improvement |
 | ANNOTATIONNET-1514 | Incorrect image size for Excel document | Bug |
@@ -134,15 +134,15 @@ In this versionÿBelow the list of most notable changes in release of GroupDocs.A
 | ANNOTATIONNET-1334 | Annotations available after removing. | Bug |
 | ANNOTATIONNET-1335 | Error during generating preview for password-protected document. | Bug |
 | ANNOTATIONNET-1336 | Unexpected error with message "The image file format may be not supported at the moment." for Jpg. | Bug |
-| ANNOTATIONNET-1178ÿ | FilteringAnnotationTypes example raised and exception | Bug |
-| ANNOTATIONNET-1184ÿ | Background color for highlight annotation is not set in Images | Bug |
-| ANNOTATIONNET-1132ÿÿ | Issue with one page PDF preview generating | Bug |
+| ANNOTATIONNET-1178 | FilteringAnnotationTypes example raised and exception | Bug |
+| ANNOTATIONNET-1184 | Background color for highlight annotation is not set in Images | Bug |
+| ANNOTATIONNET-1132 | Issue with one page PDF preview generating | Bug |
 | ANNOTATIONNET-1133 | Wrong Slides preview generating | Bug |
-| ANNOTATIONNET-1145ÿ | Compatibility issues under .NET Standard 2.0 | Bug |
+| ANNOTATIONNET-1145 | Compatibility issues under .NET Standard 2.0 | Bug |
 | ANNOTATIONNET-1103 | Issue with saving formats in Presentations | Bug |
-| ANNOTATIONNET-1104ÿ | Issue with Word Processing documents cleanup | Bug |
+| ANNOTATIONNET-1104 | Issue with Word Processing documents cleanup | Bug |
 | ANNOTATIONNET-1106 | Issue with cleanup Link annotation on Presentations | Bug |
-| ANNOTATIONNET-1219 | Example Code throws NullReferenceException forÿSpreadSheet | Bug |
+| ANNOTATIONNET-1219 | Example Code throws NullReferenceException for SpreadSheet | Bug |
 | ANNOTATIONNET-1240 | Fix Dwg File Support | Bug |
 | ANNOTATIONNET-1242 | Distance annotation was added in wrong place in jpg file | Bug |
 | ANNOTATIONNET-1243 | Font color was changed after removing text redaction annotation | Bug |
@@ -160,6 +160,14 @@ In this versionÿBelow the list of most notable changes in release of GroupDocs.A
 | ANNOTATIONNET-1361 | Comments not cleaned in Excel files | Bug |
 | ANNOTATIONNET-1358 | Wrong file metadata issue in Images after adding Versions | Bug |
 | ANNOTATIONNET-1357 | Empty PagesInfo for Excel file in MVC project. | Bug |
+| ANNOTATIONJAVA-1217 | Exception occurred while remove annotations from xls file | Bug |
+| ANNOTATIONJAVA-1238 | Add DWG files support | Bug |
+| ANNOTATIONJAVA-1240 | Remove underline annotation doesn't work | Bug |
+| ANNOTATIONJAVA-1241 | Font color was changed after removing text redaction annotation | Bug |
+| ANNOTATIONJAVA-1243 | Cannot add annotations to the image. | Bug |
+| ANNOTATIONJAVA-1245 | Distance annotation in jpg file | Bug |
+| ANNOTATIONJAVA-1312 | Remove annotation via AnnotationType.None dosen't work | Bug |
+| ANNOTATIONJAVA-1311 | Error when save Text Redaction annotation to file | Bug |
 
 ## Public API and Backward Incompatible Changes
 
@@ -167,7 +175,7 @@ In this versionÿBelow the list of most notable changes in release of GroupDocs.A
 
 1.  Add Image Annotation  
     
-    **Image annotation**ÿallows to add image within document page like shown at the picture below.
+    **Image annotation** allows to add image within document page like shown at the picture below.
     
 ![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes.png)
     
@@ -189,10 +197,10 @@ There is an ability to specify the next properties for ImageAnnotation type:
 
 Follow these steps to add Image annotation to document:
 
-*   Instantiateÿ[Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator)ÿobject with input document path or stream;
+*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
 *   Instantiate ImageAnnotation object with desired properties (position, page number, etc);
-*   Callÿ[Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass ImageAnnotation object;
-*   Callÿ[Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save) method with resultant document path or stream.
+*   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass ImageAnnotation object;
+*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save) method with resultant document path or stream.
     
 The following code demonstrates how to add ImageAnnotation with remote ImagePath to the document:
     
@@ -216,7 +224,7 @@ The result would be
 
 2.  **Extract Image from Image Annotation**  
     
-    Added new method that allows to get image (.NET classÿ*System.Drawing.Image*) from annotated Documentÿ
+    Added new method that allows to get image (.NET class *System.Drawing.Image*) from annotated Document 
     
     Follow these steps to Extract Image:
     *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
@@ -255,7 +263,7 @@ The result would be
     *   Call [Remove](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/remove) method and give them id, list of id's, annotation to delete, or list of annotations 
     *   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.annotator/save/methods/2) method to save changes
        
-    1) Following code demonstratesÿoverload how to remove Annotation from Document using annotation index:
+    1) Following code demonstrates overload how to remove Annotation from Document using annotation index:
     ```csharp
     using (Annotator annotator = new Annotator("result.xlsx"))
     {
@@ -294,7 +302,7 @@ The result would be
     }
     ```
 5.  **Starting from version 21.7 several Save methods overloads was added for user convenience**  
-    Now you can call Empty Save to save documents as input file for annotator. If you need to add some options, you may call Save method with only one parameter - SaveOptions, it will do the same as empty but willÿconsider your options.
+    Now you can call Empty Save to save documents as input file for annotator. If you need to add some options, you may call Save method with only one parameter - SaveOptions, it will do the same as empty but will consider your options.
 
     1) Method accepts SaveOption parameter
 
@@ -315,7 +323,7 @@ The result would be
     }
     ```
 
-    2) EmptyÿSave Method
+    2) Empty Save Method
 
     ```csharp
     using (FileStream fs = new FileStream(_resultPath, FileMode.Open))
@@ -390,9 +398,9 @@ The result would be
     
 ## 2\. Versions of Annotated files
 
-Every Time you Save file using Annotator.Save() method -ÿyou implicitly create a new version of the annotated file. Versions List stores not document, it keeps annotations that you add, remove, and change. So you can easyÿswap between different changes made with GroupDocs.Annotation.ÿAnd of course you can set your version names. More information about how it works you can find in child Pages
+Every Time you Save file using Annotator.Save() method - you implicitly create a new version of the annotated file. Versions List stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names. More information about how it works you can find in child Pages
 
-By default, they are created using unique GUID keys.ÿNext, each aspect of using versions will be considered. The API execution logic has not changed, so you do not need to change your code to use it as before. By default, the latest version is loaded without your fate (that is, you will not notice the difference with previous releases).ÿ
+By default, they are created using unique GUID keys. Next, each aspect of using versions will be considered. The API execution logic has not changed, so you do not need to change your code to use it as before. By default, the latest version is loaded without your fate (that is, you will not notice the difference with previous releases). 
 
 ### Backward Compatibility
 
@@ -461,7 +469,7 @@ using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Ve
     {{< alert style="info" >}}This feature is only supported for Word processing documents.{{< /alert >}}
 
     Default value is *true*. If it is not needed to display replies and comments at the page preview - set *RenderComments* property to *false* (replies and comments still will be stored inside document).  
-    Please notice, that *RenderComments* value will impact any document comments (doesn't matter if they were added by GroupDocs.Annotation orÿ some other application).
+    Please notice, that *RenderComments* value will impact any document comments (doesn't matter if they were added by GroupDocs.Annotation or  some other application).
     Here the code that demonstrates how display image preview without comments:
 
     ```csharp
