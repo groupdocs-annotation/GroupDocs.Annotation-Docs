@@ -424,7 +424,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     {{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as a version.{{< /alert >}}
 
-## Added RenderComments Property to PreviewOptions
+9. **Added RenderComments Property to PreviewOptions**
     If you need not to generate comments on image preview you may use *RenderComments* property
 
     {{< alert style="info" >}}This feature is only supported for Word processing documents.{{< /alert >}}
@@ -447,7 +447,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     annotator.getDocument().generatePreview(previewOptions);
     ```
 
-## Add PagesInfo property to IDocumentInfo
+10. **Add PagesInfo property to IDocumentInfo**
     *PagesInfo* represents list of *PageInfo* objects which store information about each page.
 
     Now *PageInfo* have two properties - *Width* and *Height* in pixels. This properties works with all formats except Email And Html that doesn't have height and width so the won't store them and will be empty. All pages width and height will be same in all formats except Cells, so you can use size of first element as size of all document.
@@ -461,7 +461,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     int height = info.getPagesInfo().get(0).getHeight();
     ```
 
-## Added Angle property for ImageAnnotation
+11. **Added Angle property for ImageAnnotation**
     To set a custom angle for ImageAnnotation, you can use the new *Angle* property. Angle is measured in degrees.
 
     Example how to use it:
@@ -475,7 +475,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     imageAnnotation.setAngle(90.0);
     ```
 
-## Added horizontal and vertical alignment for Watermark
+12. **Added horizontal and vertical alignment for Watermark**
     To set Horizontal and Vertical Alignments for WatermarkAnnotation, you can use Alignment properties.
 
     ```java
@@ -485,7 +485,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```
 
 
-## Added text horizontal alignment for TextField
+13. **Added text horizontal alignment for TextField**
     To set a text horizontal alignment you can use the TextHorizontalAlignment property.
 
     ```java
