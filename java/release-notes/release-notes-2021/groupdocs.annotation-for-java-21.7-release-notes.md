@@ -338,7 +338,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     loadOptions.setPassword("password");
     try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
-7.  **New [WorksheetColumns](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property in [PreviewOptions](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.options/previewoptions) class that allows to specify the range of generated columns on a specified worksheet.**
+7.  **New **
 
     Example how to use it:
     ```java
