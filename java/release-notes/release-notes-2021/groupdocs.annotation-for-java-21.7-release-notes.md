@@ -338,8 +338,42 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     loadOptions.setPassword("password");
     try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
+7.  **New [WorksheetColumns](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property in [PreviewOptions](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.options/previewoptions) class that allows to specify the range of generated columns on a specified worksheet.**
 
+    Example how to use it:
+    ```java
+    PreviewOptions previewOptions = new PreviewOptions(new CreatePageStream() {
+        @Override
+        public OutputStream invoke(int pageNumber) { //Stream => InputStream
+            String pagePath = "/result_{pageNumber}.png";
+            return File.create(pagePath).toOutputStream();
+        }
+    });
 
+    previewOptions.getWorksheetColumns().add(new WorksheetColumnsRange("Sheet1", 2, 3));
+    previewOptions.getWorksheetColumns().add(new WorksheetColumnsRange("Sheet1", 1, 1));
+
+    try (Annotator annotator = new Annotator("input.xlsx")) {
+        annotator.getDocument().generatePreview(previewOptions);
+    }
+    ```
+    
+    
+8. **Versions of Annotated files**
+
+    Every Time you Save file using Annotator.Save() method - you implicitly create a new version of the annotated file. Versions List stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names. More information about how it works you can find in child Pages
+
+    By default, they are created using unique GUID keys. Next, each aspect of using versions will be considered. The API execution logic has not changed, so you do not need to change your code to use it as before. By default, the latest version is loaded without your fate (that is, you will not notice the difference with previous releases). 
+
+    1) Backward Compatibility
+
+    The update is fully compatible with previous and next updates (The latest saved version will be used), however, using versions on previous versions is not possible and the list of versions in this document will not be changed. And If you update file from 20.4+ using 20.2 and lower few times, after loading this document on 20.4+ only last changes will be added as new version.
+
+    2) Add Version with custom name
+
+    If you want to swap between versions easily you might need to have ability to set custom versions names.
+
+    Here the code that demonstrates how to save version with custom name:
     ```java
     try (Annotator annotator = new Annotator("input.pdf")) {
         AreaAnnotation areaAnnotation = new AreaAnnotation();
@@ -352,7 +386,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```
     {{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as version variable{{< /alert >}}
 
-    ### Get List of All version keys on a document
+    3) Get List of All version keys on a document
 
     If you don't know what versions were added earlier or want to know versions count
     Here the code that demonstrates how to get list of versions keys:
@@ -363,7 +397,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```
     {{< alert style="info" >}}Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.{{< /alert >}}
 
-    ### Get List of Annotations using version key
+    4) Get List of Annotations using version key
 
     If you need to get List of Annotations you can use Annotator.GetVersion() method
     Here code that demonstrates how to get list of annotations from individual version
@@ -375,7 +409,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     {{< alert style="info" >}}GetVersion method supports any type, and you can use any variable as version variable.{{< /alert >}}
 
-    ### Load Document of custom Version
+    5) Load Document of custom Version
 
     Using LoadOptions.Version you can load previous versions of annotated document.
     Here the code that demonstrates how load version using version name:
