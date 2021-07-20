@@ -2,7 +2,7 @@
 id: generate-document-pages-preview
 url: annotation/java/generate-document-pages-preview
 title: Generate document pages preview
-weight: 1
+weight: 3
 description: ""
 keywords: 
 productName: GroupDocs.Annotation for Java

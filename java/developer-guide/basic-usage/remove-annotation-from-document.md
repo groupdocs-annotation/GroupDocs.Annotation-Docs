@@ -15,15 +15,41 @@ There are the steps to remove annotations from document:
 *   Instantiate [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object and set *AnnotationTypes = AnnotationType.None*;
 *   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
     
-
-The following code demonstrates how to remove annotation from document:
+1) Following code demonstrates how to remove annotation from document using annotation index:
 
 ```java
 Annotator annotator = new Annotator("C://input.pdf");
-SaveOptions saveOptions = new SaveOptions();
-saveOptions.setAnnotationTypes(AnnotationType.None);
-annotator.save("C://output.pdf", saveOptions);
-annotator.dispose();
+annotator.remove(0);
+annotator.save("C://output.pdf", new SaveOptions());
+```
+
+2) Following code demonstrates how to remove annotation from document using annotation Object:
+
+```java
+Annotator annotator = new Annotator("C://input.pdf");
+java.util.List<AnnotationBase> annotations = annotator.get();
+annotator.remove(annotations.get(0));
+annotator.save("C://output.pdf", new SaveOptions());
+```
+
+3) Following code demonstrates how to remove some annotations from document using list of Id’s:
+
+```java
+Annotator annotator = new Annotator("C://input.pdf");
+java.util.List<Integer> idList = new java.util.ArrayList<>();
+idList.add(0);
+idList.add(1);
+annotator.remove(idList);
+annotator.save("C://output.pdf", new SaveOptions());
+```
+
+4) Following code demonstrates how to remove some annotations from document using list of annotations:
+
+```java
+Annotator annotator = new Annotator("C://input.pdf");
+java.util.List<AnnotationBase> annotations = annotator.get();
+annotator.removeInternal(annotations);
+annotator.save("C://output.pdf", new SaveOptions());
 ```
 
 ## More resources

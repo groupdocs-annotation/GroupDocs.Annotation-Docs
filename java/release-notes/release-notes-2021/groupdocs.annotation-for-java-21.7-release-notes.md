@@ -177,7 +177,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     
     **Image annotation** allows to add image within document page like shown at the picture below.
     
-    ![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes.png)
+    ![](annotation/java/images/groupdocs-annotation-for-net-20-1-release-notes.png)
         
     {{< alert style="info" >}}IMPORTANT: On version 20.1 Image Annotation supported only in PDF, Words, Slides, Cells, Images documents.{{< /alert >}}
 
@@ -197,201 +197,164 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     Follow these steps to add Image annotation to document:
 
-    *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+    *   Instantiate [Annotator](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator) object with input document path or stream;
     *   Instantiate ImageAnnotation object with desired properties (position, page number, etc);
-    *   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass ImageAnnotation object;
-    *   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save) method with resultant document path or stream.
+    *   Call [Add](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/methods/add) method and pass ImageAnnotation object;
+    *   Call [Save](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/methods/save) method with resultant document path or stream.
         
     The following code demonstrates how to add ImageAnnotation with remote ImagePath to the document:
         
-    ```csharp
-    using (Annotator annotator = new Annotator("input.pdf"))
-    {
-         ImageAnnotation area = new ImageAnnotation
-        {
-            Box = new Rectangle(100, 100, 100, 100),
-            Opacity = 0.7,
-            PageNumber = 0,
-            ImagePath = "www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
-        };
-        annotator.Add(area);
-        annotator.Save("result.pdf");
-    }               
+    ```java
+	try (Annotator annotator = new Annotator("input.pdf")) {
+		ImageAnnotation imageAnnotation = new ImageAnnotation();
+		imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
+		imageAnnotation.setOpacity(0.7);
+		imageAnnotation.setPageNumber(0);
+		imageAnnotation.setImagePath("www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png");
+		imageAnnotation.setAngle(100.0);
+
+		annotator.add(imageAnnotation);
+		annotator.save("result.pdf");
+	}
     ```
         
     The result would be
-    ![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)
-
-2.  **Extract Image from Image Annotation**  
+    ![](annotation/java/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)
     
-    Added new method that allows to get image (.NET class *System.Drawing.Image*) from annotated Document 
-    
-    Follow these steps to Extract Image:
-    *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-    *   Call [Get](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/get) method and get annotations list
-    *   Call GetImage method from some of [ImageAnnotations](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) from annotations list
-    *   [Save](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.save?view=netframework-4.8#System_Drawing_Image_Save_System_String_) image if it needed using Save Method. You can also use Property ImageExtension of [ImageAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) to set correct image extension
-    
-    The following code demonstrates how to get image from Image Annotation:
-    
-    ```csharp
-    using (Annotator annotator = new Annotator("result.xlsx"))
-    {
-        var tmp = annotator.Get(AnnotationType.Image);
-        ImageAnnotation img = tmp[0] as ImageAnnotation;     
-        img.GetImage().Save($"res.{img.ImageExtension}");
-    }
-    ```
-    
-3.  **Added new overloads for Get method** 
+2.  **Added new overloads for Get method** 
     
     On version 20.2 was added new overload of Annotator.Get method. It allows to get list of annotation of specific type
-    ```csharp
-    using (Annotator annotator = new Annotator("annotated.pdf"))
-    {
-        //List with only Annotations with type Area will be returned and saved as tmp variable                
-        var tmp = annotator.Get(AnnotationType.Area);            
-    }
+    ```java
+    try (Annotator annotator = new Annotator("annotated.pdf")) {
+		List<AnnotationBase> tmp = annotator.get(AnnotationType.Area);
+	}
     ```
     
-4.  **Added new overloads for Remove method**  
+3.  **Added new overloads for Remove method**  
     On version 20.2 Was added new overload of Annotator.Remove method.
     New overloads method allow to remove single Annotation or list of Annotations.
     Follow these steps to add annotation to document:
     
-    *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-    *   Call [Remove](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/remove) method and give them id, list of id's, annotation to delete, or list of annotations 
-    *   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.annotator/save/methods/2) method to save changes
+    *   Instantiate [Annotator](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator) object with input document path or stream;
+    *   Call [Remove](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/methods/remove) method and give them id, list of id's, annotation to delete, or list of annotations 
+    *   Call [Save](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.annotator/save/methods/2) method to save changes
        
     1) Following code demonstrates overload how to remove Annotation from Document using annotation index:
-    ```csharp
-    using (Annotator annotator = new Annotator("result.xlsx"))
-    {
-        annotator.Remove(0);
-        annotator.Save("removed.xlsx");
+    ```java
+    try (Annotator annotator = new Annotator("result.xlsx")) {
+        annotator.remove(0);
+        annotator.save("removed.xlsx");
     }
     ```
     
     2) Following code demonstrates overload how to remove Annotation from Document using Annotation Object:
-    ```csharp
-    using (Annotator annotator = new Annotator("result.xlsx"))
-    {
-        var tmp = annotator.Get();
-        annotator.Remove(tmp[0]);
-        annotator.Save("removed.xlsx");
+    ```java
+    try (Annotator annotator = new Annotator("result.xlsx")) {
+        List<AnnotationBase> tmp = annotator.get();
+		annotator.remove(tmp.get(0));
+		annotator.save("removed.xlsx");
     }
     ```
     
     3) Following code demonstrates overload how to remove some Annotations from Document using list of Id's:
-    ```csharp
-    using (Annotator annotator = new Annotator("result.xlsx"))
-    {
-        var idList = new List<int>{1, 2, 3};
-        annotator.Remove(idList);
-        annotator.Save("removed.xlsx");
+    ```java
+    try (Annotator annotator = new Annotator("result.xlsx")) {
+        java.util.List<Integer> idList = new java.util.ArrayList<>();
+		idList.add(0);
+		idList.add(1);
+		annotator.remove(idList);
+		annotator.remove(idList);
+		annotator.save("removed.xlsx");
     }
     ```
 
     4) Following code demonstrates how to remove some Annotations from Document using list of Annotations:
-    ```csharp
-    using (Annotator annotator = new Annotator("result.xlsx"))
-    {
-        var tmp = annotator.Get();
-        annotator.Remove(tmp);
-        annotator.Save("removed.xlsx");
+    ```java
+    try (Annotator annotator = new Annotator("result.xlsx")) {
+        List<AnnotationBase> tmp = annotator.get();
+		annotator.removeInternal(tmp);
+		annotator.save("removed.xlsx");
     }
     ```
-5.  **Starting from version 21.7 several Save methods overloads was added for user convenience**  
+4.  **Starting from version 21.7 several Save methods overloads was added for user convenience**  
     Now you can call Empty Save to save documents as input file for annotator. If you need to add some options, you may call Save method with only one parameter - SaveOptions, it will do the same as empty but will consider your options.
 
     1) Method accepts SaveOption parameter
 
-    ```csharp
-    using (FileStream fs = new FileStream(_resultPath, FileMode.Open))
-    {
-        using (Annotator annotator = new Annotator(fs))
-        {
-            annotator.Save(new SaveOptions { Version = "1" });
-        }
-    }
-    ```
-
-    ```csharp
-    using (Annotator annotator = new Annotator(_resultPath))
-    {
-        annotator.Save(new SaveOptions { Version = "1" });
+    ```java
+    try (Annotator annotator = new Annotator(_resultPath)) {
+        SaveOptions saveOptions = new SaveOptions();
+		saveOptions.setVersion(1);
+		annotator.save(saveOptions);
     }
     ```
 
     2) Empty Save Method
 
-    ```csharp
-    using (FileStream fs = new FileStream(_resultPath, FileMode.Open))
-    {
-        using (Annotator annotator = new Annotator(fs))
-        {
-            annotator.Save();
-        }
+    ```java
+    try (Annotator annotator = new Annotator(_resultPath)) {
+        annotator.save();
     }
     ```
 
-    ```csharp
-    using (Annotator annotator = new Annotator(_resultPath))
-    {
-        annotator.Save();
-    }
-    ```
-
-6.  **From this time Annotation Models overload the standard Equals method and also implement the IEquatable interface with the type of the class from which this method is called.**
+5.  **From this time Annotation Models overload the standard Equals method and also implement the IEquatable interface with the type of the class from which this method is called.**
     Example how to use it:
 
-    ```csharp
-    using (Annotator annotator = new Annotator("annotated_file.pdf"))
-    {
-        var annotations = annotator.Get();
-        ImageAnnotation imageAnnotation = new ImageAnnotation
-        {
-            Box = new Rectangle(100, 100, 100, 100),
-            Opacity = 0.7,
-            PageNumber = 0,
-            ImagePath = "www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
-            Angle = 100
-        };
-        foreach (var annotation in annotations)
-        {
-            if (imageAnnotation.Equals(annotation))
-            {
-                // Do some stuff here...
-            }
-        }
+    ```java
+    try (Annotator annotator = new Annotator("annotated_file.pdf")) {
+        List<AnnotationBase> annotations = annotator.get();
+		ImageAnnotation imageAnnotation = new ImageAnnotation();
+		imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
+		imageAnnotation.setOpacity(0.7);
+		imageAnnotation.setPageNumber(0);
+		imageAnnotation.setImagePath("www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png");
+		imageAnnotation.setAngle(100.0);
+
+		annotator.add(imageAnnotation);
+		annotator.save("result.pdf");
+
+		for(int i = 0; i < annotations.size(); i++) {
+			if (imageAnnotation.equals(annotations.get(i))) {
+					// Do some stuff here...
+			}
+		}
     }
     
-7.  **Removed the deprecated ImportAnnotations property from the LoadOptions class because annotations are imported automatically.**
+6.  **Removed the deprecated ImportAnnotations property from the LoadOptions class because annotations are imported automatically.**
     So, if before version 21.7 this code was correct:
 
-    ```csharp
-    Annotator annotator = new Annotator("input.docx", new LoadOptions { Password = "password", ImportAnnotations = true });
+    ```java
+    LoadOptions loadOptions = new LoadOptions();
+	loadOptions.setPassword("password");
+	loadOptions.setImportAnnotations(true);
+	try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
     #
     Beginning with version 21.7, LoadOptions no longer has the ImportAnnotations property. The previous code needs to be changed. Example:
 
 
-    ```csharp
-    Annotator annotator = new Annotator("input.docx", new LoadOptions { Password = "password" });
+    ```java
+    LoadOptions loadOptions = new LoadOptions();
+	loadOptions.setPassword("password");
+	try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
-8.  **New [WorksheetColumns](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property in [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class that allows to specify the range of generated columns on a specified worksheet.**
+7.  **New [WorksheetColumns](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property in [PreviewOptions](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.options/previewoptions) class that allows to specify the range of generated columns on a specified worksheet.**
 
     Example how to use it:
-    ```csharp
-    PreviewOptions previewOptions =
-        new PreviewOptions(pageNumber => new FileStream($"preview_pages/page{pageNumber}.png", FileMode.Create),
-            (number, stream) => stream.Dispose());
-    previewOptions.WorksheetColumns.Add(new WorksheetColumnsRange("Sheet1", 2, 3));
-    previewOptions.WorksheetColumns.Add(new WorksheetColumnsRange("Sheet1", 1, 1));
+    ```java
+    PreviewOptions previewOptions = new PreviewOptions(new CreatePageStream() {
+        @Override
+        public OutputStream invoke(int pageNumber) { //Stream => InputStream
+            String pagePath = "/result_{pageNumber}.png";
+            return File.create(pagePath).toOutputStream();
+        }
+    });
 
-    using (Annotator annotator = new Annotator("input.xlsx"))
-    {
-        annotator.Document.GeneratePreview(previewOptions);
+    previewOptions.getWorksheetColumns().add(new WorksheetColumnsRange("Sheet1", 2, 3));
+    previewOptions.getWorksheetColumns().add(new WorksheetColumnsRange("Sheet1", 1, 1));
+
+    try (Annotator annotator = new Annotator("input.xlsx")) {
+        annotator.getDocument().generatePreview(previewOptions);
     }
     ```
     
@@ -412,12 +375,15 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     Here the code that demonstrates how to save version with custom name:
 
-    ```csharp
-    using (Annotator annotator = new Annotator("input.pdf"))
-    {
-       annotator.Update(new AreaAnnotation{ Box = new Rectangle(100, 100, 100, 100) });
-       annotator.Save("result.pdf", new SaveOptions { Version = "CUSTOM_VERSION" });
-    }
+    ```java
+    try (Annotator annotator = new Annotator("input.pdf")) {
+		AreaAnnotation areaAnnotation = new AreaAnnotation();
+		areaAnnotation.setBox(new Rectangle(100, 100, 100, 100));
+		annotator.update(areaAnnotation);
+		SaveOptions saveOptions = new SaveOptions();
+		saveOptions.setVersion("CUSTOM_VERSION" );
+		annotator.save("result.pdf", saveOptions);
+	}
     ```
 
     {{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as version variable{{< /alert >}}
@@ -427,10 +393,10 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     If you don't know what versions were added earlier or want to know versions count
     Here the code that demonstrates how to get list of versions keys:
 
-    ```csharp
-    using (Annotator annotator = new Annotator("result.pdf")) { 
-          List<object> versionKeys = annotator.GetVersionsList();
-    }
+    ```java
+    try (Annotator annotator = new Annotator("result.pdf")) { 
+		List<Object> versionKeys = annotator.getVersionsList();
+	}
     ```
 
     {{< alert style="info" >}}Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.{{< /alert >}}
@@ -440,11 +406,10 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     If you need to get List of Annotations you can use Annotator.GetVersion() method
     Here code that demonstrates how to get list of annotations from individual version
 
-    ```csharp
-    using (Annotator annotator = new Annotator("result.pdf"))
-    {
-        List<AnnotationBase> annotations = annotator.GetVersion("CUSTOM_VERSION");
-    }
+    ```java
+    try (Annotator annotator = new Annotator("result.pdf")) { 
+		List<AnnotationBase> versionKeys = annotator.getVersion("CUSTOM_VERSION");
+	}
     ```
 
     {{< alert style="info" >}}GetVersion method supports any type, and you can use any variable as version variable.{{< /alert >}}
@@ -454,11 +419,12 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     Using LoadOptions.Version you can load previous versions of annotated document.
     Here the code that demonstrates how load version using version name:
 
-    ```csharp
-    using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Version = "CUSTOM_VERSION" }))
-    {
-      annotator.Save("result_loaded.pdf");
-    }
+    ```java
+    LoadOptions loadOptions = new LoadOptions();
+	loadOptions.setVersion("CUSTOM_VERSION");
+	try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {
+		annotator.save("result_loaded.pdf");
+	}
     ```
 
     {{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as a version.{{< /alert >}}
@@ -472,16 +438,18 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     Please notice, that *RenderComments* value will impact any document comments (doesn't matter if they were added by GroupDocs.Annotation or  some other application).
     Here the code that demonstrates how display image preview without comments:
 
-    ```csharp
-    Annotator annotator = new Annotator(File.OpenRead(MakeStoragePath(inputPath)));
-               PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
-               {
-                   var pagePath = MakeStoragePath(inputPath.Replace("input.doc", $"result{pageNumber}.png"));
-                   return File.Create(pagePath);
-               });
-    previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.RenderComments = false;
-    annotator.Document.GeneratePreview(previewOptions);
+    ```java
+    Annotator annotator = new Annotator("inputPath");
+	PreviewOptions previewOptions = new PreviewOptions(new CreatePageStream() {
+		@Override
+		public OutputStream invoke(int pageNumber) {
+			String pagePath = resultPath.replace("result.pdf", "/result_{pageNumber}.png");
+			return File.create(pagePath).toOutputStream();
+		}
+	})
+	previewOptions.setPreviewFormat(PreviewFormats.PNG);
+	previewOptions.setRenderComments(false);
+	annotator.getDocument().generatePreview(previewOptions);
     ```
 
 ## Add PagesInfo property to IDocumentInfo
@@ -491,11 +459,11 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     Here code that demonstrates how to get Document width and Height:
 
-    ```csharp
+    ```java
     Annotator annotator = new Annotator("input.docx");
-    IDocumentInfo info = annotator.Document.GetDocumentInfo();
-    int width = info.PagesInfo[0].Width;
-    int height = info.PagesInfo[0].Height;
+	IDocumentInfo info = annotator.getDocument().getDocumentInfo();
+	int width = info.getPagesInfo().get(0).getWidth();
+	int height = info.getPagesInfo().get(0).getHeight();
     ```
 
 ## Added Angle property for ImageAnnotation
@@ -503,35 +471,29 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     Example how to use it:
 
-    ```csharp
-    ImageAnnotation imageAnnotation = new ImageAnnotation
-    {
-        Box = new Rectangle(100, 100, 100, 100),
-        Opacity = 0.7,
-        PageNumber = 0,
-        ImagePath = "image.png",
-        Angle = 90
-    };
+    ```java
+    ImageAnnotation imageAnnotation = new ImageAnnotation();   
+	imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
+	imageAnnotation.setOpacity(0.7);
+	imageAnnotation.setPageNumber(0);
+	imageAnnotation.setImagePath("image.png");
+	imageAnnotation.setAngle(90.0);
     ```
 
 ## Added horizontal and vertical alignment for Watermark
     To set Horizontal and Vertical Alignments for WatermarkAnnotation, you can use Alignment properties.
 
-    ```csharp
-    WatermarkAnnotation watermarkAnnotation = new WatermarkAnnotation()
-    {
-        VerticalAlignment = VerticalAlignment.Bottom,
-        HorizontalAlignment = HorizontalAlignment.Left
-    };
+    ```java
+    WatermarkAnnotation watermarkAnnotation = new WatermarkAnnotation();
+	watermarkAnnotation.setVerticalAlignment(VerticalAlignment.Bottom);
+	watermarkAnnotation.setHorizontalAlignment(HorizontalAlignment.Left);
     ```
 
 
 ## Added text horizontal alignment for TextField
     To set a text horizontal alignment you can use the TextHorizontalAlignment property.
 
-    ```csharp
-    TextFieldAnnotation textFieldAnnotation = new TextFieldAnnotation()
-    {
-        TextHorizontalAlignment = HorizontalAlignment.Left
-    };
+    ```java
+    TextFieldAnnotation textFieldAnnotation = new TextFieldAnnotation();
+	textFieldAnnotation.setTextHorizontalAlignment(HorizontalAlignment.Left);
     ```
