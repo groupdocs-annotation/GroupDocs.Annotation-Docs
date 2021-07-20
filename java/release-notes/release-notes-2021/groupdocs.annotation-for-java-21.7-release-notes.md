@@ -339,7 +339,6 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
 
-## Versions of Annotated files
 
     ```java
     try (Annotator annotator = new Annotator("input.pdf")) {
