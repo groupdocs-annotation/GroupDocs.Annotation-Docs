@@ -205,17 +205,17 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     The following code demonstrates how to add ImageAnnotation with remote ImagePath to the document:
         
     ```java
-	try (Annotator annotator = new Annotator("input.pdf")) {
-		ImageAnnotation imageAnnotation = new ImageAnnotation();
-		imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
-		imageAnnotation.setOpacity(0.7);
-		imageAnnotation.setPageNumber(0);
-		imageAnnotation.setImagePath("www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png");
-		imageAnnotation.setAngle(100.0);
+    try (Annotator annotator = new Annotator("input.pdf")) {
+        ImageAnnotation imageAnnotation = new ImageAnnotation();
+        imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
+        imageAnnotation.setOpacity(0.7);
+        imageAnnotation.setPageNumber(0);
+        imageAnnotation.setImagePath("www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png");
+        imageAnnotation.setAngle(100.0);
 
-		annotator.add(imageAnnotation);
-		annotator.save("result.pdf");
-	}
+        annotator.add(imageAnnotation);
+        annotator.save("result.pdf");
+    }
     ```
         
     The result would be
@@ -226,8 +226,8 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     On version 20.2 was added new overload of Annotator.Get method. It allows to get list of annotation of specific type
     ```java
     try (Annotator annotator = new Annotator("annotated.pdf")) {
-		List<AnnotationBase> tmp = annotator.get(AnnotationType.Area);
-	}
+        List<AnnotationBase> tmp = annotator.get(AnnotationType.Area);
+    }
     ```
     
 3.  **Added new overloads for Remove method**  
@@ -251,8 +251,8 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```java
     try (Annotator annotator = new Annotator("result.xlsx")) {
         List<AnnotationBase> tmp = annotator.get();
-		annotator.remove(tmp.get(0));
-		annotator.save("removed.xlsx");
+        annotator.remove(tmp.get(0));
+        annotator.save("removed.xlsx");
     }
     ```
     
@@ -260,11 +260,11 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```java
     try (Annotator annotator = new Annotator("result.xlsx")) {
         java.util.List<Integer> idList = new java.util.ArrayList<>();
-		idList.add(0);
-		idList.add(1);
-		annotator.remove(idList);
-		annotator.remove(idList);
-		annotator.save("removed.xlsx");
+        idList.add(0);
+        idList.add(1);
+        annotator.remove(idList);
+        annotator.remove(idList);
+        annotator.save("removed.xlsx");
     }
     ```
 
@@ -272,8 +272,8 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```java
     try (Annotator annotator = new Annotator("result.xlsx")) {
         List<AnnotationBase> tmp = annotator.get();
-		annotator.removeInternal(tmp);
-		annotator.save("removed.xlsx");
+        annotator.removeInternal(tmp);
+        annotator.save("removed.xlsx");
     }
     ```
 4.  **Starting from version 21.7 several Save methods overloads was added for user convenience**  
@@ -284,8 +284,8 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```java
     try (Annotator annotator = new Annotator(_resultPath)) {
         SaveOptions saveOptions = new SaveOptions();
-		saveOptions.setVersion(1);
-		annotator.save(saveOptions);
+        saveOptions.setVersion(1);
+        annotator.save(saveOptions);
     }
     ```
 
@@ -303,21 +303,21 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```java
     try (Annotator annotator = new Annotator("annotated_file.pdf")) {
         List<AnnotationBase> annotations = annotator.get();
-		ImageAnnotation imageAnnotation = new ImageAnnotation();
-		imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
-		imageAnnotation.setOpacity(0.7);
-		imageAnnotation.setPageNumber(0);
-		imageAnnotation.setImagePath("www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png");
-		imageAnnotation.setAngle(100.0);
+        ImageAnnotation imageAnnotation = new ImageAnnotation();
+        imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
+        imageAnnotation.setOpacity(0.7);
+        imageAnnotation.setPageNumber(0);
+        imageAnnotation.setImagePath("www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png");
+        imageAnnotation.setAngle(100.0);
 
-		annotator.add(imageAnnotation);
-		annotator.save("result.pdf");
+        annotator.add(imageAnnotation);
+        annotator.save("result.pdf");
 
-		for(int i = 0; i < annotations.size(); i++) {
-			if (imageAnnotation.equals(annotations.get(i))) {
-					// Do some stuff here...
-			}
-		}
+        for(int i = 0; i < annotations.size(); i++) {
+            if (imageAnnotation.equals(annotations.get(i))) {
+                    // Do some stuff here...
+            }
+        }
     }
     
 6.  **Removed the deprecated ImportAnnotations property from the LoadOptions class because annotations are imported automatically.**
@@ -325,9 +325,9 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     ```java
     LoadOptions loadOptions = new LoadOptions();
-	loadOptions.setPassword("password");
-	loadOptions.setImportAnnotations(true);
-	try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
+    loadOptions.setPassword("password");
+    loadOptions.setImportAnnotations(true);
+    try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
     #
     Beginning with version 21.7, LoadOptions no longer has the ImportAnnotations property. The previous code needs to be changed. Example:
@@ -335,8 +335,8 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     ```java
     LoadOptions loadOptions = new LoadOptions();
-	loadOptions.setPassword("password");
-	try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
+    loadOptions.setPassword("password");
+    try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
 7.  **New [WorksheetColumns](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property in [PreviewOptions](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.options/previewoptions) class that allows to specify the range of generated columns on a specified worksheet.**
 
@@ -374,42 +374,37 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     If you want to swap between versions easily you might need to have ability to set custom versions names.
 
     Here the code that demonstrates how to save version with custom name:
-
     ```java
     try (Annotator annotator = new Annotator("input.pdf")) {
-		AreaAnnotation areaAnnotation = new AreaAnnotation();
-		areaAnnotation.setBox(new Rectangle(100, 100, 100, 100));
-		annotator.update(areaAnnotation);
-		SaveOptions saveOptions = new SaveOptions();
-		saveOptions.setVersion("CUSTOM_VERSION" );
-		annotator.save("result.pdf", saveOptions);
-	}
+        AreaAnnotation areaAnnotation = new AreaAnnotation();
+        areaAnnotation.setBox(new Rectangle(100, 100, 100, 100));
+        annotator.update(areaAnnotation);
+        SaveOptions saveOptions = new SaveOptions();
+        saveOptions.setVersion("CUSTOM_VERSION" );
+        annotator.save("result.pdf", saveOptions);
+    }
     ```
-
     {{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as version variable{{< /alert >}}
 
     ### Get List of All version keys on a document
 
     If you don't know what versions were added earlier or want to know versions count
     Here the code that demonstrates how to get list of versions keys:
-
     ```java
     try (Annotator annotator = new Annotator("result.pdf")) { 
-		List<Object> versionKeys = annotator.getVersionsList();
-	}
+        List<Object> versionKeys = annotator.getVersionsList();
+    }
     ```
-
     {{< alert style="info" >}}Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.{{< /alert >}}
 
     ### Get List of Annotations using version key
 
     If you need to get List of Annotations you can use Annotator.GetVersion() method
     Here code that demonstrates how to get list of annotations from individual version
-
     ```java
     try (Annotator annotator = new Annotator("result.pdf")) { 
-		List<AnnotationBase> versionKeys = annotator.getVersion("CUSTOM_VERSION");
-	}
+        List<AnnotationBase> versionKeys = annotator.getVersion("CUSTOM_VERSION");
+    }
     ```
 
     {{< alert style="info" >}}GetVersion method supports any type, and you can use any variable as version variable.{{< /alert >}}
@@ -421,10 +416,10 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     ```java
     LoadOptions loadOptions = new LoadOptions();
-	loadOptions.setVersion("CUSTOM_VERSION");
-	try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {
-		annotator.save("result_loaded.pdf");
-	}
+    loadOptions.setVersion("CUSTOM_VERSION");
+    try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {
+        annotator.save("result_loaded.pdf");
+    }
     ```
 
     {{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as a version.{{< /alert >}}
@@ -440,16 +435,16 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     ```java
     Annotator annotator = new Annotator("inputPath");
-	PreviewOptions previewOptions = new PreviewOptions(new CreatePageStream() {
-		@Override
-		public OutputStream invoke(int pageNumber) {
-			String pagePath = resultPath.replace("result.pdf", "/result_{pageNumber}.png");
-			return File.create(pagePath).toOutputStream();
-		}
-	})
-	previewOptions.setPreviewFormat(PreviewFormats.PNG);
-	previewOptions.setRenderComments(false);
-	annotator.getDocument().generatePreview(previewOptions);
+    PreviewOptions previewOptions = new PreviewOptions(new CreatePageStream() {
+        @Override
+        public OutputStream invoke(int pageNumber) {
+            String pagePath = resultPath.replace("result.pdf", "/result_{pageNumber}.png");
+            return File.create(pagePath).toOutputStream();
+        }
+    })
+    previewOptions.setPreviewFormat(PreviewFormats.PNG);
+    previewOptions.setRenderComments(false);
+    annotator.getDocument().generatePreview(previewOptions);
     ```
 
 ## Add PagesInfo property to IDocumentInfo
@@ -461,9 +456,9 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     ```java
     Annotator annotator = new Annotator("input.docx");
-	IDocumentInfo info = annotator.getDocument().getDocumentInfo();
-	int width = info.getPagesInfo().get(0).getWidth();
-	int height = info.getPagesInfo().get(0).getHeight();
+    IDocumentInfo info = annotator.getDocument().getDocumentInfo();
+    int width = info.getPagesInfo().get(0).getWidth();
+    int height = info.getPagesInfo().get(0).getHeight();
     ```
 
 ## Added Angle property for ImageAnnotation
@@ -473,11 +468,11 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     ```java
     ImageAnnotation imageAnnotation = new ImageAnnotation();   
-	imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
-	imageAnnotation.setOpacity(0.7);
-	imageAnnotation.setPageNumber(0);
-	imageAnnotation.setImagePath("image.png");
-	imageAnnotation.setAngle(90.0);
+    imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
+    imageAnnotation.setOpacity(0.7);
+    imageAnnotation.setPageNumber(0);
+    imageAnnotation.setImagePath("image.png");
+    imageAnnotation.setAngle(90.0);
     ```
 
 ## Added horizontal and vertical alignment for Watermark
@@ -485,8 +480,8 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     ```java
     WatermarkAnnotation watermarkAnnotation = new WatermarkAnnotation();
-	watermarkAnnotation.setVerticalAlignment(VerticalAlignment.Bottom);
-	watermarkAnnotation.setHorizontalAlignment(HorizontalAlignment.Left);
+    watermarkAnnotation.setVerticalAlignment(VerticalAlignment.Bottom);
+    watermarkAnnotation.setHorizontalAlignment(HorizontalAlignment.Left);
     ```
 
 
@@ -495,5 +490,5 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     ```java
     TextFieldAnnotation textFieldAnnotation = new TextFieldAnnotation();
-	textFieldAnnotation.setTextHorizontalAlignment(HorizontalAlignment.Left);
+    textFieldAnnotation.setTextHorizontalAlignment(HorizontalAlignment.Left);
     ```
