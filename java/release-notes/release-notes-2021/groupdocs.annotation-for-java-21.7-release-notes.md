@@ -173,54 +173,54 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
 {{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Annotation for Java 21.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
-1.  Add Image Annotation  
+1.  **Add Image Annotation** 
     
     **Image annotation** allows to add image within document page like shown at the picture below.
     
-![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes.png)
-    
-{{< alert style="info" >}}IMPORTANT: On version 20.1 Image Annotation supported only in PDF, Words, Slides, Cells, Images documents.{{< /alert >}}
+    ![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes.png)
+        
+    {{< alert style="info" >}}IMPORTANT: On version 20.1 Image Annotation supported only in PDF, Words, Slides, Cells, Images documents.{{< /alert >}}
 
-There is an ability to specify the next properties for ImageAnnotation type:
-*   ImagePath - defines image local or remote path. Warning, if you use remote path - you need to remove http and https protocol, or www if it present. This error is now investigating.
+    There is an ability to specify the next properties for ImageAnnotation type:
+    *   ImagePath - defines image local or remote path. Warning, if you use remote path - you need to remove http and https protocol, or www if it present. This error is now investigating.
 
-**Not Correct:**
-[https://www.google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png](https://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
-[http://www.google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png](http://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
+    **Not Correct:**
+    [https://www.google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png](https://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
+    [http://www.google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png](http://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
 
-**Correct:**
-[www.google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png](http://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
-[google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png](http://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
+    **Correct:**
+    [www.google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png](http://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
+    [google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png](http://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
 
-*   Box - defines annotation position at document page; (image will be resized for your custom width and height)
-*   Opacity - allows to set annotation opacity (present in all supported formats, examples of it you can see above);
+    *   Box - defines annotation position at document page; (image will be resized for your custom width and height)
+    *   Opacity - allows to set annotation opacity (present in all supported formats, examples of it you can see above);
 
-Follow these steps to add Image annotation to document:
+    Follow these steps to add Image annotation to document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate ImageAnnotation object with desired properties (position, page number, etc);
-*   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass ImageAnnotation object;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save) method with resultant document path or stream.
-    
-The following code demonstrates how to add ImageAnnotation with remote ImagePath to the document:
-    
-```csharp
-using (Annotator annotator = new Annotator("input.pdf"))
-{
-     ImageAnnotation area = new ImageAnnotation
+    *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+    *   Instantiate ImageAnnotation object with desired properties (position, page number, etc);
+    *   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass ImageAnnotation object;
+    *   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save) method with resultant document path or stream.
+        
+    The following code demonstrates how to add ImageAnnotation with remote ImagePath to the document:
+        
+    ```csharp
+    using (Annotator annotator = new Annotator("input.pdf"))
     {
-        Box = new Rectangle(100, 100, 100, 100),
-        Opacity = 0.7,
-        PageNumber = 0,
-        ImagePath = "www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
-    };
-    annotator.Add(area);
-    annotator.Save("result.pdf");
-}               
-```
-    
-The result would be
-![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)
+         ImageAnnotation area = new ImageAnnotation
+        {
+            Box = new Rectangle(100, 100, 100, 100),
+            Opacity = 0.7,
+            PageNumber = 0,
+            ImagePath = "www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+        };
+        annotator.Add(area);
+        annotator.Save("result.pdf");
+    }               
+    ```
+        
+    The result would be
+    ![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)
 
 2.  **Extract Image from Image Annotation**  
     
@@ -396,74 +396,74 @@ The result would be
     ```
     
     
-## 2\. Versions of Annotated files
+## Versions of Annotated files
 
-Every Time you Save file using Annotator.Save() method - you implicitly create a new version of the annotated file. Versions List stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names. More information about how it works you can find in child Pages
+    Every Time you Save file using Annotator.Save() method - you implicitly create a new version of the annotated file. Versions List stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names. More information about how it works you can find in child Pages
 
-By default, they are created using unique GUID keys. Next, each aspect of using versions will be considered. The API execution logic has not changed, so you do not need to change your code to use it as before. By default, the latest version is loaded without your fate (that is, you will not notice the difference with previous releases). 
+    By default, they are created using unique GUID keys. Next, each aspect of using versions will be considered. The API execution logic has not changed, so you do not need to change your code to use it as before. By default, the latest version is loaded without your fate (that is, you will not notice the difference with previous releases). 
 
-### Backward Compatibility
+    ### Backward Compatibility
 
-The update is fully compatible with previous and next updates (The latest saved version will be used), however, using versions on previous versions is not possible and the list of versions in this document will not be changed. And If you update file from 20.4+ using 20.2 and lower few times, after loading this document on 20.4+ only last changes will be added as new version.
+    The update is fully compatible with previous and next updates (The latest saved version will be used), however, using versions on previous versions is not possible and the list of versions in this document will not be changed. And If you update file from 20.4+ using 20.2 and lower few times, after loading this document on 20.4+ only last changes will be added as new version.
 
-### Add Version with custom name
+    ### Add Version with custom name
 
-If you want to swap between versions easily you might need to have ability to set custom versions names.
+    If you want to swap between versions easily you might need to have ability to set custom versions names.
 
-Here the code that demonstrates how to save version with custom name:
+    Here the code that demonstrates how to save version with custom name:
 
-```csharp
-using (Annotator annotator = new Annotator("input.pdf"))
-{
-   annotator.Update(new AreaAnnotation{ Box = new Rectangle(100, 100, 100, 100) });
-   annotator.Save("result.pdf", new SaveOptions { Version = "CUSTOM_VERSION" });
-}
-```
+    ```csharp
+    using (Annotator annotator = new Annotator("input.pdf"))
+    {
+       annotator.Update(new AreaAnnotation{ Box = new Rectangle(100, 100, 100, 100) });
+       annotator.Save("result.pdf", new SaveOptions { Version = "CUSTOM_VERSION" });
+    }
+    ```
 
-{{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as version variable{{< /alert >}}
+    {{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as version variable{{< /alert >}}
 
-### Get List of All version keys on a document
+    ### Get List of All version keys on a document
 
-If you don't know what versions were added earlier or want to know versions count
-Here the code that demonstrates how to get list of versions keys:
+    If you don't know what versions were added earlier or want to know versions count
+    Here the code that demonstrates how to get list of versions keys:
 
-```csharp
-using (Annotator annotator = new Annotator("result.pdf")) { 
-      List<object> versionKeys = annotator.GetVersionsList();
-}
-```
+    ```csharp
+    using (Annotator annotator = new Annotator("result.pdf")) { 
+          List<object> versionKeys = annotator.GetVersionsList();
+    }
+    ```
 
-{{< alert style="info" >}}Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.{{< /alert >}}
+    {{< alert style="info" >}}Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.{{< /alert >}}
 
-### Get List of Annotations using version key
+    ### Get List of Annotations using version key
 
-If you need to get List of Annotations you can use Annotator.GetVersion() method
-Here code that demonstrates how to get list of annotations from individual version
+    If you need to get List of Annotations you can use Annotator.GetVersion() method
+    Here code that demonstrates how to get list of annotations from individual version
 
-```csharp
-using (Annotator annotator = new Annotator("result.pdf"))
-{
-    List<AnnotationBase> annotations = annotator.GetVersion("CUSTOM_VERSION");
-}
-```
+    ```csharp
+    using (Annotator annotator = new Annotator("result.pdf"))
+    {
+        List<AnnotationBase> annotations = annotator.GetVersion("CUSTOM_VERSION");
+    }
+    ```
 
-{{< alert style="info" >}}GetVersion method supports any type, and you can use any variable as version variable.{{< /alert >}}
+    {{< alert style="info" >}}GetVersion method supports any type, and you can use any variable as version variable.{{< /alert >}}
 
-### Load Document of custom Version
+    ### Load Document of custom Version
 
-Using LoadOptions.Version you can load previous versions of annotated document.
-Here the code that demonstrates how load version using version name:
+    Using LoadOptions.Version you can load previous versions of annotated document.
+    Here the code that demonstrates how load version using version name:
 
-```csharp
-using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Version = "CUSTOM_VERSION" }))
-{
-  annotator.Save("result_loaded.pdf");
-}
-```
+    ```csharp
+    using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Version = "CUSTOM_VERSION" }))
+    {
+      annotator.Save("result_loaded.pdf");
+    }
+    ```
 
-{{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as a version.{{< /alert >}}
+    {{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as a version.{{< /alert >}}
 
-## 3\. Added RenderComments Property to PreviewOptions?
+## Added RenderComments Property to PreviewOptions
     If you need not to generate comments on image preview you may use *RenderComments* property
 
     {{< alert style="info" >}}This feature is only supported for Word processing documents.{{< /alert >}}
@@ -484,7 +484,7 @@ using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Ve
     annotator.Document.GeneratePreview(previewOptions);
     ```
 
-## 4\. Add PagesInfo property to IDocumentInfo
+## Add PagesInfo property to IDocumentInfo
     *PagesInfo* represents list of *PageInfo* objects which store information about each page.
 
     Now *PageInfo* have two properties - *Width* and *Height* in pixels. This properties works with all formats except Email And Html that doesn't have height and width so the won't store them and will be empty. All pages width and height will be same in all formats except Cells, so you can use size of first element as size of all document.
@@ -498,7 +498,7 @@ using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Ve
     int height = info.PagesInfo[0].Height;
     ```
 
-## 5\. Added Angle property for ImageAnnotation
+## Added Angle property for ImageAnnotation
     To set a custom angle for ImageAnnotation, you can use the new *Angle* property. Angle is measured in degrees.
 
     Example how to use it:
@@ -512,9 +512,9 @@ using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Ve
         ImagePath = "image.png",
         Angle = 90
     };
-```
+    ```
 
-## 6\. Added horizontal and vertical alignment for Watermark
+## Added horizontal and vertical alignment for Watermark
     To set Horizontal and Vertical Alignments for WatermarkAnnotation, you can use Alignment properties.
 
     ```csharp
@@ -526,7 +526,7 @@ using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Ve
     ```
 
 
-## 7\. Added text horizontal alignment for TextField
+## Added text horizontal alignment for TextField
     To set a text horizontal alignment you can use the TextHorizontalAlignment property.
 
     ```csharp
