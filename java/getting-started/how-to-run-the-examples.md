@@ -1,7 +1,7 @@
 ---
 id: how-to-run-the-examples
 url: annotation/java/how-to-run-the-examples
-title: How To Run the Examples
+title: How to Run the Examples
 weight: 6
 description: ""
 keywords: 

@@ -33,7 +33,7 @@ Then define GroupDocs.Annotation for Java API dependency in your `pom.xml` as
     <dependency>
         <groupId>com.groupdocs</groupId>
         <artifactId>groupdocs-annotation</artifactId>
-        <version>19.11</version> 
+        <version>21.7</version> 
     </dependency>
 </dependencies>
 ```
