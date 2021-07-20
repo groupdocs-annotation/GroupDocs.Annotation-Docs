@@ -338,23 +338,9 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     loadOptions.setPassword("password");
     try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
-    
-    
+
 ## Versions of Annotated files
 
-    Every Time you Save file using Annotator.Save() method - you implicitly create a new version of the annotated file. Versions List stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names. More information about how it works you can find in child Pages
-
-    By default, they are created using unique GUID keys. Next, each aspect of using versions will be considered. The API execution logic has not changed, so you do not need to change your code to use it as before. By default, the latest version is loaded without your fate (that is, you will not notice the difference with previous releases). 
-
-    ### Backward Compatibility
-
-    The update is fully compatible with previous and next updates (The latest saved version will be used), however, using versions on previous versions is not possible and the list of versions in this document will not be changed. And If you update file from 20.4+ using 20.2 and lower few times, after loading this document on 20.4+ only last changes will be added as new version.
-
-    ### Add Version with custom name
-
-    If you want to swap between versions easily you might need to have ability to set custom versions names.
-
-    Here the code that demonstrates how to save version with custom name:
     ```java
     try (Annotator annotator = new Annotator("input.pdf")) {
         AreaAnnotation areaAnnotation = new AreaAnnotation();
