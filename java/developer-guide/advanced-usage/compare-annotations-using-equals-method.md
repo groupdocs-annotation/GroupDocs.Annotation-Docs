@@ -8,7 +8,7 @@ keywords: Equals, Compare, Annotation, Annotations, Comparing, Compare annotatio
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---
-
+Since from 21.7.
 You have the ability to compare annotations using the [Equals]() method.
 
 Here is the example of the code:

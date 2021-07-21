@@ -8,6 +8,7 @@ keywords: Get different document versions, versions, Version management
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---
+Since from 21.7.
 Every time you are saving file using [Annotator.Save()](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method - you implicitly create a new version of the annotated file. Versions list stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names.
 
 By default, they are created using unique GUID keys. Next, each aspect of using versions will be considered. The API execution logic has not changed, so you do not need to change your code to use it as before. The latest version of document is loaded by default. 
