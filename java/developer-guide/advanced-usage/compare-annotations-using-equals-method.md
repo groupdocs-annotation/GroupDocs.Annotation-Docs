@@ -4,12 +4,12 @@ url: annotation/java/comparing-annotations-using-equals-method
 title: Comparing annotations using the equals method
 weight: 6
 description: "Following this guide you will learn how to compare annotations using equals method of document using GroupDocs.Annotation for Java API."
-keywords: Equals, Compare, Annotation, Annotations, Comparing, Compare annotations, IEquatable
+keywords: Equals, Compare, Annotation, Annotations, Comparing, Compare annotations
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---
 
-You have the ability to compare annotations using the [Equals]() method or the already implemented [IEquatable](https://docs.microsoft.com/en-us/dotnet/api/system.iequatable-1) interface.
+You have the ability to compare annotations using the [Equals]() method.
 
 Here is the example of the code:
 

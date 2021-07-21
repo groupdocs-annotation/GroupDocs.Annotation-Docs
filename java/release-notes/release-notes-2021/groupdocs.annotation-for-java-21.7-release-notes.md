@@ -199,8 +199,8 @@ In this version Below the list of most notable changes in release of GroupDocs.A
 
     *   Instantiate [Annotator](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator) object with input document path or stream;
     *   Instantiate ImageAnnotation object with desired properties (position, page number, etc);
-    *   Call [Add](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/methods/add) method and pass ImageAnnotation object;
-    *   Call [Save](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/methods/save) method with resultant document path or stream.
+    *   Call [Add](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method and pass ImageAnnotation object;
+    *   Call [Save](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save()) method with resultant document path or stream.
         
     The following code demonstrates how to add ImageAnnotation with remote ImagePath to the document:
         
@@ -236,8 +236,8 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     Follow these steps to add annotation to document:
     
     *   Instantiate [Annotator](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator) object with input document path or stream;
-    *   Call [Remove](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/methods/remove) method and give them id, list of id's, annotation to delete, or list of annotations 
-    *   Call [Save](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.annotator/save/methods/2) method to save changes
+    *   Call [Remove](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#remove(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method and give them id, list of id's, annotation to delete, or list of annotations 
+    *   Call [Save](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save(java.lang.String)) method to save changes
        
     1) Following code demonstrates overload how to remove Annotation from Document using annotation index:
     ```java
@@ -338,7 +338,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     loadOptions.setPassword("password");
     try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {}
     ```
-7.  **New [WorksheetColumns](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property in [PreviewOptions](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.options/previewoptions) class that allows to specify the range of generated columns on a specified worksheet.**
+7.  **New [WorksheetColumns](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.pagepreview/PreviewOptions#getWorksheetColumns()) property in [PreviewOptions](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.pagepreview/PreviewOptions) class that allows to specify the range of generated columns on a specified worksheet.**
 
     Example how to use it:
     ```java
