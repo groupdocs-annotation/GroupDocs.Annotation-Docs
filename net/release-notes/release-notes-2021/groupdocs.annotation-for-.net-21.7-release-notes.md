@@ -33,4 +33,4 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ### 1. Ability to add dropdown component to PDF documents
 
-In version 21.7 we have added a dropdown component that allows you to add a combobox to a pdf document. To learn more about this component follow this [link](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent).
+In version 21.7 we have added a dropdown component that allows you to add a combobox to a pdf document. To learn more about this component follow this [link](annotation/net/add-dropdown-component).
