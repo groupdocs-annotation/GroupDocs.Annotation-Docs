@@ -23,6 +23,7 @@ There is an ability to specify the next properties for [WatermarkAnnotation](ht
 *   [Angle](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/angle) - watermark text angle;
 *   [VerticalAlignment]() - defines vertical alignment on document;
 *   [HorizontalAlignment]() - defines horizontal alignment on document.
+*   [AutoScale]() - size watermark depends on the word length and document size.
 
 Follow these steps to add Watermark annotation to document:
 
@@ -49,6 +50,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
         FontSize = 12,
         Message = "This is watermark annotation",
         Opacity = 0.7,
+        AutoScale = true,
         HorizontalAlignment = HorizontalAlignment.Center,
         VerticalAlignment = VerticalAlignment.Center,
         Replies = new List<Reply>
