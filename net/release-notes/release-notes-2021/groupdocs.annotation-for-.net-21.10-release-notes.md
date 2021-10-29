@@ -35,6 +35,6 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ### 1. From version 21.10 could set background color via setting `BackgroundColor` for the listed annotations. 
 * [LinkAnnotation](https://docs.groupdocs.com/annotation/net/add-link-annotation/).
-* [StrikeoutAnnotation](https://docs.groupdocs.com/annotation/net/add-annotation-to-the-document/).
+* [StrikeoutAnnotation](https://docs.groupdocs.com/annotation/net/add-strikeout-annotation/).
 * [UnderlineAnnotation](https://docs.groupdocs.com/annotation/net/add-underline-annotation/)
           
