@@ -36,6 +36,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
     	Url = "https://www.groupdocs.com/",
         CreatedOn = DateTime.Now,
         Message = "This is link annotation",
+        BackgroundColor = 65535,
         PageNumber = 0,
         Points = new List<Point>
         {

@@ -39,6 +39,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
     {
     	CreatedOn = DateTime.Now,
         FontColor = 65535,
+        BackgroundColor = 16761035,
         Message = "This is strikeout annotation",
         Opacity = 0.7,
         PageNumber = 0,
