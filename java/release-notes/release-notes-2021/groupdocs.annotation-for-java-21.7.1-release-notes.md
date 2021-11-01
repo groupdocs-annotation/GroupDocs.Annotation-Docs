@@ -2,7 +2,7 @@
 id: groupdocs-annotation-for-java-21-7-1-release-notes
 url: annotation/java/groupdocs-annotation-for-java-21-7-1-release-notes
 title: GroupDocs.Annotation for Java 21.7.1 Release Notes
-weight: 2
+weight: 1
 description: ""
 keywords: 
 productName: GroupDocs.Annotation for Java
