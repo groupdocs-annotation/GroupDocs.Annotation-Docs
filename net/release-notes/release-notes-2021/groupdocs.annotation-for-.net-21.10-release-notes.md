@@ -2,7 +2,7 @@
 id: groupdocs-annotation-for-net-21-10-release-notes
 url: annotation/net/groupdocs-annotation-for-net-21-10-release-notes
 title: GroupDocs.Annotation for .NET 21.10 Release Notes
-weight: 40
+weight: 30
 description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
@@ -35,6 +35,6 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ### 1. From version 21.10 could set background color via setting `BackgroundColor` for the listed annotations. 
 * [LinkAnnotation](https://docs.groupdocs.com/annotation/net/add-link-annotation/).
-* [StrikeoutAnnotation](https://docs.groupdocs.com/annotation/net/add-strikeout-annotation/).
+* [StrikeoutAnnotation](https://docs.groupdocs.com/annotation/net/add-annotation-to-the-document/).
 * [UnderlineAnnotation](https://docs.groupdocs.com/annotation/net/add-underline-annotation/)
           
