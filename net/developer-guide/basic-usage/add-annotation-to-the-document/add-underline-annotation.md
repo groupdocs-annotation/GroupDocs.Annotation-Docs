@@ -17,6 +17,7 @@ There is an ability to specify the next properties for [UnderlineAnnotation](ht
 *   [FontColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/underlineannotation/properties/fontcolor) - color of annotation text;
 *   [Opacity](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/underlineannotation/properties/opacity) - allows to set annotation opacity;
 *   [Points](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/underlineannotation/properties/points) - annotation positions set by array of points.  
+*   [UnderlineColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/underlineannotation/properties/underlinecolor) - setup color of underline line
 
 Follow these steps to add Underline annotation to document:
 
@@ -39,6 +40,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
         Message = "This is underline annotation",
         Opacity = 0.7,
         PageNumber = 0,
+        UnderlineColor = 1422623, //Supported only Word and PDF documents
         Points = new List<Point>
         {
         	new Point(80, 730), new Point(240, 730), new Point(80, 650), new Point(240, 650)

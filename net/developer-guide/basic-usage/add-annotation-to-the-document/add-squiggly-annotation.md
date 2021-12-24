@@ -18,6 +18,7 @@ There is an ability to specify the next properties for [SquigglyAnnotation](htt
 *   [Opacity](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/squigglyannotation/properties/opacity) - allows to set annotation opacity;
 *   [Points](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/squigglyannotation/properties/points) - annotation positions set by array of points.  
 *   [BackgroundColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/textfieldannotation/properties/backgroundcolor) - describes area background color;
+*   [SquigglyColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/squigglyannotation/properties/squigglycolor) - setup annotation line color
 
 Follow these steps to add Squiggly annotation to document:
 
@@ -40,6 +41,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
         Message = "This is squiggly annotation",
         Opacity = 0.7,
         PageNumber = 0,
+        SquigglyColor = 1422623, //Supported only Word and PDF
         Points = new List<Point>
         {
         	new Point(80, 730), new Point(240, 730), new Point(80, 650), new Point(240, 650)
