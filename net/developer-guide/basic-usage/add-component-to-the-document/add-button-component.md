@@ -1,0 +1,79 @@
+---
+id: add-button-component
+url: annotation/net/add-button-component
+title: Add button component
+weight: 1
+description: "Learn what is button component and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
+keywords: What is button component, how to add component, add button component
+productName: GroupDocs.Annotation for .NET
+hideChildren: False
+---
+**Button component** allows to create button component like shown at the picture below: 
+
+![](annotation/net/images/add-button-component.png)
+
+There is an ability to specify the next properties for [ButtonComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) type:
+
+*   [Box](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent/properties/box) - defines annotation position at document page;
+*   [PenColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent/properties/pencolor) - defines frame color;
+
+Follow these steps to add Button component to document:
+
+*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [ButtonComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) object with desired properties (position, page number, etc);
+*   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [ButtonComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) object;
+*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
+
+The following code demonstrates how to add [ButtonComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/cropdowncomponent) to the document:
+
+```csharp
+using (Annotator annotator = new Annotator("input.pdf"))
+{
+	ButtonComponent button = new ButtonComponent
+    {
+        CreatedOn = DateTime.Now,
+        Style = BorderStyle.Dashed,
+        Message = "This is button component",
+        BorderColor = 1422623,
+        PenColor = 14527697,
+        ButtonColor = 10832612,
+        PageNumber = 0,
+        BorderWidth = 12,
+        Box = new Rectangle(100, 300, 90, 30),
+        Replies = new List<Reply>
+            {
+                new Reply
+                {
+                    Comment = "First comment",
+                    RepliedOn = DateTime.Now
+                },
+                new Reply
+                {
+                    Comment = "Second comment",
+                    RepliedOn = DateTime.Now
+                }
+            }
+    };
+    annotator.Add(button);
+    annotator.Save("result.pdf");
+}
+```
+
+## More resources
+### Advanced Usage Topics
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation/net/developer-guide/advanced-usage/_index.md" >}}).
+
+### GitHub Examples
+You may easily run the code above and see the feature in action in our GitHub examples:
+
+*   [GroupDocs.Annotation for .NET examples, plugins, and showcase](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET)
+*   [GroupDocs.Annotation for Java examples, plugins, and showcase](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java)
+*   [Document Annotation for .NET MVC UI Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC)
+*   [Document Annotation for .NET App WebForms UI Modern Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms)
+*   [Document Annotation for Java App Dropwizard UI Modern Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java-Dropwizard)
+*   [Document Annotation for Java Spring UI Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java-Spring)
+    
+
+### Free Online App
+Along with full-featured .NET library we provide simple but powerful free Apps.
+You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
