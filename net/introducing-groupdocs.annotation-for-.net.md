@@ -3,8 +3,8 @@ id: introducing-groupdocs-annotation-for-net
 url: annotation/net/introducing-groupdocs-annotation-for-net
 title: Introducing GroupDocs.Annotation for .NET
 weight: 1
-description: ""
-keywords: 
+description: Apply annotations to your documents in the form of textual comments, explanations with highlighted notes, watermarks, polylines, text/resource redactions and much more.
+keywords: annotation,to annotate,.net api,api,xlsx,microsoft word,docx,pptx,pdf,c# 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

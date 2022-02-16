@@ -3,8 +3,8 @@ id: home
 url: annotation/net
 title: GroupDocs.Annotation for .NET
 weight: 1
-description: ""
-keywords: 
+description: API to annotate text or images in your documents using C#. It supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint. PPTX
+keywords: annotation,to annotate,.net api,api,xlsx,microsoft word,docx,pptx,pdf,c#
 productName: GroupDocs.Annotation for .NET
 hideChildren: True
 ---

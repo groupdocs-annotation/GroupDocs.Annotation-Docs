@@ -3,8 +3,8 @@ id: system-requirements
 url: annotation/net/system-requirements
 title: System Requirements
 weight: 3
-description: ""
-keywords: 
+description: "It does not require any external software or third party tool to be installed"
+keywords: annotation,
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

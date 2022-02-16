@@ -3,8 +3,8 @@ id: how-to-run-examples
 url: annotation/net/how-to-run-examples
 title: How to Run Examples
 weight: 6
-description: ""
-keywords: 
+description: Examples to annotate on your documents, images or web pages using C#.
+keywords: to annotate, annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

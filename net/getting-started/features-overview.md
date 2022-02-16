@@ -3,8 +3,8 @@ id: features-overview
 url: annotation/net/features-overview
 title: Features Overview
 weight: 1
-description: ""
-keywords: 
+description: Variety of features to manipulate graphics, watermarks and text annotations
+keywords: text annotations, watermark, annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

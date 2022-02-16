@@ -3,8 +3,8 @@ id: evaluation-limitations-and-licensing-of-groupdocs-annotation
 url: annotation/net/evaluation-limitations-and-licensing-of-groupdocs-annotation
 title: Evaluation Limitations and Licensing of GroupDocs.Annotation
 weight: 5
-description: ""
-keywords: 
+description: Free trial is available to evaluate the API which will be similar as licensed but with few limitations.
+keywords: free trial,license,annotation,api
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
