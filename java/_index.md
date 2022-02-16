@@ -3,8 +3,8 @@ id: home
 url: annotation/java
 title: GroupDocs.Annotation for Java
 weight: 1
-description: ""
-keywords: 
+description: API to annotate text or images in your documents using Java. It supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint. PPTX
+keywords: annotation,to annotate,.net api,api,xlsx,microsoft word,docx,pptx,pdf,java 
 productName: GroupDocs.Annotation for Java
 hideChildren: True
 ---

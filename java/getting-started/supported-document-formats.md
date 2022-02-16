@@ -3,8 +3,8 @@ id: supported-document-formats
 url: annotation/java/supported-document-formats
 title: Supported Document Formats
 weight: 2
-description: ""
-keywords: 
+description: This Java API supports DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML and many more.
+keywords: DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---

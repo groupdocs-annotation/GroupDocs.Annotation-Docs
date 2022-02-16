@@ -3,8 +3,8 @@ id: evaluation-limitations-and-licensing
 url: annotation/java/evaluation-limitations-and-licensing
 title: Evaluation Limitations and Licensing
 weight: 5
-description: ""
-keywords: 
+description: Free trial is available to evaluate the API which will be similar as licensed but with few limitations.
+keywords: free trial,license,annotation,api
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---

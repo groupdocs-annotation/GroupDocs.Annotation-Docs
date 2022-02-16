@@ -3,8 +3,8 @@ id: add-annotation-to-the-document
 url: annotation/java/add-annotation-to-the-document
 title: Add annotation to the document
 weight: 3
-description: "Learn about what is a document annotation, what possible annotation types are, and how to programmatically add annotations to a document using GroupDocs.Annotation API."
-keywords: What is annotation, document annotation, add annotation
+description: "Learn about what is a document annotation, what are possible types of annotations, and writing annotations programmatically in a document using GroupDocs.Annotation API."
+keywords: What is annotation, document annotation, add annotation, types of annotations
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---

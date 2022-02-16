@@ -3,8 +3,8 @@ id: how-to-run-the-examples
 url: annotation/java/how-to-run-the-examples
 title: How to Run the Examples
 weight: 6
-description: ""
-keywords: 
+description: Examples to annotate on your documents, images or web pages using Java.
+keywords: to annotate, annotation, java
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---

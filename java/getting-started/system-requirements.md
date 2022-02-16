@@ -3,8 +3,8 @@ id: system-requirements
 url: annotation/java/system-requirements
 title: System Requirements
 weight: 3
-description: ""
-keywords: 
+description: "This Java API does not require any external software or third party tool to be installed"
+keywords: annotation,java
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---

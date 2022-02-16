@@ -3,8 +3,8 @@ id: features-overview
 url: annotation/java/features-overview
 title: Features Overview
 weight: 1
-description: ""
-keywords: 
+description: Variety of features to manipulate graphics, watermarks and text annotations by using Java
+keywords: text annotations, watermark, annotation, java
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---
