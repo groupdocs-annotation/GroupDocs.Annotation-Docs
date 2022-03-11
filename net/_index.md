@@ -8,19 +8,60 @@ keywords: annotation,to annotate,.net api,api,xlsx,microsoft word,docx,pptx,pdf,
 productName: GroupDocs.Annotation for .NET
 hideChildren: True
 ---
-{{< alert style="info" >}}
-![](annotation/net/images/home.png) **Welcome to the GroupDocs.Annotation for .NET**   
-GroupDocs.Annotation for .NET API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document. Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more. Annotator API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX documents. 
-{{< /alert >}}
+<img src="annotation/net/images/home.png" alt="groupdocs annotation .net logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
-## GroupDocs.Annotation for .NET Resources
-Following are the links to some useful resources you may need to accomplish your tasks.
-*   [GroupDocs.Annotation for .NET Online Documentation]({{< ref "annotation/net" >}})
-*   [GroupDocs.Annotation for .NET Features]({{< ref "annotation/net/getting-started/features-overview.md" >}})
-*   [GroupDocs.Annotation for .NET Limitations]({{< ref "annotation/net/getting-started/evaluation-limitations-and-licensing-of-groupdocs.annotation.md" >}})
-*   [GroupDocs.Annotation for .NET Release Notes]({{< ref "annotation/net/release-notes/_index.md" >}})
-*   [GroupDocs.Annotation for .NET Product Page](https://products.groupdocs.com/annotation/net)
-*   [Install GroupDocs.Annotation for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Annotation/)
-*   [GroupDocs.Annotation for .NET API Reference Guide](https://apireference.groupdocs.com/net/annotation)
-*   [GroupDocs.Annotation for .NET Free Support Forum](https://forum.groupdocs.com/c/annotation)
-*   [GroupDocs.Annotation for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
+GroupDocs.Annotation for .NET API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document. 
+
+Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more. 
+
+Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX documents.
+
+------
+
+<div class="row">
+	<div class="col-md-4">
+		<p><b>About GroupDocs.Annotation</b></p>
+		<hr><p>OVERVIEW</p></hr>
+		<ul>
+			<li><a href='{{< ref "annotation/net/getting-started/features-overview" >}}'>Features Overview</a></li>
+			<li><a href='{{< ref "annotation/net/getting-started/supported-document-formats" >}}'>Supported Document Formats</a></li>
+			<li><a href='{{< ref "annotation/net/getting-started/system-requirements" >}}'>System Requirements</a></li>
+			<li><a href='{{< ref "annotation/net/getting-started/installation" >}}'>Installation</a></li>
+			<li><a href='{{< ref "annotation/net/getting-started/evaluation-limitations-and-licensing-of-groupdocs.annotation.md" >}}'>Licensing and Subscription</a></li>
+		</ul>
+		<p>TECHNICAL SUPPORT</p>
+		<ul>
+			<li><a href="https://forum.groupdocs.com/">GroupDocs Free Support Forum</a></li>
+			<li><a href="https://helpdesk.groupdocs.com/">GroupDocs Paid Support Helpdesk</a></li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<p><b>Get Started</b></p>
+			<hr><p>GUIDE</p></hr>
+			<ul>
+				<li><a href='{{< ref "annotation/net/getting-started/how-to-run-examples" >}}'>Run GroupDocs.Annotation Examples</a></li>
+			</ul>
+			<p>USEFUL RESOURCES</p>
+			<ul>
+				<li><a href="https://www.nuget.org/packages/groupdocs.annotation">GroupDocs.Annotation Nuget Package</a></li>
+				</li><li><a href="https://downloads.groupdocs.com/annotation/net">GroupDocs.Annotation for .NET Downloads</a></li>
+				<li><a href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET">Download Examples and Demos at GitHub</a></li>
+			</ul>
+	</div>
+	<div class="col-md-4">
+		<p><b>Develop Functions</b></p>
+			<hr><p>GUIDE</p></hr>
+			<ul>
+				<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/get-file-info" >}}'>Retrieve File Info</a></li>
+				<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/extract-annotations-from-document" >}}'>Read Annotations</a></li>
+				<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/remove-annotation-from-document" >}}'>Remove Annotations</a></li>
+				<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/add-annotation-to-the-document/_index.md" >}}'>Add Annotations</a></li>				
+                <li><a href='{{< ref "annotation/net/developer-guide/basic-usage/working-with-annotation-replies/_index.md" >}}'>Working with Replies</a></li>
+			</ul>
+			<p>USEFUL RESOURCES</p>
+			<ul>
+				<li><a href="https://apireference.groupdocs.com/annotation/net">GroupDocs.Annotation for .NET API Reference</a></li>
+				<li><a href='{{< ref "annotation/net/release-notes" >}}'>GroupDocs.Annotation for .NET Release Notes</a></li>
+			</ul>
+	</div>
+</div>
