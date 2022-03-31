@@ -42,6 +42,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
         Message = "This is replacement annotation",
         Opacity = 0.7,
         PageNumber = 0,
+        FontSize = 11,
         Points = new List<Point>
         {
         	new Point(80, 730), new Point(240, 730), new Point(80, 650), new Point(240, 650)
