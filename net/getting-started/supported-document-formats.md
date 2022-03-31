@@ -46,7 +46,7 @@ For formats marked with <strong>\*</strong>, the output format is different than
 | [VSD](https://docs.fileformat.com/image/vsd/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio 2003-2010 Drawing | ![(tick)](annotation/net/images/check.png) |
 | [VSDX](https://docs.fileformat.com/image/vsdx/) | Microsoft Visio Drawing | ![(tick)](annotation/net/images/check.png) |
 | [VSDM](https://docs.fileformat.com/image/vsdm/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio Drawing File Format | ![(tick)](annotation/net/images/check.png) |
-| VSS <span style="float: right; color: #909090"><strong>*</strong>vsdx</span>| Microsoft Visio 2003-2010 Stencil | ![(tick)](annotation/net/images/check.png) |
+| [VSS](https://docs.fileformat.com/image/vss/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span>| Microsoft Visio 2003-2010 Stencil | ![(tick)](annotation/net/images/check.png) |
 | [VSSX](https://docs.fileformat.com/image/vssx/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span>| Visio Stencil File Format | ![(tick)](annotation/net/images/check.png) |
 | [VST](https://docs.fileformat.com/image/vst/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio 2013 Stencil | ![(tick)](annotation/net/images/check.png) |
 | [VSTM](https://docs.fileformat.com/image/vstm/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio Template File Format | ![(tick)](annotation/net/images/check.png) |
