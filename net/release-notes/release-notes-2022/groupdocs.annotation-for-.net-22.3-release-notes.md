@@ -2,7 +2,7 @@
 id: groupdocs-annotation-for-net-22-3-release-notes
 url: annotation/net/groupdocs-annotation-for-net-22-3-release-notes
 title: GroupDocs.Annotation for .NET 22.3 Release Notes
-weight: 10
+weight: 20
 description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
