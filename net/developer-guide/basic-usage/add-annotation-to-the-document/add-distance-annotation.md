@@ -7,6 +7,21 @@ description: "Learn what is a distance annotation and how to add it to a documen
 keywords: What is a distance annotation, how to add annotation, add distance annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to annotate a document
+        description: Learn how to add area annotation to document step by step
+        steps:
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+          text: Create an instance of DistanceAnnotation class.
+          text: In the DistanceAnnotation class constructor, pass parameters.
+          text: Call Annotator class .Add() method and pass the class name AreaAnnotation.
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 
