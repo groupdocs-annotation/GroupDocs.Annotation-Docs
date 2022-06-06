@@ -7,6 +7,24 @@ description: "Learn what is area annotation and how to add it to a document prog
 keywords: What is area annotation, how to add annotation, add area annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Area annotation in document using Java
+        description: Add area annotation to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add area annotation and notes to document in Java
+        description: Learn how to add area annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for area annotation
+          text: Create an instance of AreaAnnotation class and add data for area annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the AreaAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 

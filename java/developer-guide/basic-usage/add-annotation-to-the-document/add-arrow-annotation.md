@@ -7,6 +7,24 @@ description: "Learn what is arrow annotation and how to add it to a document pro
 keywords: What is arrow annotation, how to add annotation, add arrow annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Arrow annotation in document using Java
+        description: Add arrow annotation to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add arrow annotation and notes to document in Java
+        description: Learn how to add arrow annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for arrow annotation
+          text: Create an instance of ArrowAnnotation class and add data for arrow annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the ArrowAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 
 

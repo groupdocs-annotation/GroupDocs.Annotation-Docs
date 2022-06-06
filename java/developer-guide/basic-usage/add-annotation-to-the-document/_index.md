@@ -7,6 +7,8 @@ description: "Learn about what is a document annotation, what are possible types
 keywords: What is annotation, document annotation, add annotation, types of annotations
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 ## What is a document annotation?
 

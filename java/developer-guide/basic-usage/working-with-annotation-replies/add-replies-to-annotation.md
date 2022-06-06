@@ -7,6 +7,26 @@ description: "Check this guide to learn how to add annotation replies when colla
 keywords: How to add annotation reply, add annotation reply, add reply, reply to annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Add annotation replies to pdfs, words and other documents with Java
+        description: Add annotation replies to document word, pdf and other docs natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add annotation replies to document in Java 
+        description: Learn how to add annotation replies to document in Java step by step
+        steps:
+        - name: Load source document file with replies
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Create new annotation replies
+          text: Create an instance of Reply class and add data then create java List with Reply and add all replies to this list.
+        - name: Add annotation replies
+          text: Create an instance of AreaAnnotation (or other type of annotation) and call setUpdate method for add list with replies. 
+        - name: Add annotation to document and save result 
+          text: Call Annotator class Add method and pass the AreaAnnotation (or other type of annotation) object with updated replies from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) provides ability for several users to collaborate over document via annotation replies. Adding reply to an annotation via code is as easy as specifying reply content and related user object.  
 Here are the steps to add annotation replies:

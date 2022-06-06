@@ -7,6 +7,24 @@ description: "Learn what is a replacement annotation and how to add it to a docu
 keywords: What is a replacement annotation, how to add annotation, add replacement annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Replacement annotation in document using Java
+        description: Add replacement annotation to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add replacement annotation and notes to document in Java
+        description: Learn how to add replacement annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for replacement annotation
+          text: Create an instance of ReplacementAnnotation class and add data for replacement annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the ReplacementAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 **Replacement** annotation replaces original text with other provided text fragment. Please check the picture below to know how replacement annotation may look like. 
 

@@ -7,6 +7,24 @@ description: "Check this guide to learn how to remove all or specific annotation
 keywords: How to remove annotation reply, remove annotation reply, remove reply, reply to annotation, remove annotation comment
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Remove annotation replies from pdfs, words and other documents with Java
+        description: Remove annotation replies from document word, pdf and other docs natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to remove annotation replies from document in Java
+        description: Learn how to remove annotation replies from document in Java step by step
+        steps:
+        - name: Load source document file with replies
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Get annotations and remove reply
+          text: Get annotations from Annotator class and specify which reply need to delete by index or user name.
+        - name: Remove annotation replies from document and save result
+          text: Call Annotator class Update method and pass the AreaAnnotation (or other type of annotation) object with removed replies from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 There is a quick and convenient way to remove specific or even all replies for some document annotation using **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** API. It is as easy as removing items from generic [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) collection. In common case you have to follow these steps to delete replies:
 

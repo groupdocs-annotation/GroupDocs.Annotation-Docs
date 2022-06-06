@@ -7,6 +7,24 @@ description: " Learn what is a strikeout annotation and how to add it to a docu
 keywords: What is a strikeout annotation, how to add annotation, add strikeout annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Strikeout annotation in document using Java
+        description: Add strikeout annotation to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add strikeout annotation and notes to document in Java
+        description: Learn how to add strikeout annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for strikeout annotation
+          text: Create an instance of StrikeoutAnnotation class and add data for strikeout annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the StrikeoutAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 **Strikeout** annotation marks text fragment with a strikethrough styling like shown at the picture below.
 

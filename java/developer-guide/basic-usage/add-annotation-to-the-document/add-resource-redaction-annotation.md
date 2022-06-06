@@ -7,6 +7,24 @@ description: "Learn what is a resource redaction annotation and how to add it to
 keywords: What is a resource redaction annotation, how to add annotation, add resource redaction annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Resource annotation in document using Java
+        description: Add resource redaction annotation to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add resource redaction annotation and notes to document in Java
+        description: Learn how to add resource redaction annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for resource redaction annotation
+          text: Create an instance of ResourceAnnotation class and add data for resource redaction annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the ResourceAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 **Resource redaction** annotation fills black rectangle with fixed position (used if you want to hide some text) like shown at the picture below. 
 

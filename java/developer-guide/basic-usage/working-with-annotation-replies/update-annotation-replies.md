@@ -7,6 +7,26 @@ description: "Check this guide to learn how to update annotation replies when co
 keywords: How to change or remove annotation reply, update annotation reply, remove reply, reply to annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Update annotation replies in pdfs, words and other documents with Java
+        description: Update annotation replies in document word, pdf and other docs natively on mac, windows or ubuntu natively with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to update annotation replies in document in Java 
+        description: Learn how to update annotation replies in document in Java step by step
+        steps:
+        - name: Load source document file with replies
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Create new replies
+          text: Create an instance of Reply class and add data then create java List with Reply and add all replies to this list.
+        - name: Update annotation replies
+          text: Create an instance of AreaAnnotation (or other type of annotation) and call setUpdate method for add list with replies.
+        - name: Add annotation to document and save result 
+          text: Call Annotator class Add method and pass the AreaAnnotation (or other type of annotation) object then call Save method from Annotator class and pass the output filename as parameter.
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase#getReplies()) collection.
 

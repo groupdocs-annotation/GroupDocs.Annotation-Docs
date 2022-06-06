@@ -7,6 +7,8 @@ description: "What annotation replies are and how to manage them for different d
 keywords: Annotation reply, what are annotation replies, what is reply
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 ## What are Annotation Replies?
 

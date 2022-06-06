@@ -7,6 +7,24 @@ description: "Learn what is a watermark annotation and how to add it to a docume
 keywords: What is a watermark annotation, how to add annotation, add watermark annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Watermark annotation in document using Java
+        description: Add watermark annotation to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add watermark annotation and notes to document in Java
+        description: Learn how to add watermark annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for watermark annotation
+          text: Create an instance of WatermarkAnnotation class and add data for watermark annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the WatermarkAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 **Watermark** annotation adds text watermark like shown at the picture below. 
 

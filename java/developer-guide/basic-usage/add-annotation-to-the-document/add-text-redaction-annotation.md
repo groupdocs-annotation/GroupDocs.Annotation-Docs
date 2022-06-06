@@ -7,6 +7,24 @@ description: "Learn what is a text redaction annotation and how to add it to a d
 keywords: What is a text redaction annotation, how to add annotation, add text redaction annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Text redaction annotation in document using Java
+        description: Add text redaction annotation to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add text redaction annotation and notes to document in Java
+        description: Learn how to add text redaction annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for text redaction annotation
+          text: Create an instance of TextRedactionAnnotation class and add data for text redaction annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the TextRedactionAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 **Text redaction** annotation fills part of text with black rectangle (used if you want to hide some text) like shown at the picture below.
 

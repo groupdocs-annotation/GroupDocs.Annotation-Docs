@@ -7,6 +7,24 @@ description: "Learn what is a distance annotation and how to add it to a documen
 keywords: What is a distance annotation, how to add annotation, add distance annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Distance annotation in document using Java
+        description: Add distance annotation to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to add distance annotation and notes to document in Java
+        description: Learn how to add distance annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for distance annotation
+          text: Create an instance of DistanceAnnotation class and add data for distance annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the DistanceAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 

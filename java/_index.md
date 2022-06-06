@@ -7,6 +7,8 @@ description: API to annotate text or images in your documents using C#. It suppo
 keywords: annotation,to annotate,java api,api,xlsx,microsoft word,docx,pptx,pdf,c#
 productName: GroupDocs.Annotation for Java
 hideChildren: True
+structuredData:
+    showOrganization: True
 ---
 <img src="annotation/java/images/home.png" alt="groupdocs annotation java logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
