@@ -7,6 +7,21 @@ description: "Learn what is a resource redaction annotation and how to add it to
 keywords: What is a resource redaction annotation, how to add annotation, add resource redaction annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to annotate a document
+        description: Learn how to add resource redaction annotation to document step by step
+        steps:
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+          text: Create an instance of ResourcesRedactionAnnotation class.
+          text: In the ResourcesRedactionAnnotation class constructor, pass parameters.
+          text: Call Annotator class .Add() method and pass the class name ResourcesRedactionAnnotation.
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 **Resource redaction** annotation fills black rectangle with fixed position (used if you want to hide some text) like shown at the picture below. 
 

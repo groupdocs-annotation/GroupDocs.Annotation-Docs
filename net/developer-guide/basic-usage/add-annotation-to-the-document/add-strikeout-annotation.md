@@ -7,6 +7,21 @@ description: "Learn what is a strikeout annotation and how to add it to a docume
 keywords: What is a strikeout annotation, how to add annotation, add strikeout annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to annotate a document
+        description: Learn how to add strikeout annotation to document step by step
+        steps:
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+          text: Create an instance of StrikeoutAnnotation class.
+          text: In the StrikeoutAnnotation class constructor, pass parameters.
+          text: Call Annotator class .Add() method and pass the class name StrikeoutAnnotation.
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 **Strikeout** annotation marks text fragment with a strikethrough styling like shown at the picture below.
 

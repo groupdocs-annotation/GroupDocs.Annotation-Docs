@@ -15,12 +15,12 @@ structuredData:
     showVideo: False
     howTo:
         name: How to annotate a document
-        description: Learn how to add area annotation to document step by step
+        description: Learn how to add arrow annotation to document step by step
         steps:
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
           text: Create an instance of ArrowAnnotation class.
           text: In the ArrowAnnotation class constructor, pass parameters.
-          text: Call Annotator class .Add() method and pass the class name AreaAnnotation.
+          text: Call Annotator class .Add() method and pass the class name ArrowAnnotation.
           text: Call Annotator class .Save() method and pass output path file.
 ---
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 

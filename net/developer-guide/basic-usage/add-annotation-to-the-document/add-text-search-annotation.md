@@ -7,6 +7,21 @@ description: "Learn what is a search text annotation and how to add it to a docu
 keywords: What is a search text annotation, how to add annotation, add search text annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to annotate a document
+        description: Learn how to add search text fragment annotation to document step by step
+        steps:
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+          text: Create an instance of SearchTextFragment class.
+          text: In the SearchTextFragment class constructor, pass parameters.
+          text: Call Annotator class .Add() method and pass the class name SearchTextFragment.
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 **Search text** annotation adds rectangle with a text inside, like shown at the picture below. 
 

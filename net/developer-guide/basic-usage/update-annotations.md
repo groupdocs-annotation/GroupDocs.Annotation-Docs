@@ -7,6 +7,8 @@ description: "Check this article and learn how to edit annotation properties - c
 keywords: Update annotations, Edit annotation, Change annotation properties
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+showOrganization: True
 ---
 Sometimes it's needed to change different annotation properties - move annotation to another position within document, change annotation size, color, text or even select different annotation type. You can easily do this using [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) by specifying annotation [Id property](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/id) (which is unique for each annotation object within document) and other updated annotation properties. Another way is to update multiple annotations at once - you just need to provide collection of updated annotation objects which will replace all existing document annotations.  
 

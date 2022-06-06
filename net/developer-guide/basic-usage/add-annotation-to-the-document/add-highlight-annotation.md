@@ -7,6 +7,21 @@ description: "Learn what is a highlight annotation and how to add it to a docume
 keywords: What is a highlight annotation, how to add annotation, add highlight annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to annotate a document
+        description: Learn how to add highlight annotation to document step by step
+        steps:
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+          text: Create an instance of HighlightAnnotation class.
+          text: In the HighlightAnnotation class constructor, pass parameters.
+          text: Call Annotator class .Add() method and pass the class name HighlightAnnotation.
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 **Highlight** annotation highlights and comments selected text  like shown at the picture below. 
 
