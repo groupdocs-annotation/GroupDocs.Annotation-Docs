@@ -7,6 +7,13 @@ description: Examples to annotate on your documents, images or web pages using J
 keywords: to annotate, annotation, java
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: How to run the examples for annotate pdf, words, image, cells etc. documents
+        description: This tutorial show how to run add, update or delete annotation in different type of documents.
+        productCode: annotation
+        productPlatform: java 
 ---
   
 

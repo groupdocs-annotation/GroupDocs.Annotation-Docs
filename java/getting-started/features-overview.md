@@ -7,6 +7,13 @@ description: Variety of features to manipulate graphics, watermarks and text ann
 keywords: text annotations, watermark, annotation, java
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Features for annotation docs in Java
+        description: GroupDocs.Annotation hame many different features, for example highlighting pdfs, mark up words, add notes to pdf and other. For check features use annotation online https://products.groupdocs.app/annotation/total 
+        productCode: annotation
+        productPlatform: java 
 ---
 ## Add, edit and remove annotations
 

@@ -7,6 +7,13 @@ description: "This Java API does not require any external software or third part
 keywords: annotation,java
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: System requirements for annotate pdfs, words, images, cells and other types of documents
+        description: GroupDocs.Annotation natively work with defferent operation systems, like macOs, windows, linux, ubuntu.
+        productCode: annotation
+        productPlatform: java 
 ---
 ## Supported Java Versions
 

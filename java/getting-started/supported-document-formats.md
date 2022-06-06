@@ -7,6 +7,13 @@ description: This Java API supports DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, 
 keywords: DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Supported documents for annotation
+        description: GroupDocs.Annotation support for annotate this yupe of documents: pdfs, words, images, cells, slides and diagrams.
+        productCode: annotation
+        productPlatform: java 
 ---
 The list of supported by GroupDocs.Annotation document formats and types. 
 

@@ -7,6 +7,13 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: How to installation GroupDocs.Annotation for annotate docs in Java
+        description: For annotate pdf, words, images, cells, slides and diagram need add to your project GroupDocs.Annotation via Maven.
+        productCode: annotation
+        productPlatform: java 
 ---
 GroupDocs hosts all Java APIs on [GroupDocs Repository](https://repository.groupdocs.com/). You can easily use [GroupDocs.Annotation for Java](https://artifact.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-annotation) API directly in your Maven projects with simple configurations.
 
