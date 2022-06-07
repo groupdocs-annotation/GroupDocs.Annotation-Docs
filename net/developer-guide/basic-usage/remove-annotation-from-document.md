@@ -7,8 +7,6 @@ description: "Learn how to remove annotations from document when collaborate, ed
 keywords: Delete annotation, remove annotation, annotate document
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
-structuredData:
-showOrganization: True
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability to remove all previously added annotations from document and save cleaned document as it was before annotating.  
 There are the steps to remove annotations from document:

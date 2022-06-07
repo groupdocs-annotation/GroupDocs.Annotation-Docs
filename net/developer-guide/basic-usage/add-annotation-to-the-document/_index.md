@@ -3,12 +3,10 @@ id: add-annotation-to-the-document
 url: annotation/net/add-annotation-to-the-document
 title: Add annotation to the document
 weight: 3
-description: "Learn about what is a document annotation, what possible annotation types are, and how to programmatically add annotations to a document using GroupDocs.Annotation API."
-keywords: What is annotation, document annotation, add annotation
+description: "Learn about what is a document annotation, what possible annotation types are, and writing annotations programmatically in a document using GroupDocs.Annotation API."
+keywords: What is annotation, document annotation, writing annotations
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
-structuredData:
-    showOrganization: True
 ---
 ## What is a document annotation?
 

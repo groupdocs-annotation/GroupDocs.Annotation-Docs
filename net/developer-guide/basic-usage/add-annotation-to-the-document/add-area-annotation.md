@@ -17,10 +17,15 @@ structuredData:
         name: How to annotate a document
         description: Learn how to add area annotation to document step by step
         steps:
+        - name: Load source file an instance Annotator
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Annotation class declaration
           text: Create an instance of AreaAnnotation class.
+        - name: Specify annotation options 
           text: In the AreaAnnotation class constructor, pass parameters.
+        - name: Add annotation to the document
           text: Call Annotator class .Add() method and pass the class name AreaAnnotation.
+        - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
 ---
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
