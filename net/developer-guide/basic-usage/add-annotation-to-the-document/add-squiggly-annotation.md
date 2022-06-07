@@ -7,21 +7,6 @@ description: "Learn what is an squiggly annotation and how to add it to a docume
 keywords: What is a squiggly annotation, how to add annotation, add squiggly annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
-structuredData:
-    showOrganization: True
-    application:    
-        name: GroupDocs Annotation
-        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
-    showVideo: False
-    howTo:
-        name: How to annotate a document
-        description: Learn how to add squiggly annotation to document step by step
-        steps:
-          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
-          text: Create an instance of SquigglyAnnotation class.
-          text: In the SquigglyAnnotation class constructor, pass parameters.
-          text: Call Annotator class .Add() method and pass the class name SquigglyAnnotation.
-          text: Call Annotator class .Save() method and pass output path file.
 ---
 **Squiggly** annotation marks text with a squiggly styling like shown at the picture below. 
 

@@ -7,8 +7,6 @@ description: "Learn how to extract annotations from document when collaborate, e
 keywords: Extract annotations, annotate document, get document annotations
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
-structuredData:
-showOrganization: True
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability to extract annotations from document and serializing to XML format.  
 To achieve this you should:

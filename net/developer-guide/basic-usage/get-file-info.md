@@ -7,8 +7,6 @@ description: "This article explains how to detect document file type, size and c
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
-structuredData:
-showOrganization: True
 ---
 GroupDocs.Annotation allows to get document information which includes.
 
