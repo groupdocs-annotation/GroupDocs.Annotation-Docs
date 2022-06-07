@@ -7,6 +7,14 @@ description: "Learn this guide to check how to filter annotation types during sa
 keywords: save specific annotation types, save annotations
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Filtering annotation types in documents using Java
+        description: Filtering annotation types in pdf, word and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
 ---
 This feature can be using when need to save only specific annotation types and ignore others.
 

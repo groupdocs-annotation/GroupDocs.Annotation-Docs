@@ -7,6 +7,14 @@ description: "Following this guide you will learn how to manage different versio
 keywords: Get different document versions, versions, Version management
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Versioning of annotated documents using Java
+        description: Versioning of annotated documents for pdf, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
 ---
 Since from 21.7.
 Every time you are saving file using [Annotator.Save()](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method - you implicitly create a new version of the annotated file. Versions list stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names.

@@ -7,6 +7,14 @@ description: "Following this guide you will learn how to compare annotations usi
 keywords: Equals, Compare, Annotation, Annotations, Comparing, Compare annotations
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Comparing annotations in document using Java
+        description: Comparing annotation of pdf, word, images and other documents using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
 ---
 Since from 21.7.
 You have the ability to compare annotations using the [Equals]() method.

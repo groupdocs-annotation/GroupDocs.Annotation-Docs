@@ -7,6 +7,24 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Generate document pages preview
+        description: Generate document pages preview for pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to generate document pages preview in Java
+        description: Learn how to generate document pages preview for words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Add options for preview annotation
+          text: Create an instance of PreviewOptions class and add information for preview annotation.
+        - name: Generate preview
+          text: Call Annotator class generatePreview method for Generate preview for pdfs, words, cells, images, diagrams.
 ---
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** allows to generate document page previews using [generatePreview](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Document#generatePreview(com.groupdocs.annotation.options.pagepreview.PreviewOptions)) method of a [Document](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Document) class.  
 [PreviewOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.pagepreview/PreviewOptions) class is used to manage preview generation process - specify desired page numbers, image format etc.

@@ -7,6 +7,14 @@ description: "This article demonstrates how to save specific page range when ann
 keywords: Save specific annotated pages, save specific pages
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Save specific annotated pages, save specific pages in docs using Java
+        description: Save specific annotated pages, save specific pages in pdfs, words, cells, diagrams and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
 ---
 In case of processing large documents (for example 100 pages or more) there is an ability to save only specific pages or desired pages range.   
   

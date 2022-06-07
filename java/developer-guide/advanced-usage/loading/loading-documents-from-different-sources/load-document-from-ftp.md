@@ -7,6 +7,24 @@ description: "This article explains how to load PDF, Word, Excel, PowerPoint doc
 keywords: Load document from URL, Load document by FTP GroupDocs.Annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Load document from FTP using Java
+        description: Load document from FTP for annotate pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to load document from FTP with in Java
+        description: Learn how to load document with mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter.
+        - name: Set data for arrow annotation
+          text: Create an instance of ArrowAnnotation class (for example) and add data for arrow annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the ArrowAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 Following example demonstrates how to annotate document from FTP.
 

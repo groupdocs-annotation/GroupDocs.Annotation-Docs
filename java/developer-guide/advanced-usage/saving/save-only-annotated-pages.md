@@ -7,6 +7,14 @@ description: "This article demonstrates how to save only annotated pages when us
 keywords: Save annotated pages, save annotations
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Save only annotated pages in document using Java
+        description: Save only annotated pages to pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
 ---
 Result document will contains only pages, which contains any annotation.
 

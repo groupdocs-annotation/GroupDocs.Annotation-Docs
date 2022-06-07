@@ -7,6 +7,24 @@ description: "This article explains how to load password-protected PDF, Word, Ex
 keywords: Load password-protected document, Load protected document with GroupDocs.Annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Load password-protected documents using Java
+        description: Load password-protected pdfs, words and other documents natively on mac, windows or ubuntu with high performance using Java language and GroupDocs.Annotation for Java APIs
+        productCode: annotation
+        productPlatform: java 
+    showVideo: True
+    howTo:
+        name: How to load password-protected documents with annotation in Java
+        description: Learn how to add arrow annotation for mark up words, pdf or other document in Java step by step
+        steps:
+        - name: Load pdf, word or other document file
+          text: Create an instance of Annotator class and pass source document file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Set data for annotation
+          text: Create an instance of ArrowAnnotation class (for exaple) and add data for arrow annotation.
+        - name: Add annotation to document and save result
+          text: Call Annotator class Add method and pass the ArrowAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) allows to annotate documents that are protected with a password.
 

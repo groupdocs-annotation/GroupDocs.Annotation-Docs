@@ -7,6 +7,8 @@ description: "Learn about GroupDocs.Annotation advanced usage and its multiple p
 keywords: GroupDocs.Annotation Advanced Features, GroupDocs.Annotation Customization, GroupDocs.Annotation Advanced Features Java
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 Along with the ability to annotate documents using a couple lines of code **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** API allows to fine tune the document processing from start to end - like loading password-protected documents in different ways, saving results in different ways, generate document pages preview in image form and many other. 
 
