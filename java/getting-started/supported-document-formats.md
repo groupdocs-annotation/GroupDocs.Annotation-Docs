@@ -11,7 +11,7 @@ structuredData:
     showOrganization: True
     application:
         name: Supported documents for annotation
-        description: GroupDocs.Annotation support for annotate this yupe of documents: pdfs, words, images, cells, slides and diagrams.
+        description: GroupDocs.Annotation support for annotate this types of documents pdfs, words, images, cells, slides and diagrams.
         productCode: annotation
         productPlatform: java 
 ---
