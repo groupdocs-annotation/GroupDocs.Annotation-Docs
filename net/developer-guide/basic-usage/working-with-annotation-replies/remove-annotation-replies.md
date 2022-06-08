@@ -7,6 +7,26 @@ description: "Check this guide to learn how to remove all or specific annotation
 keywords: How to remove annotation reply, remove annotation reply, remove reply, reply to annotation, remove annotation comment
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to remove annotation replies
+        description: Learn how to remove annotation replies step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Annotation class declaration
+          text: Obtain annotations collection from document
+        - name: Remove reply 
+          text: Call AnnotationBase class .RemoveAt() method.
+        - name: Update document with annotations
+          text: Call Annotator class .Update() method.
+        - name: Save document with annotation
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 There is a quick and convenient way to remove specific or even all replies for some document annotation using **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** API. It is as easy as removing items from generic [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) collection. In common case you have to follow these steps to delete replies:
 

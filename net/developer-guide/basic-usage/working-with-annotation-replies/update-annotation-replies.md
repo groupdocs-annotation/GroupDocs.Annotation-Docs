@@ -7,6 +7,26 @@ description: "Check this guide to learn how to update annotation replies when co
 keywords: How to change or remove annotation reply, update annotation reply, remove reply, reply to annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to update replies to annotation
+        description: Learn how to update replies annotation step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Annotation class declaration
+          text: Obtain annotations collection from document
+        - name: Update reply 
+          text: set the Comment parameter of the AnnotationBase class
+        - name: Update document with annotations
+          text: Call Annotator class .Update() method.
+        - name: Save document with annotation
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection.
 

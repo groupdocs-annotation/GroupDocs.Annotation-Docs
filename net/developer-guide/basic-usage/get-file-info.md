@@ -7,6 +7,20 @@ description: "This article explains how to detect document file type, size and c
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to get file info
+        description: Learn how to get file info step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Interface IDocumentInfo
+          text: Call interface IDocumentInfo and pass information about the page to it
 ---
 GroupDocs.Annotation allows to get document information which includes.
 

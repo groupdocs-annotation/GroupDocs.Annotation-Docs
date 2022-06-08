@@ -15,7 +15,7 @@ structuredData:
     showVideo: False
     howTo:
         name: How to annotate a document
-        description: Learn how to add area annotation to document step by step
+        description: Learn how to add distance annotation to document step by step
         steps:
         - name: Load source file an instance Annotator
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
@@ -24,7 +24,7 @@ structuredData:
         - name: Specify annotation options 
           text: In the DistanceAnnotation class constructor, pass parameters.
         - name: Add annotation to the document
-          text: Call Annotator class .Add() method and pass the class name AreaAnnotation.
+          text: Call Annotator class .Add() method and pass the class name DistanceAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
 ---

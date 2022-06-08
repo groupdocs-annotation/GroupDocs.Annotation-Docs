@@ -7,6 +7,26 @@ description: "Check this guide to learn how to add annotation replies when colla
 keywords: How to add annotation reply, add annotation reply, add reply, reply to annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to add replies to annotation
+        description: Learn how to add replies annotation step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Annotation class declaration
+          text: Create an instance of ButtonComponent class.
+        - name: Specify annotation options 
+          text: In the ButtonComponent class, pass parameter Reply class with property.
+        - name: Add annotation to the document
+          text: Call Annotator class .Add() method and pass the class name ButtonComponent.
+        - name: Save document with annotation
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability for several users to collaborate over document via annotations and annotation replies. Adding reply to an annotation via code is as easy as specifying reply content and related user object.  
   

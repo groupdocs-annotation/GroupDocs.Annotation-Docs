@@ -7,6 +7,8 @@ description: "Learn about what is a document components, what is a difference be
 keywords: What is component, document component, add component
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 ## What is a document component?
 

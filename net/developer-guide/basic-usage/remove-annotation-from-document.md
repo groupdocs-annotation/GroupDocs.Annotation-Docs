@@ -7,6 +7,22 @@ description: "Learn how to remove annotations from document when collaborate, ed
 keywords: Delete annotation, remove annotation, annotate document
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to get file info
+        description: Learn how to get file info step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Method Remove
+          text: Call Annotator class method .Remove()
+        - name: Save document
+          text: Call Annotator class method .Save() and pass output path file to it.
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability to remove all previously added annotations from document and save cleaned document as it was before annotating.  
 There are the steps to remove annotations from document:

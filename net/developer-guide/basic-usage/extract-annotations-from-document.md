@@ -7,6 +7,26 @@ description: "Learn how to extract annotations from document when collaborate, e
 keywords: Extract annotations, annotate document, get document annotations
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to extract annotations from document
+        description: Learn how to extract annotations from document step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Annotation class declaration
+          text: Obtain annotations collection from document.
+        - name: Serialize class
+          text: Call class XmlSerializer and pass collection of annotations to it.
+        - name: Instantiate object FileStram
+          text: Call an instance of a FileStream object and pass .xml file with FileMode to it.
+        - name: Serialize annotation
+          text: Call XmlSeerializer class .Serialize() method.
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability to extract annotations from document and serializing to XML format.  
 To achieve this you should:

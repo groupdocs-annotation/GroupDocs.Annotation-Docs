@@ -7,6 +7,8 @@ description: "This article explains how to obtain supported file formats list wh
 keywords: supported image formats, supported file formats, annotation, Groupdocs annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** allows to get the list of all supported file formats by following the below steps:
 

@@ -7,6 +7,26 @@ description: "Learn what is a text redaction annotation and how to add it to a d
 keywords: What is a text redaction annotation, how to add annotation, add text redaction annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to annotate a document
+        description: Learn how to add text redaction annotation to document step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Annotation class declaration
+          text: Create an instance of TextRedactionAnnotation class.
+        - name: Specify annotation options
+          text: In the TextRedactionAnnotation class constructor, pass parameters.
+        - name: Add annotation to the document
+          text: Call Annotator class .Add() method and pass the class name TextRedactionAnnotation.
+        - name: Save document with annotation
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 **Text redaction** annotation fills part of text with black rectangle (used if you want to hide some text) like shown at the picture below.
 
