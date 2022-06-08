@@ -1,12 +1,32 @@
 ---
-id: add-or-remove-annotation-from-pdf-files
-url: annotation/net/add-or-remove-annotation-from-pdf-files
-title: Add or Remove Annotations from PDF files using .NET
-weight: 5
-description: "Programmatically add and remove annotations from PDF files. Add arrow, rectangle, ellipse, highlight, watermark annotations and more using .NET API."
+id: how-to-add-or-remove-annotation-from-pdf-files
+url: annotation/net/how-to-add-or-remove-annotation-from-pdf-files
+title: How to Add or Remove Annotations from PDF files using .NET
+weight: 1
+description: "Programmatically add and remove annotations from PDF files. Add arrow, rectangle annotations and more using .NET API."
 keywords: highlight PDF, add annotations in PDF, Annotate PDF, Remove annotations from PDF, 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: An examples of how to add and remove annotations from PDF documents. Add arrow, rectangle annotations and more using .NET API.
+    showVideo: False
+    howTo:
+        name: How to add and remove annotations
+        description: Learn how to add arrow and rectangle annotations to the PDF document
+        steps:
+          - name: Load source file an instance Annotator
+            text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+          - name: Annotation class declaration
+            text: Create an instance of ArrowAnnotation or AreaAnnotation class.
+          - name: Specify annotation options 
+            text: In the ArrowAnnotation or AreaAnnotation class constructor pass parameters.
+          - name: Add annotation to the document
+            text: Call method Add() on Annotator object and pass ArrowAnnotation or AreaAnnotation instance there.
+          - name: Save document with annotation
+            text: Call method Save() on Annotator object and pass output file destination there.
 ---
 
 There was a time when we used to discuss document content and feedback in long email threads with multiple attachments and different file versions. Now we can simply use annotations to markup the document with messages and replies and send it. In this article, you will learn how to programmatically annotate PDF documents in .NET with your application. Additionally, we will see how to remove annotations from PDF files using the same .NET API.
