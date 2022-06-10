@@ -7,6 +7,28 @@ description: "This article explains how to load PDF, Word, Excel, PowerPoint doc
 keywords: Load document from stream, Load document with GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to load document from stream
+        description: Learn how to load document from stream step by step
+        steps:
+        - name: Document stream
+          text: Load source file an instance documentStream with definition OpenRead
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass document stream to it. You may specify absolute or relative file path as per your requirements.
+        - name: Annotation class declaration
+          text: Create an instance of annotation class.
+        - name: Specify annotation options 
+          text: In the annotation class constructor, pass parameters.
+        - name: Add annotation to the document
+          text: Call Annotator class .Add() method and pass the class name annotation.
+        - name: Save document with annotation
+          text: Call Annotator class .Save() method and pass output path file with class SaveOptions.
 ---
 There might be the case when source or target document is not physically located on the disk. Instead, you have the document in the form of a stream. In this case, to avoid the overhead of saving stream as a file on disk, [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides a way to work with document streams directly.   
   

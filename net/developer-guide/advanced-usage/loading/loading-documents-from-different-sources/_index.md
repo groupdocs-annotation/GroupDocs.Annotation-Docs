@@ -7,6 +7,8 @@ description: "Following this guide you will learn how to load PDF, Word, Excel, 
 keywords: Load document from file path, Load document from URL, Load document from stream
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows you to annotate remotely located documents. The document processing would be similar to [Load document from stream]({{< ref "annotation/net/developer-guide/advanced-usage/loading/loading-documents-from-different-sources/load-document-from-stream.md" >}}).

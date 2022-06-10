@@ -7,6 +7,26 @@ description: "This article explains how to load password-protected PDF, Word, Ex
 keywords: Load password-protected document, Load protected document with GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to load document from local
+        description: Learn how to load password protected documents step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass file path with password to it.
+        - name: Annotation class declaration
+          text: Create an instance of annotation class.
+        - name: Specify annotation options 
+          text: In the annotation class constructor, pass parameters.
+        - name: Add annotation to the document
+          text: Call Annotator class .Add() method and pass the class name annotation.
+        - name: Save document with annotation
+          text: Call Annotator class .Save() method and pass output path file with class SaveOptions.
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows to annotate documents that are protected with a password.
 

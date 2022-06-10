@@ -7,6 +7,30 @@ description: "This article explains how to load PDF, Word, Excel, PowerPoint doc
 keywords: Load document from URL, Load document by URL GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to load document from Url
+        description: Learn how to load document from Url step by step
+        steps:
+        - name: Get file stream
+          text: Create a method that will receive the document stream.
+        - name: Get response
+          text: Create a method that will receive the response.
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass method and Url to it. You may specify absolute or relative file path as per your requirements.
+        - name: Annotation class declaration
+          text: Create an instance of annotation class.
+        - name: Specify annotation options 
+          text: In the annotation class constructor, pass parameters.
+        - name: Add annotation to the document
+          text: Call Annotator class .Add() method and pass the class name annotation.
+        - name: Save document with annotation
+          text: Call Annotator class .Save() method and pass output path file with class SaveOptions.
 ---
 Following example demonstrates how to annotate document from URL.
 
