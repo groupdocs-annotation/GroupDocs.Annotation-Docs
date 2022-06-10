@@ -9,6 +9,18 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 structuredData:
     showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to get supported file formats info
+        description: Learn how to get supported file formats step by step
+        steps:
+        - name: Interface IEnumerable
+          text: FileType collection call
+        - name: Iterate over elements in a FileType collection
+          text: Using a foreach loop, iterate over the resulting collection.
 ---
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** allows to get the list of all supported file formats by following the below steps:
 

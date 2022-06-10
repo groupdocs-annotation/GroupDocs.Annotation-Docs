@@ -9,6 +9,24 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 structuredData:
     showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to get supported file formats info
+        description: Learn how to get supported file formats step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Annotation class declaration
+          text: Create an instance of annotation class and specify the id of the annotation to be updated.
+        - name: Parametrs annotation
+          text: Pass new parametrs for annotation.
+        - name: Update annotation to the document
+          text: Call Annotator class .Update() method and pass the class name annotation.
+        - name: Save document with annotation
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 Sometimes it's needed to change different annotation properties - move annotation to another position within document, change annotation size, color, text or even select different annotation type. You can easily do this using [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) by specifying annotation [Id property](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/id) (which is unique for each annotation object within document) and other updated annotation properties. Another way is to update multiple annotations at once - you just need to provide collection of updated annotation objects which will replace all existing document annotations.  
 
