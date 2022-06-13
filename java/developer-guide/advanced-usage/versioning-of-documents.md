@@ -32,51 +32,35 @@ If you want to swap between versions easily you might need to have ability to se
   
 Here the code that demonstrates how to save version with custom name:
 
-```java
-try (Annotator annotator = new Annotator("input.pdf")) {
-    AreaAnnotation areaAnnotation = new AreaAnnotation();
-    areaAnnotation.setBox(new Rectangle(100, 100, 100, 100)); 
-    annotator.update(areaAnnotation);
-    SaveOptions saveOptions = new SaveOptions();
-    saveOptions.setVersion("CUSTOM_VERSION");
-    annotator.save("result.pdf", saveOptions);
-}
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-version-with-custom-name.java" >}}
+
 {{< alert style="info" >}}
 Type of [Version](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/saveoptions/) property is object, so it support any type, and you can use any variable as version variable
 {{< /alert >}}
 # Get List of All version keys on a document
 If you don't know what versions were added earlier or want to know versions count 
 Here the code that demonstrates how to get list of versions keys, you could do this calling [GetVersionsList](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#getversionslist) method of [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/annotator):
-```java
-try (Annotator annotator = new Annotator("input.pdf")) {
-    List<Object> versionKeys = annotator.getVersionsList();
-}
-```
+
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-get-all-versions.java" >}}
+
 {{< alert style="info" >}}
 [Annotator.GetVersionList()](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#getversionslist) returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.
 {{< /alert >}}
 # Get List of Annotations using version key
 If you need to get list of annotations you can use [Annotator.GetVersion()](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#getversionslist) method
 Here code that demonstrates how to get list of annotations from specific version of document
-```java
-try (Annotator annotator = new Annotator("input.pdf")) {
-    List<AnnotationBase> annotations = annotator.getVersion("CUSTOM_VERSION");
-}
-```
+
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-get-list-of-annotations-using-key.java" >}}
+
 {{< alert style="info" >}}
 [GetVersion](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#getversionslist) supports any type, and you can use any variable as version.
 {{< /alert >}}
 # Load Document of custom Version
 Using [LoadOptions.Version](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/loadoptions/) property you could load specific version of annotated document
 Here the code that demonstrates how load version using version property:
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setVersion("CUSTOM_VERSION");
-try (Annotator annotator = new Annotator("input.pdf", loadOptions)) {
-    annotator.save("result_loaded.pdf");
-}
-```
+
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-load-document-of-custom-version.java" >}}
+
 ## More resources
 ### GitHub Examples
 You may easily run the code above and see the feature in action in our GitHub examples:
