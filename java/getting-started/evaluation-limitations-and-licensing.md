@@ -33,25 +33,13 @@ The license can be loaded from a file or stream object. 
 
 The code below will explain how to set product license.
 
-```java
-// For complete examples and data files, please go to https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java
-// Setup license.
-License license = new License();
-license.setLicense(licensePath);
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-setting-license-from-file.java" >}}
 
 #### Setting License from Stream
 
 The following example shows how to load a license from a stream.
 
-```java
-// For complete examples and data files, please go to https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java
-using (FileInputStream fileStream = new FileInputStream("GroupDocs.Annotation.lic"))
-{
-    License license = new License();
-    license.setLicense(fileStream);
-}
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-setting-license-from-stream.java" >}}
 
 #### Setting Metered License
 
@@ -71,19 +59,4 @@ Here are the simple steps to use the `Metered` class.
 
 Following is the sample code demonstrating how to use [Metered](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.license/Metered) class.
 
-```java
-// For complete examples and data files, please go to https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java
-string publicKey = ""; // Your public license key
-string privateKey = ""; // Your private license key
-
-Metered metered = new Metered();
-metered.setMeteredKey(publicKey, privateKey);
-
-// Get amount (MB) consumed
-double consumption = metered.getConsumptionQuantity();
-System.out.print("Metered consumption = " + consumption);     
-
-// Get count of credits consumed
-double credit = metered.getConsumptionCredit();
-System.out.print("Metered credit = " + credit);    
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-class-metered.java" >}}
