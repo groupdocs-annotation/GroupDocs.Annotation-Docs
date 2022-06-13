@@ -42,33 +42,7 @@ Follow these steps to add Point annotation to document:
 
 The following code demonstrates how to add [PointAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/PointAnnotation) to the document:
 
-```java
-String outputPath = Constants.getOutputFilePath("AddPointAnnotation", FilenameUtils.getExtension(Constants.INPUT));
-            final Annotator annotator = new Annotator(Constants.INPUT);
-            try {
-                Reply reply1 = new Reply();
-                reply1.setComment("First comment");
-                reply1.setRepliedOn(Calendar.getInstance().getTime());
-                Reply reply2 = new Reply();
-                reply2.setComment("Second comment");
-                reply2.setRepliedOn(Calendar.getInstance().getTime());
-                java.util.List<Reply> replies =  new ArrayList<Reply>();
-                replies.add(reply1);
-                replies.add(reply2);
-                PointAnnotation point = new PointAnnotation();
-                point.setBox(new Rectangle(100, 100, 0, 0));
-                point.setCreatedOn(Calendar.getInstance().getTime());
-                point.setMessage("This is point annotation");
-                point.setPageNumber(0);
-                point.setReplies(replies);
-                annotator.add(point);
-                annotator.save(outputPath);
-            } finally {
-                if (annotator != null) {
-                    annotator.dispose();
-                }
-            }
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-point-annotation.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

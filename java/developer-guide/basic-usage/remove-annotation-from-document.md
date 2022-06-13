@@ -15,42 +15,9 @@ There are the steps to remove annotations from document:
 *   Instantiate [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object and set *AnnotationTypes = AnnotationType.None*;
 *   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
     
-1) Following code demonstrates how to remove annotation from document using annotation index:
+Following code demonstrates how to remove annotation from from document:
 
-```java
-Annotator annotator = new Annotator("C://input.pdf");
-annotator.remove(0);
-annotator.save("C://output.pdf", new SaveOptions());
-```
-
-2) Following code demonstrates how to remove annotation from document using annotation Object:
-
-```java
-Annotator annotator = new Annotator("C://input.pdf");
-java.util.List<AnnotationBase> annotations = annotator.get();
-annotator.remove(annotations.get(0));
-annotator.save("C://output.pdf", new SaveOptions());
-```
-
-3) Following code demonstrates how to remove some annotations from document using list of Id’s:
-
-```java
-Annotator annotator = new Annotator("C://input.pdf");
-java.util.List<Integer> idList = new java.util.ArrayList<>();
-idList.add(0);
-idList.add(1);
-annotator.remove(idList);
-annotator.save("C://output.pdf", new SaveOptions());
-```
-
-4) Following code demonstrates how to remove some annotations from document using list of annotations:
-
-```java
-Annotator annotator = new Annotator("C://input.pdf");
-java.util.List<AnnotationBase> annotations = annotator.get();
-annotator.removeInternal(annotations);
-annotator.save("C://output.pdf", new SaveOptions());
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-remove-annotation-from-document.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

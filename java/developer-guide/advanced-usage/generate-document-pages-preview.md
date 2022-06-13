@@ -43,14 +43,7 @@ The following code snippet demonstrates how to generate document previews.
 
 ## Get document page previews 
 
-```java
-Annotator annotator = new Annotator("input.pdf");
-PreviewOptions previewOptions = new PreviewOptions("C://Output//GenerateDocumentPagesPreview_{0}.png");
-previewOptions.setPreviewFormat(PreviewFormats.PNG);
-previewOptions.setPageNumbers(new int[]{1, 2});
-annotator.getDocument().generatePreview(previewOptions);
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-generate-document-pages-preview.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

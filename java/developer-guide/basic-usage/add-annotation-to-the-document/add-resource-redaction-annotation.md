@@ -42,33 +42,7 @@ Follow these steps to add Resource redaction annotation to document:
 
 The following code demonstrates how to add [ResourcesRedactionAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ResourcesRedactionAnnotation) to the document:
 
-```java
-String outputPath = Constants.getOutputFilePath("AddResourcesRedactionAnnotation", FilenameUtils.getExtension(Constants.INPUT));
-            final Annotator annotator = new Annotator(Constants.INPUT);
-            try {
-                Reply reply1 = new Reply();
-                reply1.setComment("First comment");
-                reply1.setRepliedOn(Calendar.getInstance().getTime());
-                Reply reply2 = new Reply();
-                reply2.setComment("Second comment");
-                reply2.setRepliedOn(Calendar.getInstance().getTime());
-                java.util.List<Reply> replies =  new ArrayList<Reply>();
-                replies.add(reply1);
-                replies.add(reply2);
-                ResourcesRedactionAnnotation resourcesRedaction = new ResourcesRedactionAnnotation();
-                resourcesRedaction.setBox(new Rectangle(100, 100, 100, 100));
-                resourcesRedaction.setCreatedOn(Calendar.getInstance().getTime());
-                resourcesRedaction.setMessage("This is resources redaction annotation");
-                resourcesRedaction.setPageNumber(0);
-                resourcesRedaction.setReplies(replies);
-                annotator.add(resourcesRedaction);
-                annotator.save(outputPath);
-            } finally {
-                if (annotator != null) {
-                    annotator.dispose();
-                }
-            }
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-resources-redaction-annotation.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

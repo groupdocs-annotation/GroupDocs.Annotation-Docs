@@ -46,45 +46,7 @@ Follow these steps to add Replacement annotation to document:
 
 The following code demonstrates how to add [ReplacementAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) to the document:
 
-```java
-String outputPath = Constants.getOutputFilePath("AddTextStrikeoutAnnotation", FilenameUtils.getExtension(Constants.INPUT));
-            final Annotator annotator = new Annotator(Constants.INPUT);
-            try {
-                Reply reply1 = new Reply();
-                reply1.setComment("First comment");
-                reply1.setRepliedOn(Calendar.getInstance().getTime());
-                Reply reply2 = new Reply();
-                reply2.setComment("Second comment");
-                reply2.setRepliedOn(Calendar.getInstance().getTime());
-                java.util.List<Reply> replies =  new ArrayList<Reply>();
-                replies.add(reply1);
-                replies.add(reply2);
-                Point point1 = new Point(80, 730);
-                Point point2 = new Point(240, 730);
-                Point point3 = new Point(80, 650);
-                Point point4 = new Point(240, 650);
-                List<Point> points = new ArrayList<Point>();
-                points.add(point1);
-                points.add(point2);
-                points.add(point3);
-                points.add(point4);
-                ReplacementAnnotation replacement = new ReplacementAnnotation();
-                replacement.setCreatedOn(Calendar.getInstance().getTime());
-                replacement.setFontColor(65535);
-                replacement.setMessage("This is replacement annotation");
-                replacement.setOpacity(0.7);
-                replacement.setPageNumber(0);
-                replacement.setPoints(points);
-                replacement.setReplies(replies);
-                replacement.setTextToReplace("replaced text");
-                annotator.add(replacement);
-                annotator.save(outputPath);
-            } finally {
-                if (annotator != null) {
-                    annotator.dispose();
-                }
-            }
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-text-replacement-annotation.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

@@ -45,44 +45,7 @@ Follow these steps to add Highlight annotation to document:
 
 The following code demonstrates how to add [HighlightAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation) to the document:
 
-```java
- final Annotator annotator = new Annotator(Constants.INPUT);
-            try {
-                Reply reply1 = new Reply();
-                reply1.setComment("First comment");
-                reply1.setRepliedOn(Calendar.getInstance().getTime());
-                Reply reply2 = new Reply();
-                reply2.setComment("Second comment");
-                reply2.setRepliedOn(Calendar.getInstance().getTime());
-                java.util.List<Reply> replies =  new ArrayList<Reply>();
-                replies.add(reply1);
-                replies.add(reply2);
-                Point point1 = new Point(80, 730);
-                Point point2 = new Point(240, 730);
-                Point point3 = new Point(80, 650);
-                Point point4 = new Point(240, 650);
-                List<Point> points = new ArrayList<Point>();
-                points.add(point1);
-                points.add(point2);
-                points.add(point3);
-                points.add(point4);
-                HighlightAnnotation highlight = new HighlightAnnotation();
-                highlight.setBackgroundColor(65535);
-                highlight.setCreatedOn(Calendar.getInstance().getTime());
-                highlight.setFontColor(0);
-                highlight.setMessage("This is highlight annotation");
-                highlight.setOpacity(0.5);
-                highlight.setPageNumber(0);
-                highlight.setPoints(points);
-                highlight.setReplies(replies);
-                annotator.add(highlight);
-                annotator.save(outputPath);
-            } finally {
-                if (annotator != null) {
-                    annotator.dispose();
-                }
-            }
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-text-highlight-annotation.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

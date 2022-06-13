@@ -41,49 +41,10 @@ There is a quick and convenient way to remove specific or even all replies for s
 
 The easiest way for removing specific annotation reply is to delete by its index inside Replies collection. The following code sample demonstrates how to remove first annotation reply:
 
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setImportAnnotations(true);
-
-// NOTE: Input document already contain annotations with replies
-final Annotator annotator = new Annotator("annotated_with_replies.pdf", loadOptions);
-
-// Obtain annotations collection from document
-List<AnnotationBase> annotations = annotator.get();
-
-// Remove first reply
-annotations.get(0).getReplies().remove(0);
-
-// Save changes
-annotator.update(annotations);
-annotator.save("RemoveRepliesById.pdf");
-
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-remove-replies-by-id.java" >}}
 
 ## Remove annotation replies by criteria
 
 The following code demonstrates how to remove replies that were added by user with name "Tom":
 
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setImportAnnotations(true);
- 
-// NOTE: Input document already contain annotations with replies
-final Annotator annotator = new Annotator("annotated_with_replies.pdf", loadOptions);
- 
-// Obtain annotations collection from document
-List<AnnotationBase> annotations = annotator.get();
- 
-// Remove all replies where author name is "Tom"
-for(int i = 0; i < annotations.get(0).getReplies().size(); i++) {
-    if(annotations.get(0).getReplies().get(i).getUser().getName().toString().equals("Tom")) {
-        annotations.get(0).getReplies().remove(i);
-    }
-}
- 
-// Save changes
-annotator.update(annotations);
-annotator.save("RemoveRepliesByUserName.pdf");
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-remove-replies-by-user-name.java" >}}

@@ -18,67 +18,7 @@ That case can be used when need to update some annotation properties (move, resi
 
 The following code demonstrates how to update annotations:
 
-```java
-String outputPath = "UpdateAnnotation.pdf";
-Annotator annotator = new Annotator("input.pdf");
-
-Reply reply1 = new Reply();
-reply1.setComment("Original first comment");
-reply1.setRepliedOn(Calendar.getInstance().getTime());
-
-Reply reply2 = new Reply();
-reply2.setComment("Original second comment");
-reply2.setRepliedOn(Calendar.getInstance().getTime());
-
-java.util.List<Reply> replies = new ArrayList<Reply>();
-replies.add(reply1);
-replies.add(reply2);
-
-AreaAnnotation original = new AreaAnnotation();
-original.setId(1);
-original.setBackgroundColor(65535);
-original.setBox(new Rectangle(100, 100, 100, 100));
-original.setCreatedOn(Calendar.getInstance().getTime());
-original.setMessage("This is original annotation");
-original.setReplies(replies);
-
-// add original annotation
-annotator.add(original);
-annotator.save(outputPath);
-annotator.dispose();
-
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setImportAnnotations(true);
-
-// open annotated document
-Annotator annotator1 = new Annotator(outputPath, loadOptions);
-
-Reply reply3 = new Reply();
-reply3.setComment("Updated first comment");
-reply3.setRepliedOn(Calendar.getInstance().getTime());
-
-Reply reply4 = new Reply();
-reply4.setComment("Updated second comment");
-reply4.setRepliedOn(Calendar.getInstance().getTime());
-
-java.util.List<Reply> replies1 = new ArrayList<Reply>();
-replies1.add(reply3);
-replies1.add(reply4);
-
-// suggest we want change some properties of existed annotation
-AreaAnnotation updated = new AreaAnnotation();
-updated.setId(1);
-updated.setBackgroundColor(255);
-updated.setBox(new Rectangle(0, 0, 50, 200));
-updated.setCreatedOn(Calendar.getInstance().getTime());
-updated.setMessage("This is updated annotation");
-updated.setReplies(replies1);
-
-// update annotation
-annotator1.update(updated);
-annotator1.save(outputPath);
-annotator1.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-update-annotation.java" >}}
 
 Also annotation could be updated using Id. Note, that for using this case is necessary need to set annotation Id property. It’s need because **GroupDocs.Annotation** must know which annotation must be changed. Or you can pass list of annotations. In that case all previous annotations will be replaced by new list.
 
@@ -86,66 +26,6 @@ Also annotation could be updated using Id. Note, that for using this case is ne
 *   Create some [AnnotationBase](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/annotationbase) implementation and set Id of existed annotation (if annotation with that Id not found, nothing will be changed) or path list of annotations (all existed annotations will be removed);
 *   Call [Update](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#update) method of [Annotator](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator) object with passed annotations;
 *   Call [Save](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream;
-
-The following code demonstrates how to update annotations using Id:
-
-```java
-try (Annotator annotator = new Annotator("C://input.pdf")) {        
-    AreaAnnotation original = new AreaAnnotation();
-    original.setId(1);
-    original.setBackgroundColor(65535);
-    original.setBox(new Rectangle(100, 100, 100, 100));
-    original.setCreatedOn(Calendar.getInstance().getTime());
-    original.setMessage("This is original annotation");
-
-    Reply reply1 = new Reply();
-    reply1.setComment("Original first comment");
-    reply1.setRepliedOn(Calendar.getInstance().getTime());
-
-    Reply reply2 = new Reply();
-    reply2.setComment("Original second comment");
-    reply2.setRepliedOn(Calendar.getInstance().getTime());
-
-    java.util.List<Reply> replies = new ArrayList<>();
-    replies.add(reply1);
-    replies.add(reply2);
-    original.setReplies(replies);
-
-    // add original annotation
-    annotator.add(original);
-    annotator.save("result.pdf");
-}
- 
-// open annotated document
-try (Annotator annotator = new Annotator("result.pdf")) {
-    //assuming we are going to change some properties of existing annotation
-    AreaAnnotation updated = new AreaAnnotation();
-    
-    // It's important to set existed annotation Id
-    updated.setId(1);
-    updated.setBackgroundColor(255);
-    updated.setBox(new Rectangle(0, 0, 50, 200));
-    updated.setCreatedOn(Calendar.getInstance().getTime());
-    updated.setMessage("This is updated annotation");
-
-    Reply reply1 = new Reply();
-    reply1.setComment("Updated first comment");
-    reply1.setRepliedOn(Calendar.getInstance().getTime());
-
-    Reply reply2 = new Reply();
-    reply2.setComment("Updated second comment");
-    reply2.setRepliedOn(Calendar.getInstance().getTime());
-
-    java.util.List<Reply> replies = new ArrayList<>();
-    replies.add(reply1);
-    replies.add(reply2);
-    updated.setReplies(replies);
-    
-    // update annotation
-    annotator.update(updated);
-    annotator.save("result.pdf");
-}
-```
 
 ## More resources
 ### Advanced Usage Topics

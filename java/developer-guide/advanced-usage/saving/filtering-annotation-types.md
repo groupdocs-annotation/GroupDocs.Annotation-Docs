@@ -27,32 +27,7 @@ The following are the steps how to filter exported annotations to document: 
 
 Following code snippet shows how to save only pages with specific annotation type
 
-```java
-String outputPath = "FilteringAnnotationTypes.pdf";
-
-Annotator annotator = new Annotator("input.pdf");
-
-AreaAnnotation area = new AreaAnnotation();
-area.setBox(new Rectangle(100, 100, 100, 100));
-area.setBackgroundColor(65535);
-area.setPageNumber(1);
-
-EllipseAnnotation ellipse = new EllipseAnnotation();
-ellipse.setBox(new Rectangle(100, 100, 100, 100));
-ellipse.setBackgroundColor(123456);
-ellipse.setPageNumber(4);
-
-List<AnnotationBase> tmp0 = new ArrayList<AnnotationBase>();
-tmp0.add(area);
-tmp0.add(ellipse);
-annotator.add(tmp0);
-
-SaveOptions tmp1 = new SaveOptions();
-tmp1.setAnnotationTypes(AnnotationType.Ellipse);
-
-annotator.save(outputPath, tmp1);
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-filtering-annotation-types.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

@@ -42,66 +42,7 @@ Here are the steps to add annotation replies:
     
 The following code demonstrates how to add replies to annotation:
 
-```java
-String outputPath = "AddReplies.pdf";
-
-Annotator annotator = new Annotator("input.pdf");
-
-User user1 = new User();
-user1.setId(1);
-user1.setName("Tom");
-user1.setEmail("somemail@mail.com");
-
-User user2 = new User();
-user2.setId(2);
-user2.setName("Jack");
-user2.setEmail("somebody@mail.com");
-
-AreaAnnotation area = new AreaAnnotation();
-area.setBackgroundColor(65535);
-area.setBox(new Rectangle(100, 100, 100, 100));
-area.setCreatedOn(Calendar.getInstance().getTime());
-area.setMessage("This is area annotation");
-area.setOpacity(0.7);
-area.setPageNumber(0);
-area.setPenColor(65535);
-area.setPenStyle(PenStyle.Dot);
-area.setPenWidth((byte) 3);
-
-Reply reply1 = new Reply();
-reply1.setId(1);
-reply1.setComment("First comment");
-reply1.setRepliedOn(Calendar.getInstance().getTime());
-reply1.setUser(user1);
-
-Reply reply2 = new Reply();
-reply2.setId(2);
-reply2.setComment("Second comment");
-reply2.setRepliedOn(Calendar.getInstance().getTime());
-reply2.setUser(user2);
-
-Reply reply3 = new Reply();
-reply3.setId(3);
-reply3.setComment("Third comment");
-reply3.setRepliedOn(Calendar.getInstance().getTime());
-reply3.setUser(user1);
-
-Reply reply4 = new Reply();
-reply4.setId(4);
-reply4.setComment("Fourth comment");
-reply4.setRepliedOn(Calendar.getInstance().getTime());
-reply4.setUser(user2);
-java.util.List<Reply> replies =  new ArrayList<Reply>();
-replies.add(reply1);
-replies.add(reply2);
-replies.add(reply3);
-replies.add(reply4);
-area.setReplies(replies);
-annotator.add(area);
-annotator.save(outputPath);
-
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-replies.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

@@ -30,19 +30,7 @@ When the source document is located on the local disk [**GroupDocs.Annotation**]
 
 Following code snippet shows how to load documents from local disk.
 
-```java
-String outputPath = "LoadDocumentFromLocalDisk.pdf";
-
-Annotator annotator = new Annotator("input.pdf");
-
-AreaAnnotation area = new AreaAnnotation();
-area.setBox(new Rectangle(100, 100, 100, 100));
-area.setBackgroundColor(65535);
-
-annotator.add(area);
-annotator.save(outputPath);
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-load-document-from-local-disk.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

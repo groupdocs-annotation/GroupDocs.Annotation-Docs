@@ -28,22 +28,7 @@ structuredData:
 ---
 Following example demonstrates how to annotate document from URL.
 
-
-
-```java
-String outputPath = "LoadDocumentFromUrl.pdf";
-
-String url = "https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java/blob/master/Examples/Resources/SampleFiles/input.pdf?raw=true";
-Annotator annotator = new Annotator(new URL(url).openStream());
-
-AreaAnnotation area = new AreaAnnotation();
-area.setBox(new Rectangle(100, 100, 100, 100));
-area.setBackgroundColor(65535);
-annotator.add(area);
-annotator.save(outputPath);
-
-annotator.dispose(); 
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-load-document-from-url.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

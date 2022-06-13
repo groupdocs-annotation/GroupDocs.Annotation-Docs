@@ -39,25 +39,7 @@ Here is a steps to update annotation reply (considered that we already have some
 
 The following code demonstrates how to update reply by index:
 
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setImportAnnotations(true);
-
-// NOTE: Input document already contain annotations with replies
-final Annotator annotator = new Annotator("annotated_with_replies.pdf", loadOptions);
-
-// Obtain annotations collection from document
-List<AnnotationBase> annotations = annotator.get();
-
-// Update first annotation first reply
-annotations.get(0).getReplies().get(0).setComment("Updated comment");
-
-// Save changes
-annotator.update(annotations);
-annotator.save("RemoveRepliesById.pdf");
-
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-update-annotation.java" >}}
 
 ## More resources
 

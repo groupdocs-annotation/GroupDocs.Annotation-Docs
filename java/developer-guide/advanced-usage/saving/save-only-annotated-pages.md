@@ -27,33 +27,7 @@ The following are the steps how to export to resultant document only annotated 
 
 Following code snippet shows how to save only annotated pages of document
 
-```java
-String outputPath = "SavingOnlyPagesWithAnnotations.pdf";
-
-Annotator annotator = new Annotator("input.pdf");
-
-AreaAnnotation area = new AreaAnnotation();
-area.setBox(new Rectangle(100, 100, 100, 100));
-area.setBackgroundColor(65535);
-area.setPageNumber(1);
-
-EllipseAnnotation ellipse = new EllipseAnnotation();
-ellipse.setBox(new Rectangle(100, 100, 100, 100));
-ellipse.setBackgroundColor(123456);
-ellipse.setPageNumber(2);
-
-List<AnnotationBase> annotations = new ArrayList<AnnotationBase>();
-annotations.add(area);
-annotations.add(ellipse);
-
-annotator.add(annotations);
-
-SaveOptions saveOptions = new SaveOptions();
-saveOptions.setOnlyAnnotatedPages(true);
-annotator.save(outputPath, saveOptions);
-
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-saving-only-pages-with-annotations.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

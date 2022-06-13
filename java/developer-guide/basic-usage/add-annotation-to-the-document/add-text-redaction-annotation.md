@@ -43,42 +43,7 @@ Follow these steps to add TextRedaction annotation to document:
     
 The following code demonstrates how to add [TextRedactionAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) to the document:
 
-```java
-String outputPath = Constants.getOutputFilePath("AddTextStrikeoutAnnotation", FilenameUtils.getExtension(Constants.INPUT));
-            final Annotator annotator = new Annotator(Constants.INPUT);
-            try {
-                Reply reply1 = new Reply();
-                reply1.setComment("First comment");
-                reply1.setRepliedOn(Calendar.getInstance().getTime());
-                Reply reply2 = new Reply();
-                reply2.setComment("Second comment");
-                reply2.setRepliedOn(Calendar.getInstance().getTime());
-                java.util.List<Reply> replies =  new ArrayList<Reply>();
-                replies.add(reply1);
-                replies.add(reply2);
-                Point point1 = new Point(80, 730);
-                Point point2 = new Point(240, 730);
-                Point point3 = new Point(80, 650);
-                Point point4 = new Point(240, 650);
-                List<Point> points = new ArrayList<Point>();
-                points.add(point1);
-                points.add(point2);
-                points.add(point3);
-                points.add(point4);
-                TextRedactionAnnotation textRedaction = new TextRedactionAnnotation();
-                textRedaction.setCreatedOn(Calendar.getInstance().getTime());
-                textRedaction.setMessage("This is text redaction annotation");
-                textRedaction.setPageNumber(0);
-                textRedaction.setPoints(points);
-                textRedaction.setReplies(replies);
-                annotator.add(textRedaction);
-                annotator.save(outputPath);
-            } finally {
-                if (annotator != null) {
-                    annotator.dispose();
-                }
-            }
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-text-redaction-annotation.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

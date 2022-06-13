@@ -16,18 +16,7 @@ hideChildren: False
 
 The following code sample demonstrates how to get information about document.
 
-```java
-Annotator annotator = new Annotator("input.pdf");
-IDocumentInfo info = annotator.getDocument().getDocumentInfo();
-
-System.out.println(
-    "\nFile type: "        + info.getFileType()
-    +"\nNumber of pages: " + info.getPageCount()
-    +"\nDocument size: "   + info.getSize() + " bytes" 
-);
-
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-get-file-info.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

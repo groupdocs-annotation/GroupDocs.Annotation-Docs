@@ -18,15 +18,7 @@ To achieve this you should:
 
 The following code demonstrates how to extract annotations metadata from document:
 
-```java
-// for using this example input file ("annotated.pdf") must be with annotations
- 
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setImportAnnotations(true);
-
-final Annotator annotator = new Annotator("annotated.pdf", loadOptions);
-List<AnnotationBase> annotations = annotator.get();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-extract-annotations-from-document.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

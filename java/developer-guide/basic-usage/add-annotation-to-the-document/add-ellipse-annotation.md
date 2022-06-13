@@ -48,38 +48,7 @@ Follow these steps to add Ellipse annotation to document: 
 
 The following code demonstrates how to add [EllipseAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/EllipseAnnotation) to the document: 
 
-```java
-String outputPath = Constants.getOutputFilePath("AddLinkAnnotation", FilenameUtils.getExtension(Constants.INPUT));
-            final Annotator annotator = new Annotator(Constants.INPUT);
-            try {
-                Reply reply1 = new Reply();
-                reply1.setComment("First comment");
-                reply1.setRepliedOn(Calendar.getInstance().getTime());
-                Reply reply2 = new Reply();
-                reply2.setComment("Second comment");
-                reply2.setRepliedOn(Calendar.getInstance().getTime());
-                java.util.List<Reply> replies =  new ArrayList<Reply>();
-                replies.add(reply1);
-                replies.add(reply2);
-                EllipseAnnotation ellipse = new EllipseAnnotation();
-                ellipse.setBackgroundColor(65535);
-                ellipse.setBox(new Rectangle(100, 100, 100, 100));
-                ellipse.setCreatedOn(Calendar.getInstance().getTime());
-                ellipse.setMessage("This is ellipse annotation");
-                ellipse.setOpacity(0.7);
-                ellipse.setPageNumber(0);
-                ellipse.setPenColor(65535);
-                ellipse.setPenStyle(PenStyle.Dot);
-                ellipse.setPenWidth((byte) 3);
-                ellipse.setReplies(replies);
-                annotator.add(ellipse);
-                annotator.save(outputPath);
-            } finally {
-                if (annotator != null) {
-                    annotator.dispose();
-                }
-            }
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-ellipse-annotation.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

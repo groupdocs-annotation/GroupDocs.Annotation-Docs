@@ -21,23 +21,7 @@ You have the ability to compare annotations using the [Equals]() method.
 
 Here is the example of the code:
 
-```java
-try (Annotator annotator = new Annotator("annotated_file.pdf")) {
-    List<AnnotationBase> annotations = annotator.get();
-    ImageAnnotation imageAnnotation = new ImageAnnotation();
-    imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
-    imageAnnotation.setOpacity(0.7);
-    imageAnnotation.setPageNumber(0);
-    imageAnnotation.setImagePath("www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png");
-    imageAnnotation.setAngle(100.0);
-
-    for(int i = 0; i < annotations.size(); i++) {
-        if (imageAnnotation.equals(annotations.get(i))) {
-                // Do some stuff here...
-        }
-    }
-}
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-compare-annotations.java" >}}
 
 ## More resources
 ### GitHub Examples

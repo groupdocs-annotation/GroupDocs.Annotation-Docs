@@ -27,19 +27,7 @@ The following are the steps how to export resultant specific page range: 
 
 The following code demonstrates how to save the range of document page: 
 
-```java
-String outputPath = "SavingSpecificPageRange.pdf";
-
-Annotator annotator = new Annotator("input.pdf");
-
-SaveOptions saveOptions = new SaveOptions();
-saveOptions.setFirstPage(2);
-saveOptions.setLastPage(4);
-
-annotator.save(outputPath, saveOptions);
-
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-saving-specific-page-range.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

@@ -34,22 +34,7 @@ The following are the steps to be followed:
 
 Following code snippet describes this case.
 
-
-
-```java
-String outputPath = "LoadDocumentFromStream.pdf";
-
-InputStream stream = new FileInputStream("input.pdf");
-final Annotator annotator = new Annotator(stream);
-
-AreaAnnotation area = new AreaAnnotation();
-area.setBox(new Rectangle(100, 100, 100, 100));
-area.setBackgroundColor(65535);
-
-annotator.add(area);
-annotator.save(outputPath);
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-load-document-from-stream.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

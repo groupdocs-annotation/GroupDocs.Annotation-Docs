@@ -46,38 +46,7 @@ Follow these steps to add Area annotation to document:
 
 The following code demonstrates how to add [AreaAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation) to the document:
 
-```java
-			Reply reply1 = new Reply();
-            reply1.setComment("First comment");
-            reply1.setRepliedOn(Calendar.getInstance().getTime());
-            Reply reply2 = new Reply();
-            reply2.setComment("Second comment");
-            reply2.setRepliedOn(Calendar.getInstance().getTime());
-            java.util.List<Reply> replies =  new ArrayList<Reply>();
-            replies.add(reply1);
-            replies.add(reply2);
-            String outputPath = Constants.getOutputFilePath("AddAreaAnnotation", FilenameUtils.getExtension(Constants.INPUT));
-            final Annotator annotator = new Annotator(Constants.INPUT);
-            try {
-                AreaAnnotation area = new AreaAnnotation();
-                area.setBackgroundColor(65535);
-                area.setBox(new Rectangle(100, 100, 100, 100));
-                area.setCreatedOn(Calendar.getInstance().getTime());
-                area.setMessage("This is area annotation");
-                area.setOpacity(0.7);
-                area.setPageNumber(0);
-                area.setPenColor(65535);
-                area.setPenStyle(PenStyle.Dot);
-                area.setPenWidth((byte) 3);
-                area.setReplies(replies);
-                annotator.add(area);
-                annotator.save(outputPath);
-            } finally {
-                if (annotator != null) {
-                    annotator.dispose();
-                }
-            }
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-area-annotation.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

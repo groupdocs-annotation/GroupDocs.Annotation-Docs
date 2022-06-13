@@ -48,37 +48,7 @@ Follow these steps to add Distance annotation to document:
 
 The following code demonstrates how to add [DistanceAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/DistanceAnnotation) to the document:
 
-```java
-String outputPath = Constants.getOutputFilePath("AddDistanceAnnotation", FilenameUtils.getExtension(Constants.INPUT));
-            final Annotator annotator = new Annotator(Constants.INPUT);
-            try {
-                Reply reply1 = new Reply();
-                reply1.setComment("First comment");
-                reply1.setRepliedOn(Calendar.getInstance().getTime());
-                Reply reply2 = new Reply();
-                reply2.setComment("Second comment");
-                reply2.setRepliedOn(Calendar.getInstance().getTime());
-                java.util.List<Reply> replies =  new ArrayList<Reply>();
-                replies.add(reply1);
-                replies.add(reply2);
-                DistanceAnnotation distance = new DistanceAnnotation();
-                distance.setBox(new Rectangle(200, 150, 200, 30));
-                distance.setCreatedOn(Calendar.getInstance().getTime());
-                distance.setMessage("This is distance annotation");
-                distance.setOpacity(0.7);
-                distance.setPageNumber(0);
-                distance.setPenColor(65535);
-                distance.setPenStyle(PenStyle.Dot);
-                distance.setPenWidth((byte) 3);
-                distance.setReplies(replies);
-                annotator.add(distance);
-                annotator.save(outputPath);
-            } finally {
-                if (annotator != null) {
-                    annotator.dispose();
-                }
-            }
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-distance-annotation.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

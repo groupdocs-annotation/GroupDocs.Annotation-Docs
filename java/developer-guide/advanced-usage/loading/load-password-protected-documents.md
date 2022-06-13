@@ -36,21 +36,7 @@ The following are the steps to process password-protected documents.
 
 The following code sample shows how to work with password protected documents.
 
-```java
-String outputPath = "LoadPasswordProtectedDocuments.pdf";
-
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setPassword("1234");
-
-Annotator annotator = new Annotator("input_protected.pdf", loadOptions);
-AreaAnnotation area = new AreaAnnotation();
-area.setBox(new Rectangle(100, 100, 100, 100));
-area.setBackgroundColor(65535);
-
-annotator.add(area);
-annotator.save(outputPath);
-annotator.dispose();
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-load-password-protected-documents.java" >}}
 
 ## More resources
 ### Advanced Usage Topics

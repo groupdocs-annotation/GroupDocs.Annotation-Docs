@@ -28,33 +28,7 @@ structuredData:
 ---
 Following example demonstrates how to annotate document from FTP.
 
-```java
-import org.apache.commons.net.ftp.FTPClient;
-
-public static void main() {
-    String outputPath = "LoadDocumentFromFtp.pdf";
-    String filePath = "sample.pdf";
-    String server = "localhost";
-    
-	Annotator annotator = new Annotator(getFileFromFtp(server, filePath));
-    
-	AreaAnnotation area = new AreaAnnotation();
-    area.setBox(new Rectangle(100, 100, 100, 100));
-    area.setBackgroundColor(65535);
-
-	annotator.add(area);
-    annotator.save(outputPath);    
-	annotator.dispose();
-}
-
-private static InputStream getFileFromFtp(String server, String filePath) throws IOException {
-    FTPClient client = new FTPClient();
-    client.connect(server);
-    InputStream inputStream = client.retrieveFileStream(filePath);
-    client.disconnect();
-    return inputStream;
-}
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-load-document-from-ftp.java" >}}
 
 ## More resources
 ### Advanced Usage Topics
