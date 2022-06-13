@@ -13,7 +13,7 @@ hideChildren: False
 *   Call [getSupportedFileTypes()](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType#getSupportedFileTypes()) method of [FileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) objects.
 
-The following code sample demonstrates how to get supported file formats list.
+The following code sample demonstrates how to get supported file formats list..
 
 ```java
 		List<FileType> fileTypes = FileType.getSupportedFileTypes();
