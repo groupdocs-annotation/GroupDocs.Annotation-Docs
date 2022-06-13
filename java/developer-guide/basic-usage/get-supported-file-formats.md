@@ -13,7 +13,9 @@ hideChildren: False
 *   Call [getSupportedFileTypes()](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType#getSupportedFileTypes()) method of [FileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) objects.
 
-The following code sample demonstrates how to get supported file formats list..
+The following code sample demonstrates how to get supported file formats list.
+
+{{< gist "aspose-words" "9a306a41bb6aea8adfcabf5a575c5718" "Examples-CSharp-Quick-Start-ApplyLicenseFromFile-ApplyLicenseFromFile.cs" >}}
 
 ```java
 		List<FileType> fileTypes = FileType.getSupportedFileTypes();
@@ -24,6 +26,16 @@ The following code sample demonstrates how to get supported file formats list..
             System.out.println(fileType.getExtension());
         }
 ```
+6417f1b3b8fc9edeeb070f2cfad3edcc#file-java-get-supported-file-formats-java
+{{< gist "aspose-words" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-get-supported-file-formats.java" >}}
+
+test
+
+{{< gist "aspose-words" "6417f1b3b8fc9edeeb070f2cfad3edcc" "file-java-get-supported-file-formats-java" >}}
+
+test11
+
+{{< gist "aspose-words" "6417f1b3b8fc9edeeb070f2cfad3edcc" "file-java-get-supported-file-formats-java.java" >}}
 
 ## More resources
 ### Advanced Usage Topics
