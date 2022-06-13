@@ -15,6 +15,10 @@ hideChildren: False
 
 The following code sample demonstrates how to get supported file formats list.
 
+https://gist.github.com/aspose-words/9a306a41bb6aea8adfcabf5a575c5718#file-examples-csharp-quick-start-applylicensefromfile-applylicensefromfile-cs
+
+aspose-words 9a306a41bb6aea8adfcabf5a575c5718  file-examples-csharp-quick-start-applylicensefromfile-applylicensefromfile-cs
+
 {{< gist "aspose-words" "9a306a41bb6aea8adfcabf5a575c5718" "Examples-CSharp-Quick-Start-ApplyLicenseFromFile-ApplyLicenseFromFile.cs" >}}
 
 ```java
@@ -26,16 +30,16 @@ The following code sample demonstrates how to get supported file formats list.
             System.out.println(fileType.getExtension());
         }
 ```
-6417f1b3b8fc9edeeb070f2cfad3edcc#file-java-get-supported-file-formats-java
-{{< gist "aspose-words" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-get-supported-file-formats.java" >}}
+
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-get-supported-file-formats.java" >}}
 
 test
 
-{{< gist "aspose-words" "6417f1b3b8fc9edeeb070f2cfad3edcc" "file-java-get-supported-file-formats-java" >}}
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "file-java-get-supported-file-formats-java" >}}
 
 test11
 
-{{< gist "aspose-words" "6417f1b3b8fc9edeeb070f2cfad3edcc" "file-java-get-supported-file-formats-java.java" >}}
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "file-java-get-supported-file-formats-java.java" >}}
 
 ## More resources
 ### Advanced Usage Topics
