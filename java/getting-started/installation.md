@@ -21,29 +21,13 @@ GroupDocs hosts all Java APIs on [GroupDocs Repository](https://repository.grou
 
 First, you need to specify GroupDocs repository configuration/location in your Maven `pom.xml` as follows: 
 
-```java
-<repositories>
-	<repository>
-		<id>GroupDocsJavaAPI</id>
-		<name>GroupDocs Java API</name>
-		<url>http://repository.groupdocs.com/repo/</url>
-	</repository>
-</repositories>
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-installation-repository.xml" >}}
 
 ### Define GroupDocs.Annotation for Java API Dependency
 
 Then define GroupDocs.Annotation for Java API dependency in your `pom.xml` as follows:
 
-```java
-<dependencies>
-    <dependency>
-        <groupId>com.groupdocs</groupId>
-        <artifactId>groupdocs-annotation</artifactId>
-        <version>21.7</version> 
-    </dependency>
-</dependencies>
-```
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-installation-dependency.xml" >}}
 
   
 After performing above-mentioned steps, GroupDocs.Annotation for Java dependency will finally be added to your Maven project
