@@ -37,9 +37,19 @@ To deal with annotations of your document and images within your Java applicatio
 
 ### Download and Configure
 
-[Get the annotation library](https://downloads.groupdocs.com/annotation/java) using NuGet Package Manager in your Java applications to try the examples of this article. To always stay up to date, make sure you are using latest version of the product. You can find many more example available on [GitHub](https://github.com/groupdocs-annotation). For the details, you may visit the [API Reference](https://apireference.groupdocs.com/annotation/java).
+GroupDocs hosts all Java APIs on [GroupDocs Repository](https://repository.groupdocs.com/). You can easily use [GroupDocs.Annotation for Java](https://artifact.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-annotation) API directly in your Maven projects with simple configurations.
 
-![Nuget Package Manager](annotation/net/images/annotation-nuget.jpg)
+### Specify GroupDocs Repository Configuration
+
+First, you need to specify GroupDocs repository configuration/location in your Maven `pom.xml` as follows: 
+
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-installation-repository.xml" >}}
+
+### Define GroupDocs.Annotation for Java API Dependency
+
+Then define GroupDocs.Annotation for Java API dependency in your `pom.xml` as follows:
+
+{{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-installation-dependency.xml" >}}
 
 Let’s quickly jump to add some of the different kinds of annotations to the PDF document. As there are many different types of annotation, we may not cover all in this article. I will just mention them, and you may [learn about each annotation individually](https://docs.groupdocs.com/annotation/java/add-annotation-to-the-document/).
 
