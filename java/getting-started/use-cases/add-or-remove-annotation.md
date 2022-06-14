@@ -39,7 +39,7 @@ To deal with annotations of your document and images within your Java applicatio
 
 [Get the annotation library](https://downloads.groupdocs.com/annotation/java) using NuGet Package Manager in your Java applications to try the examples of this article. To always stay up to date, make sure you are using latest version of the product. You can find many more example available on [GitHub](https://github.com/groupdocs-annotation). For the details, you may visit the [API Reference](https://apireference.groupdocs.com/annotation/java).
 
-![Nuget Package Manager](annotation/java/images/annotation-nuget.jpg)
+![Nuget Package Manager](annotation/net/images/annotation-nuget.jpg)
 
 Let’s quickly jump to add some of the different kinds of annotations to the PDF document. As there are many different types of annotation, we may not cover all in this article. I will just mention them, and you may [learn about each annotation individually](https://docs.groupdocs.com/annotation/java/add-annotation-to-the-document/).
 
