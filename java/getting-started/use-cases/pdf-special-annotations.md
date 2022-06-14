@@ -39,7 +39,7 @@ This article will talk about the components that are already implemented in the 
 
 **Button component** allows to create button component like shown at the picture below: 
 
-![](annotation/java/images/add-button-component.png)
+![](annotation/net/images/add-button-component.png)
 
 There is an ability to specify the next properties for [ButtonComponent](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) type:
 
@@ -60,7 +60,7 @@ The following code demonstrates how to add [ButtonComponent](https://apireferen
 ### Checkbox component
 **Checkbox component** allows to create checkbox component like shown at the picture below: 
 
-![](annotation/java/images/add-checkbox-component.png)
+![](annotation/net/images/add-checkbox-component.png)
 
 There is an ability to specify the next properties for [CheckBoxComponent](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) type:
 
@@ -82,7 +82,7 @@ The following code demonstrates how to add [CheckboxComponent](https://apirefer
 
 **Dropdown component** allows to create combo box with specified options like shown at the picture below: 
 
-![](annotation/java/images/add-dropdown-component.png)
+![](annotation/net/images/add-dropdown-component.png)
 
 There is an ability to specify the next properties for [DropdownComponent](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) type:
 
