@@ -7,6 +7,22 @@ description: "Following this guide you will learn how to export annotation using
 keywords: Export
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to export annotations
+        description: Learn how to export annotations step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass input PDF file path as a constructor parameter.
+        - name: Export annotation from XML file
+          text: Call the annotator method and pass it the path to the XML file.
+        - name: Save document
+          text: Call Annotator class .Save() method and pass output path file.
 ---
 
 Starting from version 22.1 it is possible to export annotations from an XML file.

@@ -7,6 +7,8 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides different ways of saving resultant document - with specific annotations type only, save only annotated pages, save specific page range from resultant document, set password on saving resultant document etc.
 

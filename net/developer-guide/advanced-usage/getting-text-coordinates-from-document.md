@@ -7,6 +7,22 @@ description: "Following this guide you will learn how to get an information abou
 keywords: Text line information, text coordinates, document content
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How getting text coordinates from document
+        description: Learn how getting text coordinates from document step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Interface document info
+          text: Create an object of the IDocumentInfo interface and assign document information to it.
+        - name: Get page information
+          text: Using a foreach loop to get information about each page
 ---
 Since version 21.3 the structure [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) has been changed. Now you can get an information not only about the width and height of each page, but also about it text content. In addition to that, page numbering was also added to the [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure. You can now take an advantage of the new functionality by calling the [GetDocumentInfo()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/document/methods/getdocumentinfo) method of the [Document](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/document) class.
 

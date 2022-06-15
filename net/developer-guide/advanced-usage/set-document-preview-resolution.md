@@ -6,6 +6,24 @@ weight: 9
 description: "Following this guide you will learn how to set resolution(quality) of document preview"
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to set document preview resolution
+        description: Learn how to set document preview resolution step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: PreviewOptions class declaration
+          text: Create an instance of PreviewOptions class.
+        - name: Specify ptrview options
+          text: In the PreviewOptions class constructor, pass the path to the page and in its constructor specify the resolution.
+        - name: Generate preview
+          text: Call the .GeneratePreview() method and pass the class name PreviewOptions to it.
 ---
 Since 21.5 you are now able to generate preview for documents with custom resolution. This value is measured on points per inch, default value is 96. In order to use this feature [Resolution](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/resolution) property has been added to [PreviewOptions](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions) class.
 

@@ -7,6 +7,26 @@ description: "Following this guide you will learn how to compare annotations usi
 keywords: Equals, Compare, Annotation, Annotations, Comparing, Compare annotations, IEquatable
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to compare annotation using equals method
+        description: Learn how to compare annotation using equals method step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Get annotation
+          text: Get all annotations to created variable.
+        - name: Annotation class declaration          
+          text: Create an instance of ImageAnnotation class.
+        - name: Specify annotation options 
+          text: In the ImageAnnotation class constructor, pass parameters.
+        - name: Compare annotations
+          text: With a foreach loop, compare all annotations with yours.
 ---
 
 You have the ability to compare annotations using the [Equals]() method or the already implemented [IEquatable](https://docs.microsoft.com/en-us/dotnet/api/system.iequatable-1) interface.

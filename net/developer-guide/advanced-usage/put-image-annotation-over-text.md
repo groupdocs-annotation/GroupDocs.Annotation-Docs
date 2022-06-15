@@ -6,6 +6,20 @@ weight: 8
 description: "Following this guide you will learn how set ZIndex of image to put it over the other text"
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to put image annotation over text
+        description: Learn how to put image annotation over text step by step
+        steps:
+        - name: Annotation class declaration
+          text: Create an instance of ImageAnnotation class.
+        - name: Specify annotation options 
+          text: In the ImageAnnotation class constructor, pass parameters.
 ---
 Since 21.5 you are now able to specify images placing order for file formats linked to Word. For this purpose a new [ZIndex](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/properties/zindex) property has been added to [ImageAnnotation](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation) class. You may now try in addition to other properties:
 

@@ -7,6 +7,22 @@ description: "Following this guide you will learn how to manage different versio
 keywords: Get different document versions, versions, Version management
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to set document preview resolution
+        description: Learn how to set document preview resolution step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Update
+          text: In the .Update() method, create an instance of the annotation class and set its coordinates using the Box class.
+        - name: Save document
+          text: Call Annotator class .Save() method and pass output path file and instance of the SaveOptions class and set the version.
 ---
 Every time you are saving file using [Annotator.Save()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save/index) method - you implicitly create a new version of the annotated file. Versions list stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names.
 

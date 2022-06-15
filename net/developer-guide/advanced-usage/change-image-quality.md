@@ -7,6 +7,22 @@ description: "Following this guide you will learn how to change image quality us
 keywords: Change image quality
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to change image quality
+        description: Learn how to change image quality step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Variables
+          text: Create variables path to the inut PDF file, path to the JPG file, page number, image quality.
+        - name: Saving a document
+          text: Call the annotator method .AddImageToDocument and pass the created variables to it.
 ---
 
 Starting from version 22.4 it is possible to change quality of image representation of document by setting property

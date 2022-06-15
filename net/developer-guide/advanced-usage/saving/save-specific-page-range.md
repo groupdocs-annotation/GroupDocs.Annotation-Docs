@@ -7,6 +7,20 @@ description: "This article demonstrates how to save specific page range when ann
 keywords: Save specific annotated pages, save specific pages
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to annotate a document
+        description: Learn how to add area annotation to document step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
+        - name: Save document
+          text: Call Annotator class .Save() method and pass output path file and in the SaveOptions class set FirstPage and LastPage .
 ---
 In case of processing large documents (for example 100 pages or more) there is an ability to save only specific pages or desired pages range. 
 

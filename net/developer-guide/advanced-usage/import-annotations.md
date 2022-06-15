@@ -7,6 +7,20 @@ description: "Following this guide you will learn how to import annotation using
 keywords: Import
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to import annotations
+        description: Learn how to import annotations step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass the path to the file with annotations.
+        - name: Import annotation
+          text: call the ImportAnnotationsFromDocument method and pass it the path to the XML file.
 ---
 
 Starting from version 22.1 it is possible to import annotations from an files.

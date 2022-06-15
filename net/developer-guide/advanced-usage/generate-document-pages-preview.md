@@ -7,6 +7,26 @@ description: "Following this guide you will learn how to generate PDF, Word, Exc
 keywords: Preview document pages, Document pages as PNG, document pages as JPG, Document preview
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to generate document pages preview
+        description: Learn how to generate document pages preview step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: PreviewOptions class declaration
+          text: Create an instance of PreviewOptions class.
+        - name: Specify ptrview options
+          text: In the PreviewOptions class constructor, pass the path to the page.
+        - name: Property preview
+          text: Specify preview format and page numbers
+        - name: Generate preview
+          text: Call the .GeneratePreview() method and pass the class name PreviewOptions to it
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows to generate document page previews using [GeneratePreview](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method of a [Document](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) class.  
 [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class is used to manage preview generation process - specify desired page numbers, image format etc.

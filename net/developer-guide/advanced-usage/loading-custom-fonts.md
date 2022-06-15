@@ -6,6 +6,24 @@ weight: 7
 description: "Following this guide you will learn how to load custom fonts for your documents"
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to loading custom fonts
+        description: Learn how to loading custom fonts step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass the path to the file with annotations.
+        - name: PreviewOptions class declaration
+          text: Create an instance of PreviewOptions class.
+        - name: Specify ptrview options
+          text: In the PreviewOptions class constructor, pass the path to the page.
+        - name: Generate preview
+          text: Calls the .GeneratePreview() method and pass it the class name PreviewOptions 
 ---
 
 Since 21.5 you are now able to generate preview for documents using custom fonts. In order to realize this opportunity [FontDirectories](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/fontdirectories) option has been added to [LoadOptions](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions) class.

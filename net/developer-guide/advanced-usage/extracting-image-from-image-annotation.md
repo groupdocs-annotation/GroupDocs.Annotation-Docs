@@ -7,6 +7,24 @@ description: "Following this guide you will learn how to extract images from ima
 keywords: Image, Extract Image, ImageAnnotation, Get Image, Extract Image from annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:    
+        name: GroupDocs Annotation
+        description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
+    showVideo: False
+    howTo:
+        name: How to extracting image from image annotation
+        description: Learn how to extracting image from image annotation step by step
+        steps:
+        - name: Load source file an instance Annotator
+          text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
+        - name: Annotation collection
+          text: Assign collection of annotations to all annotations
+        - name: Check all annotations
+          text: Сall a for loop and check all annotations in it
+        - name: Save image
+          text: Using the Image class, call the .Save() method
 ---
 
 If you added any ImageAnnotation to file and saved it using [Annotator](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator), you can extract Image from ImageAnnotation using [ImageAnnotation.GetImage()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/methods/getimage) method.
