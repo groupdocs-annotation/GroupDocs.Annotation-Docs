@@ -75,7 +75,7 @@ Let’s start adding some of these in a PDF document.
 
 The following are the steps to add arrow annotation to a PDF document.
 
-![Arrow Annotation](annotation/java/images/add-arrow-annotation.png)
+![Arrow Annotation](/annotation/java/images/add-arrow-annotation.png)
 
 *   Load the PDF document using the [Annotator](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator) class.
 *   Initialize arrow annotation using [ArrowAnnotation](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/arrowannotation) class.
@@ -99,7 +99,7 @@ You can customize any annotation while adding it to the document. The following 
 *   Add the created rectangle annotation to the Annotator object.
 *   Save the annotated PDF by providing the path using the [Save](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation/annotator/methods/save) method.
 
-![Rectangle or Area Annotation](annotation/java/images/add-area-annotation.png)
+![Rectangle or Area Annotation](/annotation/java/images/add-area-annotation.png)
 
 The following code sample shows how to add rectangle/area annotation to a PDF document using Java.
 

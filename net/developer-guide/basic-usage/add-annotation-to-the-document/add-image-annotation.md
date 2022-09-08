@@ -30,7 +30,7 @@ structuredData:
 ---
 **[Image annotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation)** allows to add image within document page like shown at the picture below.
 
-![](annotation/net/images/add-image-annotation.png)
+![](/annotation/net/images/add-image-annotation.png)
 
 There is an ability to specify the next properties for [ImageAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) type:
 

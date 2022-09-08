@@ -30,7 +30,7 @@ structuredData:
 ---
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 
 
-![](annotation/net/images/add-arrow-annotation.png)
+![](/annotation/net/images/add-arrow-annotation.png)
 
 There is an ability to specify the next properties for [ArrowAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/arrowannotation) type:
 

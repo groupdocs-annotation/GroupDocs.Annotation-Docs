@@ -10,7 +10,7 @@ hideChildren: True
 structuredData:
     showOrganization: True
 ---
-<img src="annotation/java/images/home.png" alt="groupdocs annotation java logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
+<img src="/annotation/java/images/home.png" alt="groupdocs annotation java logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 GroupDocs.Annotation for Java API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document. 
 
@@ -20,50 +20,46 @@ Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX
 
 ------
 
-<div class="row">
-	<div class="col-md-4">
-		<p><b>About GroupDocs.Annotation</b></p>
-		<hr><p>OVERVIEW</p></hr>
-		<ul>
-			<li><a href='{{< ref "annotation/java/getting-started/features-overview" >}}'>Features Overview</a></li>
-			<li><a href='{{< ref "annotation/java/getting-started/supported-document-formats" >}}'>Supported Document Formats</a></li>
-			<li><a href='{{< ref "annotation/java/getting-started/system-requirements" >}}'>System Requirements</a></li>
-			<li><a href='{{< ref "annotation/java/getting-started/installation" >}}'>Installation</a></li>
-			<li><a href='{{< ref "annotation/java/getting-started/evaluation-limitations-and-licensing.md" >}}'>Licensing and Subscription</a></li>
-		</ul>
-		<p>TECHNICAL SUPPORT</p>
-		<ul>
-			<li><a href="https://forum.groupdocs.com/">GroupDocs Free Support Forum</a></li>
-			<li><a href="https://helpdesk.groupdocs.com/">GroupDocs Paid Support Helpdesk</a></li>
-		</ul>
-	</div>
-	<div class="col-md-4">
-		<p><b>Get Started</b></p>
-			<hr><p>GUIDE</p></hr>
-			<ul>
-				<li><a href='{{< ref "annotation/java/getting-started/how-to-run-the-examples" >}}'>Run GroupDocs.Annotation Examples</a></li>
-			</ul>
-			<p>USEFUL RESOURCES</p>
-			<ul>
-				<li><a href="https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-annotation">GroupDocs.Annotation Artifact Repository</a></li>
-				</li><li><a href="https://downloads.groupdocs.com/annotation/java">GroupDocs.Annotation for Java Downloads</a></li>
-				<li><a href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java">Download Examples and Demos at GitHub</a></li>
-			</ul>
-	</div>
-	<div class="col-md-4">
-		<p><b>Develop Functions</b></p>
-			<hr><p>GUIDE</p></hr>
-			<ul>
-				<li><a href='{{< ref "annotation/java/developer-guide/basic-usage/get-file-info" >}}'>Retrieve File Info</a></li>
-				<li><a href='{{< ref "annotation/java/developer-guide/basic-usage/extract-annotations-from-document" >}}'>Read Annotations</a></li>
-				<li><a href='{{< ref "annotation/java/developer-guide/basic-usage/remove-annotation-from-document" >}}'>Remove Annotations</a></li>
-				<li><a href='{{< ref "annotation/java/developer-guide/basic-usage/add-annotation-to-the-document/_index.md" >}}'>Add Annotations</a></li>				
-                <li><a href='{{< ref "annotation/java/developer-guide/basic-usage/working-with-annotation-replies/_index.md" >}}'>Working with Replies</a></li>
-			</ul>
-			<p>USEFUL RESOURCES</p>
-			<ul>
-				<li><a href="https://apireference.groupdocs.com/annotation/java">GroupDocs.Annotation for Java API Reference</a></li>
-				<li><a href='{{< ref "annotation/java/release-notes" >}}'>GroupDocs.Annotation for Java Release Notes</a></li>
-			</ul>
-	</div>
-</div>
+{{< columns >}}
+<p><b>About GroupDocs.Annotation</b></p>
+<hr><p>OVERVIEW</p></hr>
+<ul>
+	<li><a href='{{< ref "annotation/java/getting-started/features-overview" >}}'>Features Overview</a></li>
+	<li><a href='{{< ref "annotation/java/getting-started/supported-document-formats" >}}'>Supported Document Formats</a></li>
+	<li><a href='{{< ref "annotation/java/getting-started/system-requirements" >}}'>System Requirements</a></li>
+	<li><a href='{{< ref "annotation/java/getting-started/installation" >}}'>Installation</a></li>
+	<li><a href='{{< ref "annotation/java/getting-started/evaluation-limitations-and-licensing.md" >}}'>Licensing and Subscription</a></li>
+</ul>
+<p>TECHNICAL SUPPORT</p>
+<ul>
+	<li><a href="https://forum.groupdocs.com/">GroupDocs Free Support Forum</a></li>
+	<li><a href="https://helpdesk.groupdocs.com/">GroupDocs Paid Support Helpdesk</a></li>
+</ul>
+<--->
+<p><b>Get Started</b></p>
+<hr><p>GUIDE</p></hr>
+<ul>
+	<li><a href='{{< ref "annotation/java/getting-started/how-to-run-the-examples" >}}'>Run GroupDocs.Annotation Examples</a></li>
+</ul>
+<p>USEFUL RESOURCES</p>
+<ul>
+	<li><a href="https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-annotation">GroupDocs.Annotation Artifact Repository</a></li>
+	</li><li><a href="https://downloads.groupdocs.com/annotation/java">GroupDocs.Annotation for Java Downloads</a></li>
+	<li><a href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java">Download Examples and Demos at GitHub</a></li>
+</ul>
+<--->
+<p><b>Develop Functions</b></p>
+<hr><p>GUIDE</p></hr>
+<ul>
+	<li><a href='{{< ref "annotation/java/developer-guide/basic-usage/get-file-info" >}}'>Retrieve File Info</a></li>
+	<li><a href='{{< ref "annotation/java/developer-guide/basic-usage/extract-annotations-from-document" >}}'>Read Annotations</a></li>
+	<li><a href='{{< ref "annotation/java/developer-guide/basic-usage/remove-annotation-from-document" >}}'>Remove Annotations</a></li>
+	<li><a href='{{< ref "annotation/java/developer-guide/basic-usage/add-annotation-to-the-document/_index.md" >}}'>Add Annotations</a></li>				
+    <li><a href='{{< ref "annotation/java/developer-guide/basic-usage/working-with-annotation-replies/_index.md" >}}'>Working with Replies</a></li>
+</ul>
+<p>USEFUL RESOURCES</p>
+<ul>
+	<li><a href="https://apireference.groupdocs.com/annotation/java">GroupDocs.Annotation for Java API Reference</a></li>
+	<li><a href='{{< ref "annotation/java/release-notes" >}}'>GroupDocs.Annotation for Java Release Notes</a></li>
+</ul>
+{{< /columns >}}

@@ -28,7 +28,7 @@ structuredData:
 ---
 **Link** annotation adds a hyper link to document  like shown at the picture below. 
 
-![](annotation/java/images/add-link-annotation.png)
+![](/annotation/java/images/add-link-annotation.png)
 
 There is an ability to specify the next fields for [LinkAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/LinkAnnotation) type:
 *   [Url](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/LinkAnnotation#getUrl()) - link to the web resource.

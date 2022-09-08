@@ -28,7 +28,7 @@ structuredData:
 ---
 **Watermark** annotation adds text watermark like shown at the picture below. 
 
-![](annotation/java/images/add-watermark-annotation.png)
+![](/annotation/java/images/add-watermark-annotation.png)
 
 There is an ability to specify the next fields for [WatermarkAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/WatermarkAnnotation) type:
 *   [Box](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/PointAnnotation#getBox()) - defines annotation position at document page;

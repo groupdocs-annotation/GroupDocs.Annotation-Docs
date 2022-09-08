@@ -30,7 +30,7 @@ structuredData:
 ---
 **Replacement** annotation replaces original text with other provided text fragment. Please check the picture below to know how replacement annotation may look like. 
 
-![](annotation/net/images/add-replacement-annotation.png)
+![](/annotation/net/images/add-replacement-annotation.png)
 
 There is an ability to specify the next properties for [ReplacementAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) type:
 

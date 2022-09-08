@@ -30,7 +30,7 @@ structuredData:
 ---
 **Point** annotation sticks comments to any point in a document like shown at the picture below. 
 
-![](annotation/net/images/add-point-annotation.png)
+![](/annotation/net/images/add-point-annotation.png)
 
 There is an ability to specify the next properties for [PointAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) type:
 

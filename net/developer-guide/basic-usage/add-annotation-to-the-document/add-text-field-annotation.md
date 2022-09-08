@@ -30,7 +30,7 @@ structuredData:
 ---
 **Text field** annotation adds rectangle with a text inside, like shown at the picture below. 
 
-![](annotation/net/images/add-text-field-annotation.png)
+![](/annotation/net/images/add-text-field-annotation.png)
 
 There is an ability to specify the next properties for [TextFieldAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textfieldannotation) type:
 

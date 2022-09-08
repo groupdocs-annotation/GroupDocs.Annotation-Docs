@@ -28,7 +28,7 @@ structuredData:
 ---
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 
 
-![](annotation/java/images/add-arrow-annotation.png)
+![](/annotation/java/images/add-arrow-annotation.png)
 
 There  is an ability to specify the next fields for [ArrowAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ArrowAnnotation) type:
 

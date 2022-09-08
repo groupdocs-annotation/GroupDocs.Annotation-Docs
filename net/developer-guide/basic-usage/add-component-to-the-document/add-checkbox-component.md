@@ -30,7 +30,7 @@ structuredData:
 ---
 **Checkbox component** allows to create checkbox component like shown at the picture below: 
 
-![](annotation/net/images/add-checkbox-component.png)
+![](/annotation/net/images/add-checkbox-component.png)
 
 There is an ability to specify the next properties for [CheckBoxComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) type:
 

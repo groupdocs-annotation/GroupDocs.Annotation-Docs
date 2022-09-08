@@ -39,7 +39,7 @@ This article will talk about the components that are already implemented in the 
 
 **Button component** allows to create button component like shown at the picture below: 
 
-![](annotation/net/images/add-button-component.png)
+![](/annotation/net/images/add-button-component.png)
 
 There is an ability to specify the next properties for [ButtonComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) type:
 
@@ -91,7 +91,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
 ### Checkbox component
 **Checkbox component** allows to create checkbox component like shown at the picture below: 
 
-![](annotation/net/images/add-checkbox-component.png)
+![](/annotation/net/images/add-checkbox-component.png)
 
 There is an ability to specify the next properties for [CheckBoxComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) type:
 
@@ -139,7 +139,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
 
 **Dropdown component** allows to create combo box with specified options like shown at the picture below: 
 
-![](annotation/net/images/add-dropdown-component.png)
+![](/annotation/net/images/add-dropdown-component.png)
 
 There is an ability to specify the next properties for [DropdownComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) type:
 

@@ -30,7 +30,7 @@ structuredData:
 ---
 **Dropdown component** allows to create combo box with specified options like shown at the picture below: 
 
-![](annotation/net/images/add-dropdown-component.png)
+![](/annotation/net/images/add-dropdown-component.png)
 
 There is an ability to specify the next properties for [DropdownComponent](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) type:
 

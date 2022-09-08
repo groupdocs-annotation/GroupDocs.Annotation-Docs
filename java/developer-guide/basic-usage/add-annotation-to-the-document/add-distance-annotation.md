@@ -28,7 +28,7 @@ structuredData:
 ---
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 
-![](annotation/java/images/add-distance-annotation.png)
+![](/annotation/java/images/add-distance-annotation.png)
 
 There is an ability to specify the next fields for [DistanceAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/DistanceAnnotation) type:
 *   [Box](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation#getBox()) - defines annotation position at document page;

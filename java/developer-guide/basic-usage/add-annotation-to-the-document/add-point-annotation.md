@@ -28,7 +28,7 @@ structuredData:
 ---
 **Point** annotationsticks comments to any point in a document like shown at the picture below. 
 
-![](annotation/java/images/add-point-annotation.png)
+![](/annotation/java/images/add-point-annotation.png)
 
 There is an ability to specify the next fields for [PointAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/PointAnnotation) type:
 *   [Box](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/PointAnnotation#getBox()) - defines annotation position at document page;

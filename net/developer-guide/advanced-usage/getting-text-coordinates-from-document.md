@@ -63,7 +63,7 @@ The ability to retrieve text information is implemented for most supported forma
 
 Example below shows how these parameters are calculated:
 
- ![Example of how text parameters are calucalated](annotation/net/images/highlighted-text.png)
+ ![Example of how text parameters are calucalated](/annotation/net/images/highlighted-text.png)
 
 ***Example above is schematic, although it's quite accurate.***
 

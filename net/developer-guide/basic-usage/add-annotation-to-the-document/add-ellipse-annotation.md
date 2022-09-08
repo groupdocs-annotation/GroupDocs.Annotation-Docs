@@ -30,7 +30,7 @@ structuredData:
 ---
 **Ellipse annotation** draws elliptic annotation in a document page like shown at the picture below.
 
-![](annotation/net/images/add-ellipse-annotation.png)
+![](/annotation/net/images/add-ellipse-annotation.png)
 
 There is an ability to specify the next properties for [EllipseAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/ellipseannotation) type: 
 

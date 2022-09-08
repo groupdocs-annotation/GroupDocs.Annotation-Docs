@@ -28,7 +28,7 @@ structuredData:
 ---
 **Text field** annotation adds rectangle with a text inside, like shown at the picture below. 
 
-![](annotation/java/images/add-text-field-annotation.png)
+![](/annotation/java/images/add-text-field-annotation.png)
 
 There is an ability to specify the next fields for [TextFieldAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextFieldAnnotation) type:
 *   [BackgroundColor](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation#getBackgroundColor()) - describes area background color;

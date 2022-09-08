@@ -30,7 +30,7 @@ structuredData:
 ---
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 
-![](annotation/net/images/add-area-annotation.png)
+![](/annotation/net/images/add-area-annotation.png)
 
 There is an ability to specify the next properties for [AreaAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/areaannotation) type:
 

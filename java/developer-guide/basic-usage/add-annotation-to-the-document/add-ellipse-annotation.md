@@ -28,7 +28,7 @@ structuredData:
 ---
 **Ellipse annotation** draws elliptic annotation in a document page like shown at the picture below.
 
-![](annotation/java/images/add-ellipse-annotation.png)
+![](/annotation/java/images/add-ellipse-annotation.png)
 
 There is an ability to specify the next fields for [EllipseAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/EllipseAnnotation) type:
 *   [BackgroundColor](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation#getBackgroundColor()) - describes area background color;

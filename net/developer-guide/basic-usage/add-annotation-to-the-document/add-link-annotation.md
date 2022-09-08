@@ -30,7 +30,7 @@ structuredData:
 ---
 **Link** annotation adds a hyper link to document  like shown at the picture below. 
 
-![](annotation/net/images/add-link-annotation.png)
+![](/annotation/net/images/add-link-annotation.png)
 
 There is an ability to specify the next properties for [LinkAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/linkannotation) type:
 

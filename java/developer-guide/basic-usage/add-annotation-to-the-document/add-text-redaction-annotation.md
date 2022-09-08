@@ -28,7 +28,7 @@ structuredData:
 ---
 **Text redaction** annotation fills part of text with black rectangle (used if you want to hide some text) like shown at the picture below.
 
-![](annotation/java/images/add-text-redaction-annotation.png)
+![](/annotation/java/images/add-text-redaction-annotation.png)
 
 There is an ability to specify the next fields for [TextRedactionAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) type
 *   [Points](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation#getPoints()) - annotation positions set by array of points.

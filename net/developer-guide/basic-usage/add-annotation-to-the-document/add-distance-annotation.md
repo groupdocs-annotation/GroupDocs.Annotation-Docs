@@ -30,7 +30,7 @@ structuredData:
 ---
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 
-![](annotation/net/images/add-distance-annotation.png)
+![](/annotation/net/images/add-distance-annotation.png)
 
 There is an ability to specify the next properties for [DistanceAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/distanceannotation) type:
 

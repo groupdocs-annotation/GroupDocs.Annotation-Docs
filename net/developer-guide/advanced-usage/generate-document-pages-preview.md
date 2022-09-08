@@ -172,9 +172,9 @@ using (Annotator annotator = new Annotator("input.xlsx"))
 In the following images you can see how the columns were generated in the range from the second to the third and the first after them. Columns are generated in the order you specify, each column is generated only once, so please keep this in mind while using this feature.
 
 ### Original worksheet
-![](annotation/net/images/original_page.png)
+![](/annotation/net/images/original_page.png)
 ### Generated image file
-![](annotation/net/images/generated_page.png)
+![](/annotation/net/images/generated_page.png)
 
 
 ## More resources

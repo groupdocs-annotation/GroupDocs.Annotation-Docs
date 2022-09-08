@@ -30,7 +30,7 @@ structuredData:
 ---
 **Watermark** annotation adds text watermark like shown at the picture below. 
 
-![](annotation/net/images/add-watermark-annotation.png)
+![](/annotation/net/images/add-watermark-annotation.png)
 
 There is an ability to specify the next properties for [WatermarkAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/watermarkannotation) type:
 

@@ -28,7 +28,7 @@ structuredData:
 ---
 **Polyline** annotation allows to draw shapes and freehand lines like shown at the picture below. 
 
-![](annotation/java/images/add-polyline-annotation.png)
+![](/annotation/java/images/add-polyline-annotation.png)
 
 There is an ability to specify the next fields for [PolylineAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/PolylineAnnotation) type:
 *   [Box](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation#getBox()) - defines annotation position at document page;

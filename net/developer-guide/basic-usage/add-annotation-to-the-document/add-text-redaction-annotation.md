@@ -30,7 +30,7 @@ structuredData:
 ---
 **Text redaction** annotation fills part of text with black rectangle (used if you want to hide some text) like shown at the picture below.
 
-![](annotation/net/images/add-text-redaction-annotation.png)
+![](/annotation/net/images/add-text-redaction-annotation.png)
 
 There is an ability to specify the next properties for [TextRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) type
 

@@ -39,7 +39,7 @@ To deal with annotations of your document and images within your .NET applicatio
 
 [Get the annotation library](https://downloads.groupdocs.com/annotation/net) using NuGet Package Manager in your .NET applications to try the examples of this article. To always stay up to date, make sure you are using latest version of the product. You can find many more example available on [GitHub](https://github.com/groupdocs-annotation). For the details, you may visit the [API Reference](https://apireference.groupdocs.com/annotation/net).
 
-![Nuget Package Manager](annotation/net/images/annotation-nuget.jpg)
+![Nuget Package Manager](/annotation/net/images/annotation-nuget.jpg)
 
 Let’s quickly jump to add some of the different kinds of annotations to the PDF document. As there are many different types of annotation, we may not cover all in this article. I will just mention them, and you may [learn about each annotation individually](https://docs.groupdocs.com/annotation/net/add-annotation-to-the-document/).
 
@@ -65,7 +65,7 @@ Let’s start adding some of these in a PDF document.
 
 The following are the steps to add arrow annotation to a PDF document.
 
-![Arrow Annotation](annotation/net/images/add-arrow-annotation.png)
+![Arrow Annotation](/annotation/net/images/add-arrow-annotation.png)
 
 *   Load the PDF document using the [Annotator](https://apireference.groupdocs.com/annotation/net/com.groupdocs.annotation/Annotator) class.
 *   Initialize arrow annotation using [ArrowAnnotation](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/arrowannotation) class.
@@ -119,7 +119,7 @@ You can customize any annotation while adding it to the document. The following 
 *   Add the created rectangle annotation to the Annotator object.
 *   Save the annotated PDF by providing the path using the [Save](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save) method.
 
-![Rectangle or Area Annotation](annotation/net/images/add-area-annotation.png)
+![Rectangle or Area Annotation](/annotation/net/images/add-area-annotation.png)
 
 The following code sample shows how to add rectangle/area annotation to a PDF document using .NET.
 

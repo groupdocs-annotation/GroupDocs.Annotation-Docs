@@ -30,7 +30,7 @@ structuredData:
 ---
 **Search text** annotation adds rectangle with a text inside, like shown at the picture below. 
 
-![](annotation/net/images/add-text-search-annotation.png)
+![](/annotation/net/images/add-text-search-annotation.png)
                           
 
 There is an ability to specify the next properties for [SearchTextAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) type:

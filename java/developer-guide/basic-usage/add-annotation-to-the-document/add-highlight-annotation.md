@@ -28,7 +28,7 @@ structuredData:
 ---
 **Highlight** annotation highlights and comments selected text  like shown at the picture below. 
 
-![](annotation/java/images/add-highlight-annotation.png)
+![](/annotation/java/images/add-highlight-annotation.png)
 
 There is an ability to specify the next fields for [HighlightAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation) type:
 *   [BackgroundColor](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation#getBackgroundColor()) - describes area background color;

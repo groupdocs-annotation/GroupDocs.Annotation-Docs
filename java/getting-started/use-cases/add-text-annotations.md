@@ -49,7 +49,7 @@ In this article we will cover just a few of them - highlight and strikeout annot
 
 **Highlight** annotation highlights and comments selected text. This is a good way to "highlight" an import text, to bring it to the user's attention. Highlighting is used everywhere, so this is unquestionably text annotation number one.
 
-![](annotation/java/images/add-highlight-annotation.png)
+![](/annotation/java/images/add-highlight-annotation.png)
 
 You have ability to specify the next properties for [HighlightAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) type:
 
@@ -74,7 +74,7 @@ The following code demonstrates how to add [HighlightAnnotation](https://apiref
 
 **Strikeout** annotation marks text fragment with a strikethrough styling. When you receive a document for review and find errors or inconsistencies in it, it is very important to be able to draw the author's attention to them. We recommend to you strikeout annotation for these purposes. Whenever the highlight annotation draws attention to the correct and important parts of the document, the strikeout annotation is usually used to cross out the wrong and unimportant parts of the document. You can check an example below. 
 
-![](annotation/java/images/add-strikeout-annotation.png)
+![](/annotation/java/images/add-strikeout-annotation.png)
 
 There is an ability to specify the next properties for [StrikeoutAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) type:
 

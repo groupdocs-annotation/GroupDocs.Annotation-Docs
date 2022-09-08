@@ -28,7 +28,7 @@ structuredData:
 ---
 **Underline** annotation marks text with a underline styling like shown at the picture below. 
 
-![](annotation/java/images/add-underline-annotation.png)
+![](/annotation/java/images/add-underline-annotation.png)
 
 There is an ability to specify the next fields for [UnderlineAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/UnderlineAnnotation) type:
 *   [FontColor](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation#getFontColor()) - color of annotation text;

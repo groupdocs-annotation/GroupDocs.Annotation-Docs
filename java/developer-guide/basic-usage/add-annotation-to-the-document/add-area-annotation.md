@@ -28,7 +28,7 @@ structuredData:
 ---
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 
-![](annotation/java/images/add-area-annotation.png)
+![](/annotation/java/images/add-area-annotation.png)
 
 There is an ability to specify the next fields for [AreaAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation) type:
 *   [BackgroundColor](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation#getBackgroundColor()) - describes area background color;

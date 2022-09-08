@@ -35,7 +35,7 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
     
     **Image annotation** allows to add image within document page like shown at the picture below.
     
-![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes.png)
+![](/annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes.png)
     
 {{< alert style="info" >}}IMPORTANT: On version 20.1 Image Annotation supported only in PDF, Words, Slides, Cells, Images documents.{{< /alert >}}
 
@@ -78,4 +78,4 @@ using (Annotator annotator = new Annotator("input.pdf"))
 ```
     
 The result would be
-![](annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)
+![](/annotation/net/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)

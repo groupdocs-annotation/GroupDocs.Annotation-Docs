@@ -30,7 +30,7 @@ structuredData:
 ---
 **Resource redaction** annotation fills black rectangle with fixed position (used if you want to hide some text) like shown at the picture below. 
 
-![](annotation/net/images/add-resource-redaction-annotation.png)
+![](/annotation/net/images/add-resource-redaction-annotation.png)
 
 There is an ability to specify the next properties for [ResourcesRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/resourcesredactionannotation) type:
 

@@ -28,7 +28,7 @@ structuredData:
 ---
 **Replacement** annotation replaces original text with other provided text fragment. Please check the picture below to know how replacement annotation may look like. 
 
-![](annotation/java/images/add-replacement-annotation.png)
+![](/annotation/java/images/add-replacement-annotation.png)
 
 There is an ability to specify the next fields for [ReplacementAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) type:
 *   [FontColor](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation#getFontColor()) - color of annotation text;

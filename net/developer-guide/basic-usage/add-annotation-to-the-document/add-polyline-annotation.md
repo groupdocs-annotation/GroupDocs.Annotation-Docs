@@ -30,7 +30,7 @@ structuredData:
 ---
 **Polyline** annotation allows to draw shapes and freehand lines like shown at the picture below. 
 
-![](annotation/net/images/add-polyline-annotation.png)
+![](/annotation/net/images/add-polyline-annotation.png)
 
 There is an ability to specify the next properties for [PolylineAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) type:
 

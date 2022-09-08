@@ -177,7 +177,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     
     **Image annotation** allows to add image within document page like shown at the picture below.
     
-    ![](annotation/java/images/groupdocs-annotation-for-net-20-1-release-notes.png)
+    ![](/annotation/java/images/groupdocs-annotation-for-net-20-1-release-notes.png)
         
     {{< alert style="info" >}}IMPORTANT: On version 20.1 Image Annotation supported only in PDF, Words, Slides, Cells, Images documents.{{< /alert >}}
 
@@ -219,7 +219,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     ```
         
     The result would be
-    ![](annotation/java/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)
+    ![](/annotation/java/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)
     
 2.  **Added new overloads for Get method** 
     
