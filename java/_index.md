@@ -12,9 +12,9 @@ structuredData:
 ---
 <img src="/annotation/java/images/home.png" alt="groupdocs annotation java logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
-GroupDocs.Annotation for Java API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document. 
+GroupDocs.Annotation for Java API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document.
 
-Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more. 
+Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more.
 
 Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX documents.
 
@@ -43,8 +43,8 @@ Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>
-	<li><a href="https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-annotation">GroupDocs.Annotation Artifact Repository</a></li>
-	</li><li><a href="https://downloads.groupdocs.com/annotation/java">GroupDocs.Annotation for Java Downloads</a></li>
+	<li><a href="https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-annotation/">GroupDocs.Annotation Artifact Repository</a></li>
+	</li><li><a href="https://releases.groupdocs.com/annotation/java/">GroupDocs.Annotation for Java Downloads</a></li>
 	<li><a href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java">Download Examples and Demos at GitHub</a></li>
 </ul>
 <--->
