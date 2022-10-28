@@ -14,7 +14,9 @@ structuredData:
         description: GroupDocs.Annotation hame many different features, for example highlighting pdfs, mark up words, add notes to pdf and other. For check features use annotation online https://products.groupdocs.app/annotation/total 
         productCode: annotation
         productPlatform: java 
+toc: True
 ---
+
 ## Add, edit and remove annotations
 
 GroupDocs.Annotation for Java main feature is document annotation which supports over 13 different annotation types for over 50 file formats with full control for your annotations such as adding annotations, editing annotations and removing annotations.

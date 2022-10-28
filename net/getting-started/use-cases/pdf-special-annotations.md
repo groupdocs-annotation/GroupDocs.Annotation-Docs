@@ -25,6 +25,7 @@ structuredData:
             text: Call method Add() on Annotator object and pass ButtonComponent instance there.
           - name: Save document with annotation
             text: Call method Save() on Annotator object and pass output file destination there.
+toc: True
 ---
 
 ## Special annotations for PDF documents only

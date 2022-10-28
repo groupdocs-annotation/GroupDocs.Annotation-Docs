@@ -14,8 +14,8 @@ structuredData:
         description: This tutorial show how to run add, update or delete annotation in different type of documents.
         productCode: annotation
         productPlatform: java 
+toc: True
 ---
-  
 
 ## Download from GitHub
 

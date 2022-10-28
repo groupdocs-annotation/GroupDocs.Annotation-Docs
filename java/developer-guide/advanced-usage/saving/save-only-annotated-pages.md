@@ -15,7 +15,9 @@ structuredData:
         productCode: annotation
         productPlatform: java 
     showVideo: True
+toc: True
 ---
+
 Result document will contains only pages, which contains any annotation.
 
 The following are the steps how to export to resultant document only annotated pages: 

@@ -7,7 +7,9 @@ description: "This article explains how to detect document file type, size and c
 keywords: 
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+toc: True
 ---
+
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** allows to get document information which includes following methods.
 
 *   [getFileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/IDocumentInfo#getFileType())

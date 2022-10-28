@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name DistanceAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 

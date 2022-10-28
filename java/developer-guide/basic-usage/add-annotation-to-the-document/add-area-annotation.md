@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of AreaAnnotation class and add data for area annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the AreaAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 
 ![](/annotation/java/images/add-area-annotation.png)

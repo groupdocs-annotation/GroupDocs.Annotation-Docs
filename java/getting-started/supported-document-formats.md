@@ -15,6 +15,7 @@ structuredData:
         productCode: annotation
         productPlatform: java 
 ---
+
 The list of supported by GroupDocs.Annotation document formats and types. 
 
 For formats marked with <strong>\*</strong>, the output format is different than the input format. The format in which the document is saved is specified after <strong>\*</strong>. If there is no such symbol, the format will remain the same after saving.

@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of PreviewOptions class and add information for preview annotation.
         - name: Generate preview
           text: Call Annotator class generatePreview method for Generate preview for pdfs, words, cells, images, diagrams.
+toc: True
 ---
+
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** allows to generate document page previews using [generatePreview](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Document#generatePreview(com.groupdocs.annotation.options.pagepreview.PreviewOptions)) method of a [Document](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Document) class.  
 [PreviewOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.pagepreview/PreviewOptions) class is used to manage preview generation process - specify desired page numbers, image format etc.
 

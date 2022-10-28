@@ -27,8 +27,8 @@ structuredData:
             text: Call method Add() on Annotator object and pass TextFieldAnnotation or StrikeoutAnnotation instance there.
           - name: Save document with annotation
             text: Call method Save() on Annotator object and pass output file destination there.
+toc: True
 ---
-
 
 ## Text annotations
 

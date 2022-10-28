@@ -21,7 +21,9 @@ structuredData:
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
         - name: Save document
           text: Call Annotator class .Save() method and pass output path file and in the SaveOptions class set FirstPage and LastPage .
+toc: True
 ---
+
 In case of processing large documents (for example 100 pages or more) there is an ability to save only specific pages or desired pages range. 
 
 The following are the steps how to export resultant specific page range:

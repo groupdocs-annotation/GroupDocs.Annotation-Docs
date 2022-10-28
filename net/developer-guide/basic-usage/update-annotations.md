@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Update() method and pass the class name annotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 Sometimes it's needed to change different annotation properties - move annotation to another position within document, change annotation size, color, text or even select different annotation type. You can easily do this using [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) by specifying annotation [Id property](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/id) (which is unique for each annotation object within document) and other updated annotation properties. Another way is to update multiple annotations at once - you just need to provide collection of updated annotation objects which will replace all existing document annotations.  
 

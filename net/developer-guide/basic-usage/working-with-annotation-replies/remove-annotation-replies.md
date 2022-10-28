@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Update() method.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 There is a quick and convenient way to remove specific or even all replies for some document annotation using **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** API. It is as easy as removing items from generic [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) collection. In common case you have to follow these steps to delete replies:
 

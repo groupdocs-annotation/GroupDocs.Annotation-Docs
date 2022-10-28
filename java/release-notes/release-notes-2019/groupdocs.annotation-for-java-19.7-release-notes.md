@@ -7,7 +7,9 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for Java 19.7{{< /alert >}}
 
 ## Major Features

@@ -27,7 +27,9 @@ structuredData:
           text: Specify preview format and page numbers
         - name: Generate preview
           text: Call the .GeneratePreview() method and pass the class name PreviewOptions to it
+toc: True
 ---
+
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows to generate document page previews using [GeneratePreview](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method of a [Document](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) class.  
 [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class is used to manage preview generation process - specify desired page numbers, image format etc.
 

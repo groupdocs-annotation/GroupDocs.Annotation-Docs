@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name TextFieldAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Text field** annotation adds rectangle with a text inside, like shown at the picture below. 
 

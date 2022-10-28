@@ -7,7 +7,9 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+toc: True
 ---
+
 ## What Is GroupDocs.Annotation?
 
 GroupDocs.Annotation is a lightweight and powerful library which allows developers to seamlessly enhance their applications with the capability to annotate documents from wide range of [supported formats]({{< ref "annotation/java/getting-started/supported-document-formats.md" >}}).

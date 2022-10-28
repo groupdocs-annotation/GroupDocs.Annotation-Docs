@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name ButtonComponent.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Button component** allows to create button component like shown at the picture below: 
 

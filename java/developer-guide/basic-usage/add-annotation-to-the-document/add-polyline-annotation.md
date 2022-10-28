@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of PolylineAnnotation class and add data for polyline annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the PolylineAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Polyline** annotation allows to draw shapes and freehand lines like shown at the picture below. 
 
 ![](/annotation/java/images/add-polyline-annotation.png)

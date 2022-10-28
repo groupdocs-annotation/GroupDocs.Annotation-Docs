@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of TextRedactionAnnotation class and add data for text redaction annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the TextRedactionAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Text redaction** annotation fills part of text with black rectangle (used if you want to hide some text) like shown at the picture below.
 
 ![](/annotation/java/images/add-text-redaction-annotation.png)

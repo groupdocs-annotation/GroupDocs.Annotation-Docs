@@ -31,7 +31,9 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name annotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file with class SaveOptions.
+toc: True
 ---
+
 Following example demonstrates how to annotate document from URL.
 
 ```csharp

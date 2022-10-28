@@ -27,7 +27,9 @@ structuredData:
           text: In the .Add() method, create a new instance of the annotation collections and pass the annotation names to it.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file and in the SaveOptions class set OnlyAnnotationPage to true .
+toc: True
 ---
+
 Result document will contains only pages, which contains any annotation.
 
 The following are the steps how to export to resultant document only annotated pages:

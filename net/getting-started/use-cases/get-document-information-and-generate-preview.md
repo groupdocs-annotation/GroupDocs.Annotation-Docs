@@ -27,6 +27,7 @@ structuredData:
             text: Get information about the page by accessing PagesInfo property
           - name: Interate over TextLines
             text: Get information about each text line by accessing TextLines property on the PageInfo object
+toc: True
 ---
 
 

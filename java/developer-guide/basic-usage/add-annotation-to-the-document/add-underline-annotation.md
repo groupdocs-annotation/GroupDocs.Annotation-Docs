@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of UnderlineAnnotation class and add data for underline annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the UnderlineAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Underline** annotation marks text with a underline styling like shown at the picture below. 
 
 ![](/annotation/java/images/add-underline-annotation.png)

@@ -25,6 +25,7 @@ structuredData:
           text: Сall a for loop and check all annotations in it
         - name: Save image
           text: Using the Image class, call the .Save() method
+toc: True
 ---
 
 If you added any ImageAnnotation to file and saved it using [Annotator](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator), you can extract Image from ImageAnnotation using [ImageAnnotation.GetImage()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/methods/getimage) method.

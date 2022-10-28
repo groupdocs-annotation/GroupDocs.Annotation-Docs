@@ -23,6 +23,7 @@ structuredData:
           text: Call Annotator class method .Remove()
         - name: Save document
           text: Call Annotator class method .Save() and pass output path file to it.
+toc: True
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability to remove all previously added annotations from document and save cleaned document as it was before annotating.  
 There are the steps to remove annotations from document:

@@ -7,7 +7,9 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for .NET 16.11.0{{< /alert >}}
 
 ## Major Features

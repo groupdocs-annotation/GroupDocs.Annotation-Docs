@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of ArrowAnnotation class (for example) and add data for arrow annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the ArrowAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 There might be the case when source or target document is not physically located on the disk. Instead, you have the document in the form of a stream. In this case, to avoid the overhead of saving stream as a file on disk, [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) provides a way to work with document streams directly.   
 The following are the steps to be followed:
 

@@ -7,7 +7,9 @@ description: "Check this article and learn how to edit annotation properties - c
 keywords: Update annotations, Edit annotation, Change annotation properties
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+toc: True
 ---
+
 That case can be used when need to update some annotation properties (move, resize, change color and so on) or even annotation. Note, that for using this case is necessary need to set annotation Id property. It’s need because **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** must know which annotation must be changed. Or you can pass list of annotations. In that case all previous annotation collection will be replaced from new list.
 
 *   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream with instantiated [LoadOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) with *ImportAnnotations = true;*

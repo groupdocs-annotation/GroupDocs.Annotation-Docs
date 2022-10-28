@@ -7,6 +7,7 @@ description: Free trial is available to evaluate the API which will be similar a
 keywords: free trial,license,annotation,api
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+toc: True
 ---
 {{< alert style="info" >}}You can use GroupDocs.Annotation without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.{{< /alert >}}
 

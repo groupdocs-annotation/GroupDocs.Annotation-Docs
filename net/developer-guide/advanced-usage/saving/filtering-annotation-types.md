@@ -27,7 +27,9 @@ structuredData:
           text: In the .Add() method, create a new instance of the annotation collections and pass the annotation names to it.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file and class SaveOptions with the annotation type you want to save.
+toc: True
 ---
+
 This feature can be using when need to save only specific annotation types and ignore others.
 
 The following are the steps how to filter exported annotations to document:

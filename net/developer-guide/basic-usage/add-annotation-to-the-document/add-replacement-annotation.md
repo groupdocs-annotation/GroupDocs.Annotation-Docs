@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name ReplacementAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Replacement** annotation replaces original text with other provided text fragment. Please check the picture below to know how replacement annotation may look like. 
 

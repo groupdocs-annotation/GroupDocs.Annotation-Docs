@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name ImageAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **[Image annotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation)** allows to add image within document page like shown at the picture below.
 

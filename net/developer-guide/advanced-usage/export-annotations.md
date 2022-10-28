@@ -23,6 +23,7 @@ structuredData:
           text: Call the annotator method and pass it the path to the XML file.
         - name: Save document
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 
 Starting from version 22.1 it is possible to export annotations from an XML file.

@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of TextAnnotation class and add data for text field annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the TextAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Text field** annotation adds rectangle with a text inside, like shown at the picture below. 
 
 ![](/annotation/java/images/add-text-field-annotation.png)

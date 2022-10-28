@@ -7,6 +7,7 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+toc: True
 ---
 ## Install from Nuget
 

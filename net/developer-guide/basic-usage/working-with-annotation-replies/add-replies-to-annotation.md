@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name ButtonComponent.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability for several users to collaborate over document via annotations and annotation replies. Adding reply to an annotation via code is as easy as specifying reply content and related user object.  
   

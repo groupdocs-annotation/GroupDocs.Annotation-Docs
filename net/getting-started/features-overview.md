@@ -7,6 +7,7 @@ description: Variety of features to manipulate graphics, watermarks and text ann
 keywords: text annotations, watermark, annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+toc: True
 ---
 ## Add, edit and remove annotations
 

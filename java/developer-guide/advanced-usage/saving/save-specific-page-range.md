@@ -15,7 +15,9 @@ structuredData:
         productCode: annotation
         productPlatform: java 
     showVideo: True
+toc: True
 ---
+
 In case of processing large documents (for example 100 pages or more) there is an ability to save only specific pages or desired pages range.   
   
 The following are the steps how to export resultant specific page range: 

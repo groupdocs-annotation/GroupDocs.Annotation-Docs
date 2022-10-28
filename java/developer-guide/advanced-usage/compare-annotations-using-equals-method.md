@@ -15,7 +15,9 @@ structuredData:
         productCode: annotation
         productPlatform: java 
     showVideo: True
+toc: True
 ---
+
 Since from 21.7.
 You have the ability to compare annotations using the [Equals]() method.
 

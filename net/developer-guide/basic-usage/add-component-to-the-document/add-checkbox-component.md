@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name CheckBoxComponent.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Checkbox component** allows to create checkbox component like shown at the picture below: 
 

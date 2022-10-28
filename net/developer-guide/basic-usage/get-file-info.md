@@ -21,6 +21,7 @@ structuredData:
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
         - name: Interface IDocumentInfo
           text: Call interface IDocumentInfo and pass information about the page to it
+toc: True
 ---
 GroupDocs.Annotation allows to get document information which includes.
 

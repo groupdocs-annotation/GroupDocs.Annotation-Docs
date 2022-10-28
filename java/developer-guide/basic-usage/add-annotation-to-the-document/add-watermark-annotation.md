@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of WatermarkAnnotation class and add data for watermark annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the WatermarkAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Watermark** annotation adds text watermark like shown at the picture below. 
 
 ![](/annotation/java/images/add-watermark-annotation.png)

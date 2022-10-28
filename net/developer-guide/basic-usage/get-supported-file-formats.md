@@ -21,6 +21,7 @@ structuredData:
           text: FileType collection call
         - name: Iterate over elements in a FileType collection
           text: Using a foreach loop, iterate over the resulting collection.
+toc: True
 ---
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** allows to get the list of all supported file formats by following the below steps:
 

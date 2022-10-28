@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of ArrowAnnotation class (for example) and add data for arrow annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the ArrowAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 Following example demonstrates how to annotate document from URL.
 
 {{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-load-document-from-url.java" >}}

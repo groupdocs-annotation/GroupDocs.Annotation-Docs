@@ -27,7 +27,9 @@ structuredData:
           text: Create an instance of AreaAnnotation (or other type of annotation) and call setUpdate method for add list with replies.
         - name: Add annotation to document and save result 
           text: Call Annotator class Add method and pass the AreaAnnotation (or other type of annotation) object then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase#getReplies()) collection.
 
 Here is a steps to update annotation reply (considered that we already have some reply added to annotation)

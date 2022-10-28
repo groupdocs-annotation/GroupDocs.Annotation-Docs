@@ -27,6 +27,7 @@ structuredData:
             text: Call method Add() on Annotator object and pass ArrowAnnotation or AreaAnnotation instance there.
           - name: Save document with annotation
             text: Call method Save() on Annotator object and pass output file destination there.
+toc: True
 ---
 
 There was a time when we used to discuss document content and feedback in long email threads with multiple attachments and different file versions. Now we can simply use annotations to markup the document with messages and replies and send it. In this article, you will learn how to programmatically annotate PDF documents in .NET with your application. Additionally, we will see how to remove annotations from PDF files using the same .NET API.

@@ -14,7 +14,9 @@ structuredData:
         description: GroupDocs.Annotation natively work with defferent operation systems, like macOs, windows, linux, ubuntu.
         productCode: annotation
         productPlatform: java 
+toc: True
 ---
+
 ## Supported Java Versions
 
 GroupDocs.Annotation for Java supports Java versions listed below. For more platform support please check [GroupDocs.Annotation for .NET](https://products.groupdocs.com/annotation/net).

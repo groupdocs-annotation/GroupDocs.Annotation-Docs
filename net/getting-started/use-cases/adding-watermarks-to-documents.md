@@ -27,6 +27,7 @@ structuredData:
             text: Call method Add() on Annotator object and pass WatermarkAnnotation instance there.
           - name: Save document with annotation
             text: Call method Save() on Annotator object and pass output file destination there.
+toc: True
 ---
 
 ## What we offer in context of watermarks

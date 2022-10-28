@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name DropdownComponent.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Dropdown component** allows to create combo box with specified options like shown at the picture below: 
 

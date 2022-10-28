@@ -23,6 +23,7 @@ structuredData:
             text: On annotator instance call GetVersionsList() method
           - name: Get all version keys of the document
             text: Save list of objects got from GetVersionList() method
+toc: True
 ---
 
 ## What is Version Control?

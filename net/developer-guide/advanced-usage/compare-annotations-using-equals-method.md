@@ -27,6 +27,7 @@ structuredData:
           text: In the ImageAnnotation class constructor, pass parameters.
         - name: Compare annotations
           text: With a foreach loop, compare all annotations with yours.
+toc: True
 ---
 
 You have the ability to compare annotations using the [Equals]() method or the already implemented [IEquatable](https://docs.microsoft.com/en-us/dotnet/api/system.iequatable-1) interface.

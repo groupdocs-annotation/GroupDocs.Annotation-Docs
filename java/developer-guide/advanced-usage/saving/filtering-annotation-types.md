@@ -15,7 +15,9 @@ structuredData:
         productCode: annotation
         productPlatform: java 
     showVideo: True
+toc: True
 ---
+
 This feature can be using when need to save only specific annotation types and ignore others.
 
 The following are the steps how to filter exported annotations to document: 

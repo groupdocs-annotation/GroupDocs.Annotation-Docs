@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of ResourceAnnotation class and add data for resource redaction annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the ResourceAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Resource redaction** annotation fills black rectangle with fixed position (used if you want to hide some text) like shown at the picture below. 
 
 ![](/annotation/java/images/add-resource-redaction-annotation.png)

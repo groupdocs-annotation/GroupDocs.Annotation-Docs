@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name StrikeoutAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Strikeout** annotation marks text fragment with a strikethrough styling like shown at the picture below.
 

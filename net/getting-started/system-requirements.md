@@ -7,6 +7,7 @@ description: "It does not require any external software or third party tool to b
 keywords: annotation,
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+toc: True
 ---
 ## Overview
 

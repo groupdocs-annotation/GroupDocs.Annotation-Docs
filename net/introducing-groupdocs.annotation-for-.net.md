@@ -7,6 +7,7 @@ description: Apply annotations to your documents in the form of textual comments
 keywords: annotation,to annotate,.net api,api,xlsx,microsoft word,docx,pptx,pdf,c# 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+toc: True
 ---
 ## What Is GroupDocs.Annotation?
 

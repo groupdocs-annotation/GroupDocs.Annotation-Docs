@@ -7,7 +7,9 @@ description: "This article explains how to obtain supported file formats list wh
 keywords: supported image formats, supported file formats, annotation, Groupdocs annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+toc: True
 ---
+
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** allows to get the list of all supported file formats by following the below steps:
 
 *   Call [getSupportedFileTypes()](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType#getSupportedFileTypes()) method of [FileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) class;

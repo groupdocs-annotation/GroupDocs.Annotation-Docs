@@ -20,7 +20,9 @@ structuredData:
           text: Create an instance of ImageAnnotation class.
         - name: Specify annotation options 
           text: In the ImageAnnotation class constructor, pass parameters.
+toc: True
 ---
+
 Since 21.5 you are now able to specify images placing order for file formats linked to Word. For this purpose a new [ZIndex](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/properties/zindex) property has been added to [ImageAnnotation](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation) class. You may now try in addition to other properties:
 
 ```csharp

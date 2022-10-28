@@ -7,6 +7,7 @@ description: Examples to annotate on your documents, images or web pages using C
 keywords: to annotate, annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+toc: True
 ---
 {{< alert style="warning" >}}Before running an example make sure that GroupDocs.Annotation has been installed successfully.{{< /alert >}}
 

@@ -10,6 +10,7 @@ hideChildren: False
 structuredData:
     showOrganization: True
 ---
+
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** provides different ways of saving resultant document - with specific annotations type only, save only annotated pages, save specific page range from resultant document, set password on saving resultant document etc.
 
 The [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) class provides following properties to customize saving process:

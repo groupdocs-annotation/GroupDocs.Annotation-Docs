@@ -9,7 +9,5 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 structuredData:
     showOrganization: True
+isMenuItemWithNoContent: True
 ---
-
-[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows you to annotate remotely located documents. The document processing would be similar to [Load document from stream]({{< ref "annotation/net/developer-guide/advanced-usage/loading/loading-documents-from-different-sources/load-document-from-stream.md" >}}).
-Following examples demonstrates how to load documents from different sources.

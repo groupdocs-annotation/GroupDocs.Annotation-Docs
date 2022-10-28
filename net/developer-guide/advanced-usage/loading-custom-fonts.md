@@ -24,6 +24,7 @@ structuredData:
           text: In the PreviewOptions class constructor, pass the path to the page.
         - name: Generate preview
           text: Calls the .GeneratePreview() method and pass it the class name PreviewOptions 
+toc: True
 ---
 
 Since 21.5 you are now able to generate preview for documents using custom fonts. In order to realize this opportunity [FontDirectories](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/fontdirectories) option has been added to [LoadOptions](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions) class.

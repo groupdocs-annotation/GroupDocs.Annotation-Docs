@@ -7,7 +7,9 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+toc: True
 ---
+
 ### Why To Migrate?
 
 Here are the key reasons to use the new updated API provided by GroupDocs.Annotation for Java since version 20.2:

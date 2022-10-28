@@ -14,7 +14,9 @@ structuredData:
         description: For best work with GroupDocs.Annotation need to use license, it helps working with annotation in documents
         productCode: annotation
         productPlatform: java 
+toc: True
 ---
+
 {{< alert style="info" >}}You can use GroupDocs.Annotation without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.{{< /alert >}}
 
 ## Evaluation Limitations

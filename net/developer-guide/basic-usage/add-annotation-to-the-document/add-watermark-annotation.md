@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name WatermarkAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Watermark** annotation adds text watermark like shown at the picture below. 
 

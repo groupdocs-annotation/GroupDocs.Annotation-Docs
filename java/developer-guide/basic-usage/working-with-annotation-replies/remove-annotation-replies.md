@@ -25,7 +25,9 @@ structuredData:
           text: Get annotations from Annotator class and specify which reply need to delete by index or user name.
         - name: Remove annotation replies from document and save result
           text: Call Annotator class Update method and pass the AreaAnnotation (or other type of annotation) object with removed replies from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 There is a quick and convenient way to remove specific or even all replies for some document annotation using **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** API. It is as easy as removing items from generic [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) collection. In common case you have to follow these steps to delete replies:
 
 *   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream

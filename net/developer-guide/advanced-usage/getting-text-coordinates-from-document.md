@@ -23,7 +23,9 @@ structuredData:
           text: Create an object of the IDocumentInfo interface and assign document information to it.
         - name: Get page information
           text: Using a foreach loop to get information about each page
+toc: True
 ---
+
 Since version 21.3 the structure [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) has been changed. Now you can get an information not only about the width and height of each page, but also about it text content. In addition to that, page numbering was also added to the [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure. You can now take an advantage of the new functionality by calling the [GetDocumentInfo()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/document/methods/getdocumentinfo) method of the [Document](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/document) class.
 
 Each page, represented by [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure, now contains list of [TextLineinfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo). Every [TextLineinfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo) contains information about text top and left indents, width, height and text itself. In other words, we can say that each page is represented as a sequence of text lines. Every text line is described by its parameters (width, heigh and indents).

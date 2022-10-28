@@ -23,6 +23,7 @@ structuredData:
           text: Create variables path to the inut PDF file, path to the JPG file, page number, image quality.
         - name: Saving a document
           text: Call the annotator method .AddImageToDocument and pass the created variables to it.
+toc: True
 ---
 
 Starting from version 22.4 it is possible to change quality of image representation of document by setting property

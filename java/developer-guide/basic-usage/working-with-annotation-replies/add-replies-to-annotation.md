@@ -27,7 +27,9 @@ structuredData:
           text: Create an instance of AreaAnnotation (or other type of annotation) and call setUpdate method for add list with replies. 
         - name: Add annotation to document and save result 
           text: Call Annotator class Add method and pass the AreaAnnotation (or other type of annotation) object with updated replies from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) provides ability for several users to collaborate over document via annotation replies. Adding reply to an annotation via code is as easy as specifying reply content and related user object.  
 Here are the steps to add annotation replies:
 

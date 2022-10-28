@@ -7,6 +7,7 @@ description: API to annotate text or images in your documents using C#. It suppo
 keywords: annotation,to annotate,.net api,api,xlsx,microsoft word,docx,pptx,pdf,c#
 productName: GroupDocs.Annotation for .NET
 hideChildren: True
+fullWidth: True
 ---
 <img src="/annotation/net/images/home.png" alt="groupdocs annotation .net logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 

@@ -31,7 +31,9 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name AreaAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
+
 Following example demonstrates how to annotate document from Azure Blob Storage.
 
 ```csharp

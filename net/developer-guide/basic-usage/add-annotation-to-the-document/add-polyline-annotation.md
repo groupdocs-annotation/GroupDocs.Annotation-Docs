@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name PolylineAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Polyline** annotation allows to draw shapes and freehand lines like shown at the picture below. 
 

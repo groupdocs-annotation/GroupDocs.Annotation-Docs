@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Update() method.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection.
 

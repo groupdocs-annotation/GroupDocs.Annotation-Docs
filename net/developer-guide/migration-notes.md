@@ -7,7 +7,9 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
+toc: True
 ---
+
 ### Why To Migrate?
 
 Here are the key reasons to use the new updated API provided by GroupDocs.Annotation for .NET since version 19.8:

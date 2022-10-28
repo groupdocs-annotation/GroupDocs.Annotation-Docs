@@ -10,6 +10,7 @@ hideChildren: False
 structuredData:
     showOrganization: True
 ---
+
 ## What are Annotation Replies?
 
 **Annotation replies** are the commenting feature of Microsoft Office, PDF, and other document formats that allows to store written discussion inside a document and provides an effective way for users to collaborate during document review and redaction. Different software vendors provide their own way for commenting and annotating document content, so when you need to collaborate over various document types it’s required to have multiple applications installed on every collaborator’s device.   

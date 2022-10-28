@@ -9,6 +9,5 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 structuredData:
     showOrganization: True
+isMenuItemWithNoContent: True
 ---
-**[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** allows you to load password-protected documents and load documents from different sources. For more details please refer to the following guides:
-

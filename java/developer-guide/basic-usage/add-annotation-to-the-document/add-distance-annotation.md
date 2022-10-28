@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of DistanceAnnotation class and add data for distance annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the DistanceAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 
 ![](/annotation/java/images/add-distance-annotation.png)

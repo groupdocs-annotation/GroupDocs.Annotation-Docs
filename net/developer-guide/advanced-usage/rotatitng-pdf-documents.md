@@ -23,6 +23,7 @@ structuredData:
           text: Specify document properties
         - name: Save document
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 
 Starting from version 21.12 there is an ability to rotate the page of PDF documents by 90, 180, 270 degrees, if you do not specify the page value using ProcessPages, the default will be the first.

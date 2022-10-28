@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name PointAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Point** annotation sticks comments to any point in a document like shown at the picture below. 
 

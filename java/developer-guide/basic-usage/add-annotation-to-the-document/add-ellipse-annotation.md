@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of EllipseAnnotation class and add data for ellipse annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the EllipseAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Ellipse annotation** draws elliptic annotation in a document page like shown at the picture below.
 
 ![](/annotation/java/images/add-ellipse-annotation.png)

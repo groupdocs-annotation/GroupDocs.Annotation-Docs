@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name SquigglyAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Squiggly** annotation marks text with a squiggly styling like shown at the picture below. 
 

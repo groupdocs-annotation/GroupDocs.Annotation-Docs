@@ -27,7 +27,9 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name annotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file with class SaveOptions.
+toc: True
 ---
+
 When the source document is located on the local disk [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows you to load it via [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class constructor specifying absolute or relative path to it.   
 Following code snippet shows how to load documents from local disk.
 

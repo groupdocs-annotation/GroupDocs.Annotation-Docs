@@ -7,7 +7,9 @@ description: "Learn how to extract annotations from document when collaborate, e
 keywords: Extract annotations, annotate document, get document annotations
 productName: GroupDocs.Annotation for Java
 hideChildren: False
+toc: True
 ---
+
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** provides an ability to extract annotations from document.  
 To achieve this you should:
 

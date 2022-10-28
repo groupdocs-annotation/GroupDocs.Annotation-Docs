@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of PointAnnotation class and add data for point annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the PointAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Point** annotationsticks comments to any point in a document like shown at the picture below. 
 
 ![](/annotation/java/images/add-point-annotation.png)

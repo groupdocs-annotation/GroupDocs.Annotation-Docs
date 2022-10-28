@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name AreaAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 

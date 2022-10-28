@@ -15,7 +15,9 @@ structuredData:
         productCode: annotation
         productPlatform: java 
     showVideo: True
+toc: True
 ---
+
 Since from 21.7.
 Every time you are saving file using [Annotator.Save()](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method - you implicitly create a new version of the annotated file. Versions list stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names.
 

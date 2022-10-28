@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of HighlightAnnotation class and add data for highlight annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the HighlightAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Highlight** annotation highlights and comments selected text  like shown at the picture below. 
 
 ![](/annotation/java/images/add-highlight-annotation.png)

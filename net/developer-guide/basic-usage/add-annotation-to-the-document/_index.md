@@ -9,6 +9,7 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 structuredData:
     showOrganization: True
+toc: True
 ---
 ## What is a document annotation?
 

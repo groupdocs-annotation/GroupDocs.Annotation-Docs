@@ -27,6 +27,7 @@ structuredData:
           text: Call Annotator class .Add() method and pass the class name ResourcesRedactionAnnotation.
         - name: Save document with annotation
           text: Call Annotator class .Save() method and pass output path file.
+toc: True
 ---
 **Resource redaction** annotation fills black rectangle with fixed position (used if you want to hide some text) like shown at the picture below. 
 

@@ -24,7 +24,9 @@ structuredData:
           text: In the PreviewOptions class constructor, pass the path to the page and in its constructor specify the resolution.
         - name: Generate preview
           text: Call the .GeneratePreview() method and pass the class name PreviewOptions to it.
+toc: True
 ---
+
 Since 21.5 you are now able to generate preview for documents with custom resolution. This value is measured on points per inch, default value is 96. In order to use this feature [Resolution](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/resolution) property has been added to [PreviewOptions](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions) class.
 
 ```csharp

@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of ArrowAnnotation class (for exaple) and add data for arrow annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the ArrowAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) allows to annotate documents that are protected with a password.
 
 The following are the steps to process password-protected documents.

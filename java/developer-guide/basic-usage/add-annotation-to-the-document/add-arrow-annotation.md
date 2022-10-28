@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of ArrowAnnotation class and add data for arrow annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the ArrowAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 
 
 ![](/annotation/java/images/add-arrow-annotation.png)

@@ -27,6 +27,7 @@ structuredData:
           text: Call an instance of a FileStream object and pass .xml file with FileMode to it.
         - name: Serialize annotation
           text: Call XmlSeerializer class .Serialize() method.
+toc: True
 ---
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability to extract annotations from document and serializing to XML format.  
 To achieve this you should:

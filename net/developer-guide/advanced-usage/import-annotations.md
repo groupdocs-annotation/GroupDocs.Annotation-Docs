@@ -21,6 +21,7 @@ structuredData:
           text: Create an instance of Annotator class and pass the path to the file with annotations.
         - name: Import annotation
           text: call the ImportAnnotationsFromDocument method and pass it the path to the XML file.
+toc: True
 ---
 
 Starting from version 22.1 it is possible to import annotations from an files.

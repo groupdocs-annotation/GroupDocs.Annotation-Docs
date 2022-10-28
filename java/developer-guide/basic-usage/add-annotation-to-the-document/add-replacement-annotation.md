@@ -25,7 +25,9 @@ structuredData:
           text: Create an instance of ReplacementAnnotation class and add data for replacement annotation.
         - name: Add annotation to document and save result
           text: Call Annotator class Add method and pass the ReplacementAnnotation object from the previous step as parameter then call Save method from Annotator class and pass the output filename as parameter.
+toc: True
 ---
+
 **Replacement** annotation replaces original text with other provided text fragment. Please check the picture below to know how replacement annotation may look like. 
 
 ![](/annotation/java/images/add-replacement-annotation.png)
