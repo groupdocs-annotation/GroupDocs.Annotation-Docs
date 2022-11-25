@@ -29,14 +29,14 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection.
+[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection.
 
 Here is a steps to update annotation reply (considered that we already have some reply added to annotation)
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Call [Get](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/get) method of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object and obtain collection of document annotations;
-*   Access desired reply object inside [Replies](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection by its index (zero-based) and update its properties as needed;
-*   Call [Update](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/update) method of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with passed annotations;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) object;
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Call [Get](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/get) method of [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object and obtain collection of document annotations;
+*   Access desired reply object inside [Replies](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection by its index (zero-based) and update its properties as needed;
+*   Call [Update](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/update) method of [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with passed annotations;
+*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream and [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) object;
     
 
 The following code demonstrates how to update reply by index: 

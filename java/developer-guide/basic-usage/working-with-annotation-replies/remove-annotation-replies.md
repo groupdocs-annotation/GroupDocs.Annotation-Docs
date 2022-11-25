@@ -30,13 +30,13 @@ toc: True
 
 There is a quick and convenient way to remove specific or even all replies for some document annotation using **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** API. It is as easy as removing items from generic [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) collection. In common case you have to follow these steps to delete replies:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream
-*   Call [get](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#get()) method of [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object and obtain collection of document annotations;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream
+*   Call [get](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#get()) method of [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object and obtain collection of document annotations;
 *   Access desired annotation object and remove reply in a most suitable way:
     *   Call *annotations.get(index).getReplies().remove(index)* method with desired parameters;
-    *   Call [AnnotationBase.getReplies()](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase#getReplies()) and remove replies that match desired criteria;
-*   Call [update](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#update(java.util.List)) method of [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object and pass annotations collection into it;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.lang.String)) method with resultant document path or stream;
+    *   Call [AnnotationBase.getReplies()](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase#getReplies()) and remove replies that match desired criteria;
+*   Call [update](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#update(java.util.List)) method of [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object and pass annotations collection into it;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.lang.String)) method with resultant document path or stream;
     
 
 ## Remove specific annotation reply 

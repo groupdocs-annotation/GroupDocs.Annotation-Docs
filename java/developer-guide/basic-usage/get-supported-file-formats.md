@@ -12,8 +12,8 @@ toc: True
 
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** allows to get the list of all supported file formats by following the below steps:
 
-*   Call [getSupportedFileTypes()](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType#getSupportedFileTypes()) method of [FileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) class;
-*   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) objects.
+*   Call [getSupportedFileTypes()](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType#getSupportedFileTypes()) method of [FileType](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) class;
+*   Enumerate through the collection of [FileType](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/FileType) objects.
 
 The following code sample demonstrates how to get supported file formats list.
 

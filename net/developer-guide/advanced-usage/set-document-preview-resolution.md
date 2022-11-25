@@ -27,7 +27,7 @@ structuredData:
 toc: True
 ---
 
-Since 21.5 you are now able to generate preview for documents with custom resolution. This value is measured on points per inch, default value is 96. In order to use this feature [Resolution](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/resolution) property has been added to [PreviewOptions](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions) class.
+Since 21.5 you are now able to generate preview for documents with custom resolution. This value is measured on points per inch, default value is 96. In order to use this feature [Resolution](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/resolution) property has been added to [PreviewOptions](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions) class.
 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))

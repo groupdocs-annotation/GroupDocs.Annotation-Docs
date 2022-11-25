@@ -33,14 +33,14 @@ toc: True
   
 Here are the steps to add annotation replies:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [User](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models/user) object;
-*   Instantiate [Reply](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models/reply) object(s);
-*   Instantiate annotation object of desired type. Available annotation types are listed [here](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels);
-*   Assign [User](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models/user) object to Reply. User property (or by default will be "Guest");
-*   Assign [Reply](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models/reply) object(s) to Replies collection of an annotation object created at previous steps;
-*   Call [Add](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/add) method of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object and pass annotation to it;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream;
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [User](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models/user) object;
+*   Instantiate [Reply](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models/reply) object(s);
+*   Instantiate annotation object of desired type. Available annotation types are listed [here](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels);
+*   Assign [User](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models/user) object to Reply. User property (or by default will be "Guest");
+*   Assign [Reply](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models/reply) object(s) to Replies collection of an annotation object created at previous steps;
+*   Call [Add](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/add) method of [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object and pass annotation to it;
+*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream;
 
 The following code demonstrates how to add replies to annotation:
 

@@ -28,7 +28,7 @@ structuredData:
 toc: True
 ---
 
-When the source document is located on the local disk [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) allows you to load it via [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class constructor specifying absolute or relative path to it. For loading target document located on the local disk you should use [add](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method that accepts absolute or relative path as parameter. 
+When the source document is located on the local disk [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) allows you to load it via [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class constructor specifying absolute or relative path to it. For loading target document located on the local disk you should use [add](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method that accepts absolute or relative path as parameter. 
 
 Following code snippet shows how to load documents from local disk.
 

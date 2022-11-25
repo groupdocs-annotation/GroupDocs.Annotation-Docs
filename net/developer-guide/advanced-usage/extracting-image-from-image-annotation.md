@@ -28,7 +28,7 @@ structuredData:
 toc: True
 ---
 
-If you added any ImageAnnotation to file and saved it using [Annotator](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator), you can extract Image from ImageAnnotation using [ImageAnnotation.GetImage()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/methods/getimage) method.
+If you added any ImageAnnotation to file and saved it using [Annotator](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator), you can extract Image from ImageAnnotation using [ImageAnnotation.GetImage()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/methods/getimage) method.
 
 Here is the example of the code:
 

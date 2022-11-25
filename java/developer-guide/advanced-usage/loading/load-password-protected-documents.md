@@ -32,8 +32,8 @@ toc: True
 
 The following are the steps to process password-protected documents.
 
-*   Instantiate [LoadOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) object and specify source document password;
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with document path or stream and [LoadOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) object created at previous step;
+*   Instantiate [LoadOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) object and specify source document password;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with document path or stream and [LoadOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) object created at previous step;
     
 
 The following code sample shows how to work with password protected documents.

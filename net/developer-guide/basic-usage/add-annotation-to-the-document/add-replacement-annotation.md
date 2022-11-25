@@ -33,24 +33,24 @@ toc: True
 
 ![](/annotation/net/images/add-replacement-annotation.png)
 
-There is an ability to specify the next properties for [ReplacementAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) type:
+There is an ability to specify the next properties for [ReplacementAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) type:
 
-*   [FontColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/replacementannotation/properties/fontcolor) - color of annotation text;
-*   [Opacity](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/replacementannotation/properties/opacity) \- allows to set annotation opacity;
-*   [Points](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/replacementannotation/properties/points) - annotation positions set by array of points;
-*   [TextToReplace](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/replacementannotation/properties/texttoreplace) - text that will be replaced   
+*   [FontColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/replacementannotation/properties/fontcolor) - color of annotation text;
+*   [Opacity](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/replacementannotation/properties/opacity) \- allows to set annotation opacity;
+*   [Points](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/replacementannotation/properties/points) - annotation positions set by array of points;
+*   [TextToReplace](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/replacementannotation/properties/texttoreplace) - text that will be replaced   
      
 
 Follow these steps to add Replacement annotation to document: 
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [ReplacementAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [ReplacementAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) object;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream;
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [ReplacementAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) object with desired properties (position, page number, etc);
+*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [ReplacementAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) object;
+*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream;
 
   
 
-The following code demonstrates how to add [ReplacementAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) to the document:
+The following code demonstrates how to add [ReplacementAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) to the document:
 
 ```csharp
 //Add replacement annotation to the document from local disk

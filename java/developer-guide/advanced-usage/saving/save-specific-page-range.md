@@ -22,9 +22,9 @@ In case of processing large documents (for example 100 pages or more) there is 
   
 The following are the steps how to export resultant specific page range: 
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
-*   Instantiate [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object and use [setFirstPage](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions#setFirstPage(int)) and high bound [setLastPage](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions#setLastPage(int)) for setting select borders;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
+*   Instantiate [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object and use [setFirstPage](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions#setFirstPage(int)) and high bound [setLastPage](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions#setLastPage(int)) for setting select borders;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
     
 
 The following code demonstrates how to save the range of document page: 

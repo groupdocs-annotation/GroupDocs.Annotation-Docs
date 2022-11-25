@@ -13,10 +13,10 @@ toc: True
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** provides an ability to extract annotations from document.  
 To achieve this you should:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
-*   Instantiate [LoadOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) object and call [setImportAnnotations](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions#setImportAnnotations(boolean)) with *true* argument;
-*   Define variable with type *List<*[AnnotationBase](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase)*\>;*
-*   Call [get](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#get()) method and return result to variable above.
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
+*   Instantiate [LoadOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) object and call [setImportAnnotations](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions#setImportAnnotations(boolean)) with *true* argument;
+*   Define variable with type *List<*[AnnotationBase](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase)*\>;*
+*   Call [get](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#get()) method and return result to variable above.
 
 The following code demonstrates how to extract annotations metadata from document:
 

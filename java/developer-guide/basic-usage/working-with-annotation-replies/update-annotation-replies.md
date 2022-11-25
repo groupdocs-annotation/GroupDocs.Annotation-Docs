@@ -30,14 +30,14 @@ structuredData:
 toc: True
 ---
 
-[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase#getReplies()) collection.
+[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase#getReplies()) collection.
 
 Here is a steps to update annotation reply (considered that we already have some reply added to annotation)
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream with instantiated [LoadOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) with *ImportAnnotations = true;*
-*   Call [get](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#get()) method of [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object and import annotations;
-*   Access desired reply object via [getReplies](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase#getReplies()) method collection by its index (zero-based) and update its properties as needed;
-*   Call [update](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#update(java.util.List)) method of Annotator object with passed annotations;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream with instantiated [LoadOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) with *ImportAnnotations = true;*
+*   Call [get](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#get()) method of [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object and import annotations;
+*   Access desired reply object via [getReplies](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase#getReplies()) method collection by its index (zero-based) and update its properties as needed;
+*   Call [update](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#update(java.util.List)) method of Annotator object with passed annotations;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
 
 The following code demonstrates how to update reply by index:
 

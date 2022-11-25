@@ -34,14 +34,14 @@ toc: True
 
 PDF is a good way to share documents with people. It guarantees you that your document looks on any computer exactly the same as it is on yours. But working with documents may sometimes require an ability to manipulate with a text. To do it programmatically you can use our Annotation API for Java. We support a various text annotations, such as: 
 
-* [Highlight annotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation)
-* [Link annotation](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/linkannotation)
-* [Replacement annotation](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/replacementannotation)
-* [Strikeout annotation](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/strikeoutannotation)
-* [Text field annotation](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/textfieldannotation)
-* [Text redaction annotation](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/textredactionannotation)
-* [Squiggly annotation](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/squigglyannotation)
-* [Underline annotation](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/underlineannotation)
+* [Highlight annotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation)
+* [Link annotation](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/linkannotation)
+* [Replacement annotation](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/replacementannotation)
+* [Strikeout annotation](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/strikeoutannotation)
+* [Text field annotation](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/textfieldannotation)
+* [Text redaction annotation](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/textredactionannotation)
+* [Squiggly annotation](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/squigglyannotation)
+* [Underline annotation](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/underlineannotation)
 
 In this article we will cover just a few of them - highlight and strikeout annotations. All others works in exactly the same way.
 
@@ -51,22 +51,22 @@ In this article we will cover just a few of them - highlight and strikeout annot
 
 ![](/annotation/java/images/add-highlight-annotation.png)
 
-You have ability to specify the next properties for [HighlightAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) type:
+You have ability to specify the next properties for [HighlightAnnotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) type:
 
-*   [BackgroundColor](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/areaannotation/properties/backgroundcolor) - describes annotation background color;
-*   [FontColor](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/linkannotation/properties/fontcolor) - color of annotation text;
-*   [Opacity](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) - allows to set annotation opacity;
-*   [Points](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/linkannotation/properties/points) - annotation positions set by array of points.
+*   [BackgroundColor](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/areaannotation/properties/backgroundcolor) - describes annotation background color;
+*   [FontColor](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/linkannotation/properties/fontcolor) - color of annotation text;
+*   [Opacity](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) - allows to set annotation opacity;
+*   [Points](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/linkannotation/properties/points) - annotation positions set by array of points.
 
 Follow these steps to add Highlight annotation to document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [HighlightAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation/annotator/methods/add) method and pass [HighlightAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) object;
-*   Call [Save](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.  
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [HighlightAnnotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) object with desired properties (position, page number, etc);
+*   Call [Add](https://reference.groupdocs.com/java/annotation/groupdocs.annotation/annotator/methods/add) method and pass [HighlightAnnotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) object;
+*   Call [Save](https://reference.groupdocs.com/java/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.  
       
 
-The following code demonstrates how to add [HighlightAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) to the document:
+The following code demonstrates how to add [HighlightAnnotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) to the document:
 
 {{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-text-highlight-annotation.java" >}}
 
@@ -76,24 +76,24 @@ The following code demonstrates how to add [HighlightAnnotation](https://apiref
 
 ![](/annotation/java/images/add-strikeout-annotation.png)
 
-There is an ability to specify the next properties for [StrikeoutAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) type:
+There is an ability to specify the next properties for [StrikeoutAnnotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) type:
 
-*   [FontColor](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/strikeoutannotation/properties/fontcolor) – color of annotation text;
-*   [Opacity](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) – allows to set annotation opacity;
-*   [Points](https://apireference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/strikeoutannotation/properties/points) – annotation positions set by array of points.  
+*   [FontColor](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/strikeoutannotation/properties/fontcolor) – color of annotation text;
+*   [Opacity](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) – allows to set annotation opacity;
+*   [Points](https://reference.groupdocs.com/annotation/java/groupdocs.annotation.models.annotationmodels/strikeoutannotation/properties/points) – annotation positions set by array of points.  
       
 
 
 Follow these steps to add Strikeout annotation to document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [StrikeoutAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation/annotator/methods/add) method and pass [StrikeoutAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) object;
-*   Call [Save](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [StrikeoutAnnotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) object with desired properties (position, page number, etc);
+*   Call [Add](https://reference.groupdocs.com/java/annotation/groupdocs.annotation/annotator/methods/add) method and pass [StrikeoutAnnotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) object;
+*   Call [Save](https://reference.groupdocs.com/java/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
  
 
 
-The following code demonstrates how to add [StrikeoutAnnotation](https://apireference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) to the document:
+The following code demonstrates how to add [StrikeoutAnnotation](https://reference.groupdocs.com/java/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) to the document:
 
 {{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-text-strikeout-annotation.java" >}}
 

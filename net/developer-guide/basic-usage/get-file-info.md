@@ -25,13 +25,13 @@ toc: True
 ---
 GroupDocs.Annotation allows to get document information which includes.
 
-*   [FileType](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/idocumentinfo/properties/filetype) - document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.);
-*   [PageCount](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/idocumentinfo/properties/pagecount) - count of document pages;
-*   [FileSize](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/idocumentinfo/properties/size) - document file size;
+*   [FileType](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/idocumentinfo/properties/filetype) - document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.);
+*   [PageCount](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/idocumentinfo/properties/pagecount) - count of document pages;
+*   [FileSize](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/idocumentinfo/properties/size) - document file size;
 
-[PagesInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/idocumentinfo/properties/pagesinfo) represents List of [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) objects which store information about each page. 
+[PagesInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/idocumentinfo/properties/pagesinfo) represents List of [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) objects which store information about each page. 
 
-[PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) has two properties - [Width](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo/properties/width) and [Height](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo/properties/height) in pixels. This properties works with all formats except Email And Html that doesn't have height and width so the won't store them and will be empty. All pages width and height will be same in all formats except Cells, so you can use size of first element as size of all document.
+[PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) has two properties - [Width](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo/properties/width) and [Height](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo/properties/height) in pixels. This properties works with all formats except Email And Html that doesn't have height and width so the won't store them and will be empty. All pages width and height will be same in all formats except Cells, so you can use size of first element as size of all document.
 
 The following code sample demonstrates how to get information about document and Width and Height of its pages:
 

@@ -40,9 +40,9 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ### 1. Moved License and Metered class to GroupDocs.Annotation namespace
 
-Class License and Metered were moved to [GroupDocs.Annotation](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation) namespace. The whole [GroupDocs.Annotation.Licenses](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.licenses) namespace became obsolete and will be removed soon. Please use these class from the new namespace.
+Class License and Metered were moved to [GroupDocs.Annotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation) namespace. The whole [GroupDocs.Annotation.Licenses](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.licenses) namespace became obsolete and will be removed soon. Please use these class from the new namespace.
 
 
 ### 2. List of supported formats have been tidied up
 
-The list of supported formats from [documentation](https://docs.groupdocs.com/annotation/net/supported-document-formats/) and those available with [GetSupportedFileTypes](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/filetype/methods/getsupportedfiletypes) method have been given into accordance.
+The list of supported formats from [documentation](https://docs.groupdocs.com/annotation/net/supported-document-formats/) and those available with [GetSupportedFileTypes](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/filetype/methods/getsupportedfiletypes) method have been given into accordance.

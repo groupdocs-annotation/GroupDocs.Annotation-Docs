@@ -55,4 +55,4 @@ To get more information about preview generation, please visit this [page](https
 
 ### 2. Implemented generation of text information for each page
 
-Since this update you are able to get information about documents text content. [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure was changed and now it contains information not only about page width and height, but also about it's text content. To learn how to use this feature please visit [this](https://docs.groupdocs.com/annotation/net/document-text-info/) page.
+Since this update you are able to get information about documents text content. [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure was changed and now it contains information not only about page width and height, but also about it's text content. To learn how to use this feature please visit [this](https://docs.groupdocs.com/annotation/net/document-text-info/) page.

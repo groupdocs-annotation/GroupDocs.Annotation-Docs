@@ -12,10 +12,10 @@ toc: True
 
 That case can be used when need to update some annotation properties (move, resize, change color and so on) or even annotation. Note, that for using this case is necessary need to set annotation Id property. It’s need because **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** must know which annotation must be changed. Or you can pass list of annotations. In that case all previous annotation collection will be replaced from new list.
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream with instantiated [LoadOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) with *ImportAnnotations = true;*
-*   Create some [AnnotationBase](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase) implementation and set Id of existed annotation (if annotation with that Id not found, nothing will be changed) or path list of annotations (all existed annotations will be removed);
-*   Call [update](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#update(java.util.List)) method of [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with passed annotations;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream with instantiated [LoadOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options/LoadOptions) with *ImportAnnotations = true;*
+*   Create some [AnnotationBase](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase) implementation and set Id of existed annotation (if annotation with that Id not found, nothing will be changed) or path list of annotations (all existed annotations will be removed);
+*   Call [update](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#update(java.util.List)) method of [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with passed annotations;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
     
 
 The following code demonstrates how to update annotations:
@@ -24,10 +24,10 @@ The following code demonstrates how to update annotations:
 
 Also annotation could be updated using Id. Note, that for using this case is necessary need to set annotation Id property. It’s need because **GroupDocs.Annotation** must know which annotation must be changed. Or you can pass list of annotations. In that case all previous annotations will be replaced by new list.
 
-*    Instantiate [Annotator](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator) object with input document path or stream
-*   Create some [AnnotationBase](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/annotationbase) implementation and set Id of existed annotation (if annotation with that Id not found, nothing will be changed) or path list of annotations (all existed annotations will be removed);
-*   Call [Update](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#update) method of [Annotator](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator) object with passed annotations;
-*   Call [Save](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream;
+*    Instantiate [Annotator](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator) object with input document path or stream
+*   Create some [AnnotationBase](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/annotationbase) implementation and set Id of existed annotation (if annotation with that Id not found, nothing will be changed) or path list of annotations (all existed annotations will be removed);
+*   Call [Update](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#update) method of [Annotator](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator) object with passed annotations;
+*   Call [Save](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream;
 
 ## More resources
 ### Advanced Usage Topics

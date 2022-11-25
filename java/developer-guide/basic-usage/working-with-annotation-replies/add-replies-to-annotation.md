@@ -33,14 +33,14 @@ toc: True
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) provides ability for several users to collaborate over document via annotation replies. Adding reply to an annotation via code is as easy as specifying reply content and related user object.  
 Here are the steps to add annotation replies:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
-*   Instantiate [User](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models/User) object;
-*   Instantiate [Reply](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models/Reply) object(s);
-*   Instantiate some of [AnnotationBase](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase) implementation object;
-*   Assign [User](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models/User) object to Reply.User property (or by default will be "Guest");
-*   Assign [Reply](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models/Reply) object(s) to implementation of [AnnotationBase](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase) object Replies property;
-*   Call [add](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method of [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with passed annotations;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
+*   Instantiate [User](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models/User) object;
+*   Instantiate [Reply](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models/Reply) object(s);
+*   Instantiate some of [AnnotationBase](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase) implementation object;
+*   Assign [User](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models/User) object to Reply.User property (or by default will be "Guest");
+*   Assign [Reply](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models/Reply) object(s) to implementation of [AnnotationBase](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AnnotationBase) object Replies property;
+*   Call [add](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method of [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with passed annotations;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
     
 The following code demonstrates how to add replies to annotation:
 

@@ -31,8 +31,8 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Public API and Backward Incompatible Changes
 
-1. Added new property for changing Suiggly annotation line color [SquigglyColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/squigglyannotation/properties/squigglycolor)
+1. Added new property for changing Suiggly annotation line color [SquigglyColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/squigglyannotation/properties/squigglycolor)
 
-2. Added new property for changing Underline annotation line color [UnderlineColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/underlineannotation/properties/underlinecolor)
+2. Added new property for changing Underline annotation line color [UnderlineColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/underlineannotation/properties/underlinecolor)
 
 3. Added ability to Rotate PDF document [see](https://docs.groupdocs.com/annotation/net/rotatitng-pdf-documents/)
