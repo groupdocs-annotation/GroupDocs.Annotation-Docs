@@ -33,19 +33,19 @@ toc: True
 
 ![](/annotation/net/images/add-point-annotation.png)
 
-There is an ability to specify the next properties for [PointAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) type:
+There is an ability to specify the next properties for [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) type:
 
-*   [Box](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/pointannotation/properties/box) – defines annotation position at document page;  
+*   [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/pointannotation/properties/box) – defines annotation position at document page;  
     
 
 Follow these steps to add Point annotation to document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [PointAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [PointAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) object;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream. 
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) object with desired properties (position, page number, etc);
+*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) object;
+*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream. 
 
-The following code demonstrates how to add [PointAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) to the document:
+The following code demonstrates how to add [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) to the document:
 
 ```csharp
 //Add point annotation to the document from local disk

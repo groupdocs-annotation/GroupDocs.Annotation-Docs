@@ -37,9 +37,9 @@ When working with a PDF document programmatically, in addition to interacting wi
 
 ### Example
 
-Since version 21.3 the structure [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) has been changed. You can now take an advantage of the new functionality by calling the [GetDocumentInfo()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/document/methods/getdocumentinfo) method of the [Document](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/document) class.
+Since version 21.3 the structure [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) has been changed. You can now take an advantage of the new functionality by calling the [GetDocumentInfo()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document/methods/getdocumentinfo) method of the [Document](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document) class.
 
-Each page, represented by [PageInfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure, now contains list of [TextLineinfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo). Every [TextLineinfo](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo) contains information about text top and left indents, width, height and text itself. In other words, we can say that each page is represented as a sequence of text lines and you can get this information programatically within seconds!
+Each page, represented by [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure, now contains list of [TextLineinfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo). Every [TextLineinfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo) contains information about text top and left indents, width, height and text itself. In other words, we can say that each page is represented as a sequence of text lines and you can get this information programatically within seconds!
 
 Code example below shows how you can get data from described structures:
 

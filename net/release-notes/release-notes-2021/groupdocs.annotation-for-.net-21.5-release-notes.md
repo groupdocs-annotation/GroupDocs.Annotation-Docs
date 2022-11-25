@@ -40,7 +40,7 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ### 1. Loading custom fonts for documents.
 
-Since 21.5 you are now able to generate preview for documents using custom fonts. In order to realize this opportunity [FontDirectories](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/fontdirectories) option has been added to [LoadOptions](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions) class.
+Since 21.5 you are now able to generate preview for documents using custom fonts. In order to realize this opportunity [FontDirectories](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/fontdirectories) option has been added to [LoadOptions](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions) class.
 
 You can now try this feature by using code sample given below:
 
@@ -59,7 +59,7 @@ using (Annotator annotator = new Annotator(fs, new LoadOptions { FontDirectories
 
 ### 2. Put image annotation top over or add ZIndex property.
 
-Since 21.5 you are now able to specify images placing order for file formats linked to Word. For this purpose a new [ZIndex](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/properties/zindex) property has been added to [ImageAnnotation](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation) class. You may now try in addition to other properties:
+Since 21.5 you are now able to specify images placing order for file formats linked to Word. For this purpose a new [ZIndex](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/properties/zindex) property has been added to [ImageAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation) class. You may now try in addition to other properties:
 
 ```csharp
 ImageAnnotation area = new ImageAnnotation
@@ -75,7 +75,7 @@ ImageAnnotation area = new ImageAnnotation
 
 ### 3. Configure resolution for generated preview images
 
-Since 21.5 you are now able to generate preview for documents with custom resolution. This value is measured on points per inch, default value is 96. In order to use this feature [Resolution](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/resolution) property has been added to [PreviewOptions](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions) class.
+Since 21.5 you are now able to generate preview for documents with custom resolution. This value is measured on points per inch, default value is 96. In order to use this feature [Resolution](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/resolution) property has been added to [PreviewOptions](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions) class.
 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))

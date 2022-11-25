@@ -34,9 +34,9 @@ This feature can be using when need to save only specific annotation types and i
 
 The following are the steps how to filter exported annotations to document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [SaveOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) object and set [AnnotationType](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions/properties/annotationtypes) desired annotation type(s), that will presented in resultant document;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) object;
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) object and set [AnnotationType](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions/properties/annotationtypes) desired annotation type(s), that will presented in resultant document;
+*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream and [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) object;
 
 Following code snippet shows how to save only pages with specific annotation type
 

@@ -32,21 +32,21 @@ toc: True
 
 ![](/annotation/java/images/add-replacement-annotation.png)
 
-There is an ability to specify the next fields for [ReplacementAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) type:
-*   [FontColor](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation#getFontColor()) - color of annotation text;
-*   [Opacity](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation#getOpacity()) - allows to set annotation opacity;
-*   [Points](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation#getPoints()) - annotation positions set by array of points.
-*   [TextToReplace](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation#getTextToReplace()) - text that will be replaced 
+There is an ability to specify the next fields for [ReplacementAnnotation](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) type:
+*   [FontColor](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation#getFontColor()) - color of annotation text;
+*   [Opacity](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation#getOpacity()) - allows to set annotation opacity;
+*   [Points](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation#getPoints()) - annotation positions set by array of points.
+*   [TextToReplace](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation#getTextToReplace()) - text that will be replaced 
     
 
 Follow these steps to add Replacement annotation to document:
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
-*   Instantiate [ReplacementAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) object with desired properties (position, page number, etc);
-*   Call [add](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method and pass [ReplacementAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) object;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
+*   Instantiate [ReplacementAnnotation](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) object with desired properties (position, page number, etc);
+*   Call [add](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method and pass [ReplacementAnnotation](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) object;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream;
     
 
-The following code demonstrates how to add [ReplacementAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) to the document:
+The following code demonstrates how to add [ReplacementAnnotation](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ReplacementAnnotation) to the document:
 
 {{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-text-replacement-annotation.java" >}}
 

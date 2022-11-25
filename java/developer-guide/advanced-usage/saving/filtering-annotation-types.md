@@ -22,9 +22,9 @@ This feature can be using when need to save only specific annotation types and i
 
 The following are the steps how to filter exported annotations to document: 
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
-*   Instantiate [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object and set [AnnotationType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/AnnotationType) desired annotation type(s), that will presented in resultant document;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
+*   Instantiate [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object and set [AnnotationType](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/AnnotationType) desired annotation type(s), that will presented in resultant document;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
     
 
 Following code snippet shows how to save only pages with specific annotation type

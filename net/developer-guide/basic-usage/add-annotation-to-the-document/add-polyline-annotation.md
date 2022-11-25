@@ -33,23 +33,23 @@ toc: True
 
 ![](/annotation/net/images/add-polyline-annotation.png)
 
-There is an ability to specify the next properties for [PolylineAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) type:
+There is an ability to specify the next properties for [PolylineAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) type:
 
-*   [Box](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/box) - defines annotation position at a document page;
-*   [Opacity](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) - allows to set annotation opacity;
-*   [PenColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/pencolor) - defines frame color;
-*   [PenStyle](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/penstyle) - defines frame line style (solid, dash, dot etc.);
-*   [PenWidth](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/penwidth) - defines frame line width in pixels.
-*   [SvgPath](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/polylineannotation/properties/svgpath) - SVG path that describes shape.
+*   [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/box) - defines annotation position at a document page;
+*   [Opacity](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) - allows to set annotation opacity;
+*   [PenColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/pencolor) - defines frame color;
+*   [PenStyle](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/penstyle) - defines frame line style (solid, dash, dot etc.);
+*   [PenWidth](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/penwidth) - defines frame line width in pixels.
+*   [SvgPath](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/polylineannotation/properties/svgpath) - SVG path that describes shape.
 
-Follow these steps to add [Polyline](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/polylineannotation) annotation to document:
+Follow these steps to add [Polyline](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/polylineannotation) annotation to document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [PolylineAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [PolylineAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) object;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [PolylineAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) object with desired properties (position, page number, etc);
+*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [PolylineAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) object;
+*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
 
-The following code demonstrates how to add [PolylineAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) to the document:
+The following code demonstrates how to add [PolylineAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) to the document:
 
 ```csharp
 //Add polyline annotation to the document from local disk

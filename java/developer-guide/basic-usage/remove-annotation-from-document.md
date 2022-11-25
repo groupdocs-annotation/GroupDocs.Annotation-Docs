@@ -13,9 +13,9 @@ toc: True
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** provides an ability to remove all previously added annotations from document and save cleaned document as it was before annotating.  
 There are the steps to remove annotations from document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
-*   Instantiate [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object and set *AnnotationTypes = AnnotationType.None*;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
+*   Instantiate [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object and set *AnnotationTypes = AnnotationType.None*;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream and [SaveOptions](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.options.export/SaveOptions) object;
     
 Following code demonstrates how to remove annotation from from document:
 

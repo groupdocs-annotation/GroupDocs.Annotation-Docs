@@ -32,7 +32,7 @@ There might be the case when source or target document is not physically located
 The following are the steps to be followed:
 
 *   Obtain document stream; 
-*   Pass opened source document stream to [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class constructor.
+*   Pass opened source document stream to [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class constructor.
 
 Following code snippet describes this case.
 

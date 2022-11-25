@@ -32,18 +32,18 @@ toc: True
 
 ![](/annotation/java/images/add-text-redaction-annotation.png)
 
-There is an ability to specify the next fields for [TextRedactionAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) type
-*   [Points](https://apireference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation#getPoints()) - annotation positions set by array of points.
+There is an ability to specify the next fields for [TextRedactionAnnotation](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) type
+*   [Points](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation#getPoints()) - annotation positions set by array of points.
     
 
 Follow these steps to add TextRedaction annotation to document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
-*   Instantiate [TextRedactionAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) object with desired properties (position, page number, etc);
-*   Call [add](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method and pass [TextRedactionAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) object;
-*   Call [save](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream.
+*   Instantiate [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) object with input document path or stream;
+*   Instantiate [TextRedactionAnnotation](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) object with desired properties (position, page number, etc);
+*   Call [add](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method and pass [TextRedactionAnnotation](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) object;
+*   Call [save](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator#save(java.io.InputStream)) method with resultant document path or stream.
     
-The following code demonstrates how to add [TextRedactionAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) to the document:
+The following code demonstrates how to add [TextRedactionAnnotation](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextRedactionAnnotation) to the document:
 
 {{< gist "groupdocs-annotation-gists" "6417f1b3b8fc9edeeb070f2cfad3edcc" "java-add-text-redaction-annotation.java" >}}
 

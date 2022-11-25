@@ -57,7 +57,7 @@ Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>
-	<li><a href="https://apireference.groupdocs.com/annotation/net">GroupDocs.Annotation for .NET API Reference</a></li>
+	<li><a href="https://reference.groupdocs.com/annotation/net">GroupDocs.Annotation for .NET API Reference</a></li>
 	<li><a href='{{< ref "annotation/net/release-notes" >}}'>GroupDocs.Annotation for .NET Release Notes</a></li>
 </ul>
 {{< /columns >}}

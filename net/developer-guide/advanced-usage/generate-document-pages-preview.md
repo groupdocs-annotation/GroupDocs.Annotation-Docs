@@ -30,33 +30,33 @@ structuredData:
 toc: True
 ---
 
-[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows to generate document page previews using [GeneratePreview](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method of a [Document](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) class.  
-[PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class is used to manage preview generation process - specify desired page numbers, image format etc.
+[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows to generate document page previews using [GeneratePreview](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method of a [Document](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) class.  
+[PreviewOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class is used to manage preview generation process - specify desired page numbers, image format etc.
 
 Here are the steps to generate document preview with GroupDocs.Annotation API:
-*   Create a new instance of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class and pass source document path as a constructor parameter.
-*   [Document](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) property of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object allows to access source document and provides [GeneratePreview](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method.
-*   Instantiate the [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) object with:
+*   Create a new instance of [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class and pass source document path as a constructor parameter.
+*   [Document](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) property of [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object allows to access source document and provides [GeneratePreview](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method.
+*   Instantiate the [PreviewOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) object with:
     *   delegate for each page stream creation (see event handler CreatePageStream); 
     *   image preview format - PNG / JPG / BMP,
     *   page numbers to process;
     *   custom size of preview images (if needed).  
-{{< alert style="info" >}} Stream that were created by [CreatePageStream](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/createpagestream) delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleasePageStream](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/releasepagestream) to clean up resources.
+{{< alert style="info" >}} Stream that were created by [CreatePageStream](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/createpagestream) delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleasePageStream](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/releasepagestream) to clean up resources.
 {{< /alert >}}       
-*   Call [GeneratePreview](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method of [Annotator.Document](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) object and pass [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) to it.
+*   Call [GeneratePreview](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method of [Annotator.Document](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) object and pass [PreviewOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) to it.
 
     
-Here a [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class main properties:
-*   **[CreatePageStream](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/createpagestream)** - Delegate which defines method to create output page preview stream;
-*   **[ReleasePageStream](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/releasepagestream)** - Delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling;
-*   **[Width](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/width)** - Preview image width. This property used when need customize output image width;
-*   **[Height](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/height)** - Preview image height. This property used when need customize output image height;
-*   **[PageNumbers](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/pagenumbers)** - Page numbers that will be previewed;
-*   **[PreviewFormat](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/previewformat)** - Gets or sets the preview image format which provides ability to choose between image quality and size. **BMP** format should be used for the best image quality. **JPG** format will be useful in case of strict requirements to image size - it produces smallest image size (and faster loading image previews), but with lower quality than **BMP**. By default **PNG** format is selected - which is a golden mean between image quality and size;
-*   **[RenderComments](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/rendercomments)** - Default value is *true*. If it is not needed to display replies and comments at the page preview - set *RenderComments* property to *false* (replies and comments would still be stored inside your document).  
+Here a [PreviewOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class main properties:
+*   **[CreatePageStream](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/createpagestream)** - Delegate which defines method to create output page preview stream;
+*   **[ReleasePageStream](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/releasepagestream)** - Delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling;
+*   **[Width](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/width)** - Preview image width. This property used when need customize output image width;
+*   **[Height](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/height)** - Preview image height. This property used when need customize output image height;
+*   **[PageNumbers](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/pagenumbers)** - Page numbers that will be previewed;
+*   **[PreviewFormat](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/previewformat)** - Gets or sets the preview image format which provides ability to choose between image quality and size. **BMP** format should be used for the best image quality. **JPG** format will be useful in case of strict requirements to image size - it produces smallest image size (and faster loading image previews), but with lower quality than **BMP**. By default **PNG** format is selected - which is a golden mean between image quality and size;
+*   **[RenderComments](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/rendercomments)** - Default value is *true*. If it is not needed to display replies and comments at the page preview - set *RenderComments* property to *false* (replies and comments would still be stored inside your document).  
     Please notice, that *RenderComments* value will impact any document comments (doesn't matter if they were added by GroupDocs.Annotation or some other application). This property affects only on WordProcessing documents;
-*   **[RenderAnnotations](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/renderannotations)** - Default value is *true*. If it is not needed to display annotations - set *RenderAnnotations* property to *false* (all annotations would still be stored inside your document).  
-*   **[WorksheetColumns](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns)** - List of objects [WorksheetColumnsRange](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/worksheetcolumnsrange) that indicates which columns to generate on specified worksheet.
+*   **[RenderAnnotations](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/renderannotations)** - Default value is *true*. If it is not needed to display annotations - set *RenderAnnotations* property to *false* (all annotations would still be stored inside your document).  
+*   **[WorksheetColumns](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns)** - List of objects [WorksheetColumnsRange](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/worksheetcolumnsrange) that indicates which columns to generate on specified worksheet.
 
 The following code snippet demonstrates how to generate document previews.
 
@@ -156,7 +156,7 @@ annotator.Document.GeneratePreview(previewOptions);
 Starting from 20.11 version it is possible to specify columns you want to generate on the sheet you selected.
 {{< alert style="info" >}}Supported only for CellsProcessign documents, other formats ignore this property{{< /alert >}}
 
-The following code snippet demonstrates how to use [WorksheetColumns](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property.
+The following code snippet demonstrates how to use [WorksheetColumns](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property.
 
 ```csharp
 PreviewOptions previewOptions =

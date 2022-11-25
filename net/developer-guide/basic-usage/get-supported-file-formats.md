@@ -25,8 +25,8 @@ toc: True
 ---
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** allows to get the list of all supported file formats by following the below steps:
 
-*   Call [GetSupportedFileTypes](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/filetype/methods/getsupportedfiletypes) of [FileType](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/filetype) class;
-*   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/filetype) objects.
+*   Call [GetSupportedFileTypes](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/filetype/methods/getsupportedfiletypes) of [FileType](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/filetype) class;
+*   Enumerate through the collection of [FileType](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/filetype) objects.
 
 The following code sample demonstrates how to get supported file formats list.
 

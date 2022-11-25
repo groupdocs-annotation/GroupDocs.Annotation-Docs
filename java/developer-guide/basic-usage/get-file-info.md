@@ -12,8 +12,8 @@ toc: True
 
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** allows to get document information which includes following methods.
 
-*   [getFileType](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/IDocumentInfo#getFileType())
-*   [getPageCount](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation/IDocumentInfo#getPageCount())
+*   [getFileType](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/IDocumentInfo#getFileType())
+*   [getPageCount](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/IDocumentInfo#getPageCount())
 *   [getSize](https://apireference-qa.groupdocs.com/java/annotation/com.groupdocs.annotation/IDocumentInfo#getSize())
 
 The following code sample demonstrates how to get information about document.

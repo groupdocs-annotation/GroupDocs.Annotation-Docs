@@ -32,10 +32,10 @@ toc: True
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability to extract annotations from document and serializing to XML format.  
 To achieve this you should:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [LoadOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/loadoptions) object and set `ImportAnnotation = true`;
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [LoadOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/loadoptions) object and set `ImportAnnotation = true`;
 *   Define variable with type List<AnnotationBase>;
-*   Call [Get](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/get) method and return result to variable above;
+*   Call [Get](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/get) method and return result to variable above;
 *   Instantiate XmlSerializer object with type List<AnnotationBase>;
 *   Using FileStreamobject, serialize annotations to the file as on example below;
 

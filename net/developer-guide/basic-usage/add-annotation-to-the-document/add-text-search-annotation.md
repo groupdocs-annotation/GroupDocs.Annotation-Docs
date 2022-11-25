@@ -34,22 +34,22 @@ toc: True
 ![](/annotation/net/images/add-text-search-annotation.png)
                           
 
-There is an ability to specify the next properties for [SearchTextAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) type:
+There is an ability to specify the next properties for [SearchTextAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) type:
 
-*   [BackgroundColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/backgroundcolor) - describes area background color;
-*   [Text](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/text) - the text you want to find
-*   [FontColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontcolor) - color of the text
-*   [FontFamily](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontfamily) - name of text font;
-*   [FontSize](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontsize) - size of text font;
+*   [BackgroundColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/backgroundcolor) - describes area background color;
+*   [Text](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/text) - the text you want to find
+*   [FontColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontcolor) - color of the text
+*   [FontFamily](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontfamily) - name of text font;
+*   [FontSize](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontsize) - size of text font;
 
-Follow these steps to add [SearchText](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) annotation to document: 
+Follow these steps to add [SearchText](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) annotation to document: 
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [SearchText](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [SearchTextAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) object;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [SearchText](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) object with desired properties (position, page number, etc);
+*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [SearchTextAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) object;
+*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
 
-The following code demonstrates how to add [SearchTextAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) to the document:
+The following code demonstrates how to add [SearchTextAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) to the document:
 
 ```csharp
 //Add search text annotation to the document from local disk

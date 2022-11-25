@@ -46,10 +46,10 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
     Added new method that allows to get image (.NET class *System.Drawing.Image*) from annotated Document 
     
     Follow these steps to Extract Image:
-    *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-    *   Call [Get](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/get) method and get annotations list
-    *   Call GetImage method from some of [ImageAnnotations](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) from annotations list
-    *   [Save](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.save?view=netframework-4.8#System_Drawing_Image_Save_System_String_) image if it needed using Save Method. You can also use Property ImageExtension of [ImageAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) to set correct image extension
+    *   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+    *   Call [Get](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/get) method and get annotations list
+    *   Call GetImage method from some of [ImageAnnotations](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) from annotations list
+    *   [Save](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.image.save?view=netframework-4.8#System_Drawing_Image_Save_System_String_) image if it needed using Save Method. You can also use Property ImageExtension of [ImageAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) to set correct image extension
     
     The following code demonstrates how to get image from Image Annotation:
     
@@ -78,9 +78,9 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
     New overloads method allow to remove single Annotation or list of Annotations.
     Follow these steps to add annotation to document:
     
-    *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-    *   Call [Remove](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/remove) method and give them id, list of id’s, annotation to delete, or list of annotations 
-    *   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.annotator/save/methods/2) method to save changes
+    *   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+    *   Call [Remove](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/remove) method and give them id, list of id’s, annotation to delete, or list of annotations 
+    *   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.annotator/save/methods/2) method to save changes
        
     1) Following code demonstrates overload how to remove Annotation from Document using annotation index:
     ```csharp

@@ -31,7 +31,7 @@ Full List of Issues Covering all Changes in this Release 
 
 ## Public API and Backward Incompatible Changes
 
-New [WorksheetColumns](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property in [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class that allows to specify the range of generated columns on a specified worksheet.
+New [WorksheetColumns](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property in [PreviewOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class that allows to specify the range of generated columns on a specified worksheet.
 
 Example how to use it:
 ```csharp

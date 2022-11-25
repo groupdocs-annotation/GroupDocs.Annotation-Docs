@@ -33,19 +33,19 @@ toc: True
 
 ![](/annotation/net/images/add-text-redaction-annotation.png)
 
-There is an ability to specify the next properties for [TextRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) type
+There is an ability to specify the next properties for [TextRedactionAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) type
 
-*   [Points](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/textredactionannotation/properties/points) - annotation positions set by array of points.  
+*   [Points](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/textredactionannotation/properties/points) - annotation positions set by array of points.  
     
 
 Follow these steps to add text redaction annotation to document:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [TextRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [TextRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) object;
-*   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.  
+*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
+*   Instantiate [TextRedactionAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) object with desired properties (position, page number, etc);
+*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [TextRedactionAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) object;
+*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.  
 
-The following code demonstrates how to add [TextRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) to the document:
+The following code demonstrates how to add [TextRedactionAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation) to the document:
 
 ```csharp
 //Add text redaction annotation to the document from local disk
