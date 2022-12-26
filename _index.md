@@ -9,7 +9,7 @@ geekdocAnchor: false
 hideChildren: true
 ---
 
-## GroupDocs Developers Cookbook
+GroupDocs.Annotation is a cross-platform library that allows you to add, edit, and remove annotations to text or images using C# and Java.
 
 <br/>
 
