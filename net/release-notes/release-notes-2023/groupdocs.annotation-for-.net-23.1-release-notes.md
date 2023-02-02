@@ -9,25 +9,24 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 toc: True
 ---
-
-{{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for .NET 23.1{{< /alert >}}
-
-
-## Full list of changes in this Release
+## Full list of changes in this release
 
 | Key | Summary | Category |
 | --- | --- | --- |
-| ANNOTATIONNET-2147 | Added an ability to set a FontSize property for ReplacementAnnotation | Feature |
-| ANNOTATIONNET-2156 | Fixed the broken link at the end of [SquigglyAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/squigglyannotation/) page  | Bug |
+| ANNOTATIONNET-2147 | [Added an ability to set a FontSize property for ReplacementAnnotation](#added-ability-to-set-fontsize-property-for-replacementannotation) | Feature |
+| ANNOTATIONNET-2156 | Fixed the broken link at the end of [SquigglyAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/squigglyannotation/) page  | Fix |
 
 
 ## Major Features
 
+### Added ability to set FontSize property for ReplacementAnnotation
 In this release we've implenented [IFontSize](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels.interfaces.properties/ifontsize/) interface for [IReplacementAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels.interfaces.annotations/ireplacementannotation/). From user perspective, it means that from now there is an ability to set a font size for replacement annotation.
 
 With the replacement annotation you are allowed to replace text on the document to any other text you want. With the v23.1 you are also allowed to specify the FontSize of the new text. Here is a small code snippet that demonstrate how you can achieve this:
 
-```csharp
+{{< tabs "example">}}
+{{< tab "C#" >}}
+```cs
 using (Annotator annotator = new Annotator("input.pdf"))
 {
     ReplacementAnnotation replacement = new ReplacementAnnotation
@@ -39,8 +38,8 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Save("result.pdf");
 }
 ```
-
-
+{{< /tab >}}
+{{< /tabs >}}
 
 The following image demonstrates the result:
 
