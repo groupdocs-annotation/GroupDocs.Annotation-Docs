@@ -10,17 +10,28 @@ hideChildren: False
 toc: True
 ---
 
-{{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for Java 23.2{{< /alert >}}
+There are 1 feature in this release.
+
+## Full list of changes in this release
+
+| Key | Category | Summary |
+| --- | --- | --- |
+| ANNOTATIONJAVA-1356 | Feature | [Add support for adjusting image quality](#support-for-adjusting-image-quality) |
 
 ## Major Features
 
 Below is the list of most notable changes in release of GroupDocs.Annotation for Java 23.2:
 * Set resolution (image quality) of document preview.
 
-Below the list of fixed bugs in this release of GroupDocs.Annotation for Java.
+### Support for adjusting image quality
+Now you can change image quality.
+For example:
 
-## Full List of Issues Covering all Changes in this Release
-
-| Key | Summary | Issue Type |
-| --- | --- | --- |
-| ANNOTATIONJAVA-1356 | Improve image quality | Fix |
+```java
+PreviewOptions previewOptions = ...
+previewOptions.setPreviewFormat(PreviewFormats.PNG);
+try (final Annotator annotator = new Annotator(...)) {
+    previewOptions.setResolution(80);
+    annotator.getDocument().generatePreview(previewOptions);
+}
+```
