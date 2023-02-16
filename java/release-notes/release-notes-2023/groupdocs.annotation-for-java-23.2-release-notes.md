@@ -10,7 +10,7 @@ hideChildren: False
 toc: True
 ---
 
-There are 1 feature in this release.
+There is 1 feature in this release.
 
 ## Full list of changes in this release
 
