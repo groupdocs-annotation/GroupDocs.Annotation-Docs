@@ -1,7 +1,7 @@
 ---
-id: groupdocs-annotation-for-java-23-2-release-notes
-url: annotation/java/groupdocs-annotation-for-java-23-2-release-notes
-title: GroupDocs.Annotation for Java 23.2 Release Notes
+id: groupdocs-annotation-for-java-latest-release-notes
+url: annotation/java/release-notes/latest
+title: Latest release (Febrary 2023)
 weight: 1
 description: ""
 keywords: 
