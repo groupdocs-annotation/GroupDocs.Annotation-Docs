@@ -30,15 +30,15 @@ For example:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-	import com.groupdocs.annotation.Annotator;
-	import com.groupdocs.annotation.options.pagepreview.PreviewOptions;
+import com.groupdocs.annotation.Annotator;
+import com.groupdocs.annotation.options.pagepreview.PreviewOptions;
 
-	PreviewOptions previewOptions = ...
-	previewOptions.setPreviewFormat(PreviewFormats.PNG);
-	try (final Annotator annotator = new Annotator(...)) {
-		previewOptions.setResolution(80);
-		annotator.getDocument().generatePreview(previewOptions);
-	}
+PreviewOptions previewOptions = ...
+previewOptions.setPreviewFormat(PreviewFormats.PNG);
+try (final Annotator annotator = new Annotator(...)) {
+	previewOptions.setResolution(80);
+	annotator.getDocument().generatePreview(previewOptions);
+}
 ```
 {{< /tab >}}
 {{< /tabs >}}
