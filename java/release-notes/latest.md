@@ -17,7 +17,7 @@ There is 1 feature and 1 bug fixed in this release.
 | Key | Category | Summary |
 | --- | --- | --- |
 | ANNOTATIONJAVA-1356 | Feature | [Add support for adjusting image quality](#support-for-adjusting-image-quality) |
-| ANNOTATIONJAVA-1345 | Bug | The web application gets slow after some annotation |
+| ANNOTATIONJAVA-1345 | Fix | The web application gets slow after some annotation |
 
 ## Major Features
 
