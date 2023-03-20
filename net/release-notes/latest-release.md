@@ -1,14 +1,15 @@
 ---
-id: groupdocs-annotation-for-net-23-1-release-notes
-url: annotation/net/groupdocs-annotation-for-net-23-1-release-notes
-title: GroupDocs.Annotation for .NET 23.1 Release Notes
-weight: 12
-description: ""
-keywords: release notes, groupdocs.annotation, .net, 23.1 
+id: latest-release
+url: annotation/net/latest-release
+title: Latest Release (January 2023)
+weight: 1
+description: The latest release notes for the most up to date GroupDocs.Annotation version
+keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 toc: True
 ---
+
 ## Full list of changes in this release
 
 | Key | Category | Summary |
