@@ -61,6 +61,6 @@ Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX
 <p>USEFUL RESOURCES</p>
 <ul>
 	<li><a href="https://reference.groupdocs.com/annotation/java">GroupDocs.Annotation for Java API Reference</a></li>
-	<li><a href='{{< ref "annotation/java/release-notes" >}}'>GroupDocs.Annotation for Java Release Notes</a></li>
+	<li><a href='https://releases.groupdocs.com/annotation/java/release-notes/'>GroupDocs.Annotation for Java Release Notes</a></li>
 </ul>
 {{< /columns >}}
