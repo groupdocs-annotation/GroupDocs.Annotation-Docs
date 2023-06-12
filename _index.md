@@ -37,8 +37,8 @@ GroupDocs.Annotation is a cross-platform library that allows you to add, edit, a
                 <h4>{{< icon-large "book" >}} Developer Guide</h4>
                 <p>Articles and guidelines for basic and advanced development</p>
                 <ul style="text-align: left;list-style:none">
-                    <li>{{< icon "file-alt" >}} <a href='{{< ref "/annotation/net/developer-guide/basic-usage" >}}'>Basic Usage</a></li>
-                    <li>{{< icon "file-alt" >}} <a href='{{< ref "/annotation/net/developer-guide/advanced-usage" >}}'>Advanced Usage</a></li>
+                    <li>{{< icon "file-alt" >}} <a href='{{< ref "/annotation/net/annotation-basics" >}}'>Annotation basics</a></li>
+                    <li>{{< icon "file-alt" >}} <a href='{{< ref "/annotation/net/advanced-usage" >}}'>Advanced Usage</a></li>
                 </ul>
             </div>
         </div>
@@ -66,8 +66,8 @@ GroupDocs.Annotation is a cross-platform library that allows you to add, edit, a
                 <h4>{{< icon-large "book" >}} Developer Guide</h4>
                 <p>Articles and guidelines for basic and advanced development</p>
                 <ul style="text-align: left;list-style:none">
-                    <li>{{< icon "file-alt" >}} <a href='{{< ref "/annotation/net/developer-guide/basic-usage" >}}'>Basic Usage</a></li>
-                    <li>{{< icon "file-alt" >}} <a href='{{< ref "/annotation/net/developer-guide/advanced-usage" >}}'>Advanced Usage</a></li>
+                    <li>{{< icon "file-alt" >}} <a href='{{< ref "/annotation/net/annotation-basics" >}}'>Annotation basics</a></li>
+                    <li>{{< icon "file-alt" >}} <a href='{{< ref "/annotation/net/advanced-usage" >}}'>Advanced Usage</a></li>
                 </ul>
             </div>
         </div>
