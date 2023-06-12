@@ -9,9 +9,12 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 toc: True
 ---
-## Overview
 
-GroupDocs.Annotation for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Development Environment, Installation and Configuration]({{< ref "annotation/net/getting-started/installation.md" >}}).
+{{< alert style="info" >}}
+
+GroupDocs.Annotation for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation]({{< ref "annotation/net/getting-started/installation.md" >}}).
+
+{{< /alert >}}
 
 ## Supported Operating Systems
 
@@ -19,18 +22,13 @@ GroupDocs.Annotation for .NET supports any 32-bit or 64-bit operating system w
 
 ### Windows
 
-*   Microsoft Windows 2003 Server ( x64, x86)
-*   Microsoft Windows 2008 Server ( x64, x86)
-*   Microsoft Windows 2012 Server ( x64, x86)
-*   Microsoft Windows 2012 R2 Server ( x64, x86)
-*   Microsoft Windows 2016 Server ( x64, x86)
-*   Microsoft Windows 2019 Server ( x64, x86)
-*   Microsoft Windows Vista ( x64, x86)
-*   Microsoft Windows XP ( x64, x86)
-*   Microsoft Windows 7 ( x64, x86)
-*   Microsoft Windows 8, 8.1 ( x64, x86)
-*   Microsoft Windows 10 ( x64, x86)
-*   Microsoft Azure
+* Microsoft Windows Server 2003 and later
+* Microsoft Windows XP (x64, x86)
+* Microsoft Windows Vista (x64, x86)
+* Microsoft Windows 7, 8, 8.1 (x64, x86)
+* Microsoft Windows 10 (x64, x86)
+* Microsoft Windows 11 (x64)
+* Microsoft Azure
 
 ### Linux
 
@@ -77,14 +75,12 @@ Any type of .NET Standard 2.0 application is supported (since Q4 2019).
 
 GroupDocs.Annotation for .NET can be used to develop applications in any development environment that targets the .NET platform, but the following environments are explicitly supported:
 
-*   Microsoft Visual Studio 2010
-*   Microsoft Visual Studio 2011
-*   Microsoft Visual Studio 2012
-*   Microsoft Visual Studio 2013
-*   Microsoft Visual Studio 2015
-*   Microsoft Visual Studio 2017
-*   Microsoft Visual Studio 2019
-*   Xamarin.Android
-*   Xamarin.IOS
-*   Xamarin.Mac
-*   MonoDevelop 2.4 and later
+## Development Environments
+
+GroupDocs.Viewer for .NET can be used to develop applications in any development environment that targets .NET, but the following environments are explicitly supported:
+
+* Microsoft Visual Studio 2011 and later
+* Xamarin.Android
+* Xamarin.IOS
+* Xamarin.Mac
+* MonoDevelop 2.4 and later

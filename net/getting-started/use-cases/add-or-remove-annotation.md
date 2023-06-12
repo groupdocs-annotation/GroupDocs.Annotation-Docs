@@ -1,9 +1,9 @@
 ---
 id: how-to-add-or-remove-annotation-from-pdf-files
 url: annotation/net/how-to-add-or-remove-annotation-from-pdf-files
-title: How to Add or Remove Annotations from PDF files using .NET
+title: How to Add or Remove Annotations in PDF files using .NET
 weight: 1
-description: "Programmatically add and remove annotations from PDF files. Add arrow, rectangle annotations and more using .NET API."
+description: "Add and remove annotations from PDF files. Add arrow, rectangle annotations and more using .NET API."
 keywords: highlight PDF, add annotations in PDF, Annotate PDF, Remove annotations from PDF, 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -30,53 +30,25 @@ structuredData:
 toc: True
 ---
 
-There was a time when we used to discuss document content and feedback in long email threads with multiple attachments and different file versions. Now we can simply use annotations to markup the document with messages and replies and send it. In this article, you will learn how to programmatically annotate PDF documents in .NET with your application. Additionally, we will see how to remove annotations from PDF files using the same .NET API.
+This article describes how to annotate PDF documents and remove annotations within your .NET application.
 
-### PDF Annotator .NET API
+### Add Arrow Annotation to a PDF File
 
-To deal with annotations of your document and images within your .NET applications, GroupDocs provides [GroupDocs.Annotation for .NET](https://products.groupdocs.com/annotation/net). Using the API, you can add, remove, and extract annotations from **word-processing** documents, **spreadsheets**, **presentations**, **images**, **email messages**, Visio **drawings**, some **AutoCAD**, and **digital imaging formats** like **DICOM**. Furthermore, the API allows annotating PDF files. You may have a look at the documentation to know about the long list of [supported document formats for annotation](https://docs.groupdocs.com/annotation/net/supported-document-formats/).
-
-### Download and Configure
-
-[Get the annotation library](https://downloads.groupdocs.com/annotation/net) using NuGet Package Manager in your .NET applications to try the examples of this article. To always stay up to date, make sure you are using latest version of the product. You can find many more example available on [GitHub](https://github.com/groupdocs-annotation). For the details, you may visit the [API Reference](https://reference.groupdocs.com/annotation/net).
-
-![Nuget Package Manager](/annotation/net/images/annotation-nuget.jpg)
-
-Let’s quickly jump to add some of the different kinds of annotations to the PDF document. As there are many different types of annotation, we may not cover all in this article. I will just mention them, and you may [learn about each annotation individually](https://docs.groupdocs.com/annotation/net/add-annotation-to-the-document/).
-
-*   Area / Rectangle annotation
-*   Arrow
-*   Distance
-*   Ellipse
-*   Highlight
-*   Link
-*   Point
-*   Polyline
-*   Replacement
-*   Resource Redaction
-*   Strikeout
-*   Text Field
-*   Text Redaction
-*   Underline
-*   Watermark
-    
-Let’s start adding some of these in a PDF document.
-
-### Add Arrow Annotation to PDF using .NET
-
-The following are the steps to add arrow annotation to a PDF document.
+To add arrow annotation to a PDF document, follow these steps:
 
 ![Arrow Annotation](/annotation/net/images/add-arrow-annotation.png)
 
-*   Load the PDF document using the [Annotator](https://reference.groupdocs.com/annotation/net/com.groupdocs.annotation/Annotator) class.
-*   Initialize arrow annotation using [ArrowAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/arrowannotation) class.
-*   Set the position and size of the arrow using [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/arrowannotation/properties/box) property of ArrowAnnotation.
-*   Add the created arrow annotation to the Annotator object.
-*   Save the annotated PDF by providing the path using the [Save](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save) method.
+1.   Load the PDF file using the [Annotator](https://reference.groupdocs.com/annotation/net/com.groupdocs.annotation/Annotator) class.
+2.   Initialize arrow annotation using the [ArrowAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/arrowannotation) class.
+3.   Set the position and size of the arrow using the [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/arrowannotation/properties/box) property of the [ArrowAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/arrowannotation) class.
+4.   Add the created arrow annotation to the Annotator object.
+5.   Save the annotated PDF using the [Save](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save) method.
 
 
-The following code sample shows how to add arrow annotation to a PDF document using .NET.
+The following code snippet shows how to add arrow annotation to a PDF file:
 
+{{< tabs "example1">}}
+{{< tab "C#" >}} 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -108,22 +80,26 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Save("result.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}   
 
-### Insert Rectangle or Area Annotation to PDF using .NET
+### Add a Rectangle or Area Annotation to PDF file
 
-You can customize any annotation while adding it to the document. The following are the steps to add rectangle or area annotation to a PDF document with little more customizations. It is similar to adding Arrow annotation but uses **AreaAnnotation** class in place of **ArrowAnnotation**.
+To add a rectangle or area annotation to a PDF file, use the `AreaAnnotation` class instead of the `ArrowAnnotation`. Follow these steps:
 
-*   Load the PDF document using the [Annotator](https://reference.groupdocs.com/annotation/net/com.groupdocs.annotation/Annotator) class.
-*   Initialize rectangle annotation using [AreaAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation) class.
-*   Set the position and size of the rectangle using [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/box) property of AreaAnnotation.
-*   Set other properties like **PenColor**, **BackgroundColor**, **Opacity**, **PenStyle**, **PenWidth**, and even **Replies**.
-*   Add the created rectangle annotation to the Annotator object.
-*   Save the annotated PDF by providing the path using the [Save](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save) method.
+1.   Load a PDF document using the [Annotator](https://reference.groupdocs.com/annotation/net/com.groupdocs.annotation/Annotator) class.
+2.   Initialize a rectangle annotation using the [AreaAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation) class.
+3.   Set the size and position of the rectangle using the [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/box) property of the [AreaAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation).
+4.   If needed, specify the other properties such as **PenColor**, **BackgroundColor**, **Opacity**, **PenStyle**, **PenWidth**, and **Replies**.
+5.   Add the created rectangle annotation to the `Annotator` object.
+6.   Save the annotated PDF using the [Save](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save) method.
 
 ![Rectangle or Area Annotation](/annotation/net/images/add-area-annotation.png)
 
-The following code sample shows how to add rectangle/area annotation to a PDF document using .NET.
+The following code snippet shows how to add rectangle/area annotation to a PDF file:
 
+{{< tabs "example2">}}
+{{< tab "C#" >}} 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -156,21 +132,24 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Save("result.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}  
 
-We have only shown you 2 examples because all the other types of annotation work in a similar way. You can try and add all the other annotations yourself or by following our [detailed guides](https://docs.groupdocs.com/annotation/net/add-annotation-to-the-document/) related to every annotation we support.
+You can add annotations of other types in a similar way. You can try and add all the other annotations as described in [detailed guides](https://docs.groupdocs.com/annotation/net/add-annotation-to-the-document/) related to every annotation we support.
 
 ### Remove Annotations from PDF in .NET
 
-The following steps show how to remove all the annotations from PDF files in .NET.
+To remove all the annotations from PDF files, follow these steps
 
-*   Load the PDF document using the [Annotator](https://reference.groupdocs.com/annotation/net/com.groupdocs.annotation/Annotator) class.
-*   Initialize saving Options using [SaveOptions](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions) class.
-*   Set the annotation types to None.
-*   Save the PDF file having all the annotations removed, by providing the path using the [save](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save) method.
+1.   Load the PDF document using the [Annotator](https://reference.groupdocs.com/annotation/net/com.groupdocs.annotation/Annotator) class.
+2.   Initialize saving options using the [SaveOptions](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions) class.
+3.   Set the annotation types to `None`.
+4.   Save the PDF file using the [Save](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save) method.
 
 The following .NET code removes annotations from a PDF file.
 
-
+{{< tabs "example3">}}
+{{< tab "C#" >}} 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -179,9 +158,6 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Save("result.pdf", options);
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-### Conclusion 
-
-In short, you have learned how to add annotations to PDF within .NET applications. Further, you have seen how to remove all the annotations from any PDF file. Now, you should be confident to build your own document annotator .NET application. It can support different types of annotations using GroupDocs.Annotation for .NET.
-
-For more details, options, and examples, you can visit the [documentation](https://docs.groupdocs.com/annotation/net/) and the [GitHub](https://github.com/groupdocs-annotation) repository. For further queries, contact the support on the [forum](https://forum.groupdocs.com/).

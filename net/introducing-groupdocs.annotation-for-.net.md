@@ -1,6 +1,6 @@
 ---
-id: introducing-groupdocs-annotation-for-net
-url: annotation/net/introducing-groupdocs-annotation-for-net
+id: product-overview
+url: annotation/net/product-overview
 title: Product Overview
 weight: 1
 description: Apply annotations to your documents in the form of textual comments, explanations with highlighted notes, watermarks, polylines, text/resource redactions and much more.
@@ -9,19 +9,15 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 toc: True
 ---
-## What Is GroupDocs.Annotation?
+GroupDocs.Annotation is a powerful cross-platform library that allows you to implement in your applications the ability to annotate text or images in files of [various formats]({{< ref "annotation/net/getting-started/supported-document-formats.md" >}}).
+Annotations may be comments, explanations with highlighted notes, watermarks, polylines, text or resource redactions, and so on.
 
-GroupDocs.Annotation is a lightweight and powerful library which allows developers to seamlessly enhance their applications with the capability to annotate documents from wide range of [supported formats]({{< ref "annotation/net/getting-started/supported-document-formats.md" >}}).
-Annotations can be applied in form of textual comments, explanations with highlighted notes, watermarks, polylines, text/resource redactions and much more.   
-Along with ability to annotate documents multiple users can collaborate via annotation comments. Annotate PDF, DOCX/DOC, PPTX/PPT, XLSX/XLS, JPG, PNG, TIFF, VSDX/VSD, ODT, ODS, ODP, EML, HTML and many others formats, comment and review documents with GroupDocs.Annotation for .NET API.
+With a powerful and simple API, you can do the following.
 
-## Why Use GroupDocs.Annotation?
-
-*   No additional software is required to annotate documents of any supported format;
-*   Wide range of supported annotation types - textual, graphics, watermarks, redactions etc.;
-*   Great variety of customizable properties for every annotation type - color, font weight and style, opacity etc.;
-*   Ability to collaborate via annotation comments/replies;
-*   Document information extraction - file type, page count etc.;
-*   Generate document preview for precise placing annotations inside the document;
-*   Ability to export/import added annotations to/from documents;
-*   User-friendly public API and easy start.
+* Annotate documents of any supported format;
+* Use annotations of different types - text, graphics, watermarks, revisions, etc.;
+* Customize annotations of each type, specifying the color, weight, and style of the font, opacity, etc.;
+* Provide the user with the opportunity to collaborate through annotations, comments, and responses;
+* Get file information such as file type, number of pages, etc.;
+* Generate preview file for precise placement of annotations;
+* Export or import annotations to a file.

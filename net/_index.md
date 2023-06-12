@@ -11,11 +11,11 @@ fullWidth: True
 ---
 <img src="/annotation/net/images/home.png" alt="groupdocs annotation .net logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
-GroupDocs.Annotation for .NET API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document. 
+GroupDocs.Annotation for .NET is a powerful cross-platform library that allows you to implement the ability to annotate text or images in a document in your applications.
 
-Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more. 
+GroupDocs.Annotation supports [over 35 file types]({{< ref "annotation/net/getting-started/supported-document-formats.md" >}}). These include PDF documents, Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Visio, as well as HTML pages, email messages, and even image files.
 
-Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX documents.
+GroupDocs.Annotation allows you to add, edit, and delete comments, explanations with highlighted notes, watermarks, polylines, and more.
 
 ------
 {{< columns >}}
@@ -26,7 +26,7 @@ Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX
 	<li><a href='{{< ref "annotation/net/getting-started/supported-document-formats" >}}'>Supported Document Formats</a></li>
 	<li><a href='{{< ref "annotation/net/getting-started/system-requirements" >}}'>System Requirements</a></li>
 	<li><a href='{{< ref "annotation/net/getting-started/installation" >}}'>Installation</a></li>
-	<li><a href='{{< ref "annotation/net/getting-started/evaluation-limitations-and-licensing-of-groupdocs.annotation.md" >}}'>Licensing and Subscription</a></li>
+	<li><a href='{{< ref "annotation/net/getting-started/licensing-and-subscription.md" >}}'>Licensing and Subscription</a></li>
 </ul>
 <p>TECHNICAL SUPPORT</p>
 <ul>
@@ -49,11 +49,11 @@ Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX
 <p><b>Develop Functions</b></p>
 <hr><p>GUIDE</p></hr>
 <ul>
-	<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/get-file-info" >}}'>Retrieve File Info</a></li>
-	<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/extract-annotations-from-document" >}}'>Read Annotations</a></li>
-	<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/remove-annotation-from-document" >}}'>Remove Annotations</a></li>
-	<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/add-annotation-to-the-document/_index.md" >}}'>Add Annotations</a></li>				
-    <li><a href='{{< ref "annotation/net/developer-guide/basic-usage/working-with-annotation-replies/_index.md" >}}'>Working with Replies</a></li>
+	<li><a href='{{< ref "annotation/net/annotation-basics/get-file-info" >}}'>Retrieve File Info</a></li>
+	<li><a href='{{< ref "annotation/net/annotation-basics/extract-annotations-from-document" >}}'>Read Annotations</a></li>
+	<li><a href='{{< ref "annotation/net/annotation-basics/remove-annotation-from-document" >}}'>Remove Annotations</a></li>
+	<li><a href='{{< ref "annotation/net/annotation-basics/add-annotation-to-the-document/_index.md" >}}'>Add Annotations</a></li>				
+    <li><a href='{{< ref "annotation/net/annotation-basics/working-with-annotation-replies/_index.md" >}}'>Working with Replies</a></li>
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>

@@ -3,7 +3,7 @@ id: how-to-add-text-annotations-to-pdf-file
 url: annotation/net/how-to-add-text-annotations-to-pdf-file
 title: How to Add Text Annotations to PDF files using .NET
 weight: 2
-description: "Programmatically add text annotations to PDF files. Add text field and strikeout annotations using .NET API."
+description: "How to add the text annotations to PDF files. Add text field and strikeout annotations using .NET API."
 keywords: highlight PDF, add annotations in PDF, annotate PDF, strikeout text for PDF
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -33,7 +33,7 @@ toc: True
 
 ## Text annotations
 
-PDF is a good way to share documents with people. It guarantees you that your document looks on any computer exactly the same as it is on yours. But working with documents may sometimes require an ability to manipulate with a text. To do it programmatically you can use our Annotation API for .NET. We support a various text annotations, such as: 
+GroupDocs.Annotation allows you to add different text annotations to a PDF document, such as: 
 
 * [Highlight annotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation)
 * [Link annotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/linkannotation)
@@ -44,33 +44,35 @@ PDF is a good way to share documents with people. It guarantees you that your do
 * [Squiggly annotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/squigglyannotation)
 * [Underline annotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/underlineannotation)
 
-In this article we will cover just a few of them - highlight and strikeout annotations. All others works in exactly the same way.
+This article describes how to add the highlight and strikeout annotations to a PDF document. You can add other annotations in the same way.
 
-### Highlight annotation 
+### Highlight Annotation 
 
-**Highlight** annotation highlights and comments selected text. This is a good way to "highlight" an import text, to bring it to the user's attention. Highlighting is used everywhere, so this is unquestionably text annotation number one.
+The highlight annotation highlights and comments selected text:
 
 ![](/annotation/net/images/add-highlight-annotation.png)
 
-You have ability to specify the next properties for [HighlightAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) type:
+You can specify the following properties of the [HighlightAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) type:
 
-*   [BackgroundColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/backgroundcolor) - describes annotation background color;
-*   [FontColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/linkannotation/properties/fontcolor) - color of annotation text;
-*   [Opacity](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) - allows to set annotation opacity;
-*   [Points](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/linkannotation/properties/points) - annotation positions set by array of points.
+*   [BackgroundColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/backgroundcolor) specifies the annotation background color;
+*   [FontColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/linkannotation/properties/fontcolor) specifies the color of annotation text;
+*   [Opacity](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) allows you to set annotation opacity;
+*   [Points](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/linkannotation/properties/points) specifies the annotation positions as array of points.
 
-Follow these steps to add Highlight annotation to document:
+To add a highlight annotation to document, follow these steps:
 
-*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [HighlightAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [HighlightAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) object;
-*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.  
+1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class with input document path or stream;
+2.   Instantiate the [HighlightAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) class with appropriate properties (position, page number, etc);
+3.   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and specify the [HighlightAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) object;
+4.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method.  
       
 
-The following code demonstrates how to add [HighlightAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) to the document:
+The following code snippet shows how to add a highlight annotation to a document:
 
+{{< tabs "example1">}}
+{{< tab "C#" >}} 
 ```csharp
-//Add highlight annotation to the document from local disk
+// Add highlight annotation to the document from local disk
 using (Annotator annotator = new Annotator("input.pdf"))
 {
 	HighlightAnnotation highlight = new HighlightAnnotation
@@ -102,34 +104,37 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Add(highlight);
     annotator.Save("result.pdf");
 } 
-
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-### Strikeout annotation
+### Strikeout Annotation
 
-**Strikeout** annotation marks text fragment with a strikethrough styling. When you receive a document for review and find errors or inconsistencies in it, it is very important to be able to draw the author's attention to them. We recommend to you strikeout annotation for these purposes. Whenever the highlight annotation draws attention to the correct and important parts of the document, the strikeout annotation is usually used to cross out the wrong and unimportant parts of the document. You can check an example below. 
+Strikeout annotation marks text fragment with a strike-through styling:
 
 ![](/annotation/net/images/add-strikeout-annotation.png)
 
-There is an ability to specify the next properties for [StrikeoutAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) type:
+The GroupDocs.Annotation allows you to specify the following properties of the [StrikeoutAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) type:
 
-*   [FontColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/strikeoutannotation/properties/fontcolor) – color of annotation text;
-*   [Opacity](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) – allows to set annotation opacity;
-*   [Points](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/strikeoutannotation/properties/points) – annotation positions set by array of points.  
+1.   [FontColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/strikeoutannotation/properties/fontcolor) specifies the color of annotation text;
+2.   [Opacity](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/areaannotation/properties/opacity) allows you to set annotation opacity;
+3.   [Points](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/strikeoutannotation/properties/points) specifies the annotation positions as array of points.  
       
 
 
-Follow these steps to add Strikeout annotation to document:
+To add a strikeout annotation, follow these steps:
 
-*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [StrikeoutAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) object with desired properties (position, page number, etc);
-*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [StrikeoutAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) object;
-*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
+1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class with input document path or stream;
+2.   Instantiate the [StrikeoutAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) class with appropriate properties (position, page number, etc);
+3.   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and specify the [StrikeoutAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) object;
+4.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method.
  
 
 
-The following code demonstrates how to add [StrikeoutAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) to the document:
+The following code snippet shows how to add a strikeout annotation to the document:
 
+{{< tabs "example2">}}
+{{< tab "C#" >}} 
 ```csharp
 //Add strikeout annotation to the document from local disk
 using (Annotator annotator = new Annotator("input.pdf"))
@@ -164,16 +169,5 @@ using (Annotator annotator = new Annotator("input.pdf"))
      annotator.Save("result.pdf");
 }
 ```
-
-## Conclusion
-
-In short, we have learned how to add text annotations to a PDF file within .NET applications. We have introduced all the text annotations that our API supports and illustrated how and when to use them with an example. Now, you should be confident to build your own document annotator .NET application. 
-
-## More resources
-### Advanced Usage Topics
-To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation/net/developer-guide/advanced-usage/_index.md" >}}).
-    
-
-### Free Online App
-Along with full-featured .NET library we provide simple but powerful free Apps.
-You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
+{{< /tab >}}
+{{< /tabs >}}

@@ -3,7 +3,7 @@ id: how-to-get-document-information-and-generate-preview
 url: annotation/net/how-to-get-document-information-and-generate-preview
 title: How to get PDF document information and generate preview
 weight: 4
-description: "Programmatically extract information from PDF document. Generate document preview using .NET API."
+description: "Extract text information from the PDF document. Generate document preview using .NET API."
 keywords: extract text information, get text lines, preview PDF, get text from PDF
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -11,11 +11,11 @@ structuredData:
     showOrganization: True
     application:    
         name: GroupDocs Annotation
-        description: An examples of how to programmatically read text from PDf documents
+        description: An examples of how to get text from the PDf documents
     showVideo: False
     howTo:
         name: How to extract text from PDF document
-        description: Learn how to programmatically get text information line by line
+        description: Learn how to get text information line by line
         steps:
           - name: Load source file an instance Annotator
             text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
@@ -33,16 +33,16 @@ toc: True
 
 ## Extract text information from PDf
 
-When working with a PDF document programmatically, in addition to interacting with the text via annotations, the ability to access the text as such is very important. The opportunity to scan the text and to split it into pages, paragraphs and lines is an essential tool. Our .NET API provides this capability. By uploading a PDF document you can receive its full text page by page and even line by line within seconds! All you need to do is write a few lines of code. 
+Since version 21.3, GroupDocs.Annotation allows you to split the text of a PDF document into pages, paragraphs, and lines and recognize it.
 
-### Example
+To access the text information of the PDF document, call the [GetDocumentInfo()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document/methods/getdocumentinfo) method of the [Document](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document) class.
 
-Since version 21.3 the structure [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) has been changed. You can now take an advantage of the new functionality by calling the [GetDocumentInfo()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document/methods/getdocumentinfo) method of the [Document](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document) class.
+The [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structures represent pages of the PDF document. Each structure contains a list of the [TextLineinfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo) structures. The [TextLineinfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo) structure contains information about text's top and left indents, width, height, and text itself.
 
-Each page, represented by [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure, now contains list of [TextLineinfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo). Every [TextLineinfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo) contains information about text top and left indents, width, height and text itself. In other words, we can say that each page is represented as a sequence of text lines and you can get this information programatically within seconds!
+The following code snippet shows how you can get data from described structures:
 
-Code example below shows how you can get data from described structures:
-
+{{< tabs "example1">}}
+{{< tab "C#" >}} 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -50,29 +50,30 @@ using (Annotator annotator = new Annotator("input.pdf"))
 
     foreach (PageInfo page in documentInfo.PagesInfo)
     {
-        // Here you can access PageInfo fields
+        // Access PageInfo fields
         Console.WriteLine("Page number {0}, width: {1} and height: {2}", page.PageNumber, page.Width, page.Height);
 
         foreach (TextLineInfo textLine in page.TextLines)
         {
-            // Here you can access TextLineInfo fields
+            // Access TextLineInfo fields
             Console.WriteLine("\tText line. '{0}'", textLine.Text);
         }
     }
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-### Supported formats
-
-The ability to retrieve text information is implemented for most supported formats: word, pdf, excel, visio diagrams, power point presentations, html and email. Text retrieval works for all formats as it is, except for html (.htm, .html etc) and email (.eml, .msg etc). With those formats it works by converting them into the word document (.docx). Therefore, text parameters for these formats corresponds to their word counterparts.
+You can get text information from Word, PDF, and Excel files, Visio diagrams, PowerPoint presentations, HTML pages, and emails. To get information from the HTML (.htm, .html, etc.) pages and emails (.eml, .msg, etc.), GroupDocs.Annotation converts them to the Word document (.docx).
 
 ## Generate document preview
 
+GroupDocs.Annotation allows you to create page images (PNG, JPG, PDF) to preview the annotated document. 
 
-When annotating a document, it is very important to be able to see how the document would look in printed form. After all, most documents end up on paper. Of course, this can be achieved by standard means - opening the document and sending it to print. Modern operating systems usually show a preview of a document before printing it. But what if it needs to be done programmatically and much faster? 
+The following code snippet shows how to create PNG images of the document's pages:
 
-Our .NET API makes it possible. You can generate a preview right after annotating. This can be achieved by writing just a few lines of code: 
-
+{{< tabs "example2">}}
+{{< tab "C#" >}} 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -86,19 +87,8 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Document.GeneratePreview(previewOptions);
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-You can learn about more properties and setting that our [preview generator](https://docs.groupdocs.com/annotation/net/generate-document-pages-preview/) provies. It is much more configurable than we have shown above, but due to the article limitations we cannot cover all the details here.
+For details, see the [Create document's preview](https://docs.groupdocs.com/annotation/net/generate-document-pages-preview/) page.
 
-
-## Conclusion
-
-In short, you have learned how extract data from PDF document within .NET applications. Further, you have seen how to generate preview of any PDF file. Now, you should be confident to build your own document annotator .NET application. 
-
-## More resources
-### Advanced Usage Topics
-To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation/net/developer-guide/advanced-usage/_index.md" >}}).
-    
-
-### Free Online App
-Along with full-featured .NET library we provide simple but powerful free Apps.
-You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.

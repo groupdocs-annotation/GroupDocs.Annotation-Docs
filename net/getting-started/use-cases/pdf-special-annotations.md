@@ -28,34 +28,35 @@ structuredData:
 toc: True
 ---
 
-## Special annotations for PDF documents only
+## Annotations only for PDF documents
 
-We think it's no secret that the PDF format is the most popular format among text documents. Many people prefer to use it because they know that the style and formatting of the document is maintained regardless of the computer or application with which the PDF is viewed. Given its popularity, our .NET API has been improved. We have created annotations unique to the PDF format, the so-called **Components**. As you know, our .NET API supports a large number of annotations that can be applied to different documents - Word documents, Excel sheets, Visio diagrams, PDF etc. But **Component** support PDF only! 
+PDF is the most popular text document format. It preserves the style and formatting of a document regardless of the computer or application. GroupDocs.Annotation allows you to create annotations that are unique to the PDF format. These annotations are called **Components**.
 
-
-This article will talk about the components that are already implemented in the Annotation .NET API and how you can use them.
+This article describes the components that are implemented in the GrouDocs.Annotation .NET API.
 
 
 ### Button component 
 
-**Button component** allows to create button component like shown at the picture below: 
+The **Button** component allows you to create button: 
 
 ![](/annotation/net/images/add-button-component.png)
 
-There is an ability to specify the next properties for [ButtonComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) type:
+You can specify the following properties of the [ButtonComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) object:
 
-*   [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent/properties/box) - defines annotation position at document page;
-*   [PenColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent/properties/pencolor) - defines frame color;
+*   [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent/properties/box) defines the annotation position at the document page;
+*   [PenColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent/properties/pencolor) defines the frame color.
 
-Follow these steps to add Button component to document:
+To add a **Button** component, follow these steps:
 
-*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [ButtonComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) object with desired properties (position, page number, etc);
-*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [ButtonComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) object;
-*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
+1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object. Specify the input document path or stream.
+2.   Instantiate the [ButtonComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent). Specify the appropriate properties (position, page number, etc).
+3.   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and specify the [ButtonComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/buttoncomponent) object.
+4.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method. Specify the output document path or stream.
 
-The following code demonstrates how to add [ButtonComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/cropdowncomponent) to the document:
+The following code snippets shows how to add the [ButtonComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/cropdowncomponent):
 
+{{< tabs "example1">}}
+{{< tab "C#" >}} 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -88,26 +89,30 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Save("result.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Checkbox component
-**Checkbox component** allows to create checkbox component like shown at the picture below: 
+The **Checkbox** component allows you to create checkbox: 
 
 ![](/annotation/net/images/add-checkbox-component.png)
 
-There is an ability to specify the next properties for [CheckBoxComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) type:
+You can specify the following properties of the [CheckBoxComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) object:
 
-*   [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent/properties/box) - defines annotation position at document page;
-*   [PenColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent/properties/pencolor) - defines frame color;
+*   [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent/properties/box) defines the annotation position at the document page;
+*   [PenColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent/properties/pencolor) defines the frame color.
 
-Follow these steps to add Checkbox component to document:
+To add the **Checkbox** component, follow these steps:
 
-*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [CheckboxComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) object with desired properties (position, page number, etc);
-*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [CheckboxComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) object;
-*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
+1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object. Specify the document path or stream.
+2.   Instantiate the [CheckboxComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) object. Specify the appropriate properties (position, page number, etc).
+3.   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and specify the [CheckboxComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/checkboxcomponent) object.
+4.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method. Specify the output document path or stream.
 
-The following code demonstrates how to add [CheckboxComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/cropdowncomponent) to the document:
+The following code snippet shows how to add [CheckboxComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/cropdowncomponent):
 
+{{< tabs "example2">}}
+{{< tab "C#" >}} 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -135,29 +140,33 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Save("result.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Dropdown component 
 
-**Dropdown component** allows to create combo box with specified options like shown at the picture below: 
+The **Dropdown** component allows you to create combo box: 
 
 ![](/annotation/net/images/add-dropdown-component.png)
 
-There is an ability to specify the next properties for [DropdownComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) type:
+You can specify the following properties of the [DropdownComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) object:
 
-*   [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent/properties/box) - defines annotation position at document page;
-*   [PenColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent/properties/pencolor) - defines frame color;
-*   [PenStyle](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent/properties/penstyle) - defines frame line style (solid, dash, dot etc.);
-*   [PenWidth](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent/properties/penwidth) - defines frame line width in pixels.
+*   [Box](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent/properties/box) defines the annotation position at the document page;
+*   [PenColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent/properties/pencolor) defines the frame color;
+*   [PenStyle](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent/properties/penstyle) defines the frame line style (solid, dash, dot etc.);
+*   [PenWidth](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent/properties/penwidth) defines the frame line width in pixels.
 
-Follow these steps to add Dropdown component to document:
+To add **Dropdown** component, follow these steps:
 
-*   Instantiate [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
-*   Instantiate [DropdownComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) object with desired properties (position, page number, etc);
-*   Call [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and pass [DropdownComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) object;
-*   Call [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream.
+1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object. Specify the document path or stream.
+2.   Instantiate the [DropdownComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) object. Specify the appropriate properties (position, page number, etc).
+3.   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method and specify the [DropdownComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) object.
+4.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method. Specify the output document path or stream.
 
-The following code demonstrates how to add [DropdownComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent) to the document:
+The following code snippet shows how to add [DropdownComponent](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.formatspecificcomponents.pdf/dropdowncomponent):
 
+{{< tabs "example3">}}
+{{< tab "C#" >}} 
 ```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -191,16 +200,5 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Save("result.pdf");
 }
 ```
-
-## Conclusion
-
-In this article we have told you about components that are unique to pdf. We showed you how to add a button, a checkbox and a drop-down list. Now, you should be confident to build your own document annotator using our .NET application API. 
-
-## More resources
-### Advanced Usage Topics
-To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation/net/developer-guide/advanced-usage/_index.md" >}}).
-    
-
-### Free Online App
-Along with full-featured .NET library we provide simple but powerful free Apps.
-You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
+{{< /tab >}}
+{{< /tabs >}}

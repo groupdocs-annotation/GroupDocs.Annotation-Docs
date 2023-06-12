@@ -2,7 +2,7 @@
 id: release-notes
 url: annotation/net/release-notes
 title: Release Notes
-weight: 4
+weight: 5
 description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET

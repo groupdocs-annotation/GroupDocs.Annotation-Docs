@@ -8,9 +8,7 @@ keywords: DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-The list of supported by GroupDocs.Annotation document formats and types. 
-
-For formats marked with <strong>\*</strong>, the output format is different than the input format. The format in which the document is saved is specified after <strong>\*</strong>. If there is no such symbol, the format will remain the same after saving.
+For some file types, GroupDocs.Annotation saves the result in a different format. In this case, the output file type is specified after <strong>\*</strong>. If no such symbol is specified, GroupDocs.Annotation stores the result in the original file type.
 
 | Format | Description | Annotate |
 | --- | --- | --- |
