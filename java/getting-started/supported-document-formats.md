@@ -3,22 +3,12 @@ id: supported-document-formats
 url: annotation/java/supported-document-formats
 title: Supported Document Formats
 weight: 2
-description: This Java API supports DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML and many more.
+description: It supports DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML and many more.
 keywords: DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML
 productName: GroupDocs.Annotation for Java
 hideChildren: False
-structuredData:
-    showOrganization: True
-    application:
-        name: Supported documents for annotation
-        description: GroupDocs.Annotation support for annotate this types of documents pdfs, words, images, cells, slides and diagrams.
-        productCode: annotation
-        productPlatform: java 
 ---
-
-The list of supported by GroupDocs.Annotation document formats and types. 
-
-For formats marked with <strong>\*</strong>, the output format is different than the input format. The format in which the document is saved is specified after <strong>\*</strong>. If there is no such symbol, the format will remain the same after saving.
+For some file types, GroupDocs.Annotation saves the result in a different format. In this case, the output file type is specified after <strong>\*</strong>. If no such symbol is specified, GroupDocs.Annotation stores the result in the original file type.
 
 | Format | Description | Annotate |
 | --- | --- | --- |
@@ -54,7 +44,7 @@ For formats marked with <strong>\*</strong>, the output format is different than
 | [VSD](https://docs.fileformat.com/image/vsd/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio 2003-2010 Drawing | ![(tick)](/annotation/java/images/check.png) |
 | [VSDX](https://docs.fileformat.com/image/vsdx/) | Microsoft Visio Drawing | ![(tick)](/annotation/java/images/check.png) |
 | [VSDM](https://docs.fileformat.com/image/vsdm/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio Drawing File Format | ![(tick)](/annotation/java/images/check.png) |
-| [VSS](https://docs.fileformat.com/image/vss/)<span style="float: right; color: #909090"><strong>*</strong>vsdx</span>| Microsoft Visio 2003-2010 Stencil | ![(tick)](/annotation/java/images/check.png) |
+| [VSS](https://docs.fileformat.com/image/vss/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span>| Microsoft Visio 2003-2010 Stencil | ![(tick)](/annotation/java/images/check.png) |
 | [VSSX](https://docs.fileformat.com/image/vssx/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span>| Visio Stencil File Format | ![(tick)](/annotation/java/images/check.png) |
 | [VST](https://docs.fileformat.com/image/vst/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio 2013 Stencil | ![(tick)](/annotation/java/images/check.png) |
 | [VSTM](https://docs.fileformat.com/image/vstm/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio Template File Format | ![(tick)](/annotation/java/images/check.png) |

@@ -41,8 +41,8 @@ You can specify the following properties of the [PointAnnotation](https://refer
 To add a point annotation, follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class. Specify the input document path or stream.
-*   Instantiate the [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) class. Specify the appropriate properties (position, page number, etc).
-*   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method. Specify the [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) class.
+2.   Instantiate the [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) class. Specify the appropriate properties (position, page number, etc).
+3.   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method. Specify the [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) class.
 4.  Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method. Specify the output document path or stream. 
 
 The following code snippet shows how to add [PointAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) to the document:

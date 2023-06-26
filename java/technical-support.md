@@ -1,10 +1,10 @@
 ---
 id: technical-support
-url: /annotation/java/technical-support
+url: annotation/java/technical-support
 title: Technical Support
 productName: GroupDocs.Annotation for Java
 description: "GroupDocs.Annotation for Java provides free technical support available to all users. Please report your question, issue, or feature request using GroupDocs Free Support Forum."
-weight: 7
+weight: 10
 toc: True
 ---
 
@@ -20,21 +20,21 @@ Please note that GroupDocs does not provide technical support over the phone. Ph
 
 If you need help with GroupDocs.Annotation, consider the following:
 
-* Make sure you are using the latest GroupDocs.Annotation version before reporting an issue. See [GroupDocs Artifact Repository](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-annotation) to find out about the latest version.
-* Have a look through the forums, this documentation, and the API Reference before reporting an issue – perhaps your question has already been answered.
-* Post your question at [GroupDocs.Annotation Free Support Forum](https://forum.groupdocs.com/c/annotation/9), and we'll assist you. Questions are answered directly by the GroupDocs.Annotation development team.
+* Make sure you are using the latest GroupDocs.Annotation version before reporting an issue.
+* Look through the forums, this documentation, and the API Reference before reporting an issue – perhaps your question has already been answered.
+* Post your question at [GroupDocs.Annotation Free Support Forum](https://forum.groupdocs.com/c/annotation/10), and we'll assist you. Questions are answered directly by the GroupDocs.Annotation development team.
 * When expecting a reply on the forums, please allow for time zone differences.
 
 ## Paid Support Helpdesk
 
-The paid support issues has higher priority comparing to the free support requests.
+The paid support issues have a higher priority compared to the free support requests.
 
 * Post your question at the [Paid Support Helpdesk](https://helpdesk.groupdocs.com/) to set higher priority for the issue.
 
 ## Report an Issue or Feature Request
 
-When posting your issue, question, or feature request with GroupDocs.Annotation, follow these simple steps to make sure it is resolved in the most efficient way:
+When posting your issue, question, or feature request with GroupDocs.Annotation, follow these simple steps to make sure it is resolved most efficiently:
 
-* Include the original document and possibly the code snippet that is causing the problem. If you need to attach a few files, zip them into one. It is safe to attach your documents to GroupDocs.Forums because only you and the GroupDocs developers will have access to the attached files.
+* Include the original document and possibly the code snippet that is causing the problem. If you need to attach a few files, zip them into one. It is safe to attach your documents to GroupDocs.Forums because only you and the GroupDocs developers have access to the attached files.
 * Add information about the environment you are facing the issue.
 * Try to report one issue per thread. If you have another issue, question, or feature request, please report it in a separate thread.

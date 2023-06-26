@@ -29,7 +29,7 @@ There are improvements and fixes in this regular monthly release. The most notab
 
 | Key | Summary | Category |
 | --- | --- | --- |
-| ANNOTATIONNET-196 | Implement getting not all pages of document at once (performance improvenet) | Improvement |
+| ANNOTATIONNET-196 | Implement getting not all pages of document at once (performance improvement) | Improvement |
 | ANNOTATIONNET-197 | Increase slow Performance on big file | Improvement |
 | ANNOTATIONNET-216 | Implement proper exception for unsuported annotations for Slides and Cells formats | Improvement |
 | ANNOTATIONNET-189 | Implement ResourceRedaction annotation in Word documents | New Feature |

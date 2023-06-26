@@ -1,11 +1,11 @@
 ---
 id: licensing-and-subscription
-url: annotation/net/licensing-and-subscription
+url: annotation/java/licensing-and-subscription
 title: Licensing
 weight: 5
 description: "GroupDocs.Annotation provides different plans for purchasing or offers a Free Trial and a 30-day Temporary License for evaluation."
 keywords: free, free trial, evaluation, groupdocs.annotation
-productName: GroupDocs.Annotation for .NET
+productName: GroupDocs.Annotation for Java
 hideChildren: False
 toc: True
 ---
@@ -38,7 +38,7 @@ If you wish to test GroupDocs.Annotation without the limitations of the trial ve
 
 {{< alert style="info" >}}
 
-You can find the pricing information on the ["Pricing Information"](https://purchase.groupdocs.com/pricing/annotation/net) page.
+You can find the pricing information on the ["Pricing Information"](https://purchase.groupdocs.com/pricing/annotation/java) page.
 
 {{< /alert >}}
 
@@ -60,14 +60,16 @@ The license can be set multiple times per app domain but we recommend doing it o
 The following code snippet shows how to set a license from file:
 
 {{< tabs "example1">}}
-{{< tab "C#" >}}
+{{< tab "Java" >}}
+```java
+// This example demonstrates how to set License.
 
-```csharp
-string licensePath = "path to the .lic file";
+// Create an instance of License class
 License license = new License();
-license.SetLicense(licensePath);
-```
 
+// Setup license via file
+license.setLicense(licensePath);
+```
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -77,14 +79,13 @@ license.SetLicense(licensePath);
 The following code snippet shows how to set a license from a stream:
 
 {{< tabs "example2">}}
-{{< tab "C#" >}}
+{{< tab "Java" >}}
 
-```csharp
-string licensePath = "path to the .lic file";
-using (FileStream fileStream = File.OpenRead(licensePath))
+```java
+try (FileInputStream fileStream = new FileInputStream("GroupDocs.Annotation.lic"))
 {
     License license = new License();
-    license.SetLicense(fileStream);
+    license.setLicense(fileStream);
 }
 ```
 
@@ -94,27 +95,29 @@ using (FileStream fileStream = File.OpenRead(licensePath))
 
 ### Set Metered License
 
-You can also set the [Metered](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/metered/) license as an alternative to license file. It is a new licensing mechanism that will be used along with existing licensing method. It is useful for the customers who want to be billed based on the usage of the API features. For  details, please refer to the [Metered Licensing FAQ](https://purchase.groupdocs.com/faqs/licensing/metered) section.
+You can also set the [Metered](https://reference.groupdocs.com/annotation/java/groupdocs.annotation/metered/) license as an alternative to license file. It is a new licensing mechanism that will be used along with existing licensing method. It is useful for the customers who want to be billed based on the usage of the API features. For  details, please refer to the [Metered Licensing FAQ](https://purchase.groupdocs.com/faqs/licensing/metered) section.
 
 The following code snippet shows how to use `Metered` licensing:
 
 {{< tabs "example3">}}
-{{< tab "C#" >}}
+{{< tab "Java" >}}
 
-```csharp
-string publicKey = ""; // Your public license key
-string privateKey = ""; // Your private license key
+```java
+// This example demonstrates how to use Metered.
+
+String publicKey = ""; // Your public license key
+String privateKey = ""; // Your private license key
 
 Metered metered = new Metered();
-metered.SetMeteredKey(publicKey, privateKey);
+metered.setMeteredKey(publicKey, privateKey);
 
 // Get amount (MB) consumed
-decimal amountConsumed = GroupDocs.Viewer.Metered.GetConsumptionQuantity();
-Console.WriteLine("Amount (MB) consumed: " + amountConsumed);
+double consumption = metered.getConsumptionQuantity();
+System.out.print("Metered consumption = " + consumption);     
 
 // Get count of credits consumed
-decimal creditsConsumed = GroupDocs.Viewer.Metered.GetConsumptionCredit();
-Console.WriteLine("Credits consumed: " + creditsConsumed);
+double credit = metered.getConsumptionCredit();
+System.out.print("Metered credit = " + credit);
 ```
 
 {{< /tab >}}

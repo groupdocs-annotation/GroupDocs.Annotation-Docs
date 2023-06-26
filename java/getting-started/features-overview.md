@@ -3,65 +3,58 @@ id: features-overview
 url: annotation/java/features-overview
 title: Features Overview
 weight: 1
-description: Variety of features to manipulate graphics, watermarks and text annotations by using Java
-keywords: text annotations, watermark, annotation, java
+description: Variety of features to manipulate graphics, watermarks and text annotations
+keywords: text annotations, watermark, annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
-structuredData:
-    showOrganization: True
-    application:
-        name: Features for annotation docs in Java
-        description: GroupDocs.Annotation hame many different features, for example highlighting pdfs, mark up words, add notes to pdf and other. For check features use annotation online https://products.groupdocs.app/annotation/total 
-        productCode: annotation
-        productPlatform: java 
 toc: True
 ---
+## Adding, editing, and removing annotations
 
-## Add, edit and remove annotations
+GroupDocs.Annotation for Java main feature is document annotation that supports over 13 different annotation types for over 35 file formats.
 
-GroupDocs.Annotation for Java main feature is document annotation which supports over 13 different annotation types for over 50 file formats with full control for your annotations such as adding annotations, editing annotations and removing annotations.
-
-We offer a wide range of graphic, text and watermark annotation types to suit all your needs, please see all available annotation types in the list below.
+You can use various graphic, text, and watermark annotation types. See available annotation types in the list below.
 
 ### Graphic annotations
 
-*   Area – marks an area with a rectangle and adds notes to it;
-*   Arrow – draws an arrow on a document;
-*   Distance – measures a distance between objects in a document;
-*   Point – sticks comments to any point in a document;
-*   Polyline – draws shapes and freehand lines;
-*   Redaction – fills black rectangle with fixed position (used if you want to hide some text);
-*   TextField – adds rectangle with a text inside;
-*   Ellipse – draws elliptic annotation in a document.
+*   Area marks an area with a rectangle and adds notes to it
+*   Arrow draws an arrow in a document
+*   Distance measures the distance between objects in a document
+*   Point sticks comments to any point in a document
+*   Polyline draws shapes and freehand lines
+*   Redaction fills the black rectangle with a fixed position (use if you want to hide some text)
+*   Text field adds a rectangle with text inside
+*   Ellipse draws elliptic annotation in a document
 
 ### Text annotations
 
-*   Highlight – highlights and comments selected text;
-*   Replacement – replaces original text with user’s text;
-*   Strikeout – marks text with a strikethrough styling;
-*   Underline – marks text with an underline styling.
+*   Highlight highlights and comments selected text
+*   Replacement replaces the original text with the user’s text
+*   Strikeout marks text with a strike-through styling
+*   Underline marks text with an underline styling
 
 ### Watermark annotations
 
-*   Horizontal - adds horizontal text watermark;
-*   Diagonal - adds diagonal text watermark.
+*   Horizontal adds horizontal text watermark
+*   Diagonal adds diagonal text watermark
 
 ## Import annotations
 
-In case if document already contains annotations added previously, GroupDocs.Annotation for Java provides proper tools for reading and processing such data, extraction information, etc.
+GroupDocs.Annotation for Java provides the ability to work with annotations added by other software.
 
-## Add and remove comments
+## Adding and removing comments
 
-Each annotation type support comment collaboration. Add, remove or reply to comments for any annotation.
+Each annotation type supports comment collaboration. Add, remove, or reply to comments for any annotation.
 
-## Export annotated document
+## Export of annotated document
 
-Export document after adding annotations and comments back to original format. 
+GroupDocs.Annotation for Java saves the annotated document in the origin format for most supported file types. For details, see [list of supported formats]({{< ref "annotation/java/getting-started/supported-document-formats.md" >}})
 
-## Generate document pages previews & thumbnails
+## Generation of document pages previews & thumbnails
 
-GroupDocs.Annotation for Java offers a feature to render document pages as images for your desktop, mobile or web front-end applications. With this feature you can view any document, calculate annotations coordinate more precisely for adding or removing annotations or simply generate a document preview and document thumbnails.
+GroupDocs.Annotation for Java allows you to render document pages as images for your desktop, mobile, or web front-end applications. You can view any document, calculate the annotation coordinates more precisely, or generate a preview or thumbnails.
 
-## Cache results
+## Caching results
 
-By default cache is stored to a local disk, however GroupDocs.Annotation offers custom cache feature which can be used by implementing appropriate interfaces – Amazon S3, Dropbox, Google Drive, Windows Azure, Reddis or any other.
+By default, GroupDocs.Annotation stores the cache on a local disk. 
+Nevertheless, however GroupDocs.Annotation allows you to use a custom cache by implementing appropriate interfaces such as Amazon S3, Dropbox, Google Drive, Windows Azure, Redis, or others.

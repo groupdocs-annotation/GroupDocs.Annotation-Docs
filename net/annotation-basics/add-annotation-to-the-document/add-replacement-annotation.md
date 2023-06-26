@@ -44,8 +44,8 @@ You can specify the following properties of the [ReplacementAnnotation](https:/
 To add a replacement annotation, follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class. Specify the input document path or stream.
-*   Instantiate the [ReplacementAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) class. Specify the appropriate properties (position, page number, etc).
-*   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method. Specify the [ReplacementAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) class.
+2.   Instantiate the [ReplacementAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) class. Specify the appropriate properties (position, page number, etc).
+3.   Call the [Add](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/add) method. Specify the [ReplacementAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation) class.
 4.  Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method. Specify the output document path or stream. 
 
   

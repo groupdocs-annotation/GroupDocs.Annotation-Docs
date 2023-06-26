@@ -14,7 +14,7 @@ toc: True
 This page contains release notes for GroupDocs.Annotation for Java 21.7
 {{< /alert >}}{{< alert style="danger" >}}
 Breaking changes
-In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check [Migration Notes]({{< ref "annotation/java/developer-guide/migration-notes.md" >}}) and [Developer Guide](https://docs.groupdocs.com/display/annotationjava/Developer+Guide) sections.
+In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check [Migration Notes]({{< ref "annotation/java/migration-notes.md" >}}) and [Developer Guide](https://docs.groupdocs.com/display/annotationjava/Developer+Guide) sections.
 {{< /alert >}}
 
 ## Major Features

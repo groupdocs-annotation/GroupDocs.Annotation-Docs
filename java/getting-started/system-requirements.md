@@ -19,7 +19,7 @@ toc: True
 
 ## Supported Java Versions
 
-GroupDocs.Annotation for Java supports Java versions listed below. For more platform support please check [GroupDocs.Annotation for .NET](https://products.groupdocs.com/annotation/net).
+GroupDocs.Annotation for Java supports Java versions listed below. For more platform support please check [GroupDocs.Annotation for .NET](https://products.groupdocs.com/annotation/java).
 
 *   J2SE 7.0 (1.7)
 *   J2SE 8.0 (1.8)
