@@ -25,7 +25,7 @@ toc: True
 
 GroupDocs.Annotation v21.5 and later allows you to specify images placing order for the Word file formats. To do this, set the [ZIndex](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/properties/zindex) property of the [ImageAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation) class.
 
-The following code snippets shows how to specify aZIndex of the image annotation:
+The following code snippets shows how to specify a `ZIndex` of the image annotation:
 
 {{< tabs "example1">}}
 {{< tab "C#" >}}

@@ -30,8 +30,8 @@ structuredData:
 GroupDocs.Annotation v22.11 and later allows you to specify a user role for each user.
 
 You can specify a [User](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/user/) object for any reply. This object represents the author of the reply. You can also set a role of the user:
-- **Viewer** - GroupDocs.Annotation does not add their replies to the document.
-- **Editor** - GroupDocs.Annotation adds their replies. 
+- Viewer - GroupDocs.Annotation does not add their replies to the document.
+- Editor - GroupDocs.Annotation adds their replies. 
 Use this feature to control if a user can or cannot add comments to the document.
 
 The following code snippet shows how to add a user role: 

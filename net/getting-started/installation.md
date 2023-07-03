@@ -3,13 +3,13 @@ id: installation
 url: annotation/net/installation
 title: Installation
 weight: 4
-description: ""
+description: "The page describes how to add the GroupDocs.Annotation library to your .NET project."
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 toc: True
 ---
-This topic describes how to add the **GroupDocs.Annotation** library to your .NET project. You can use a NuGet package to install this library or you can download necessary DLLs from the GroupDocs website: [https://releases.groupdocs.com/annotation/net/](https://releases.groupdocs.com/annotation/net/).
+This topic describes how to add the GroupDocs.Annotation library to your .NET project. You can use a NuGet package to install this library or you can download necessary DLLs from the GroupDocs website: [https://releases.groupdocs.com/annotation/net/](https://releases.groupdocs.com/annotation/net/).
 
 ## Install GroupDocs.Annotation using NuGet packages
 

@@ -26,11 +26,12 @@ structuredData:
 toc: True
 ---
 
-GroupDocs.Annotation v21.12 and later allows you to rotate the page of a PDF document by 90, 180, 270 degrees clockwise. To do this, set the [ProcessPages](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/processpages/) property to page number and then set the [Rotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/rotation/) property to one of the following values:
-* None - does not rotate the document
-* on90 - rotate the document 90 degrees clockwise
-* on180 - rotate the document 180 degrees clockwise
-* on270 - rotate the document 270 degrees clockwise
+GroupDocs.Annotation v21.12 and later allows you to rotate the PDF document page by 90, 180, 270 degrees clockwise. To do this, specify the page number as the [ProcessPages](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/processpages/) property and then set the [Rotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/rotation/) property to one of the following values:
+
+* None does not rotate the document
+* on90 rotates the document 90 degrees clockwise
+* on180 rotates the document 180 degrees clockwise
+* on270 rotates the document 270 degrees clockwise
 
 By default, the property is set to `None`.
 

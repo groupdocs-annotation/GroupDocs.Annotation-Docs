@@ -31,7 +31,7 @@ toc: True
 ---
 You can remove specific or all replies using the [GroupDocs.Annotation](https://products.groupdocs.com/annotation/net) API. To do this, remove the appropriate items from the [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) collection. 
 
-To delete an annotation reply(replies), follow these steps:
+To delete an annotation reply (replies), follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class. Specify the input document path or stream.
 2.   Call the [Get](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/get) method of the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class to get collection of document annotations.

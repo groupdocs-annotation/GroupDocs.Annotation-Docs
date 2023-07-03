@@ -17,7 +17,7 @@ structuredData:
 toc: True
 ---
 
-GroupDocs hosts all Java APIs on [GroupDocs Repository](https://releases.groupdocs.com/java/repo/). You can easily use [GroupDocs.Annotation for Java](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-annotation/) API directly in your Maven projects with simple configurations.
+GroupDocs hosts all Java APIs on [GroupDocs Repository](https://releases.groupdocs.com/java/repo/). You use the [GroupDocs.Annotation for Java](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-annotation/) API directly in your Maven projects with simple configurations.
 
 ### Specify GroupDocs Repository Configuration
 

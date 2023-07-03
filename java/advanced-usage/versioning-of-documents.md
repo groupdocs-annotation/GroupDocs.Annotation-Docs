@@ -28,7 +28,7 @@ toc: True
 
 When you save a file using the [Annotator.save()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#save--) method, the GroupDocs.Annotations creates a version of the annotated file. Versions list keeps annotations that you add, remove, and change. You can swap between different changes made with GroupDocs.Annotation. If needed, you can set your version names.
 
-By default, GroupDocs.Annotations names version using a GUID. If needed, you can specify a custom version name.
+By default, GroupDocs.Annotations names version using a GUID. You can specify a custom version name.
 
 ### Add version with custom name
 

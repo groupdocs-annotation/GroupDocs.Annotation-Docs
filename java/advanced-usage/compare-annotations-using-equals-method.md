@@ -43,7 +43,7 @@ The following code snippet shows how to compare annotations:
 try (Annotator annotator = new Annotator("annotated_file.pdf")) {
     List<AnnotationBase> annotations = annotator.get();
     
-    // Create an instance of ImageAnnotation class and add options
+    // Create an instance of the ImageAnnotation class and add options
     ImageAnnotation imageAnnotation = new ImageAnnotation();
     imageAnnotation.setBox(new Rectangle(100, 100, 100, 100));
     imageAnnotation.setOpacity(0.7);

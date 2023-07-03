@@ -11,7 +11,7 @@ toc: True
 ---
 ## Overview
 
-GroupDocs.Annotation for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Development Environment, Installation and Configuration]({{< ref "annotation/net/getting-started/installation.md" >}}).
+GroupDocs.Annotation for .NET does not require any external software or third party tools to be installed. Just follow one of the way as described in [Development Environment, Installation and Configuration]({{< ref "annotation/net/getting-started/installation.md" >}}).
 
 ## Supported Operating Systems
 

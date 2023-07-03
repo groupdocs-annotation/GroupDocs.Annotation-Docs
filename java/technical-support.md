@@ -35,6 +35,6 @@ The paid support issues have a higher priority compared to the free support requ
 
 When posting your issue, question, or feature request with GroupDocs.Annotation, follow these simple steps to make sure it is resolved most efficiently:
 
-* Include the original document and possibly the code snippet that is causing the problem. If you need to attach a few files, zip them into one. It is safe to attach your documents to GroupDocs.Forums because only you and the GroupDocs developers have access to the attached files.
-* Add information about the environment you are facing the issue.
-* Try to report one issue per thread. If you have another issue, question, or feature request, please report it in a separate thread.
+1. Include the original document and possibly the code snippet that is causing the problem. If you need to attach a few files, zip them into one. It is safe to attach your documents to GroupDocs.Forums because only you and the GroupDocs developers have access to the attached files.
+2. Add information about the environment you are facing the issue.
+3.* Try to report one issue per thread. If you have another issue, question, or feature request, please report it in a separate thread.

@@ -3,7 +3,7 @@ id: save-only-annotated-pages
 url: annotation/net/save-only-annotated-pages
 title: Save only annotated pages
 weight: 2
-description: "The article describes how to save only annotated pages when using GroupDocs.Annotation for .NET API."
+description: "The page describes how to save only annotated pages when using GroupDocs.Annotation for .NET API."
 keywords: annotated pages, save, annotations
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -29,11 +29,11 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file and in the SaveOptions class set OnlyAnnotationPage to true .
 toc: True
 ---
-To export to resultant document only annotated pages, follow these steps:
+To export to output document only annotated pages, follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class. Specify the input document path or stream.
 2.   Instantiate the [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) class. Set the [OnlyAnnotatedPages](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions/onlyannotatedpages/) property to `true`.
-3.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with the resultant document path or stream. Specify the [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) class as a parameter.
+3.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with the output document path or stream. Specify the [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) class as a parameter.
 The following code snippet shows how to save only annotated pages:
 
 {{< tabs "example1">}}

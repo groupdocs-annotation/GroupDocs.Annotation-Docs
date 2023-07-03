@@ -13,7 +13,7 @@ Sometimes, to study the system better, you want to dive into the code as fast as
 
 {{< alert style="info" >}}
 
-Note that there are a number of general policies and practices that guide you on how to evaluate, properly license, and purchase our products. You can find them in the ["Purchase Policies and FAQ"](https://purchase.groupdocs.com/policies) section.
+There are a number of general policies and practices that guide you on how to evaluate, properly license, and purchase our products. You can find them in the ["Purchase Policies and FAQ"](https://purchase.groupdocs.com/policies) section.
 
 {{< /alert >}}
 

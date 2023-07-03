@@ -21,7 +21,7 @@ Today annotations can be programmatically added to a documents and images of var
 
 ### Add annotation to the document
 
-**[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java)** allows to apply various annotation types to the different document formats. Supported annotations list is described in a table below. 
+[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java) allows you to apply various annotation types to the different document formats. Supported annotations list is described in a table below. 
 
 ### List of supported annotations
 

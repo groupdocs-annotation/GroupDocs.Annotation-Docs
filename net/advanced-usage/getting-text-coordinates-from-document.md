@@ -26,7 +26,7 @@ structuredData:
 toc: True
 ---
 
-GroupDocs v21.3 and later allows you to get information not only about the width and height of each page but also about page number and text content. To do this, use the [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure by calling the [GetDocumentInfo()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document/methods/getdocumentinfo) method of the [Document](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document) class.
+GroupDocs v21.3 and later allows you to get information not only about the width and height of any page but also about page number and text content. To do this, use the [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure by calling the [GetDocumentInfo()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document/methods/getdocumentinfo) method of the [Document](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document) class.
 
 The [PageInfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/pageinfo) structure represents each page and contains the list of [TextLineinfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo). Every [TextLineinfo](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models/textlineinfo) stores text top and left indents, width, height and the text itself. This way, each page is represented as a sequence of text lines. Every text line is described by its parameters (width, height, and indents).
 

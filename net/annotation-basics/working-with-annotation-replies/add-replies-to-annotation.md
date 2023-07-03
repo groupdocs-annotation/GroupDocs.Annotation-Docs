@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net) provides an ability to collaborate over document using annotations and annotation replies. 
+[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net) allows you to collaborate over document using annotations and annotation replies. 
   
 To update an annotation reply, follow these steps:
 

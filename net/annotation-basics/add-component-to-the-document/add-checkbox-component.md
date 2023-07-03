@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Checkbox component creates a checkbox like shown in the picture below: 
+Checkbox component creates a checkbox as shown in the picture below: 
 
 ![](/annotation/net/images/add-checkbox-component.png)
 

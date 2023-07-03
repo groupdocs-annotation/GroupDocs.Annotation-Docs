@@ -3,7 +3,7 @@ id: load-password-protected-documents
 url: annotation/java/load-password-protected-documents
 title: Load the password-protected documents
 weight: 1
-description: "The article describes how to load the password protected PDF, Word, Excel, PowerPoint documents using GroupDocs.Annotation for Java."
+description: "The page describes how to load the password protected PDF, Word, Excel, PowerPoint documents using GroupDocs.Annotation for Java."
 keywords: Load password-protected document, Load protected document with GroupDocs.Annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
@@ -30,7 +30,7 @@ structuredData:
 toc: True
 ---
 
-[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/java) allows to annotate documents that are protected with a password.
+[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java) allows you to annotate the password-protected documents.
 
 To load a password protected file, follow these steps:
 

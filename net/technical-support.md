@@ -11,9 +11,7 @@ toc: True
 GroupDocs provides unlimited free technical support for all of its products. Support is available to all users, including evaluation. The support is provided at [Free Support Forum](https://forum.groupdocs.com/) and [Paid Support Helpdesk](https://helpdesk.groupdocs.com/).
 
 {{< alert style="info" >}}
-
 Please note that GroupDocs does not provide technical support over the phone. Phone support is only available for sales and purchase questions.
-
 {{< /alert >}}
 
 ## GroupDocs Free Support Forum

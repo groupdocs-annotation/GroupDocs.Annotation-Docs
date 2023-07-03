@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Dropdown component creates a combo box like shown in the picture below: 
+Dropdown component creates a combo box as shown in the picture below: 
 
 ![](/annotation/net/images/add-dropdown-component.png)
 

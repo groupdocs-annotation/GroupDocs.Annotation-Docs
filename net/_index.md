@@ -11,7 +11,7 @@ fullWidth: True
 ---
 <img src="/annotation/net/images/home.png" alt="groupdocs annotation .net logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
-GroupDocs.Annotation for .NET is a powerful cross-platform library that allows you to implement the ability to annotate text or images in a document in your applications.
+GroupDocs.Annotation for .NET is a powerful cross-platform library that allows you to implement the ability to annotate text or images in a document within your applications.
 
 GroupDocs.Annotation supports [over 35 file types]({{< ref "annotation/net/getting-started/supported-document-formats.md" >}}). These include PDF documents, Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Visio, as well as HTML pages, email messages, and even image files.
 

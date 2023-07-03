@@ -30,7 +30,7 @@ structuredData:
 toc: True
 ---
 
-You have the ability to compare annotations using the [Equals](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/equals) method or the already implemented [IEquatable](https://docs.microsoft.com/en-us/dotnet/api/system.iequatable-1) interface.
+GroupDocs.Annotation allows you to compare annotations using the [Equals](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/equals) method or the already implemented [IEquatable](https://docs.microsoft.com/en-us/dotnet/api/system.iequatable-1) interface.
 
 The following code snippet shows how to compare annotations:
 

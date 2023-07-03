@@ -11,7 +11,7 @@ toc: True
 ---
 ## Adding, editing, and removing annotations
 
-GroupDocs.Annotation for .NET main feature is document annotation that supports over 13 different annotation types for over 35 file formats.
+GroupDocs.Annotation for .NET main feature is document annotation that supports over 13 different annotation types for more 35 file formats.
 
 You can use various graphic, text, and watermark annotation types. See available annotation types in the list below.
 

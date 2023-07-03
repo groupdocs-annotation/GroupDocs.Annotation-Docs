@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Highlight annotation highlights and comments selected text like shown in the picture below:
+Highlight annotation highlights and comments selected text as shown in the picture below:
 
 ![](/annotation/net/images/add-highlight-annotation.png)
 

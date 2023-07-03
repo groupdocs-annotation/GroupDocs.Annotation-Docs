@@ -42,6 +42,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
         return File.Create(pagePath);
     })
     {
+        // Set resolution
         Resolution = 144
     };
 

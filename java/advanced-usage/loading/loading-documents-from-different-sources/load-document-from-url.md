@@ -3,7 +3,7 @@ id: load-document-from-url
 url: annotation/java/load-document-from-url
 title: Load document from URL
 weight: 3
-description: "The article describes how to load PDF, Word, Excel, PowerPoint documents from URL using GroupDocs.Annotation for Java."
+description: "The page describes how to load PDF, Word, Excel, PowerPoint documents from URL using GroupDocs.Annotation for Java."
 keywords: Load document from URL, Load document by URL GroupDocs.Annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False
@@ -34,7 +34,7 @@ structuredData:
 toc: True
 ---
 
-The following example shows how to load a document using URL:
+The following example shows how to load a document using its URL:
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}

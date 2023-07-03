@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Strikeout annotation strike-throughs a text fragment like shown in the picture below:
+Strikeout annotation strike-throughs a text fragment as shown in the picture below:
 
 ![](/annotation/java/images/add-strikeout-annotation.png)
 

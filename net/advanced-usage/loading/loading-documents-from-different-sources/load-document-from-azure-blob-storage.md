@@ -3,7 +3,7 @@ id: load-document-from-azure-blob-storage
 url: annotation/net/load-document-from-azure-blob-storage
 title: Load document from Azure Blob Storage
 weight: 6
-description: "This article explains how to load PDF, Word, Excel, PowerPoint documents from Azure Blob storage storage when using GroupDocs.Annotation for .NET."
+description: "The page describes how to load PDF, Word, Excel, PowerPoint documents from Azure Blob storage when using GroupDocs.Annotation for .NET."
 keywords: Load document from URL, Load document from Azure Blob storage by GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

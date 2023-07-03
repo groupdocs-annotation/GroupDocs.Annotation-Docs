@@ -32,7 +32,7 @@ toc: True
 
 [GroupDocs.Annotation](https://products.groupdocs.com/annotation/net) allows you to generate document page previews. To do this, call the [GeneratePreview](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method of the [Document](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) class. 
 
-Use the [PreviewOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class to manage the preview generation process: specify desired page numbers, image format, etc.
+Use the [PreviewOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class to manage the generation process: specify desired page numbers, image format, etc.
 
 To generate a document preview, follow these steps:
 1.  Create an instance of the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class. Specify the source document path as a parameter. The [Document](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document) property of the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class provides access to source document and implements [GeneratePreview](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview) method.
@@ -57,7 +57,7 @@ The [PreviewOptions](https://reference.groupdocs.com/net/annotation/groupdocs.an
 *   [RenderAnnotations](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/renderannotations) is an option to show or hide annotations.By default it is `true`. Set it to `false` if you do not need to show annotations.
 *   [WorksheetColumns](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) is a list of the [WorksheetColumnsRange](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/worksheetcolumnsrange) objects that indicates which columns to generate on specified worksheet.
 
-The following code snippet demonstrates how to generate document previews.
+The following code snippet demonstrates how to generate document previews:
 
 ## Get document page previews 
 

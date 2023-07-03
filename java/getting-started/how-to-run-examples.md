@@ -19,7 +19,7 @@ toc: True
 
 ## Download from GitHub
 
-The complete examples package of **GroupDocs.Annotation** is hosted on [GitHub](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java). You can either download the ZIP file or clone the repository of GitHub using your favorite GitHub client.
+The package of GroupDocs.Annotation examples is hosted on [GitHub](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java). You can either download the ZIP file or clone the repository of GitHub using your favorite GitHub client.
 
 In case you download the ZIP file, extract the folders on your local disk. The extracted files and folders will look like following image:
 

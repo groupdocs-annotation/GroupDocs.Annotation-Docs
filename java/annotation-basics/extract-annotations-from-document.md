@@ -3,7 +3,7 @@ id: extract-annotations-from-document
 url: annotation/java/extract-annotations-from-document
 title: Extract annotations from document
 weight: 4
-description: "Learn how to extract annotations from document when collaborate, edit and annotate documents using GroupDocs.Annotation for Java."
+description: "This page describes how to extract annotations from document when collaborate, edit and annotate documents using GroupDocs.Annotation for Java."
 keywords: Extract annotations, annotate document, get document annotations
 productName: GroupDocs.Annotation for Java
 hideChildren: False

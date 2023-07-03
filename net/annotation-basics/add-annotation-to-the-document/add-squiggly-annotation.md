@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Squiggly annotation marks text with a squiggly styling like shown in the picture below:
+Squiggly annotation marks text with a squiggly styling as shown in the picture below:
 
 ![](/annotation/net/images/add-squiggly-annotation.png)
 

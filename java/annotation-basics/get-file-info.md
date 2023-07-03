@@ -3,7 +3,7 @@ id: get-file-info
 url: annotation/java/get-file-info
 title: Get file info
 weight: 2
-description: "This article explains how to detect document file type, size and calculate pages count when annotate documents or images with GroupDocs.Annotation."
+description: "This page describes how to detect document file type, size and calculate pages count when annotate documents or images with GroupDocs.Annotation."
 keywords: 
 productName: GroupDocs.Annotation for Java
 hideChildren: False

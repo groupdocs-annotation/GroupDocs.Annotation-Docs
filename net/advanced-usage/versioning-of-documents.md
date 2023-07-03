@@ -26,7 +26,7 @@ structuredData:
 toc: True
 ---
 
-When you save a file using the [Annotator.Save()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save/index) method, the GroupDocs.Annotations creates a version of the annotated file. Versions list keeps annotations that you add, remove, and change. You can swap between different changes made with GroupDocs.Annotation. If needed, you can set your version names.
+When you save a file using the [Annotator.Save()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save/index) method, the GroupDocs.Annotations creates a version of the annotated file. Versions list keeps annotations that you add, remove, and change. You can swap between different changes made with GroupDocs.Annotation. If needed, you can set custom version names.
 
 By default, GroupDocs.Annotations names version using a GUID. If needed, you can specify a custom version name.
 

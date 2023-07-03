@@ -13,5 +13,5 @@ toc: True
 ---
 ## What are Annotation Replies?
 
-Annotation replies allows storing the written discussion inside a document and providing an effective way to collaborate during document review and redaction. Different software vendors provide their own way for commenting and annotating document content, so when you need to collaborate over various document types it’s required to have multiple applications installed on every collaborator’s device.   
+GroupDocs.Annotation allows you to store the written discussion inside a document and provide an effective way to collaborate during document review and redaction. Different software vendors provide their own way for commenting and annotating document content, so when you need to collaborate over various document types it’s required to have multiple applications installed on every collaborator’s device.   
 [GroupDocs.Annotation for .NET](https://products.groupdocs.com/annotation/net) provides an API to add, edit, or delete annotation replies for wide range of supported document formats within your application.

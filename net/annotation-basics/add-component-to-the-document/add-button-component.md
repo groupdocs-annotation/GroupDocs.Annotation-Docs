@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Button component creates a button component like shown in the picture below: 
+Button component creates a button component as shown in the picture below: 
 
 ![](/annotation/net/images/add-button-component.png)
 

@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Resource redaction annotation fills black rectangle with fixed position to hide a text like shown in the picture below:
+Resource redaction annotation fills black rectangle with fixed position to hide a text as shown in the picture below:
 
 ![](/annotation/net/images/add-resource-redaction-annotation.png)
 

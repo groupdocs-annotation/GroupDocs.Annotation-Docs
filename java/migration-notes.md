@@ -13,11 +13,12 @@ toc: True
 ## Why to migrate?
 
 Here are the key reasons to use the new updated API provided by GroupDocs.Annotation for Java since version 19.8:
-*   The `Annotator` class introduced as a **single entry point** to manage the document annotating process to any supported file format (instead of `AnnotationImageHandler` class in previous versions).
-*   The overall **rendering speed** improved dramatically by saving rendered page as soon as it was rendered, not when all pages list were rendered.
-*   Document **saving options** simplified so it is easy to instantiate proper options class and to control over document annotating and saving processes.
+*   The `Annotator` class introduced as a single entry point to manage the document annotating process to any supported file format (instead of `AnnotationImageHandler` class in previous versions).
+*   The overall rendering speed improved dramatically by saving rendered page as soon as it was rendered, not when all pages list were rendered.
+*   Document saving options simplified so it is easy to instantiate proper options class and to control over document annotating and saving processes.
 
 ## How to migrate?
+
 Here is a brief comparison of how to annotate document and save it using old and new API.
 
 ### Old coding style

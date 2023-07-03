@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net) provides an ability to update annotation replies by accessing them using the [Replies](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection.
+[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net) allows you to update annotation replies by accessing them using the [Replies](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection.
 
 To update annotation replies, follow these steps:
 

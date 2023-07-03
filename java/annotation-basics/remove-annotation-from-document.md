@@ -3,7 +3,7 @@ id: remove-annotation-from-document
 url: annotation/java/remove-annotation-from-document
 title: Remove annotation from document
 weight: 5
-description: "Learn how to remove annotations from document when collaborate, edit and annotate documents using GroupDocs.Annotation for Java."
+description: "This page describes how to remove annotations from document when collaborate, edit and annotate documents using GroupDocs.Annotation for Java."
 keywords: Delete annotation, remove annotation, annotate document
 productName: GroupDocs.Annotation for Java
 hideChildren: False

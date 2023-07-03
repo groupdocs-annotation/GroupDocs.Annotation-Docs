@@ -3,7 +3,7 @@ id: loading-custom-fonts
 url: annotation/net/loading-custom-fonts
 title: Load custom fonts.
 weight: 7
-description: "The page describes how to load custom fonts"
+description: "The page describes how to load custom fonts."
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 structuredData:
@@ -29,7 +29,7 @@ toc: True
 
 GroupDocs.Annotation v21.5 and later allows you to generate preview for documents using custom fonts. To do this, specify the [FontDirectories](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/fontdirectories) property of the [LoadOptions](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions) class.
 
-You can now try this feature by using code sample given below:
+The following code snippet shows how to use custom fonts while generating preview:
 
 {{< tabs "example1">}}
 {{< tab "C#" >}}
@@ -44,5 +44,6 @@ using (Annotator annotator = new Annotator(fs, new LoadOptions { FontDirectories
 
     annotator.Document.GeneratePreview(previewOptions);
 }
+```
 {{< /tab >}}
 {{< /tabs >}}

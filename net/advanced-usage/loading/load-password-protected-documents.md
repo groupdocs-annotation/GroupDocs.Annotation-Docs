@@ -3,7 +3,7 @@ id: load-password-protected-documents
 url: annotation/net/load-password-protected-documents
 title: Load the password-protected documents
 weight: 1
-description: "The article describes how to load the password protected PDF, Word, Excel, PowerPoint documents using GroupDocs.Annotation for .NET."
+description: "The page describes how to load the password protected PDF, Word, Excel, PowerPoint documents using GroupDocs.Annotation for .NET."
 keywords: Load password-protected document, Load protected document with GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -30,7 +30,7 @@ structuredData:
 toc: True
 ---
 
-[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows to annotate documents that are protected with a password.
+[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net) allows you to annotate documents that are protected with a password.
 
 To load a password protected file, follow these steps:
 

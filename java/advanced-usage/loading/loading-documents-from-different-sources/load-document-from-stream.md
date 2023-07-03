@@ -3,7 +3,7 @@ id: load-document-from-stream
 url: annotation/java/load-document-from-stream
 title: Load document from stream
 weight: 2
-description: "The article describes how to load PDF, Word, Excel, PowerPoint documents from stream using GroupDocs.Annotation for Java."
+description: "The page describes how to load PDF, Word, Excel, PowerPoint documents from stream using GroupDocs.Annotation for Java."
 keywords: Load document from stream, Load document with GroupDocs.Annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False

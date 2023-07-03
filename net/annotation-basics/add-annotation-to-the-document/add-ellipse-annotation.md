@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Ellipse annotation draws elliptic annotation on a document page like shown in the picture below.
+Ellipse annotation draws elliptic annotation on a document page as shown in the picture below.
 
 ![](/annotation/net/images/add-ellipse-annotation.png)
 

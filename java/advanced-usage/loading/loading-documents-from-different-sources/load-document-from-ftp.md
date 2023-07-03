@@ -3,7 +3,7 @@ id: load-document-from-ftp
 url: annotation/java/load-document-from-ftp
 title: Load document from FTP
 weight: 4
-description: "The article describes how to load PDF, Word, Excel, PowerPoint documents from FTP using GroupDocs.Annotation for Java."
+description: "The page describes how to load PDF, Word, Excel, PowerPoint documents from FTP using GroupDocs.Annotation for Java."
 keywords: Load document from URL, Load document by FTP GroupDocs.Annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False

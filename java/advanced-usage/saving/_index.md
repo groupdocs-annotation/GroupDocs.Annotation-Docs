@@ -11,8 +11,8 @@ structuredData:
     showOrganization: True
 toc: True
 ---
-The [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class provides the following properties to customize saving process:
-*   **AnnotationTypes** defines annotation types to be saved into resultant document;
+The [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class provides the following properties to customize the saving process:
+*   **AnnotationTypes** defines annotation types to be saved into output document;
 *   **FirstPage** defines the first page number to save specific page range;
 *   **LastPage** defines the last page number to save specific page range;
 *   **OnlyAnnotatedOptions** indicates whether to save only annotated pages or not.

@@ -3,7 +3,7 @@ id: load-document-from-ftp
 url: annotation/net/load-document-from-ftp
 title: Load document from FTP
 weight: 4
-description: "The article describes how to load PDF, Word, Excel, PowerPoint documents from FTP using GroupDocs.Annotation for .NET."
+description: "The page describes how to load PDF, Word, Excel, PowerPoint documents from FTP using GroupDocs.Annotation for .NET."
 keywords: Load document from URL, Load document by FTP GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

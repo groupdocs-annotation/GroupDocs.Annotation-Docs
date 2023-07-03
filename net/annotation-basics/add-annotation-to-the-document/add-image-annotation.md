@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Image annotation allows you to add an image on document page like shown in the picture below:
+Image annotation allows you to add an image on document page as shown in the picture below:
 
 ![](/annotation/net/images/add-image-annotation.png)
 

@@ -26,7 +26,7 @@ structuredData:
 toc: True
 ---
 
-GroupDocs.Annotation v22.4 and later allows you to set the quality of an image added to a document. Use the `imageQuality` parameter of the [AddImageToDocument](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document/addimagetodocument/) method.
+GroupDocs.Annotation v22.4 and later allows you to set the quality of an image added to a document. To do this, specify the `imageQuality` parameter of the [AddImageToDocument](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/document/addimagetodocument/) method.
 
 The parameter value is from 1 to 100. 1 means the lowest resolution, and 100 means the highest.
 

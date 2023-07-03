@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Distance annotation shows a distance between objects in a document like shown in the picture below: 
+Distance annotation shows a distance between objects in a document as shown in the picture below: 
 
 ![](/annotation/net/images/add-distance-annotation.png)
 

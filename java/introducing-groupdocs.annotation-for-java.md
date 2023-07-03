@@ -10,7 +10,7 @@ hideChildren: False
 toc: True
 ---
 GroupDocs.Annotation is a powerful cross-platform library that allows you to implement in your applications the ability to annotate text or images in files of [various formats]({{< ref "annotation/java/getting-started/supported-document-formats.md" >}}).
-Annotations may be comments, explanations with highlighted notes, watermarks, polylines, text or resource redactions, and so on.
+Annotations may be comments, explanations with highlighted notes, watermarks, polylines, text or resource redactions, etc.
 
 With a powerful and simple API, you can do the following.
 

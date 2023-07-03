@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Arrow annotation draws an arrow on the document page and annotate it like shown in the picture below. 
+Arrow annotation draws an arrow on the document page and annotate it as shown in the picture below. 
 
 ![](/annotation/java/images/add-arrow-annotation.png)
 

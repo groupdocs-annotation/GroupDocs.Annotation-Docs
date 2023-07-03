@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Watermark annotation adds text watermark like shown in the picture below:
+Watermark annotation adds text watermark as shown in the picture below:
 
 ![](/annotation/net/images/add-watermark-annotation.png)
 

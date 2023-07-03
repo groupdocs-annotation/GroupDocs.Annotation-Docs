@@ -3,7 +3,7 @@ id: load-document-from-amazon-s3-storage
 url: annotation/net/load-document-from-amazon-s3-storage
 title: Load document from Amazon S3 Storage
 weight: 5
-description: "This article explains how to load PDF, Word, Excel, PowerPoint documents from Amazon S3 storage when using GroupDocs.Annotation for .NET."
+description: "The page describes how to load PDF, Word, Excel, PowerPoint documents from Amazon S3 storage when using GroupDocs.Annotation for .NET."
 keywords: Load document from URL, Load document from Amazon S3 storage GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

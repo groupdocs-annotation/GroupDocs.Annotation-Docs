@@ -3,7 +3,7 @@ id: load-document-from-url
 url: annotation/net/load-document-from-url
 title: Load document from URL
 weight: 3
-description: "The article describes how to load PDF, Word, Excel, PowerPoint documents from URL using GroupDocs.Annotation for .NET."
+description: "The page describes how to load PDF, Word, Excel, PowerPoint documents from URL using GroupDocs.Annotation for .NET."
 keywords: Load document from URL, Load document by URL GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

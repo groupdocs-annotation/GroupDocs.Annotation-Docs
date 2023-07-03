@@ -202,7 +202,7 @@ In this version Below the list of most notable changes in release of GroupDocs.A
     *   Instantiate [Annotator](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator) object with input document path or stream;
     *   Instantiate ImageAnnotation object with desired properties (position, page number, etc);
     *   Call [Add](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#add(com.groupdocs.annotation.models.annotationmodels.AnnotationBase)) method and pass ImageAnnotation object;
-    *   Call [Save](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save()) method with resultant document path or stream.
+    *   Call [Save](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/Annotator#save()) method with output document path or stream.
         
     The following code demonstrates how to add ImageAnnotation with remote ImagePath to the document:
         

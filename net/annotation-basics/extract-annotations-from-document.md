@@ -3,7 +3,7 @@ id: extract-annotations-from-document
 url: annotation/net/extract-annotations-from-document
 title: Extract annotations from document
 weight: 4
-description: "Learn how to extract annotations from document when collaborate, edit and annotate documents using GroupDocs.Annotation for .NET."
+description: "The page describes how to extract annotations from document when collaborate, edit and annotate documents using GroupDocs.Annotation for .NET."
 keywords: Extract annotations, annotate document, get document annotations
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

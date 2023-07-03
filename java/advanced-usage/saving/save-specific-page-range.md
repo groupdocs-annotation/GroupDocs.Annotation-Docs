@@ -27,8 +27,8 @@ toc: True
 To export the specific page range, follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class. Specify the input document path or stream.
-2.   Instantiate the [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class. Call the [setFirstPage](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/#setFirstPage-int-) and  [setLastPage](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/#setLastPage-int-) methods to specify parameters.
-3.   Call the [save()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#save--) method with the resultant document path or stream. Specify the [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class as a parameter.
+2.   Instantiate the [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class. Call the [setFirstPage](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/#setFirstPage-int-) and  [setLastPage](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/#setLastPage-int-) methods to specify the first and the last pages.
+3.   Call the [save()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#save--) method with the output document path or stream. Specify the [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class as a parameter.
 
 The following code demonstrates how to save the range of document page:
 

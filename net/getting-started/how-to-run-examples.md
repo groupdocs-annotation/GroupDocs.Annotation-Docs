@@ -9,7 +9,9 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 toc: True
 ---
-{{< alert style="warning" >}}Before running an example make sure that GroupDocs.Annotation has been installed successfully.{{< /alert >}}
+{{< alert style="warning" >}}
+Before running an example make sure that GroupDocs.Annotation has been installed successfully.
+{{< /alert >}}
 
 We offer multiple solutions on how you can run GroupDocs.Annotation examples, by building your own or using our back-end or front-end examples out-of-the-box.
 

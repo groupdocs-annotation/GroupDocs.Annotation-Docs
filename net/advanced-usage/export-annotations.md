@@ -1,10 +1,10 @@
 ---
 id: export-annotations
 url: annotation/net/export-annotations
-title: Export annotations
+title: Import annotations
 weight: 10
-description: "The page describes how to export annotation using GroupDocs.Annotation for .NET API."
-keywords: export
+description: "The page describes how to import annotation using GroupDocs.Annotation for .NET API."
+keywords: import
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 structuredData:
@@ -26,7 +26,7 @@ structuredData:
 toc: True
 ---
 
-GroupDocs v22.1 allows you to export annotations to a document from an XML file.
+GroupDocs v22.1 allows you to import annotations to a document from an XML file.
 
 The following code snippet shows how to export annotations:
 

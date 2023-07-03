@@ -8,7 +8,7 @@ keywords: DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML
 productName: GroupDocs.Annotation for Java
 hideChildren: False
 ---
-For some file types, GroupDocs.Annotation saves the result in a different format. In this case, the output file type is specified after <strong>\*</strong>. If no such symbol is specified, GroupDocs.Annotation stores the result in the original file type.
+For some file types, GroupDocs.Annotation saves the result in a different format. In this case, the output file type is specified after <strong>\*</strong>. If no such symbol is specified, GroupDocs.Annotation saves the result in the original file type.
 
 | Format | Description | Annotate |
 | --- | --- | --- |

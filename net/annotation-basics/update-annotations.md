@@ -3,7 +3,7 @@ id: update-annotations
 url: annotation/net/update-annotations
 title: Update annotations
 weight: 6
-description: "Check this article and learn how to edit annotation properties - change annotation position, size, appearance etc. when annotate documents using GroupDocs.Annotation for .NET."
+description: "The page describes how to edit annotation properties - change annotation position, size, appearance etc. when annotate documents using GroupDocs.Annotation for .NET."
 keywords: Update annotations, Edit annotation, Change annotation properties
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

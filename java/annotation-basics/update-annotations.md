@@ -3,7 +3,7 @@ id: update-annotations
 url: annotation/java/update-annotations
 title: Update annotations
 weight: 6
-description: "Check this article and learn how to edit annotation properties - change annotation position, size, appearance etc. when annotate documents using GroupDocs.Annotation for Java."
+description: "This page describes how to edit annotation properties - change annotation position, size, appearance etc. when annotate documents using GroupDocs.Annotation for Java."
 keywords: Update annotations, Edit annotation, Change annotation properties
 productName: GroupDocs.Annotation for Java
 hideChildren: False
@@ -34,7 +34,7 @@ toc: True
 To update annotations, follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class. Specify the input document path or stream.
-2.   Create an [AnnotationBase](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/annotationbase) implementation and set Id of existed annotation (if annotation with that Id is not found, it is ignored) or path list of annotations (all existed annotations are removed).
+2.   Create an [AnnotationBase](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/annotationbase) implementation and specify Id of existed annotation (if annotation with that Id is not found, it is ignored) or path list of annotations (all existed annotations are removed).
 3.   Call the [update](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#update-java.util.List-com.groupdocs.annotation.models.annotationmodels.AnnotationBase--) method of the [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class. Specify annotations.
 4.   Call the [save()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#save--) method. Specify the output document path or stream.
 

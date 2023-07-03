@@ -12,7 +12,7 @@ toc: True
 GroupDocs.Annotation is a powerful cross-platform library that allows you to implement in your applications the ability to annotate text or images in files of [various formats]({{< ref "annotation/net/getting-started/supported-document-formats.md" >}}).
 Annotations may be comments, explanations with highlighted notes, watermarks, polylines, text or resource redactions, and so on.
 
-With a powerful and simple API, you can do the following.
+With a powerful and simple API, you can do the following:
 
 * Annotate documents of any supported format;
 * Use annotations of different types - text, graphics, watermarks, revisions, etc.;

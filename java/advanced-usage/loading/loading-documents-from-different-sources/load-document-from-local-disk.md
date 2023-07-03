@@ -3,7 +3,7 @@ id: load-document-from-local-disk
 url: annotation/java/load-document-from-local-disk
 title: Load document from local disk
 weight: 1
-description: "The article describes how to load PDF, Word, Excel, PowerPoint documents from local disk using GroupDocs.Annotation for Java."
+description: "The page describes how to load PDF, Word, Excel, PowerPoint documents from local disk using GroupDocs.Annotation for Java."
 keywords: Load document from local disk, Load document from file path, Load document with GroupDocs.Annotation
 productName: GroupDocs.Annotation for Java
 hideChildren: False

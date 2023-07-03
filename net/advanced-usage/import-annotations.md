@@ -3,7 +3,7 @@ id: import-annotations
 url: annotation/net/import-annotations
 title: Import annotations
 weight: 10
-description: "This page describes how to import annotation using GroupDocs.Annotation for .NET API."
+description: "This page describes how to import annotation from the XML files using GroupDocs.Annotation for .NET API."
 keywords: Import
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

@@ -28,7 +28,7 @@ To export the specific page range, follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) class. Specify the input document path or stream.
 2.   Instantiate the [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) class. Specify the [FirstPage](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions/firstpage/) and  [LastPage](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions/lastpage/) parameters.
-3.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with the resultant document path or stream. Specify the [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) class as a parameter.
+3.   Call the [Save](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with the output document path or stream. Specify the [SaveOptions](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) class as a parameter.
 
 The following code demonstrates how to save the range of document page:
 

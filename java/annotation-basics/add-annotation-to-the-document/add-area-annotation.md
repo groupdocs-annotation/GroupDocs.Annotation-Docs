@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Area annotation allows you to mark up a rectangle area within the document page and annotate it like shown in the picture below. 
+Area annotation allows you to mark up a rectangle area within the document page and annotate it as shown in the picture below. 
 
 ![](/annotation/java/images/add-area-annotation.png)
 

@@ -29,11 +29,11 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file and class SaveOptions with the annotation type you want to save.
 toc: True
 ---
-To save only annotations of specific types, follow these steps:
+To save the annotations of specific types only, follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class. Specify the input document path or stream.
 2.   Instantiate the [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class. Call the [setAnnotationType()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/#setAnnotationTypes-int-) method and specify the annotation type(s) to save.
-3.   Call the [save()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#save--) method with the resultant document path or stream. Specify the [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class as a parameter.
+3.   Call the [save()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#save--) method with the output document path or stream. Specify the [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class as a parameter.
 
 The following code snippet shows how to save only pages with specific annotation type:
 

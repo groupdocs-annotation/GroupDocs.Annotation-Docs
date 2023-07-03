@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Point annotation sticks comments to any point in a document like shown in the picture below:
+Point annotation sticks comments to any point in a document as shown in the picture below:
 
 ![](/annotation/java/images/add-point-annotation.png)
 

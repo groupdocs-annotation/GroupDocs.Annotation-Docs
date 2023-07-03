@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Link annotation adds a hyperlink to document like shown in the picture below:
+Link annotation adds a hyperlink to document as shown in the picture below:
 
 ![](/annotation/java/images/add-link-annotation.png)
 

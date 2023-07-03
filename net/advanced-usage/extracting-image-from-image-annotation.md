@@ -28,7 +28,7 @@ structuredData:
 toc: True
 ---
 
-You can extract an image from the [ImageAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/) class. To do this, call the [ImageAnnotation.GetImage()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/methods/getimage) method.
+You can extract an image from the [ImageAnnotation](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/) object. To do this, call the [ImageAnnotation.GetImage()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/methods/getimage) method.
 
 The following code snippet shows how to extract an image from an image annotation:
 

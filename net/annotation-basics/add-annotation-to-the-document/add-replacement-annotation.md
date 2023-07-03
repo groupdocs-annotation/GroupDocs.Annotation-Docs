@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-Replacement annotation replaces original text with specified text fragmentlike shown in the picture below: 
+Replacement annotation replaces original text with specified text fragmentas shown in the picture below: 
 
 ![](/annotation/net/images/add-replacement-annotation.png)
 
