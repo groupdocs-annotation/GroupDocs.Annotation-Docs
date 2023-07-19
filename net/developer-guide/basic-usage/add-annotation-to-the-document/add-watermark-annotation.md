@@ -39,12 +39,12 @@ There is an ability to specify the next properties for [WatermarkAnnotation](ht
 *   [Text](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/text) - text of watermark;
 *   [FontColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/fontcolor) - color of annotation text;
 *   [FontFamily](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/fontfamily) - font of annotation text;
-*   [FontSize](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/fontsize) - size of text font;
+*   [FontSize](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/fontsize) - size of text font (this property taken into account only when AutoScale=false);
 *   [Opacity](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/opacity) - allows to set annotation opacity;
 *   [Angle](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/angle) - watermark text angle;
-*   [VerticalAlignment]() - defines vertical alignment on document;
-*   [HorizontalAlignment]() - defines horizontal alignment on document.
-*   [AutoScale]() - size watermark depends on the word length and document size.
+*   [VerticalAlignment](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/verticalalignment/) - defines vertical alignment on document;
+*   [HorizontalAlignment](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/horizontalalignment/) - defines horizontal alignment on document.
+*   [AutoScale](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/autoscale/) - size watermark depends on the word length and document size (in case if it's true you could not specify FontSize).
 
 Follow these steps to add Watermark annotation to document:
 
