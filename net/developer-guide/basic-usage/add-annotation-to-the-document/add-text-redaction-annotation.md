@@ -55,7 +55,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
     {
     	CreatedOn = DateTime.Now,
         Message = "This is text redaction annotation",
-        BackgroundColor = 16761035,
+        FontColor = 16761035,
         PageNumber = 0,
         Points = new List<Point>
         {
