@@ -29,7 +29,7 @@ structuredData:
           text: Call Annotator class .Save() method and pass output path file.
 toc: True
 ---
-**Search text** annotation adds rectangle with a text inside, like shown at the picture below. 
+**Search text** annotation searches for specific text and highlight it, like it shown below. 
 
 ![](/annotation/net/images/add-text-search-annotation.png)
                           
@@ -37,7 +37,7 @@ toc: True
 There is an ability to specify the next properties for [SearchTextAnnotation](https://reference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/searchtextannotation) type:
 
 *   [BackgroundColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/backgroundcolor) - describes area background color;
-*   [Text](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/text) - the text you want to find
+*   [Text](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/text) - the text you want to find (please note that if document not contins specific text, then nothing will be highlighted);
 *   [FontColor](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontcolor) - color of the text
 *   [FontFamily](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontfamily) - name of text font;
 *   [FontSize](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/searchtextannotation/properties/fontsize) - size of text font;
@@ -57,7 +57,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
 {
 	SearchTextFragment searchText = new SearchTextFragment()
     {
-    	Text = "Welcome to GroupDocs",
+    	Text = "Welcome to GroupDocs", //here should be the text that is contained in your document, otherwise nothing will be highlighted
         FontSize = 10,
         FontFamily = "Calibri",
         FontColor = 65535,
