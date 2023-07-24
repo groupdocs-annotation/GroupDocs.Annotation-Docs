@@ -26,7 +26,7 @@ Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX
 	<li><a href='{{< ref "annotation/net/getting-started/supported-document-formats" >}}'>Supported Document Formats</a></li>
 	<li><a href='{{< ref "annotation/net/getting-started/system-requirements" >}}'>System Requirements</a></li>
 	<li><a href='{{< ref "annotation/net/getting-started/installation" >}}'>Installation</a></li>
-	<li><a href='{{< ref "annotation/net/getting-started/evaluation-limitations-and-licensing-of-groupdocs.annotation.md" >}}'>Licensing and Subscription</a></li>
+	<li><a href='{{< ref "annotation/net/getting-started/licensing-and-subscription.md" >}}'>Licensing and Subscription</a></li>
 </ul>
 <p>TECHNICAL SUPPORT</p>
 <ul>
@@ -49,11 +49,11 @@ Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX
 <p><b>Develop Functions</b></p>
 <hr><p>GUIDE</p></hr>
 <ul>
-	<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/get-file-info" >}}'>Retrieve File Info</a></li>
-	<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/extract-annotations-from-document" >}}'>Read Annotations</a></li>
-	<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/remove-annotation-from-document" >}}'>Remove Annotations</a></li>
-	<li><a href='{{< ref "annotation/net/developer-guide/basic-usage/add-annotation-to-the-document/_index.md" >}}'>Add Annotations</a></li>				
-    <li><a href='{{< ref "annotation/net/developer-guide/basic-usage/working-with-annotation-replies/_index.md" >}}'>Working with Replies</a></li>
+	<li><a href='{{< ref "annotation/net/annotation-basics/get-file-info" >}}'>Retrieve File Info</a></li>
+	<li><a href='{{< ref "annotation/net/annotation-basics/extract-annotations-from-document" >}}'>Read Annotations</a></li>
+	<li><a href='{{< ref "annotation/net/annotation-basics/remove-annotation-from-document" >}}'>Remove Annotations</a></li>
+	<li><a href='{{< ref "annotation/net/annotation-basics/add-annotation-to-the-document/_index.md" >}}'>Add Annotations</a></li>				
+    <li><a href='{{< ref "annotation/net/annotation-basics/working-with-annotation-replies/_index.md" >}}'>Working with Replies</a></li>
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>
