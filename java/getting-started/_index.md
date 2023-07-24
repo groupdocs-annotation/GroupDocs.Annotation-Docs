@@ -7,6 +7,4 @@ description: ""
 keywords: 
 productName: GroupDocs.Annotation for Java
 hideChildren: False
-structuredData:
-    showOrganization: True
 ---
