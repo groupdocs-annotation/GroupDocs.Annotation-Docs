@@ -2,7 +2,7 @@
 id: remove-annotation-replies
 url: annotation/java/remove-annotation-replies
 title: Remove annotation replies
-weight: 2
+weight: 3
 description: "The page describes how to remove all or specific annotation replies when collaborate over document using GroupDocs.Annotation for Java API."
 keywords: remove annotation reply, reply to annotation, remove annotation comment
 productName: GroupDocs.Annotation for Java

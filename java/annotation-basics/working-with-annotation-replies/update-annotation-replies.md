@@ -2,7 +2,7 @@
 id: update-annotation-replies
 url: annotation/java/update-annotation-replies
 title: Update annotation replies
-weight: 3
+weight: 2
 description: "The page describes how to update annotation replies when collaborate over document using GroupDocs.Annotation for Java API."
 keywords: update annotation reply, change reply, reply to annotation
 productName: GroupDocs.Annotation for Java

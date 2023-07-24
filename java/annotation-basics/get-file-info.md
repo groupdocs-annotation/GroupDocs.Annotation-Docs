@@ -32,8 +32,8 @@ GroupDocs.Annotation allows you to get the following file information:
 [PagesInfo](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/idocumentinfo/#setPagesInfo-java.util.List-com.groupdocs.annotation.models.PageInfo--) represents a `List` of the [PageInfo](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models/pageinfo/) objects which store information about each page. 
 
 [PageInfo](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models/pageinfo/) has the following properties (in pixels):
-* [Width](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models/pageinfo/#getWidth--)
-* [Height](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models/pageinfo/#getHeight--) in pixels. 
+* [Width](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models/pageinfo/#getWidth--)
+* [Height](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models/pageinfo/#getHeight--)
 
 This properties supports all formats except Email and Html. Width and height are the same for all pages except the Cells formats.
 

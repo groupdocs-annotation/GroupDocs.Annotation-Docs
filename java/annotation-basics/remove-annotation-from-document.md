@@ -25,7 +25,7 @@ structuredData:
           text: Call Annotator class method .Save() and pass output path file to it.
 toc: True
 ---
-[GroupDocs.Annotation](https://products.groupdocs.com/annotation/javaa) allows you to remove all previously added annotations. To do this, follow these steps:
+[GroupDocs.Annotation](https://products.groupdocs.com/annotation/java) allows you to remove all previously added annotations. To do this, follow these steps:
 
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class. Specify the input document path or stream.
 2.   Instantiate the [SaveOptions](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.options.export/saveoptions/) class. Set `AnnotationTypes = AnnotationType.None`.
