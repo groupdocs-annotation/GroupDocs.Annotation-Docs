@@ -9,18 +9,22 @@ productName: GroupDocs.Annotation for .NET
 hideChildren: False
 toc: True
 ---
-{{< alert style="warning" >}}Before running an example make sure that GroupDocs.Annotation has been installed successfully.{{< /alert >}}
+{{< alert style="warning" >}}
+Before running an example make sure that GroupDocs.Annotation has been installed successfully.
+{{< /alert >}}
 
 We offer multiple solutions on how you can run GroupDocs.Annotation examples, by building your own or using our back-end or front-end examples out-of-the-box.
-Please choose one from the following list:
-
 
 ## Build project from scratch
-*   Open Visual Studio and go to **File** -> **New **\->** Project**.
-*   Select appropriate project type - Console App, ASP.NET Web Application etc.
-*   Install **GroupDocs.Annotation for .NET** from Nuget or official GroupDocs website following this [guide]({{< ref "annotation/net/getting-started/installation.md" >}}).
-*   Code your first application with **GroupDocs.Annotation for .NET** like this
-    
+
+To build a project from scratch, follow these steps:
+
+1.   Open Visual Studio and navigate to **File** -> **New **\->** Project**.
+2.   Select the appropriate project type - Console App, ASP.NET Web App etc.
+3.   Install **GroupDocs.Annotation for .NET** from NuGet or official GroupDocs website as described in the [guide]({{< ref "annotation/net/getting-started/installation.md" >}}).
+4.   Develop the application using **GroupDocs.Annotation for .NET** like this:
+{{< tabs "example1">}}
+{{< tab "C#" >}}  
 ```csharp
 // Create list of annotations
 List<AnnotationBase> annotations = new List<AnnotationBase>()
@@ -49,57 +53,71 @@ using  (Annotator annotator = new Annotator("C:\output\input.pdf"))
     annotator.Save("C:\output\result.pdf", new SaveOptions());
 }
 ```
-    
-*   Build and Run your project. 
-*   Rendered document pages will appear inside "*C:\\output\\" *directory*.*
+{{< /tab >}}
+{{< /tabs >}}    
+5.   Build and run your project. 
+6.   Rendered document pages appears in the `C:\\output\\` directory.
 
 ## Run back-end examples
 
-The complete examples package of **GroupDocs.Annotation** is hosted on [GitHub](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET). You can either download the ZIP file from [here](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/archive/master.zip) or clone the repository of GitHub using your favourite git client.  
-In case you download the ZIP file, extract the folders on your local disk. The extracted files and folders will look like following image:
+You can find the complete package of the **GroupDocs.Annotation** examples on [GitHub](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET). You can either [download the ZIP file](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/archive/master.zip) or clone the GitHub repository using your any git client.  
+If you downloaded the ZIP file, extract the folders to the local disk. The extracted files and folders look as follows:
+
 ![](/annotation/net/images/how-to-run-examples.png)
 
-In extracted files and folders, you can find CSharp solution file. The project is created in **Microsoft Visual Studio 2019**. The **Resources** folder contains all the sample document and image files used in the examples.  
-To run the examples, open the solution file in Visual Studio and build the project. To add missing references of **GroupDocs.Annotation**. All the functions are called from **RunExamples.cs**.   
-Un-comment the function you want to run and comment the rest.
+Find the CSharp solution file. The project is created in **Microsoft Visual Studio 2019**. The `Resources` folder contains all the sample documents and images used in the examples.  
+To run the examples, open the solution file with Visual Studio and build the project. If needed, add missing references of GroupDocs.Annotation. All the functions are called in the **RunExamples.cs** file. Uncomment the function(s) you want to run and comment the rest.
+
 ![](/annotation/net/images/how-to-run-examples_1.png)
 
 ## Run MVC examples
 
-You can run [GroupDocs.Annotation for .NET MVC Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC) following these steps:
-*   Download [source code](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository 
-    ```csharp
-    git clone https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC
-    ```
-*   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.  
-*   Open [http://localhost:8080/annotation](http://localhost:8080/annotation) in your favorite browser.
+To run the [GroupDocs.Annotation for .NET MVC Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC), follow these steps:
 
-For more details about project configuration please refer to this [guide](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC#configuration).
+1.   Download the [source code](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC/archive/master.zip) from GitHub or clone the repository: 
+{{< tabs "example2">}}
+{{< tab "Git" >}} 
+```bash
+git clone https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC
+{{< /tab >}}
+{{< /tabs >}}  
+2.   Open solution with the Visual Studio. Update common parameters in **web.config** and example related properties in **configuration.yml** to meet your requirements.  
+3.   Open [http://localhost:8080/annotation](http://localhost:8080/annotation) in your favorite browser.
+
+For details about project configuration please refer to this [guide](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC#configuration).
 
 ## Run WebForms examples
 
-You can run [GroupDocs.Annotation for .NET Web.Forms Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms) following these steps:
+To run the [GroupDocs.Annotation for .NET Web.Forms Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms), follow these steps:
 
-*   Download [source code](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms/archive/master.zip) from GitHub or clone this repository 
-    ```csharp
-    git clone https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms.git
-    ```
-*   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
-*   Open [http://localhost:8080/annotation](http://localhost:8080/annotation) in your favorite browser.
-For more details about project configuration please refer to this [guide](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms#configuration).
+1.   Download [the source code](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms/archive/master.zip) from GitHub or clone this repository:
+{{< tabs "example3">}}
+{{< tab "Git" >}} 
+```bash
+git clone https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms.git
+```
+{{< /tab >}}
+{{< /tabs >}}  
+2.   Open solution with the Visual Studio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
+3.   Open [http://localhost:8080/annotation](http://localhost:8080/annotation) in your favorite browser.
+For details about project configuration please refer to this [guide](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms#configuration).
 
 ## Run from Docker
 
-Use [Docker](https://www.docker.com/) image to try GroupDocs.Annotation for .NET features in an easy way. Here are the command to run GroupDocs.Annotation for .NET from docker image.
-
-```csharp
+Use the [Docker](https://www.docker.com/) image to try GroupDocs.Annotation for .NET features. Execute the following commands to run GroupDocs.Annotation for .NET from docker image:
+{{< tabs "example4">}}
+{{< tab "PowerShell" >}}
+```
 mkdir DocumentSamples
 mkdir Licenses
 docker run -p 8080:8080 --env application.hostAddress=localhost -v `pwd`/DocumentSamples:/home/groupdocs/app/DocumentSamples -v `pwd`/Licenses:/home/groupdocs/app/Licenses groupdocs/annotation
 ## Open http://localhost:8080/annotation in your favorite browser.
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Contribute
 
-If you like to add or improve an example, we encourage you to contribute to the project. All examples in this repository are open source and can be freely used in your own applications.  
-To contribute, you can fork the repository, edit the code and create a pull request. We will review the changes and include it in the repository if found helpful.
+If you want to add or improve an example, we encourage you to contribute to the project. All examples in this repository are open source and can be freely used in your applications.
+
+To contribute, fork the repository, edit the code and create a pull request. We will review the changes and include it in the repository if found helpful.
