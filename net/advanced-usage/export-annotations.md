@@ -4,7 +4,7 @@ url: annotation/net/export-annotations
 title: Export annotations
 weight: 10
 description: "The page describes how to export annotation using GroupDocs.Annotation for .NET API."
-keywords: import
+keywords: export
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 structuredData:
