@@ -35,6 +35,8 @@ Today annotations can be programmatically added to a documents and images of var
 | [Point]({{< ref "annotation/java/annotation-basics/add-annotation-to-the-document/add-point-annotation.md" >}}) | Represents abstract point annotation. |
 | [Polyline]({{< ref "annotation/java/annotation-basics/add-annotation-to-the-document/add-polyline-annotation.md" >}}) | Represents free-hand drawing line. |
 | [Resource redaction]({{< ref "annotation/java/annotation-basics/add-annotation-to-the-document/add-resource-redaction-annotation.md" >}}) | Represents free rectangle annotation with fixed position and black background. For this annotation is impossible to move it (in result document), and change any visual properties. |
+| [Search text]({{< ref "annotation/java/annotation-basics/add-annotation-to-the-document/add-text-search-annotation.md" >}}) | This annotation highlight search text. Applicable only for text. |
+| [Squiggly]({{< ref "annotation/java/annotation-basics/add-annotation-to-the-document/add-squiggly-annotation.md" >}}) | This annotation squiggly underline text. Applicable only for text. |
 | [Text field]({{< ref "annotation/java/annotation-basics/add-annotation-to-the-document/add-text-field-annotation.md" >}}) | This is a rectangle annotation with some text inside rectangle area. |
 | [Highlight]({{< ref "annotation/java/annotation-basics/add-annotation-to-the-document/add-highlight-annotation.md" >}}) | This annotation highlight text. Applicable only for text. |
 | [Text redaction]({{< ref "annotation/java/annotation-basics/add-annotation-to-the-document/add-text-redaction-annotation.md" >}}) | Same as resource redaction annotation, but applicable only for text. |
