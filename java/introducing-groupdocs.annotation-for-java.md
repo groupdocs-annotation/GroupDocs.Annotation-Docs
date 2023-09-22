@@ -21,3 +21,9 @@ With a powerful and simple API, you can do the following.
 * Get file information such as file type, number of pages, etc.;
 * Generate preview file for precise placement of annotations;
 * Export or import annotations to a file.
+
+
+You can use GroupDocs.Viewer across multiple platforms and operation systems:
+
+* Windows, Linux, and macOS
+* Java 5 and higher
