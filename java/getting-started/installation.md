@@ -30,7 +30,7 @@ First, you need to specify GroupDocs repository configuration/location in your M
     <repository>
         <id>GroupDocsJavaAPI</id>
         <name>GroupDocs Java API</name>
-        <url>http://repository.groupdocs.com/repo/</url>
+        <url>https://repository.groupdocs.com/repo/</url>
     </repository>
 </repositories>
 ```
@@ -48,7 +48,7 @@ Then define GroupDocs.Annotation for Java API dependency in your `pom.xml` as
     <dependency>
         <groupId>com.groupdocs</groupId>
         <artifactId>groupdocs-annotation</artifactId>
-        <version>23.6</version> 
+        <version>23.10</version> 
     </dependency>
 </dependencies>
 ```
