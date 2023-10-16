@@ -28,9 +28,9 @@ First, you need to specify GroupDocs repository configuration/location in your M
 ```xml
 <repositories>
     <repository>
-        <id>GroupDocsJavaAPI</id>
-        <name>GroupDocs Java API</name>
-        <url>https://repository.groupdocs.com/repo/</url>
+        <id>GroupDocs Artifact Repository</id>
+        <name>GroupDocs Artifact Repository</name>
+        <url>https://releases.groupdocs.com/java/repo/</url>
     </repository>
 </repositories>
 ```
