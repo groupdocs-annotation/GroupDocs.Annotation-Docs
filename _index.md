@@ -102,7 +102,7 @@ GroupDocs.Annotation is a cross-platform library that allows you to add, edit, a
 <li > 
 <svg class="gdoc-product-example__icon"><use xlink:href="/img/groupdocs-stack.svg#git"></use></svg>
 <div>
-<a class="gdoc-product-example__link" rel="nofollow" href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Demos/GroupDocs.Annotation.AspNetMvc">GroupDocs.Annotation for .NET MVC</a>
+<a class="gdoc-product-example__link" rel="nofollow" href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Demos/ASP.NET%20MVC/src">GroupDocs.Annotation for .NET MVC</a>
 <div class="gdoc-product-example__descr">Open-source font-end project ready to be used out of the box</div>
 </div>
 </li>
@@ -110,7 +110,7 @@ GroupDocs.Annotation is a cross-platform library that allows you to add, edit, a
 <li > 
 <svg class="gdoc-product-example__icon"><use xlink:href="/img/groupdocs-stack.svg#git"></use></svg>
 <div>
-<a class="gdoc-product-example__link" rel="nofollow" href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Demos/GroupDocs.Annotation.AspNetWebForms">GroupDocs.Annotation for .NET Web Forms</a>
+<a class="gdoc-product-example__link" rel="nofollow" href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Demos/ASP.NET%20Web%20Forms/src">GroupDocs.Annotation for .NET Web Forms</a>
 <div class="gdoc-product-example__descr">Open-source font-end project ready to be used out of the box</div>
 </div>
 </li>
