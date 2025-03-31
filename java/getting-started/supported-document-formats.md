@@ -52,6 +52,7 @@ For some file types, GroupDocs.Annotation saves the result in a different format
 {{< alert style="tip" >}}
 
 **Can’t find your file format?**
+
 We’re here to help! Please post a request on our [Free Support Forum](https://forum.groupdocs.com/c/annotation/10), and our team will assist you.
 
 {{< /alert >}}
