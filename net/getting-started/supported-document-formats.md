@@ -49,7 +49,7 @@ For some file types, GroupDocs.Annotation saves the result in a different format
 | [VST](https://docs.fileformat.com/image/vst/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio 2013 Stencil | ![(tick)](/annotation/net/images/check.png) |
 | [VSTM](https://docs.fileformat.com/image/vstm/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio Template File Format | ![(tick)](/annotation/net/images/check.png) |
 
-{{< alert style="info" >}}
+{{< alert style="tip" >}}
 
 **Can’t find your file format?**
 We’re here to help! Please post a request on our [Free Support Forum](https://forum.groupdocs.com/c/annotation/10), and our team will assist you.
