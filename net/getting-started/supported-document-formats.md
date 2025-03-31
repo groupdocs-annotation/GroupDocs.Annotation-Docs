@@ -10,10 +10,6 @@ hideChildren: False
 ---
 For some file types, GroupDocs.Annotation saves the result in a different format. In this case, the output file type is specified after <strong>\*</strong>. If no such symbol is specified, GroupDocs.Annotation saves the result in the original file type.
 
-This topic lists file formats supported by GroupDocs.Annotation for .NET. You can use the input below to filter supported formats by extension.
-
-{{< table-filter placeholder="Start typing to find file format" forumUrl="https://forum.groupdocs.com/c/annotation/10">}}
-
 | Format | Description | Annotate |
 | --- | --- | --- |
 | [DOC](https://docs.fileformat.com/word-processing/doc/) | Microsoft Word 97-2003 Document | ![(tick)](/annotation/net/images/check.png) |
@@ -52,3 +48,10 @@ This topic lists file formats supported by GroupDocs.Annotation for .NET. You ca
 | [VSSX](https://docs.fileformat.com/image/vssx/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span>| Visio Stencil File Format | ![(tick)](/annotation/net/images/check.png) |
 | [VST](https://docs.fileformat.com/image/vst/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio 2013 Stencil | ![(tick)](/annotation/net/images/check.png) |
 | [VSTM](https://docs.fileformat.com/image/vstm/) <span style="float: right; color: #909090"><strong>*</strong>vsdx</span> | Microsoft Visio Template File Format | ![(tick)](/annotation/net/images/check.png) |
+
+{{< alert style="info" >}}
+
+**Can’t find your file format?**
+We’re here to help! Please post a request on our [Free Support Forum](https://forum.groupdocs.com/c/annotation/10), and our team will assist you.
+
+{{< /alert >}}
