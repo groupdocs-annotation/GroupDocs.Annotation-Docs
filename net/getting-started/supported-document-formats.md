@@ -10,6 +10,10 @@ hideChildren: False
 ---
 For some file types, GroupDocs.Annotation saves the result in a different format. In this case, the output file type is specified after <strong>\*</strong>. If no such symbol is specified, GroupDocs.Annotation saves the result in the original file type.
 
+This topic lists file formats supported by GroupDocs.Annotation for .NET. You can use the input below to filter supported formats by extension.
+
+{{< table-filter placeholder="Start typing to find file format" forumUrl="https://forum.groupdocs.com/c/annotation/10">}}
+
 | Format | Description | Annotate |
 | --- | --- | --- |
 | [DOC](https://docs.fileformat.com/word-processing/doc/) | Microsoft Word 97-2003 Document | ![(tick)](/annotation/net/images/check.png) |
