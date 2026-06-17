@@ -3,61 +3,75 @@ id: home
 url: annotation/net
 title: GroupDocs.Annotation for .NET
 weight: 1
-description: API to annotate text or images in your documents using C#. It supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint. PPTX
-keywords: annotation,to annotate,.net api,api,xlsx,microsoft word,docx,pptx,pdf,c#
+description: ".NET library that adds, edits, and removes annotations and markup — area and shape annotations, text highlight/underline/strikeout, watermarks, image and link stamps, and threaded comments — on PDF, Word, Excel, PowerPoint, images, CAD, Visio, and email files. No Microsoft Office or Adobe Acrobat required."
+keywords: GroupDocs.Annotation, .NET, C#, document annotation, annotate PDF, annotate DOCX, markup, comments, replies, highlight, underline, strikeout, watermark, image annotation, link annotation, on-premise
 productName: GroupDocs.Annotation for .NET
-hideChildren: True
-fullWidth: True
+hideChildren: true
+toc: True
+structuredData:
+    showOrganization: true
 ---
-<img src="/annotation/net/images/home.png" alt="groupdocs annotation .net logo" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
-GroupDocs.Annotation for .NET API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document.
+<img src="/logo/128x128/groupdocs-annotation-net.png" alt="groupdocs-annotation-net-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
-Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more.
+<img src="https://img.shields.io/nuget/v/GroupDocs.Annotation?label=GroupDocs.Annotation%20NuGet" alt="NuGet package">
+<img src="https://img.shields.io/nuget/dt/GroupDocs.Annotation?label=nuget%20downloads" alt="NuGet downloads">
 
-Annotation API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX documents.
+{{< button style="primary" link="https://releases.groupdocs.com/annotation/net/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}}
+{{< button style="primary" link="https://www.nuget.org/packages/GroupDocs.Annotation/" >}} {{< icon "gdoc_download" >}} Download from NuGet {{< /button >}}
+{{< button style="primary" link="https://products.groupdocs.app/annotation/family" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#app"></use></svg> Online app {{< /button >}}
 
-------
-{{< columns >}}
-<p><b>About GroupDocs.Annotation</b></p>
-<hr><p>OVERVIEW</p></hr>
-<ul>
-	<li><a href='{{< ref "annotation/net/getting-started/features-overview" >}}'>Features Overview</a></li>
-	<li><a href='{{< ref "annotation/net/getting-started/supported-document-formats" >}}'>Supported Document Formats</a></li>
-	<li><a href='{{< ref "annotation/net/getting-started/system-requirements" >}}'>System Requirements</a></li>
-	<li><a href='{{< ref "annotation/net/getting-started/installation" >}}'>Installation</a></li>
-	<li><a href='{{< ref "annotation/net/getting-started/licensing-and-subscription.md" >}}'>Licensing and Subscription</a></li>
-</ul>
-<p>TECHNICAL SUPPORT</p>
-<ul>
-	<li><a href="https://forum.groupdocs.com/">GroupDocs Free Support Forum</a></li>
-	<li><a href="https://helpdesk.groupdocs.com/">GroupDocs Paid Support Helpdesk</a></li>
-</ul>
-<--->
-<p><b>Get Started</b></p>
-<hr><p>GUIDE</p></hr>
-<ul>
-	<li><a href='{{< ref "annotation/net/getting-started/how-to-run-examples" >}}'>Run GroupDocs.Annotation Examples</a></li>
-</ul>
-<p>USEFUL RESOURCES</p>
-<ul>
-	<li><a href="https://www.nuget.org/packages/groupdocs.annotation">GroupDocs.Annotation Nuget Package</a></li>
-	</li><li><a href="https://downloads.groupdocs.com/annotation/net">GroupDocs.Annotation for .NET Downloads</a></li>
-	<li><a href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET">Download Examples and Demos at GitHub</a></li>
-</ul>
-<--->
-<p><b>Develop Functions</b></p>
-<hr><p>GUIDE</p></hr>
-<ul>
-	<li><a href='{{< ref "annotation/net/annotation-basics/get-file-info" >}}'>Retrieve File Info</a></li>
-	<li><a href='{{< ref "annotation/net/annotation-basics/extract-annotations-from-document" >}}'>Read Annotations</a></li>
-	<li><a href='{{< ref "annotation/net/annotation-basics/remove-annotation-from-document" >}}'>Remove Annotations</a></li>
-	<li><a href='{{< ref "annotation/net/annotation-basics/add-annotation-to-the-document/_index.md" >}}'>Add Annotations</a></li>				
-    <li><a href='{{< ref "annotation/net/annotation-basics/working-with-annotation-replies/_index.md" >}}'>Working with Replies</a></li>
-</ul>
-<p>USEFUL RESOURCES</p>
-<ul>
-	<li><a href="https://reference.groupdocs.com/annotation/net">GroupDocs.Annotation for .NET API Reference</a></li>
-	<li><a href='https://releases.groupdocs.com/annotation/net/release-notes/'>GroupDocs.Annotation for .NET Release Notes</a></li>
-</ul>
-{{< /columns >}}
+[GroupDocs.Annotation for .NET](https://products.groupdocs.com/annotation/net/) is a document annotation API that adds, edits, and removes annotations and markup across many document formats. It provides a unified, format-independent interface to draw area and shape annotations, mark up text with highlights, underlines, strikeouts, and squiggly lines, stamp watermarks, images, and hyperlinks, add editable text fields, and attach threaded review comments — then save the result back to its original format with optional page-range and annotation-type filters.
+
+<div style="clear:left"></div>
+
+## Quick example
+
+```csharp
+// Add an area annotation to the first page of a PDF
+using (Annotator annotator = new Annotator("input.pdf"))
+{
+    AreaAnnotation area = new AreaAnnotation
+    {
+        Box = new Rectangle(100, 100, 200, 80),   // x, y, width, height
+        PageNumber = 0,                            // 0-based page index
+        BackgroundColor = 65535,                   // ARGB integer
+        Message = "Review this section"
+    };
+    annotator.Add(area);
+    annotator.Save("annotated.pdf");
+}
+```
+
+## Features
+
+- **Shape Annotations**: Draw area, ellipse, arrow, point, distance, and polyline annotations with configurable color and opacity.
+- **Text Markup**: Highlight, underline, strikeout, and squiggly-mark text, replace or redact text, and redact embedded resources.
+- **Content Annotations**: Stamp watermarks, image annotations, hyperlinks, and editable text fields onto a document.
+- **Comments & Replies**: Attach threaded review comments to any annotation with user and timestamp information.
+- **Manage Annotations**: List, update, and remove annotations — all of them or filtered by annotation type.
+- **Save Filters**: Render only selected annotation types or a specific page range when saving the result.
+
+## Supported File Formats
+
+GroupDocs.Annotation supports a wide range of file formats. For a complete list, see the [full list of supported formats](https://docs.groupdocs.com/annotation/net/getting-started/supported-document-formats/).
+
+- **Microsoft Office** (Word, Excel, PowerPoint)
+- **PDF**
+- **Images** (JPEG, PNG, BMP, TIFF)
+- **CAD** (DWG, DXF)
+- **Visio Diagrams** (VSD, VSDX)
+- **Email** (EML, EMLX)
+- **OpenDocument** (ODT, ODS, ODP)
+
+## Getting Started
+
+To get started, refer to the [System Requirements](https://docs.groupdocs.com/annotation/net/getting-started/system-requirements/), [Supported File Formats](https://docs.groupdocs.com/annotation/net/getting-started/supported-document-formats/), [Installation](https://docs.groupdocs.com/annotation/net/getting-started/installation/), and [How to Run Examples](https://docs.groupdocs.com/annotation/net/getting-started/how-to-run-examples/) sections for setup instructions and your first annotation.
+
+## Developer Guide
+
+For practical code examples covering basic and advanced annotation, see the [Basic Usage](https://docs.groupdocs.com/annotation/net/basic-usage/) and [Advanced Usage](https://docs.groupdocs.com/annotation/net/advanced-usage/) sections. They walk through loading documents, adding every annotation type, attaching comments and replies, listing and removing annotations, and saving results with page-range and annotation-type filters.
+
+## Technical Support
+
+If you experience any issues or have suggestions, use the [GroupDocs Free Support Forum](https://forum.groupdocs.com/c/annotation/) or the [Paid Support Helpdesk](https://helpdesk.groupdocs.com/). For licensing and evaluation questions, see [Licensing and Subscription](https://docs.groupdocs.com/annotation/net/getting-started/licensing-and-subscription/).
