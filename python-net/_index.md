@@ -1,6 +1,7 @@
 ---
 id: home
 url: annotation/python-net
+outputs: ["HTML", "MD", "LLMSFULL", "LLMSTXT"]
 title: GroupDocs.Annotation for Python via .NET
 weight: 1
 description: "Native Python library that adds, edits, and removes annotations and markup — area and shape annotations, text highlight/underline/strikeout, watermarks, image and link stamps, and threaded comments — on PDF, Word, Excel, PowerPoint, images, CAD, Visio, and email files on Windows, Linux, and macOS. No Microsoft Office or Adobe Acrobat required."

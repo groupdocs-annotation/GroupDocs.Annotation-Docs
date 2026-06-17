@@ -1,6 +1,7 @@
 ---
 id: annotation
 url: annotation
+outputs: ["HTML", "MD", "LLMSFULL", "LLMSTXT"]
 title: GroupDocs.Annotation Product Family
 geekdocSkip: true
 geekdocNav: false

@@ -1,6 +1,7 @@
 ---
 id: home
 url: annotation/net
+outputs: ["HTML", "MD", "LLMSFULL", "LLMSTXT"]
 title: GroupDocs.Annotation for .NET
 weight: 1
 description: ".NET library that adds, edits, and removes annotations and markup — area and shape annotations, text highlight/underline/strikeout, watermarks, image and link stamps, and threaded comments — on PDF, Word, Excel, PowerPoint, images, CAD, Visio, and email files. No Microsoft Office or Adobe Acrobat required."
