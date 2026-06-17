@@ -21,8 +21,8 @@ structuredData:
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements. 
         - name: Annotation class declaration
           text: Create an instance of annotation class and specify the id of the annotation to be updated.
-        - name: Parametrs annotation
-          text: Pass new parametrs for annotation.
+        - name: Parameters annotation
+          text: Pass new parameters for annotation.
         - name: Update annotation to the document
           text: Call Annotator class .Update() method and pass the class name annotation.
         - name: Save document with annotation

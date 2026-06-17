@@ -23,7 +23,7 @@ With a powerful and simple API, you can do the following.
 * Export or import annotations to a file.
 
 
-You can use GroupDocs.Viewer across multiple platforms and operation systems:
+You can use GroupDocs.Annotation across multiple platforms and operation systems:
 
 * Windows, Linux, and macOS
 * Java 5 and higher

@@ -20,7 +20,7 @@ structuredData:
         - name: Load source file an instance Annotator
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
         - name: Variables
-          text: Create variables path to the inut PDF file, path to the JPG file, page number, image quality.
+          text: Create variables path to the input PDF file, path to the JPG file, page number, image quality.
         - name: Saving a document
           text: Call the annotator method .AddImageToDocument and pass the created variables to it.
 toc: True

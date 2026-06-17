@@ -14,8 +14,8 @@ structuredData:
         description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using C#
     showVideo: False
     howTo:
-        name: How to set document preview resolution
-        description: Learn how to set document preview resolution step by step
+        name: How to get document versions
+        description: Learn how to get document versions step by step
         steps:
         - name: Load source file an instance Annotator
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
@@ -69,7 +69,7 @@ using (Annotator annotator = new Annotator("result.pdf")) {
 {{< /tabs >}}
 
 {{< alert style="info" >}}
-The [Annotator.GetVersionList()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) method returns list of objects. If needed, you can convert them to appropriate type.
+The [Annotator.GetVersionsList()](https://reference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) method returns list of objects. If needed, you can convert them to appropriate type.
 {{< /alert >}}
 
 ## Get the list of annotations using version key

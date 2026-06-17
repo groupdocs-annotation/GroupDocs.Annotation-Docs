@@ -20,7 +20,7 @@ structuredData:
           text: Create an instance of Annotator class and pass the path to the file with annotations.
         - name: PreviewOptions class declaration
           text: Create an instance of PreviewOptions class.
-        - name: Specify ptrview options
+        - name: Specify preview options
           text: In the PreviewOptions class constructor, pass the path to the page.
         - name: Generate preview
           text: Calls the .GeneratePreview() method and pass it the class name PreviewOptions 

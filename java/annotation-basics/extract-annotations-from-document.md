@@ -38,19 +38,18 @@ To do this, follow these steps:
 3.   Define a variable of the `List<AnnotationBase>` type.
 4.   Call the [get()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#get--) method to get result to variable defined on the previous step.
 5.   Instantiate the `XmlSerializer` class with the `List<AnnotationBase>` type.
-6.   Using `FileStreamobject`, serialize annotations to the file.
+6.   Using `FileStream` object, serialize annotations to the file.
 
 The following code snippet shows how to extract annotations from a document:
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-// This example demonstrates how to extract annotations.
-
-LoadOptions tmp0 = new LoadOptions();
+// for using this example input file ("annotated.pdf") must have annotations
+LoadOptions loadOptions = new LoadOptions();
 
 // Create an instance of Annotator class
-Annotator annotator = new Annotator("InputPath", tmp0);
+Annotator annotator = new Annotator("annotated.pdf", loadOptions);
 
 // Get all annotations
 List<AnnotationBase> annotations = annotator.get();

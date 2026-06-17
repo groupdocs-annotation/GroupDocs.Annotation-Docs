@@ -79,6 +79,7 @@ To run the [GroupDocs.Annotation for .NET MVC Example](https://github.com/group
 {{< tab "Git" >}} 
 ```bash
 git clone https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC
+```
 {{< /tab >}}
 {{< /tabs >}}  
 2.   Open solution with the Visual Studio. Update common parameters in **web.config** and example related properties in **configuration.yml** to meet your requirements.  

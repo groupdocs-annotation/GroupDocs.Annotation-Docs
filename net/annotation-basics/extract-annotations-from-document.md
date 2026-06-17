@@ -38,7 +38,7 @@ To do this, follow these steps:
 3.   Define a variable of the `List<AnnotationBase>` type.
 4.   Call the [Get](https://reference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/get) method to get result to variable defined on the previous step.
 5.   Instantiate the `XmlSerializer` class with the `List<AnnotationBase>` type.
-6.   Using `FileStreamobject`, serialize annotations to the file.
+6.   Using `FileStream` object, serialize annotations to the file.
 
 The following code snippet shows how to extract annotations from a document:
 

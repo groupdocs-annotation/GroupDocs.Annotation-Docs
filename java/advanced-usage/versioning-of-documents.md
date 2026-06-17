@@ -14,8 +14,8 @@ structuredData:
         description: Represents text or graphic notes, comments and remarks attached to a specific part of the content of the document using Java
     showVideo: False
     howTo:
-        name: How to set document preview resolution
-        description: Learn how to set document preview resolution step by step
+        name: How to get document versions
+        description: Learn how to get document versions step by step
         steps:
         - name: Load source file an instance Annotator
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
@@ -63,7 +63,7 @@ The [Version](https://reference.groupdocs.com/java/annotation/com.groupdocs.anno
 
 ## Get the list of version keys of a file
 
-To get the list of version keys, call the [Annotator.getVersionList()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#getVersionsList--) method of the [Annotator](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/) class.
+To get the list of version keys, call the [Annotator.getVersionsList()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#getVersionsList--) method of the [Annotator](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/) class.
 
 The following code snippet shows how to get list of versions keys:
 
@@ -74,7 +74,7 @@ The following code snippet shows how to get list of versions keys:
 
 // Create an instance of Annotator class
 try (Annotator annotator = new Annotator("input.pdf")) {
-    // Get versions lest from annotated file
+    // Get versions list from annotated file
     List<Object> versionKeys = annotator.getVersionsList();
 }
 ```
@@ -82,7 +82,7 @@ try (Annotator annotator = new Annotator("input.pdf")) {
 {{< /tabs >}}
 
 {{< alert style="info" >}}
-The [Annotator.GetVersionList()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#getVersionsList--) method returns list of objects. If needed, you can convert them to appropriate type.
+The [Annotator.getVersionsList()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#getVersionsList--) method returns list of objects. If needed, you can convert them to appropriate type.
 {{< /alert >}}
 
 ## Get the list of annotations using version key
@@ -98,7 +98,7 @@ The following code snippets shows how to get list of annotations in a specific v
 
 // Create an instance of Annotator class
 try (Annotator annotator = new Annotator("input.pdf")) {
-    // Get versions lest from annotated file by CUSTOM_VERSION
+    // Get versions list from annotated file by CUSTOM_VERSION
     List<AnnotationBase> annotations = annotator.getVersion("CUSTOM_VERSION");
 }
 ```

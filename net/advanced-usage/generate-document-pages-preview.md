@@ -21,7 +21,7 @@ structuredData:
           text: Create an instance of Annotator class and pass source file path as a constructor parameter. You may specify absolute or relative file path as per your requirements.
         - name: PreviewOptions class declaration
           text: Create an instance of PreviewOptions class.
-        - name: Specify ptrview options
+        - name: Specify preview options
           text: In the PreviewOptions class constructor, pass the path to the page.
         - name: Property preview
           text: Specify preview format and page numbers

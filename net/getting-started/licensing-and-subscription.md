@@ -107,11 +107,11 @@ Metered metered = new Metered();
 metered.SetMeteredKey(publicKey, privateKey);
 
 // Get amount (MB) consumed
-decimal amountConsumed = GroupDocs.Viewer.Metered.GetConsumptionQuantity();
+decimal amountConsumed = Metered.GetConsumptionQuantity();
 Console.WriteLine("Amount (MB) consumed: " + amountConsumed);
 
 // Get count of credits consumed
-decimal creditsConsumed = GroupDocs.Viewer.Metered.GetConsumptionCredit();
+decimal creditsConsumed = Metered.GetConsumptionCredit();
 Console.WriteLine("Credits consumed: " + creditsConsumed);
 ```
 

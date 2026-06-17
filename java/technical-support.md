@@ -37,4 +37,4 @@ When posting your issue, question, or feature request with GroupDocs.Annotation,
 
 1. Include the original document and possibly the code snippet that is causing the problem. If you need to attach a few files, zip them into one. It is safe to attach your documents to GroupDocs.Forums because only you and the GroupDocs developers have access to the attached files.
 2. Add information about the environment you are facing the issue.
-3.* Try to report one issue per thread. If you have another issue, question, or feature request, please report it in a separate thread.
+3. Try to report one issue per thread. If you have another issue, question, or feature request, please report it in a separate thread.
