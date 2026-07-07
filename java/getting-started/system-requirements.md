@@ -1,6 +1,8 @@
 ---
 id: system-requirements
 url: annotation/java/system-requirements
+aliases:
+    - /annotation/java/getting-started/system-requirements/
 title: System Requirements
 weight: 3
 description: "This Java API does not require any external software or third party tool to be installed"

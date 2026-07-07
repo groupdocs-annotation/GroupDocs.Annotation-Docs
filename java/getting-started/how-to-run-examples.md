@@ -1,6 +1,8 @@
 ---
 id: how-to-run-the-examples
 url: annotation/java/how-to-run-the-examples
+aliases:
+    - /annotation/java/getting-started/how-to-run-examples/
 title: How to Run the Examples
 weight: 6
 description: Examples to annotate on your documents, images or web pages using Java.

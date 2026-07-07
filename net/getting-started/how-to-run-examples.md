@@ -1,6 +1,8 @@
 ---
 id: how-to-run-examples
 url: annotation/net/how-to-run-examples
+aliases:
+    - /annotation/net/getting-started/how-to-run-examples/
 title: How to Run Examples
 weight: 6
 description: Examples to annotate on your documents, images or web pages using C#.

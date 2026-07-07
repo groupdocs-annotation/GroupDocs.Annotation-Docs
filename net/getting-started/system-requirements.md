@@ -1,6 +1,8 @@
 ---
 id: system-requirements
 url: annotation/net/system-requirements
+aliases:
+    - /annotation/net/getting-started/system-requirements/
 title: System Requirements
 weight: 3
 description: "It does not require any external software or third party tool to be installed"

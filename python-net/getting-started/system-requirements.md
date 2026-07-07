@@ -1,6 +1,8 @@
 ---
 id: system-requirements
 url: annotation/python-net/system-requirements
+aliases:
+    - /annotation/python-net/getting-started/system-requirements/
 title: System Requirements
 linkTitle: System Requirements
 weight: 6

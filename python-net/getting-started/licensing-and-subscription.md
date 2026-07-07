@@ -1,6 +1,8 @@
 ---
 id: licensing-and-subscription
 url: annotation/python-net/licensing-and-subscription
+aliases:
+    - /annotation/python-net/getting-started/licensing-and-subscription/
 title: Licensing and evaluation
 weight: 5
 keywords: free, free trial, subscription, evaluation, watermark, metered, groupdocs annotation python

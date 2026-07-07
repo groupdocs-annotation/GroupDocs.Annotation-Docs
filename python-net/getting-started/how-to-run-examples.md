@@ -1,6 +1,8 @@
 ---
 id: how-to-run-examples
 url: annotation/python-net/how-to-run-examples
+aliases:
+    - /annotation/python-net/getting-started/how-to-run-examples/
 title: How to Run Examples
 linkTitle: How to Run Examples
 weight: 7

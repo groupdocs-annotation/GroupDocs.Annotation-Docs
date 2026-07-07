@@ -1,6 +1,8 @@
 ---
 id: installation
 url: annotation/net/installation
+aliases:
+    - /annotation/net/getting-started/installation/
 title: Installation
 weight: 4
 description: "The page describes how to add the GroupDocs.Annotation library to your .NET project."

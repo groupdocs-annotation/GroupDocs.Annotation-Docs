@@ -1,6 +1,8 @@
 ---
 id: installation
 url: annotation/java/installation
+aliases:
+    - /annotation/java/getting-started/installation/
 title: Installation
 weight: 4
 description: ""

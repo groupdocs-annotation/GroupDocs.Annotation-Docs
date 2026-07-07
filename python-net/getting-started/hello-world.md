@@ -1,6 +1,8 @@
 ---
 id: hello-world
 url: annotation/python-net/hello-world
+aliases:
+    - /annotation/python-net/getting-started/hello-world/
 title: Hello, World!
 second_title: Basic Example of Using GroupDocs.Annotation for Python via .NET
 linkTitle: Hello World

@@ -1,6 +1,8 @@
 ---
 id: supported-document-formats
 url: annotation/python-net/supported-document-formats
+aliases:
+    - /annotation/python-net/getting-started/supported-document-formats/
 title: Supported Document Formats
 second_title: Documentation
 weight: 2

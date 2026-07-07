@@ -1,6 +1,8 @@
 ---
 id: installation
 url: annotation/python-net/installation
+aliases:
+    - /annotation/python-net/getting-started/installation/
 title: Install GroupDocs.Annotation for Python via .NET
 linkTitle: Installation
 weight: 1
