@@ -13,7 +13,7 @@ structuredData:
     showOrganization: true
 ---
 
-<img src="/logo/128x128/groupdocs-annotation-python.png" alt="groupdocs-annotation-python-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
+<img src="/logo/128x128/groupdocs-annotation-python.png" alt="groupdocs-annotation-python-net-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 <img src="https://img.shields.io/pypi/v/groupdocs-annotation-net?label=GroupDocs.Annotation%20PyPI" alt="PyPI package">
 <img src="https://img.shields.io/pypi/dm/groupdocs-annotation-net?label=pypi%20downloads" alt="PyPI downloads">
