@@ -1,0 +1,649 @@
+{
+  "serverVersion": "26.9.0",
+  "capturedFrom": "GroupDocs.Annotation.Mcp@26.9.0",
+  "tools": [
+    {
+      "name": "get_annotations",
+      "description": "Lists all annotations in a document as JSON. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Each entry includes 'id' (use this with remove_annotations / update_annotation / add_reply), 'type', 'message', 'page' (1-based), bounding box, user, and replies. Call this tool first whenever the user asks to list, show, inspect, or review annotations or comments. Do NOT pre-check whether files exist — pass the filename the user provided directly. Returns a JSON object with `found` (count) and `annotations` (array). On failure, the response text starts with 'Annotation lookup failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "add_annotation",
+      "description": "Adds an annotation to a document and saves the annotated file as '<name>_annotated.<ext>'. Supported types: textfield, area, point, arrow, highlight, underline, strikeout. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Call this tool whenever the user asks to annotate, comment, highlight, underline, strikeout, or mark up a document. Do NOT pre-check whether files exist — pass the filename the user provided directly. The tool resolves files from storage and returns an error with available files if a name is not found. Returns a saved-path message ('Added <type> annotation to <file> on page <n>') with the download URL or storage path. On failure, the response text starts with 'Annotation failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "type": {
+            "description": "Annotation type: textfield, area, point, arrow, highlight, underline, strikeout",
+            "type": "string"
+          },
+          "text": {
+            "description": "Annotation text or comment",
+            "type": "string"
+          },
+          "page": {
+            "description": "Page number (1-based)",
+            "type": "integer",
+            "default": 1
+          },
+          "x": {
+            "description": "X position (document coordinates)",
+            "type": "integer",
+            "default": 100
+          },
+          "y": {
+            "description": "Y position (document coordinates)",
+            "type": "integer",
+            "default": 100
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file",
+          "type",
+          "text"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "update_annotation",
+      "description": "Updates an existing annotation's message and/or bounding box, then saves the result back to storage. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Call get_annotations first to retrieve the annotation 'id' and current values. Pass any subset of message/x/y/width/height — omitted parameters keep their current value. Call this tool whenever the user asks to edit, modify, move, or resize an existing annotation. Do NOT pre-check whether files exist — pass the filename the user provided directly. Returns a saved-path message ('Updated annotation <id> in <file>'). On failure, the response text starts with 'Annotation update failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "id": {
+            "description": "Annotation ID to update (from get_annotations)",
+            "type": "integer"
+          },
+          "message": {
+            "description": "New message/comment text. Omit to keep current.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "x": {
+            "description": "New X position. Omit to keep current.",
+            "type": [
+              "integer",
+              "null"
+            ],
+            "default": null
+          },
+          "y": {
+            "description": "New Y position. Omit to keep current.",
+            "type": [
+              "integer",
+              "null"
+            ],
+            "default": null
+          },
+          "width": {
+            "description": "New width. Omit to keep current.",
+            "type": [
+              "integer",
+              "null"
+            ],
+            "default": null
+          },
+          "height": {
+            "description": "New height. Omit to keep current.",
+            "type": [
+              "integer",
+              "null"
+            ],
+            "default": null
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file",
+          "id"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "remove_annotations",
+      "description": "Removes annotations from a document by ID and saves the result back to storage. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Call get_annotations first to retrieve annotation IDs, then pass them here. Omit 'ids' to remove every annotation in the document. Call this tool whenever the user asks to delete, remove, or clear annotations. Do NOT pre-check whether files exist — pass the filename the user provided directly. Returns a saved-path message ('Removed N annotation(s) from <file>'). On failure, the response text starts with 'Annotation removal failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "ids": {
+            "description": "Comma-separated annotation IDs to remove, e.g. '1,3,5'. Omit to remove all.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "add_reply",
+      "description": "Adds a reply to an existing annotation and saves the result back to storage. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Call get_annotations first to retrieve the target annotation 'id'. Call this tool whenever the user asks to reply to an annotation, add a comment thread, or respond to a review note. Do NOT pre-check whether files exist — pass the filename the user provided directly. Returns a saved-path message ('Added reply to annotation <id> in <file>'). On failure, the response text starts with 'Reply add failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "annotationId": {
+            "description": "Annotation ID to reply to (from get_annotations)",
+            "type": "integer"
+          },
+          "comment": {
+            "description": "Reply comment text",
+            "type": "string"
+          },
+          "userName": {
+            "description": "Name of the user posting the reply. Defaults to 'mcp-user'.",
+            "type": "string",
+            "default": "mcp-user"
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file",
+          "annotationId",
+          "comment"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "remove_replies",
+      "description": "Removes replies from annotations and saves the result back to storage. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Filter mode: pass 'replyIds' (comma-separated) to remove by reply ID, OR pass 'userName' to remove all replies from one user. Pass neither to remove ALL replies in the document. Call this tool whenever the user asks to delete a reply, remove a comment thread, or clear replies from one author. Do NOT pre-check whether files exist — pass the filename the user provided directly. Returns a saved-path message ('Removed N reply / replies from <file>'). On failure, the response text starts with 'Reply removal failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "replyIds": {
+            "description": "Comma-separated reply IDs to remove, e.g. '12,34'. Omit to fall back to userName / remove-all.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "userName": {
+            "description": "Remove all replies authored by this user name. Mutually exclusive with replyIds.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "export_annotations",
+      "description": "Extracts annotations from a document and saves them as an XML file (suitable for re-import via import_annotations). Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Call this tool whenever the user asks to export, extract, serialize, or save annotations to XML. Do NOT pre-check whether files exist — pass the filename the user provided directly. Returns a saved-path message ('Exported N annotation(s) from <file> to <name>.annotations.xml'). On failure, the response text starts with 'Annotation export failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "import_annotations",
+      "description": "Imports annotations from another source (an XML annotations file or an annotated document) and saves the merged document back to storage. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats for the target. Source must be either an XML file produced by export_annotations, or another annotated document of the same engine format. Call this tool whenever the user asks to import, merge, or apply annotations from one document to another. Do NOT pre-check whether files exist — pass the filenames the user provided directly. Returns a saved-path message ('Imported annotations from <source> into <file>'). On failure, the response text starts with 'Annotation import failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "source": {
+            "description": "Source file containing annotations to import — an XML file (.xml) or an annotated document (.pdf, .docx, etc.).",
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "password": {
+            "description": "Password for protected target documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file",
+          "source"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "generate_pages_preview",
+      "description": "Renders document pages as PNG images and returns them inline so AI clients can display them directly. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Pass 'pages' as a comma-separated list (e.g. '1,3,5') or a range ('1-3'); omit to render only page 1. Renders the document with its annotations baked in — call this whenever the user asks to preview, show, render, or visualise a page (annotated or not). Maximum MaxPagesPerCall (5) pages per call; further pages must be requested in additional calls. Do NOT pre-check whether files exist — pass the filename the user provided directly. Returns a CallToolResult with one TextContentBlock describing what was rendered, followed by one ImageContentBlock per page. On failure, the response contains a single TextContentBlock starting with 'Preview generation failed for'.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "pages": {
+            "description": "Pages to render, e.g. '1,3,5' or '1-3'. Omit for page 1 only.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_document_info",
+      "description": "Returns file type, page count, size, and per-page dimensions for a document as JSON. Supports PDF, DOCX, XLSX, PPTX, and 50+ more document and image formats. Call this tool whenever the user asks for document info, page count, size, dimensions, or wants to inspect a document before annotating. Do NOT pre-check whether files exist — pass the filename the user provided directly. Returns a JSON object with `fileType`, `pageCount`, `size`, and `pages` (array of per-page width/height when available). On failure, the response text starts with 'Document-info lookup failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_license_status",
+      "description": "Returns how this MCP server is licensed, and — under metered licensing — how much has been consumed. Call this when the user asks about licensing, evaluation limitations, metered usage, remaining credit, or which product engine version is running. Returns a JSON object with `mode` (\"evaluation\", \"licensed\" or \"metered\"), `licensed` (true for both licensed and metered), `consumption` (null unless metered; otherwise `quantity` and `credit`, or `error` if the reading failed), and `server` / `engine` name and version. Takes no arguments and never modifies anything.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
