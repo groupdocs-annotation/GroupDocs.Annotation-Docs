@@ -62,3 +62,8 @@ The change list is ordinary JSON, so the agent can carry it onward: open an issu
 ## The evaluation trap
 
 A trial badge on every page does not change the annotation data, so reports built this way are accurate even unlicensed. The badge only affects what you can *send*. If the plan ends in "and email them the marked-up copy", check [`get_license_status`]({{< ref "annotation/mcp/tools-reference/get-license-status.md" >}}) first.
+
+## Read more
+
+* [3 ways to extract every comment from a document set with MCP](https://blog.groupdocs.com/annotation/3-ways-extract-annotations-from-documents-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

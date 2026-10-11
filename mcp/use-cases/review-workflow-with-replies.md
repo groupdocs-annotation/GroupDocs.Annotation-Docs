@@ -19,7 +19,7 @@ structuredData:
         - name: "Put the documents in the storage folder"
           text: "Point GROUPDOCS_MCP_STORAGE_PATH at the folder that holds the files the agent should use."
         - name: "Ask the agent"
-          text: "List the annotations in contract_annotated.pdf. Which ones have no replies?"
+          text: "List the annotations in contract_annotated.pdf (in the output folder). Which ones have no replies?"
 ---
 
 A review round is rarely *"add a comment"*. It is: what is still open, who raised it, answer it, resolve it, and produce a clean copy for the next audience. All five are tool calls.
@@ -28,9 +28,13 @@ A review round is rarely *"add a comment"*. It is: what is still open, who raise
 The commands and config snippets on this page are for the **.NET** build of the server — the only platform available today. Installation and client setup: [MCP server for .NET]({{< ref "annotation/net/mcp/_index.md" >}}). Other platforms will expose the same tools with their own launch command; everything else on this page applies unchanged.
 {{< /alert >}}
 
+## Before you start
+
+Set `GROUPDOCS_MCP_OUTPUT_PATH` to a folder other than the storage folder before chaining edits on a produced file ([configuration]({{< ref "annotation/net/mcp/configuration.md" >}})). With the default — outputs land in the storage folder — the second write fails with `being used by another process`; with a separate output folder `add_reply`, `update_annotation` and `remove_annotations` on the produced file all succeed. File names below (`contract_annotated.pdf`) mean the produced file in the output folder.
+
 ## 1. What is open?
 
-> List the annotations in contract_annotated.pdf. Which ones have no replies?
+> List the annotations in contract_annotated.pdf (in the output folder). Which ones have no replies?
 
 [`get_annotations`]({{< ref "annotation/mcp/tools-reference/get-annotations.md" >}}) returns every annotation with its `id`, author, page, message, and `replies`. "Unanswered" is just an empty replies array — the agent filters the list it already has, without re-reading the document.
 
@@ -70,5 +74,10 @@ The same pair merges two reviewers' copies into one.
 
 Two habits make this workflow trustworthy:
 
-* **Always name the file you mean.** Each step writes a new file; the agent should pass the previous result forward, not the original.
+* **Always name the file you mean.** Each step writes a new file into the output folder; the agent should pass the previous result forward, not the original.
 * **Check the licence before a formal review.** In evaluation mode every page carries a trial badge, which is not something to send to a counterparty — [`get_license_status`]({{< ref "annotation/mcp/tools-reference/get-license-status.md" >}}) answers in one call.
+
+## Read more
+
+* [Enforce review workflows with automated annotation threads using MCP](https://blog.groupdocs.com/annotation/enforce-review-workflows-annotation-threads-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

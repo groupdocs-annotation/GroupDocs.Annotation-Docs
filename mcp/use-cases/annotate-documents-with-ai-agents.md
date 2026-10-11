@@ -30,11 +30,11 @@ The commands and config snippets on this page are for the **.NET** build of the 
 
 ## The pattern
 
-1. Put the document in the storage folder the server can see.
+1. Put the document in the storage folder the server can see, and point `GROUPDOCS_MCP_OUTPUT_PATH` at a different folder for the results.
 2. Ask in plain language: *"Highlight the payment clause on page 2 and add a note asking legal to confirm."*
 3. The agent calls [`add_annotation`]({{< ref "annotation/mcp/tools-reference/add-annotation.md" >}}) with the type, text, page, and position.
-4. The engine writes `contract_annotated.pdf` next to your original — **the original is never modified**.
-5. Optionally the agent calls [`generate_pages_preview`]({{< ref "annotation/mcp/tools-reference/generate-pages-preview.md" >}}) and looks at the result.
+4. The engine writes `contract_annotated.pdf` to your output folder — **the original is never modified**.
+5. Optionally the agent calls [`generate_pages_preview`]({{< ref "annotation/mcp/tools-reference/generate-pages-preview.md" >}}) and looks at the result (not for PDF files on Linux or in Docker — see *Look first* below).
 
 ## The one thing that trips people up
 
@@ -51,7 +51,7 @@ If you are scripting the calls yourself, pass the file name returned by the prev
 `x`/`y` are document coordinates. An agent asked to *"highlight the payment clause"* has to guess where that clause is unless something tells it. Three ways to get placement right:
 
 * **Read first** — [`get_annotations`]({{< ref "annotation/mcp/tools-reference/get-annotations.md" >}}) returns bounding boxes of existing annotations to anchor against.
-* **Look first** — render the page with `generate_pages_preview` and let a vision-capable model locate the text.
+* **Look first** — render the page with `generate_pages_preview` and let a vision-capable model locate the text. `generate_pages_preview` currently fails for PDF files on Linux, including the Docker image, with a `TypeInitializationException` for `Gdip` (`System.Drawing.Common` is not supported on non-Windows platforms); Word and other Office documents render, and on Windows with `dnx` every format renders. The other 10 tools are unaffected.
 * **Check after** — annotate, render, and let the agent adjust with [`update_annotation`]({{< ref "annotation/mcp/tools-reference/update-annotation.md" >}}) if the box landed badly.
 
 Use `get_document_info` for the page box before placing anything near an edge.
@@ -64,9 +64,16 @@ dnx GroupDocs.Annotation.Mcp --yes
 
 with `GROUPDOCS_MCP_STORAGE_PATH` pointing at your documents folder — [exact per-client config]({{< ref "annotation/net/mcp/install-in-ai-clients.md" >}}), or run the [installer]({{< ref "annotation/mcp/getting-started/_index.md" >}}).
 
+Set `GROUPDOCS_MCP_OUTPUT_PATH` to a folder other than the storage folder before chaining edits on a produced file ([configuration]({{< ref "annotation/net/mcp/configuration.md" >}})). With the default — outputs land in the storage folder — the second write fails with `being used by another process`; with a separate output folder `add_reply`, `update_annotation` and `remove_annotations` on the produced file all succeed.
+
 ## Where to go next
 
 * [Run a review cycle with replies]({{< ref "annotation/mcp/use-cases/review-workflow-with-replies.md" >}}) — threads, authors, and resolving comments.
 * [Extract and report on annotations]({{< ref "annotation/mcp/use-cases/extract-and-report-annotations.md" >}}) — turn a marked-up document into a summary.
 * [Let the agent see the page]({{< ref "annotation/mcp/use-cases/visual-preview-for-agents.md" >}}) — inline rendering, and why it matters.
 * [On-premise architecture]({{< ref "annotation/mcp/use-cases/on-premise-document-annotation.md" >}}) — what stays local.
+
+## Read more
+
+* [AI review that lands in the document, not in the chat log](https://blog.groupdocs.com/annotation/ai-review-comments-in-document-not-chat-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

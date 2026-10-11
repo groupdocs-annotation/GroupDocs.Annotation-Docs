@@ -32,17 +32,20 @@ The commands and config snippets on this page are for the **.NET** build of the 
 
 > Highlight the payment clause on page 2, then show me the page.
 
-1. [`add_annotation`]({{< ref "annotation/mcp/tools-reference/add-annotation.md" >}}) writes `contract_annotated.pdf`.
+1. [`add_annotation`]({{< ref "annotation/mcp/tools-reference/add-annotation.md" >}}) writes `contract_annotated.pdf` to the output folder.
 2. `generate_pages_preview` on that file with `pages: "2"` returns the rendered page as an image block.
 3. The agent sees where the highlight landed — and if it landed on the wrong paragraph, [`update_annotation`]({{< ref "annotation/mcp/tools-reference/update-annotation.md" >}}) moves it without starting over.
 
 That third step is the difference between *"I added a highlight"* and *"the highlight is on the payment clause"*.
 
+Step 3 is a second write on the produced file. Set `GROUPDOCS_MCP_OUTPUT_PATH` to a folder other than the storage folder before chaining edits on a produced file ([configuration]({{< ref "annotation/net/mcp/configuration.md" >}})). With the default — outputs land in the storage folder — the second write fails with `being used by another process`; with a separate output folder `add_reply`, `update_annotation` and `remove_annotations` on the produced file all succeed.
+
 ## What you need for it to work
 
+* **Windows for PDF, for now.** `generate_pages_preview` currently fails for PDF files on Linux, including the Docker image, with a `TypeInitializationException` for `Gdip` (`System.Drawing.Common` is not supported on non-Windows platforms); Word and other Office documents render, and on Windows with `dnx` every format renders. The other 10 tools are unaffected.
 * **A client that renders image content.** Claude Desktop does; a terminal client may only report that an image was returned. The tool behaves the same either way — the images simply may not be displayed.
 * **A model that can see.** The images are only useful to a vision-capable model.
-* **Patience for big pages.** Rendering is the most expensive call this server makes. Ask for `pages: "2"` or `"1-3"`, not a fifty-page document.
+* **Patience for big pages.** Rendering is the most expensive call this server makes, and one call renders at most five pages. Ask for `pages: "2"` or `"1-3"`, not a fifty-page document.
 
 ## Other things the preview is good for
 
@@ -60,3 +63,8 @@ That third step is the difference between *"I added a highlight"* and *"the high
 ## A note on cost and privacy
 
 The rendering happens locally — the PNG is produced by the engine on your machine. But the image then travels to your model provider like any other message content: with a cloud-hosted model, previewing a page means sending a picture of that page. For sensitive documents, that is the moment to use a local model. See [On-premise architecture]({{< ref "annotation/mcp/use-cases/on-premise-document-annotation.md" >}}).
+
+## Read more
+
+* [Show the agent what it did](https://blog.groupdocs.com/annotation/agent-verifies-annotations-visually-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

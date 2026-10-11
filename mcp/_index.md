@@ -25,7 +25,7 @@ With the .NET 10 SDK installed, the same server also runs without Docker:
 dnx GroupDocs.Annotation.Mcp --yes
 ```
 
-Both are the **.NET** build of the server and run on Windows, Linux, and macOS. Other platforms will each get their own launcher — see [Install for your platform](#install-for-your-platform).
+Both are the **.NET** build of the server and run on Windows, Linux, and macOS, with one exception. `generate_pages_preview` currently fails for PDF files on Linux, including the Docker image, with a `TypeInitializationException` for `Gdip` (`System.Drawing.Common` is not supported on non-Windows platforms); Word and other Office documents render, and on Windows with `dnx` every format renders. The other 10 tools are unaffected. Other platforms will each get their own launcher — see [Install for your platform](#install-for-your-platform).
 
 Or use the [guided installer]({{< ref "annotation/mcp/getting-started/_index.md" >}}) to register the server in your AI client, verify the setup, and configure shared folders in one pass.
 

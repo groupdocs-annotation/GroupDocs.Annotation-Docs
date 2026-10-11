@@ -64,7 +64,7 @@ docker run --rm -i \
 
 * Pin the tag (`:26.9.0`, not `:latest`) so a rebuild cannot change behaviour underneath you.
 * Mount the licence read-only; mount only the folders the agent should reach.
-* Images are multi-arch (linux/amd64 + linux/arm64) and carry every native dependency, which also removes the `libgdiplus` class of problem.
+* Images are multi-arch (linux/amd64 + linux/arm64) and carry every native dependency, which also removes the `libgdiplus` class of problem, with one exception. `generate_pages_preview` currently fails for PDF files on Linux, including the Docker image, with a `TypeInitializationException` for `Gdip` (`System.Drawing.Common` is not supported on non-Windows platforms); Word and other Office documents render, and on Windows with `dnx` every format renders. The other 10 tools are unaffected.
 
 ## License management
 
@@ -90,3 +90,8 @@ Both are covered in [Licensing]({{< ref "annotation/mcp/getting-started/licensin
 **What ports does it open?** None. stdio only.
 
 **How do I prove that?** Run it and watch: no listening sockets, no outbound connections while annotating. The [verification script]({{< ref "annotation/net/mcp/troubleshooting.md" >}}#verifying-an-installation-end-to-end) performs a real handshake and a real engine call so you can observe exactly what happens.
+
+## Read more
+
+* [3 architectures for AI document processing, and the one that keeps files inside your network](https://blog.groupdocs.com/total/on-premise-ai-document-processing-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+
