@@ -4,7 +4,7 @@ url: annotation/net/supported-document-formats
 aliases:
     - /annotation/net/getting-started/supported-document-formats/
 title: Supported Document Formats
-weight: 2
+weight: 3
 description: It supports DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML and many more.
 keywords: DOCX, DOCM, DOC, DOT, DOTM, XLS, XLSX, PDF, PPT, JPG, PNG, HTML, EML
 productName: GroupDocs.Annotation for .NET

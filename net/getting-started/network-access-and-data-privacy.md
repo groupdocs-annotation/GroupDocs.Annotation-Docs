@@ -2,7 +2,7 @@
 id: network-access-and-data-privacy
 url: annotation/net/network-access-and-data-privacy
 title: Network access and data privacy
-weight: 7
+weight: 8
 description: "Explains when GroupDocs.Annotation for .NET accesses the network, what data leaves your machine, how external resources referenced by documents are handled, and how to prevent outbound requests in air-gapped or security-sensitive deployments."
 keywords: on-premise, offline, air-gapped, network access, data privacy, external resources, outbound requests, firewall, SSRF, SkipExternalResources
 productName: GroupDocs.Annotation for .NET

@@ -4,7 +4,7 @@ url: annotation/net/licensing-and-subscription
 aliases:
     - /annotation/net/getting-started/licensing-and-subscription/
 title: Licensing
-weight: 5
+weight: 6
 description: "GroupDocs.Annotation provides different plans for purchasing or offers a Free Trial and a 30-day Temporary License for evaluation."
 keywords: free, free trial, evaluation, groupdocs.annotation
 productName: GroupDocs.Annotation for .NET

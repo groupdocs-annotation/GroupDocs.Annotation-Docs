@@ -4,7 +4,7 @@ url: annotation/net/system-requirements
 aliases:
     - /annotation/net/getting-started/system-requirements/
 title: System Requirements
-weight: 3
+weight: 4
 description: "It does not require any external software or third party tool to be installed"
 keywords: annotation,
 productName: GroupDocs.Annotation for .NET
