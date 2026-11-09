@@ -36,7 +36,7 @@ To delete an annotation reply (replies), follow these steps:
 1.   Instantiate the [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class. Specify the input document path or stream.
 2.   Call the [get()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#get--) method of the [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class to get collection of document annotations.
 3.   Access the appropriate annotation and remove a reply in a suitable way:
-    *   call the `annotations.get(index).getReplies().remove(index)` method. Specify approptiate parameters;
+    *   call the `annotations.get(index).getReplies().remove(index)` method. Specify appropriate parameters;
     *   call the [AnnotationBase.getReplies()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation.models.annotationmodels/annotationbase/#getReplies--) method and remove replies that match desired criteria.
 4.   Call the [update](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#update-java.util.List-com.groupdocs.annotation.models.annotationmodels.AnnotationBase--) method of the [Annotator](https://reference.groupdocs.com/java/annotation/com.groupdocs.annotation/Annotator) class. Specify the annotations collection.
 5.   Call the [save()](https://reference.groupdocs.com/annotation/java/com.groupdocs.annotation/annotator/#save--) method. Specify the output document path or stream.
