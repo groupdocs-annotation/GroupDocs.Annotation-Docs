@@ -21,7 +21,7 @@ toc: True
 
 | Name | Type | Required | Description |
 |---|---|---|---|
-| `file` | object | yes |  — [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
+| `file` | object | yes | The document — see [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
 | `replyIds` | string | no | Comma-separated reply IDs to remove, e.g. '12,34'. Omit to fall back to userName / remove-all. |
 | `userName` | string | no | Remove all replies authored by this user name. Mutually exclusive with replyIds. |
 | `password` | string | no | Password for protected documents |

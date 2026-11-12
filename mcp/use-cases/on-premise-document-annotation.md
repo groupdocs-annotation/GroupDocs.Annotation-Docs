@@ -54,7 +54,7 @@ Pair the server with a locally-hosted model and both concerns disappear: the ent
 ## Docker deployment inside the perimeter
 
 ```bash
-docker run --rm -i \
+docker run --rm -i --user "$(id -u):$(id -g)" \
   -v /srv/review:/data \
   -v /srv/licenses:/license:ro \
   -e GROUPDOCS_MCP_STORAGE_PATH=/data \
@@ -63,6 +63,7 @@ docker run --rm -i \
 ```
 
 * Pin the tag (`:26.9.0`, not `:latest`) so a rebuild cannot change behaviour underneath you.
+* `--user "$(id -u):$(id -g)"` (Linux) lets the container, which runs as a non-root user, write into a folder you own. A JSON client config runs no shell to expand it — write the numbers: `"--user", "1000:1000"`.
 * Mount the licence read-only; mount only the folders the agent should reach.
 * Images are multi-arch (linux/amd64 + linux/arm64) and carry every native dependency, which also removes the `libgdiplus` class of problem, with one exception. `generate_pages_preview` currently fails for PDF files on Linux, including the Docker image, with a `TypeInitializationException` for `Gdip` (`System.Drawing.Common` is not supported on non-Windows platforms); Word and other Office documents render, and on Windows with `dnx` every format renders. The other 10 tools are unaffected.
 

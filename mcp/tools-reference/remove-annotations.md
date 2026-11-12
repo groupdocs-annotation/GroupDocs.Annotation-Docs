@@ -21,7 +21,7 @@ toc: True
 
 | Name | Type | Required | Description |
 |---|---|---|---|
-| `file` | object | yes |  — [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
+| `file` | object | yes | The document — see [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
 | `ids` | string | no | Comma-separated annotation IDs to remove, e.g. '1,3,5'. Omit to remove all. |
 | `password` | string | no | Password for protected documents |
 

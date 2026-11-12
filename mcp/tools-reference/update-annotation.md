@@ -21,7 +21,7 @@ toc: True
 
 | Name | Type | Required | Description |
 |---|---|---|---|
-| `file` | object | yes |  — [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
+| `file` | object | yes | The document — see [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
 | `id` | integer | yes | Annotation ID to update (from get_annotations) |
 | `message` | string | no | New message/comment text. Omit to keep current. |
 | `x` | integer | no | New X position. Omit to keep current. |

@@ -21,7 +21,7 @@ toc: True
 
 | Name | Type | Required | Description |
 |---|---|---|---|
-| `file` | object | yes |  — [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
+| `file` | object | yes | The document — see [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
 | `type` | string | yes | Annotation type: textfield, area, point, arrow, highlight, underline, strikeout |
 | `text` | string | yes | Annotation text or comment |
 | `page` | integer | no | Page number (1-based) |

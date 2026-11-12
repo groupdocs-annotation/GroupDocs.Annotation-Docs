@@ -65,4 +65,4 @@ Ask your agent *"list your GroupDocs annotation tools and the license status"* â
 
 ## Still stuck?
 
-Post your config (redact license paths) and the client name in the [Annotation forum](https://forum.groupdocs.com/c/annotation/10) â€” we answer MCP questions daily. Bugs: [GitHub issues](https://github.com/groupdocs-annotation/GroupDocs.Annotation.Mcp/issues).
+Post your config (redact license paths) and the client name in the [Annotation forum](https://forum.groupdocs.com/c/annotation/10). Bugs: [GitHub issues](https://github.com/groupdocs-annotation/GroupDocs.Annotation.Mcp/issues).

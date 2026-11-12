@@ -21,7 +21,7 @@ toc: True
 
 | Name | Type | Required | Description |
 |---|---|---|---|
-| `file` | object | yes |  — [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
+| `file` | object | yes | The document — see [FileInput shape]({{< ref "annotation/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
 | `annotationId` | integer | yes | Annotation ID to reply to (from get_annotations) |
 | `comment` | string | yes | Reply comment text |
 | `userName` | string | no | Name of the user posting the reply. Defaults to 'mcp-user'. |
