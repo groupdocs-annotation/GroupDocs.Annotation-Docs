@@ -43,5 +43,5 @@ ImageAnnotation area = new ImageAnnotation
 {{< /tab >}}
 {{< /tabs >}}
 
-{{< alert style="info" >}}The feature is supported for Words files only. Other formats ignore this property{{< /alert >}}
+{{< alert style="info" >}}The feature is supported for Word files only. Other formats ignore this property{{< /alert >}}
 

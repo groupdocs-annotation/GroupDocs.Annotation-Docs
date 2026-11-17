@@ -140,7 +140,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
 {{< /tab >}}
 {{< /tabs >}}
 
-## Show and hide replies for WordsProcessing documents
+## Show and hide replies for WordProcessing documents
 
 Use the boolean [RenderComments](https://reference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/rendercomments/) property to show comments when rendering image preview.
 
